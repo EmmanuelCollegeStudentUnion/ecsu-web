@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: 101hawn/ecsu
+collections:
+    - name: "exec" # Used in routes, e.g., /admin/collections/blog
+      label: "Exec" # Used in the UI
+      folder: "content/exec" # The path to the folder where the documents are stored
+      create: true # Allow users to create new documents in this collection
+      slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+      fields: # The fields for each document, usually in front matter
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Email", name: "email", widget: "string"}
+        - {label: "Name", name: "name", widget: "string"}
+        - {label: "Image", name: "image", widget: "image", required: false}
+        - {label: "Bio", name: "body", widget: "markdown", required: false}
+    - name: "societies"
+      label: "Societies"
+      folder: "content/societies"
+      create: true
+      fields: # The fields for each document, usually in front matter
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Image", name: "image", widget: "image", required: false}
+        - {label: "Description", name: "body", widget: "markdown", required: false}
+
+media_folder: "static/images/uploads"
+media_library:
+  name: uploadcare
+  config:
+    publicKey: e3ddd3ab91b80df3f0a5

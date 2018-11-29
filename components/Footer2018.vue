@@ -1,0 +1,84 @@
+<template>
+  <footer id="footer">
+    <div class="inner">
+      <section class="info">
+        <h3>About Us</h3>
+        <div class="about">
+          <p>
+            <b>ECSU</b> is the Emmanuel College Students' Union, which is the representative body for students of Emmanuel College, Cambridge. ECSU provides a bar, common room and funding for sports and other societies, as well as acting as the channel of communication between the students and the College.
+            <br>ECSU is operated by an Executive Committee, elected on an annual basis.
+          </p>
+
+          <ul class="actions">
+            <li>
+              <a href="/pages/about.html" class="button">Learn More</a>
+            </li>
+          </ul>
+        </div>
+        <div class="team">
+          <article>
+            <span class="image">
+              <img src="/images/cropped/2018/president.jpg" alt width="100px">
+            </span>
+            <p>
+              <a href="mailto:president@ecsu.org.uk">
+                <strong class="name">Olivia Malmose-O'Connor</strong>
+              </a>
+              <span class="title">President 2017-2018</span>
+            </p>
+          </article>
+          <article>
+            <span class="image">
+              <img src="/images/cropped/2018/vicepresident.jpg" alt width="100px">
+            </span>
+            <p>
+              <a href="mailto:vicepresident@ecsu.org.uk">
+                <strong class="name">Matilda Schwefel</strong>
+              </a>
+              <span class="title">Vice-President 2017-2018</span>
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="contact">
+        <h3>Contact Us</h3>
+        <ul class="contact-icons">
+          <li class="icon fa-home">
+            <a
+              href="https://www.google.co.uk/maps/place/University+of+Cambridge,+Emmanuel+College/@52.2035723,0.1214127,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8709723b46fab:0x959fbe8634d164d9!8m2!3d52.203569!4d0.123596"
+            >
+              <strong>Emmanuel College Students Union</strong>
+              <br>Emmanuel College
+              <br>St Andrews Street
+              <br>Cambridge
+              <br>CB2 3AP
+            </a>
+          </li>
+
+          <li class="icon fa-envelope">
+            <a href="mailto:communications@ecsu.org.uk">communications@ecsu.org.uk</a>
+          </li>
+          <li class="icon fa-facebook">
+            <a href="https://www.facebook.com/groups/ECSU2011/">Facebook</a>
+          </li>
+          <li class="icon fa-twitter">
+            <a href="https://twitter.com/ECSU_cambridge">Twitter</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="copyright">
+      <img src="/images/emmanuel_logo.png" width="30" height="35">
+      <br>
+      <br>
+      <a href="https://www.emma.cam.ac.uk">Emmanuel College</a> |
+      <a href="/pages/site_index.html">Site Map</a> |
+      <a href="/pages/privacy_policy.html">Privacy Policy</a> |
+      <a href="/pages/conditions.html">Conditions of Use</a> |
+      <a href="/pages/accessibility.html">Accessibility</a> |
+      <a href="http://www.cusu.cam.ac.uk/">CUSU</a> |
+      <a href="/pages/map.html">College Map</a> |
+      <a href="https://www.emmamcr.org.uk/">MCR</a>
+    </div>
+  </footer>
+</template>
