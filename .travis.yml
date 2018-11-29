@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "iojs"
+  - "7"
+
+before_script:
+  - yarn generate
+
+deploy:
+  provider: script
+  script: tar -zcf deploy.tar.gz dist
+  skip_cleanup: true
+  on:
+    branch: master
