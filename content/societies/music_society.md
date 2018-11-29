@@ -1,0 +1,13 @@
+---
+image: /images/ecms.jpg
+title: 'Emma Music Society | ECMS '
+---
+
+Emmanuel College has one of the strongest and most active music societies of any of the colleges in Cambridge. Concerts and Recitals by different groups and in many different styles are given regularly around the college, with good audiences at all.
+The Emmanuel College Orchestra is proud to be one of few complete symphony orchestras in the Cambridge colleges and made up entirely of non-auditioned players. Recent performances have included Mozart's Horn Concerto No.4 in Eb Major, Mendelssohn's Hebrides Overture, Bizet's Carmen Suite, and a selection from Bernstein's West Side Story. Players of any standard are very warmly invited to join.
+The Emma Chorus is open to anybody who enjoys singing. It performs a huge range of repertoire, from classical to barbershop to musicals, and its performances are always huge successes. Again, anyone of any ability is welcome to join. Never sang outside the shower before? Why not start your singing career with us!
+The Emma Big Band is one of the most exciting and flexible groups in college. Not only do they perform at concerts, but also provide music for events ranging from Jazz and Cocktails to May Balls. Jazz players of any standard are warmly welcomed to join the band, as well as anyone who wish to play a little bit of jazz in addition to their classical repertoire. EBB also wants singers, so contact us if you are interested!
+There are also a huge number of smaller groups around college; everything from string trios and guitar quartets, to brilliant solo singers and instrumentalists, to bands and DJs. Whatever your style or level of playing, Emmanuel will have something for you. Additionally the college has a number of funds that can pay for lessons for students who take part in college music.
+Freshers are invited to prepare a piece to perform at the Freshers' concert which will take place in Michaelmas Term. Additionally, there are many opportunities to conduct recitals throughout the academic calendar, so if you wish to light up Sunday evening with a performance then please contact our recitals rep for details. If you just wish to come along for a listen they are usually at 9pm; check the posters and the website to see when the next one is!
+To get involved, or to find out more information, please see the Music Society Website or contact the following people.
+Return to Societies
