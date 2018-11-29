@@ -10,6 +10,7 @@
         "nuxt": "^2.3.4"
     },
     "devDependencies": {
+        "glob": "^7.1.3",
         "markdown-with-front-matter-loader": "^0.1.0"
     }
 }

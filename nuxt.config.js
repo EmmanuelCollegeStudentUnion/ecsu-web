@@ -1,3 +1,12 @@
+const glob = require('glob')
+const content = glob.sync('content/**/*.md')
+const routes = content.map(filename => {
+    console.log("filename" + filename)
+    const match = filename.match('^content\/(.*)\.md')[1]
+    console.log("match: " + match)
+    return match
+})
+console.log(routes)
 export default {
     build: {
         extend(config) {
@@ -6,5 +15,9 @@ export default {
             )
             return config
         }
+    },
+    generate: {
+        routes
     }
 }
+
