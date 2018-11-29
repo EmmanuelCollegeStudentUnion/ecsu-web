@@ -12,4 +12,3 @@ What are the facilities like? - The Club owns its own very spacious boathouse wi
 How to get involved - At the start of Michaelmas term, 'tubbing' sessions, are organised; these are an opportunity to try out rowing, and everyone is welcome. If you don't manage to try it out during Michaelmas term - don't worry! There are usually opportunities to join a boat during Lent term.
 For more information visit the EBC website for more information about the Boat Club.
 If you have any questions do get in touch with one of our captains:
-Return to Societies

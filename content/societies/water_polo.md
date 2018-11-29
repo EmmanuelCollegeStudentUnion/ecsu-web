@@ -7,4 +7,3 @@ title: 'Swimming and Water Polo Club '
  There is also a intercollegiate swimming gala held at the start of Lent term, in which Emma came 4th last year!
  Follow the society here
 Please feel free to contact Laura Schubert at ls668@cam.ac.uk, this year's captain, for more information.
-Return to Societies

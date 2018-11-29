@@ -9,4 +9,3 @@ The basic holiday price is £297 (cheaper than Varsity!) for which you get luxur
 If we've won you over already, you can book online here by entering the booking code ws09emmanuel.
 We'll be at the Freshers' fair and hosting a squash later on this term. If you have any questions, just come along and say hello, spot us in college or email us at emmanuelskitrip@googlemail.com.
 Caroline, Ben and Mark
-Return to Societies
