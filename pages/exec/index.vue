@@ -42,19 +42,16 @@
 </template>
 
 <script>
+import content from "@/content";
 export default {
   layout: "default",
   asyncData: async ({ params }) => {
-    let execContext = require.context("~/content/exec/");
-    let execs = await Promise.all(
-      execContext.keys().map(async x =>
-        import(`~/content/exec/${x.slice(2)}`).then(({ name, title }) => ({
-          name,
-          title,
-          url: "/exec" + x.split(".")[1]
-        }))
-      )
-    );
+    let execs = (await content("exec")).map(({ name, title, filename }) => ({
+      name,
+      title,
+      url: `/exec/${filename}`
+    }));
+
     return { execs };
   }
 };

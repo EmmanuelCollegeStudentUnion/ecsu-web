@@ -3,7 +3,7 @@
     <img src="/images/logo1.png" width="165px" id="borderimg1">
 
     <!-- Logo -->
-    <span class="logo"></span>
+    <span class="logo"/>
 
     <!-- Nav -->
     <nav id="nav">
@@ -43,37 +43,40 @@
           <a href="#" class="icon fa-angle-down">Welfare</a>
           <ul>
             <li>
-              <a href="/pages/disabilities.html">Accessibility in College</a>
+              <nuxt-link to="/welfare/">Welfare</nuxt-link>
             </li>
             <li>
-              <a href="/pages/welfare_request.html">Anonymous Welfare Message</a>
+              <nuxt-link to="/welfare/disabilities">Accessibility in College</nuxt-link>
             </li>
             <li>
-              <a href="/pages/welfare_in_college.html">Welfare in College</a>
+              <nuxt-link to="/welfare/welfare_request">Anonymous Welfare Message</nuxt-link>
             </li>
             <li>
-              <a href="/pages/cusu_support.html">CUSU Support</a>
+              <nuxt-link to="/welfare/welfare_in_college">Welfare in College</nuxt-link>
             </li>
             <li>
-              <a href="/pages/drugs_and_alcohol.html">Drugs and Alcohol</a>
+              <nuxt-link to="/welfare/cusu_support">CUSU Support</nuxt-link>
             </li>
             <li>
-              <a href="/pages/exams.html">Exams</a>
+              <nuxt-link to="/welfare/drugs_and_alcohol">Drugs and Alcohol</nuxt-link>
             </li>
             <li>
-              <a href="/pages/female_resources.html">Female Resources</a>
+              <nuxt-link to="/welfare/exams">Exams</nuxt-link>
             </li>
             <li>
-              <a href="/pages/health.html">Health</a>
+              <nuxt-link to="/welfare/female_resources">Female Resources</nuxt-link>
             </li>
             <li>
-              <a href="/pages/lgbt.html">LGBT+</a>
+              <nuxt-link to="/welfare/health">Health</nuxt-link>
             </li>
             <li>
-              <a href="/pages/safety.html">Safety</a>
+              <nuxt-link to="/welfare/lgbt">LGBT+</nuxt-link>
             </li>
             <li>
-              <a href="/pages/disabled.html">Students with Disabilities</a>
+              <nuxt-link to="/welfare/safety">Safety</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/welfare/disabled">Students with Disabilities</nuxt-link>
             </li>
           </ul>
         </li>

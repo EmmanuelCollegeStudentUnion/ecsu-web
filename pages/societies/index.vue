@@ -21,18 +21,15 @@
 </template>
 
 <script>
+import content from "@/content";
 export default {
   layout: "default",
   asyncData: async ({ params }) => {
-    let societiesContext = require.context("~/content/societies/");
-    let societies = await Promise.all(
-      societiesContext.keys().map(async x =>
-        import(`~/content/societies/${x.slice(2)}`).then(({ title }) => ({
-          title,
-          url: "/societies" + x.split(".")[1]
-        }))
-      )
-    );
+    let societies = (await content("societies")).map(({ title, url }) => ({
+      title,
+      url
+    }));
+
     return { societies };
   }
 };
