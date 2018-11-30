@@ -240,7 +240,7 @@
             <font size="4">
               <a href="/pages/wpotw.html">
                 <img
-                  src="/images/trophy"
+                  src="/images/trophy_black.gif"
                   width="30"
                   height="30"
                   style="vertical-align:middle"
