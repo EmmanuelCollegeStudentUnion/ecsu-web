@@ -4,3 +4,4 @@ node_modules
 static/*
 !static/admin
 .vscode/
+.DS_Store

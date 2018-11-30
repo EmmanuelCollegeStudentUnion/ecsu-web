@@ -39,7 +39,6 @@ export default {
       { property: "og:image", content: "/images/thumbnail.png" }
     ],
     link: [
-      { rel: "stylesheet", href: "/assets/css/main.css" },
       {
         rel: "apple-touch-icon",
         sizes: "180x180",
