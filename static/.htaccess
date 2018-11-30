@@ -1,0 +1,2 @@
+ErrorDocument 404 http://www.ecsu.org.uk/pages/404.html
+Redirect 301 /pages/emmacu.html https://www.facebook.com/EmmanuelCollegeChristianUnion/
