@@ -12,9 +12,6 @@ export default {
     },
     generate: {
         routes
-    },
-    css: [
-        '@/assets/css/main.css'
-    ]
+    }
 }
 
