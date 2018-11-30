@@ -28,13 +28,13 @@
               <a href="/pages/exec_resources.html">Exec Resources</a>
             </li>
             <li>
-              <a href="/protected/minutes.html">Minutes</a>
+              <nuxt-link to="/protected/minutes">Minutes</nuxt-link>
             </li>
             <li>
               <a href="/pages/open_meetings.html">Open Meetings</a>
             </li>
             <li>
-              <a href="/protected/official_documents.html">Official Documents</a>
+              <nuxt-link to="/protected/official_documents">Official Documents</nuxt-link>
             </li>
           </ul>
         </li>
@@ -139,10 +139,10 @@
               <a href="#">Online Booking</a>
               <ul>
                 <li>
-                  <a href="/protected/laundry.html">Laundry</a>
+                  <nuxt-link to="/protected/laundry">Laundry</nuxt-link>
                 </li>
                 <li>
-                  <a href="/protected/squash.html">Squash</a>
+                  <nuxt-link to="/protected/squash">Squash</nuxt-link>
                 </li>
               </ul>
             </li>
