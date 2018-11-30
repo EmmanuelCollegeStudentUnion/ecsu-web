@@ -16,3 +16,8 @@ steps:
     yarn install
     yarn build
   displayName: 'yarn install and build'
+
+- task: PublishBuildArtifacts
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: drop
