@@ -45,19 +45,20 @@
 </template>
 
 <script>
+import cloneDeep from "clone-deep";
 export default {
   layout: "default",
   asyncData: async ({ params }) => {
     let execContext = require.context("~/content/exec/");
     let execs = await Promise.all(
-      execContext.keys().map(async x => {
-        const exec = await import("~/content/exec/" + x.slice(2));
-        exec.url = "/exec" + x.split(".")[1];
-        return exec;
-      })
+      execContext.keys().map(async x =>
+        import(`~/content/exec/${x.slice(2)}`).then(({ name, url, title }) => ({
+          name,
+          title,
+          url: "/exec" + x.split(".")[1]
+        }))
+      )
     );
-    ``;
-
     return { execs };
   }
 };

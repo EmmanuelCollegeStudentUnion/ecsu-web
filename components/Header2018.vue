@@ -3,9 +3,7 @@
     <img src="/images/logo1.png" width="165px" id="borderimg1">
 
     <!-- Logo -->
-    <span class="logo">
-      <a href="/index.html"></a>
-    </span>
+    <span class="logo"></span>
 
     <!-- Nav -->
     <nav id="nav">
@@ -21,7 +19,7 @@
               <a href="/pages/about.html">About</a>
             </li>
             <li>
-              <a href="/pages/exec.html">Exec</a>
+              <nuxt-link to="/exec">Exec</nuxt-link>
             </li>
             <li>
               <a href="/pages/exec/index.html">Exec Control Panel</a>
