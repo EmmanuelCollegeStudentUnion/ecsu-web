@@ -48,7 +48,7 @@ export default {
     let execContext = require.context("~/content/exec/");
     let execs = await Promise.all(
       execContext.keys().map(async x =>
-        import(`~/content/exec/${x.slice(2)}`).then(({ name, url, title }) => ({
+        import(`~/content/exec/${x.slice(2)}`).then(({ name, title }) => ({
           name,
           title,
           url: "/exec" + x.split(".")[1]

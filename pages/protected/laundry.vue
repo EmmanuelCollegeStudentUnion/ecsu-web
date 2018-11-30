@@ -26,7 +26,7 @@
       <center>
         <font size="5">
           <center>
-            <button v-on:click="modalActive=!modalActive">Proceed To Sheet ></button>
+            <button v-on:click="modalActive=!modalActive">Proceed To Sheet</button>
           </center>
         </font>
       </center>
