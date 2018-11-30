@@ -82,7 +82,7 @@
           <a href="#" class="icon fa-angle-down">Societies</a>
           <ul>
             <li>
-              <a href="/pages/societies.html">Emmanuel Societies</a>
+              <nuxt-link to="/societies">Emmanuel Societies</nuxt-link>
             </li>
             <li>
               <a href="/pages/society_funding.html">Funding &amp; FAQs</a>
