@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import content from '@/content'
+import content from "@/content";
 export default {
   layout: "default",
   asyncData: async ({ params }) => {
-    const post = content('societies', params.name).then(
+    const post = content('welfare', params.title).then(
       ({ title, image, __content }) => ({
         title,
         image,

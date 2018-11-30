@@ -2,25 +2,26 @@
   <section>
     <header>
       <h1>{{name}}</h1>
-      <p>{{title}}</p>
+      <span>{{title}}</span>
     </header>
 
     <div class="officer-page-main-content-div">
       <div class="officer-page-text-content-div" v-html="body"></div>
       <img v-if="image" :src="image" alt class="officer-page-image">
     </div>
-    <p>
+    <span>
       Email me at:
       <a :href="mailto">{{email}}</a>
-    </p>
+    </span>
   </section>
 </template>
 
 <script>
+import content from "@/content";
 export default {
   layout: "default",
   asyncData: async ({ params }) => {
-    const post = import(`~/content/exec/${params.title}.md`).then(
+    const post = content("exec", params.title).then(
       ({ name, title, image, __content, email }) => ({
         name,
         title,
@@ -42,7 +43,6 @@ export default {
 
   justify-content: space-between;
   align-items: center;
-
 
   margin-bottom: 50px;
 }
