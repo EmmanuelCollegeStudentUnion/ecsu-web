@@ -9,7 +9,8 @@
       <div class="officer-page-text-content-div" v-html="body"></div>
       <img v-if="image" :src="image" alt class="officer-page-image">
     </div>
-    <p>Email me at:
+    <p>
+      Email me at:
       <a :href="mailto">{{email}}</a>
     </p>
   </section>
@@ -19,9 +20,16 @@
 export default {
   layout: "default",
   asyncData: async ({ params }) => {
-    let post = await import("~/content/exec/" + params.title + ".md");
-    post.body = post["__content"];
-    post.mailto = "mailto:" + post.email;
+    const post = import(`~/content/exec/${params.title}.md`).then(
+      ({ name, title, image, __content, email }) => ({
+        name,
+        title,
+        image,
+        body: __content,
+        email,
+        mailto: "mailto:" + email
+      })
+    );
     return post;
   }
 };
@@ -34,6 +42,7 @@ export default {
 
   justify-content: space-between;
   align-items: center;
+
 
   margin-bottom: 50px;
 }

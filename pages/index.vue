@@ -61,7 +61,7 @@
             </p>
             <ul class="actions">
               <li>
-                <a class="button big" href="/pages/exec.html">Find Out More</a>
+                <nuxt-link class="button big" to="/exec">Find Out More</nuxt-link>
               </li>
             </ul>
           </div>
@@ -343,7 +343,7 @@
           </li>
           <li>
             <font size="4">
-              <a href="/pages/exec.html">
+              <nuxt-link to="/exec">
                 <img
                   src="/images/exec_ico.jpg"
                   width="30"
@@ -351,7 +351,7 @@
                   style="vertical-align:middle"
                 >
                 Exec Info
-              </a>
+              </nuxt-link>
             </font>
           </li>
         </ul>
