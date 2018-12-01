@@ -9,7 +9,7 @@ Welcome to Emma! This is your one-stop-shop for information about Freshers' Week
 # Freshers' Timetable
 
 A comprehensive guide to events running <br/>
-                                    over Freshers' Week to help acclimatise <br/> you to life at Emmanuel College!
+    over Freshers' Week to help acclimatise <br/> you to life at Emmanuel College!
 
 # Freshers' Guide
 
