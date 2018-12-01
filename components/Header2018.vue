@@ -156,7 +156,7 @@
         </li>
 
         <li>
-          <a class="button" href="/info/prospective">Prospective</a>
+          <nuxt-link class="button" to="/posts/prospective">Prospective</nuxt-link>
         </li>
       </ul>
     </nav>
