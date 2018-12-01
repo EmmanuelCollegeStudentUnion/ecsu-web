@@ -1,4 +1,0 @@
----
-image: null
-title: null
----
