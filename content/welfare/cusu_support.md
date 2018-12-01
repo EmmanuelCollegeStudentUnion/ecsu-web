@@ -1,12 +1,8 @@
 ---
 image: ../images/cusu.png
+subtitle: Key Information and Points of Communication
 title: CUSU and University Support Services
 ---
-
-
-# CUSU and University Support Services
-
-Key Information and Points of Communication
 
 ## Linkline
 

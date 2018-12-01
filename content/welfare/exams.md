@@ -1,12 +1,8 @@
 ---
 image: ../images/pen.png
+subtitle: Key Information Regarding the Exam Period
 title: Exams
 ---
-
-
-# Exams
-
-Key Information Regarding the Exam Period
 
 Easter term is here at last, which means that the sun is shining, there are loads of fluffy little ducklings everywhere... and the exams are here.  But don't worry because ECSU are here to make sure that this term is a stress free as possible.  We've got lots of activities to help you prepare for your exams, revise effectively and also relax when it all gets a bit too much.  So stop worrying and sit back and enjoy the weather, because we've got this term sorted for you.
 

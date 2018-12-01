@@ -25,4 +25,4 @@ Throughout the year, look out for our main career events in Lent and Michaelmas 
 To keep in touch, please message me on my Hermes with any questions or
 		suggestions you might have! I wish to make efficient dialogues with college through listening
 		to your needs and creating innovative solutions. To learn about new events and resources,
-		like our Facebook âECSU Career and Educationâ page!
+		like our Facebook ‘ECSU Career and Education’ page!
