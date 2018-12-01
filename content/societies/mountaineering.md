@@ -9,3 +9,4 @@ title: Mountaineering | Bouldering
 	For more info, join our facebook group,
 	or contact Mary Murray
  We also have a strong engagement with CUMC. 
+Return to Societies

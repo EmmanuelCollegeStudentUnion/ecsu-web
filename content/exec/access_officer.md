@@ -1,6 +1,6 @@
 ---
 email: access@ecsu.org.uk
-image: /images/Rhys Access.jpg
+image: mages/Rhys Access.jpg
 name: Rhys Proud
 title: Emma Access Officer
 ---

@@ -1,12 +1,8 @@
 ---
 image: ../images/fruit.jpg
+subtitle: Information on Staying Healthy whilst at Cambridge
 title: Staying Healthy
 ---
-
-
-# Staying Healthy
-
-Information on Staying Healthy whilst at Cambridge
 
 Life at Emma demands a lot of us physically and mentally. Unless we give our bodies the best, we can not expect the same of our minds, so this site is to let you know what your body needs to perform. Nutrition is something we all need an awareness of, and most of us know generally what we need, whether its from what makes us feel good or from hazy food tech lessons in year 7. This covers the basics, and there is more information online, just be careful - there is a lot of misinformed material on the web.
 

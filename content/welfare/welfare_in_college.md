@@ -1,12 +1,8 @@
 ---
 image: ../images/aid_ico.png
+subtitle: Welfare Information for Emmanuel College
 title: Welfare in College
 ---
-
-
-# Welfare in College
-
-Welfare Information for Emmanuel College
 
 ## Publications
 

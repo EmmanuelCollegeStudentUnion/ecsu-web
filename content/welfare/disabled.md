@@ -1,12 +1,8 @@
 ---
 image: ../images/wheelchair.jpg
+subtitle: Key Information and Points of Contact
 title: Students with Disabilities
 ---
-
-
-# Students with Disabilities
-
-Key Information and Points of Contact
 
 ## College Disability Liason Officer
 <dt>Name</dt><dd>Chloe Lansley</dd><dt class="even">Email</dt><dd class="even">[cl723@cam.ac.uk](mailto:cl723@cam.ac.uk)</dd>
