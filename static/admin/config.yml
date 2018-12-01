@@ -72,7 +72,7 @@ collections:
       create: true
       fields:
         - {label: "Title", name: "title", widget: "string"}
-        - {label: "Location", name: "location", widget: "relation", collection: "room_locations", searchFields: ["Title"], valueField: "Title"}
+        - {label: "Location", name: "location", widget: "relation", collection: "room_locations", searchFields: ["title"], valueField: "title"}
         - {label: "Grade", name: "grade", widget: "number"}
         - label: "Images"
           name: "images"
@@ -106,7 +106,7 @@ collections:
       create: true
       fields:
         - {label: "Title", name: "title", widget: "string"}
-        - {label: "Room", name: "room", widget: "relation", collection: "room", searchFields: ["Title"], valueField: "Title"}
+        - {label: "Room", name: "room", widget: "relation", collection: "room", searchFields: ["title"], valueField: "title"}
         - {label: "Year", name: "year", widget: "string", required: false}
         - {label: "Content", name: "body", widget: "markdown", required: false}
       editor:
