@@ -11,7 +11,7 @@
 
           <ul class="actions">
             <li>
-              <a href="/pages/about.html" class="button">Learn More</a>
+              <nuxt-link to="/info/about" class="button">Learn More</nuxt-link>
             </li>
           </ul>
         </div>
@@ -72,12 +72,11 @@
       <br>
       <br>
       <a href="https://www.emma.cam.ac.uk">Emmanuel College</a> |
-      <a href="/pages/site_index.html">Site Map</a> |
-      <a href="/pages/privacy_policy.html">Privacy Policy</a> |
-      <a href="/pages/conditions.html">Conditions of Use</a> |
-      <a href="/pages/accessibility.html">Accessibility</a> |
+      <nuxt-link to="/info/privacy_policy">Privacy Policy</nuxt-link>|
+      <nuxt-link to="/info/conditions">Conditions of Use</nuxt-link>|
+      <nuxt-link to="/info/accessibility">Accessibility</nuxt-link>|
       <a href="http://www.cusu.cam.ac.uk/">CUSU</a> |
-      <a href="/pages/map.html">College Map</a> |
+      <nuxt-link to="/info/map">College Map</nuxt-link>|
       <a href="https://www.emmamcr.org.uk/">MCR</a>
     </div>
   </footer>
