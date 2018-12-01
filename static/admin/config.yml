@@ -106,7 +106,7 @@ collections:
       create: true
       fields:
         - {label: "Title", name: "title", widget: "string"}
-        - {label: "Room", name: "room", widget: "relation", collection: "room", searchFields: ["title"], valueField: "title"}
+        - {label: "Room", name: "room", widget: "relation", collection: "rooms", searchFields: ["title"], valueField: "title"}
         - {label: "Year", name: "year", widget: "string", required: false}
         - {label: "Content", name: "body", widget: "markdown", required: false}
       editor:
