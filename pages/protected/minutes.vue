@@ -10,7 +10,7 @@
       On here you can find the minutes of past ECSU Exec and Open Meetings. If the minutes for a meeting are missing
       please contact the
       <a
-        href="../pages/secretary.html"
+        href="../exec/secretary.html"
       >Secretary</a>.
     </p>
 
