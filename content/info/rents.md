@@ -12,7 +12,7 @@ Usually almost all of the rooms allocated to undergraduates are grades 1 to 5. C
 
 The College does not normally levy any additional charges in respect of the accommodation that it provides and the cost of laundry, cleaning, heating and lighting, basic contents insurance and the computer network is included within the rent figures set out below.<br/><br/>
 
-                                Please note that for graduate students commencing courses in 2017/18 the rent calculation will vary a little from that set out above. The rent charged on graduate rooms is also set on the basis of 8 grades but the rent varies with the distance of a graduate house from the main College site. The room rent for each grade of room occupied by a graduate student commencing his or her course in 2017/18 will, for the duration of that course, be linked to RPI in the manner outlined above.<br/><br/>
+Please note that for graduate students commencing courses in 2017/18 the rent calculation will vary a little from that set out above. The rent charged on graduate rooms is also set on the basis of 8 grades but the rent varies with the distance of a graduate house from the main College site. The room rent for each grade of room occupied by a graduate student commencing his or her course in 2017/18 will, for the duration of that course, be linked to RPI in the manner outlined above.<br/><br/>
 |Grade|Price Per Week (2013/4)|Price Per Week (2014/5)|Price Per Week (2015/6)|Price Per Week (2016/7)|Price Per Week (2017/8)
 |1|£96.00|£98.00|£102.91|£108.80|£112.00
 |2|£103.60|£105.80|£111.11|£117.50|£120.90

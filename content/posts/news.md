@@ -44,7 +44,7 @@ Wesley Methodist Church <br/><br/>
 Following the success of last years pilot event, the University of Cambridge Philharmonic Orchestra is again joining forces with Cambridge University Ballet Club for an evening of overtures, waltzes and danced ballet suites. The programme will include: Sibelius' Karelia Suite, Humperdinck's Hansel and Gretel Overture, exerpts from Tchaikovsky's Swan Lake, Smetana's The Bartered Bride Overture and Act I (Les chasseresses) of Delibes' Sylvia. There will also be festive mulled beverages and mice pies available. Our conductors are Karol Jaworski, Laura Dunkling and James Grimwood.<br/><br/>
 
 Tickets: £5/£10 in advance, £7/£12 on the door<br/><br/>
-                                        Available from<br/> www.adcticketing.com or call 01223 300085
+        Available from<br/> www.adcticketing.com or call 01223 300085
 
 ## Announcement
 
