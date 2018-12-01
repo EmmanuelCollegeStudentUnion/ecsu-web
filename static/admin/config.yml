@@ -20,6 +20,7 @@ collections:
 
     - name: "societies"
       label: "Societies"
+      label_singular: "Society"
       folder: "content/societies"
       create: true
       fields: # The fields for each document, usually in front matter
@@ -43,6 +44,7 @@ collections:
         
     - name: "posts"
       label: "Blog posts"
+      label_singular: "Blog post"
       folder: "content/posts"
       slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
       create: true
@@ -68,6 +70,7 @@ collections:
 
     - name: "rooms"
       label: "Rooms"
+      label_singular: "Room"
       folder: "content/rooms"
       create: true
       fields:
@@ -102,6 +105,7 @@ collections:
 
     - name: "room_comments"
       label: "Room Comments"
+      label_singular: "Room Comment"
       folder: "content/room_comments"
       create: true
       slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
@@ -114,6 +118,7 @@ collections:
 
     - name: "room_locations"
       label: "Room Locations"
+      label_singular: "Room Location"
       folder: "content/room_locations"
       create: true
       fields:
