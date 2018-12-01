@@ -5,7 +5,7 @@ floor: Second
 grade: 6
 images: []
 living_room: 'No'
-location: Cloisters
+location: North Court
 name: '18'
 network: Wired and Wireless
 title: Room 18, Cloisters

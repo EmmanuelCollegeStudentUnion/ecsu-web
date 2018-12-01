@@ -9,5 +9,5 @@ living_room: 'No'
 location: Blantyre
 name: '28'
 network: Wired and Wireless
-title: Room 28, Blantyre
+title: Room 28,  Blantyre
 ---

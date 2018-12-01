@@ -5,7 +5,7 @@ floor: Ground
 grade: 4
 images: []
 living_room: 'No'
-location: 14 Park Terrace
+location: Park Terrace
 name: '3'
 network: Wireless Only
 title: Room 3, 14 Park Terrace
