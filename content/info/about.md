@@ -18,7 +18,7 @@ Emmanuel College, founded in 1584, is one of the Colleges of the University of C
 
 ## University of Cambridge
 
-The University of Cambridge is one of the larger universities in the UK, and is the second oldest university in the United Kingdom. It is a world-class leader in both teaching and research with many well-known alumni. The University of Cambridge currently holds around 20,000 students, and the acceptance rate, as of 2015, stands at 21%. Domestic tutition fees are Â£9000 (2016), and Â£19,713 (2105) for international students. Notable alumni of Cambridge include Charles Darwin, Isaac Newton, Stephen Hawkings, Stephen Fry, Ian McKellan  and more.
+The University of Cambridge is one of the larger universities in the UK, and is the second oldest university in the United Kingdom. It is a world-class leader in both teaching and research with many well-known alumni. The University of Cambridge currently holds around 20,000 students, and the acceptance rate, as of 2015, stands at 21%. Domestic tutition fees are £9000 (2016), and £19,713 (2105) for international students. Notable alumni of Cambridge include Charles Darwin, Isaac Newton, Stephen Hawkings, Stephen Fry, Ian McKellan  and more.
                                 Both the University and College have various bursary schemes available.
 
 *University of Cambridge Website*

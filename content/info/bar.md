@@ -10,8 +10,8 @@ The bar serves a wide range of draught and bottled beers and ciders, many spirit
 
 ## Wages
 | |HBP|7:30-11:30|8:30-11:30|6:30-12:15|8:30-12:15
-|Regular Shift|Â£24.75|Â£18.15|Â£11.00|-|-
-|Wednesday (Ents)|Â£33.00|-|-|Â£20.35|Â£13.20
+|Regular Shift|£24.75|£18.15|£11.00|-|-
+|Wednesday (Ents)|£33.00|-|-|£20.35|£13.20
 
 ### Bar Extensions
 
@@ -19,5 +19,5 @@ Bar extensions
 
 For bar extensions, shifts usually last half the night and are paid by the hour at the following rates:
 
-- **HBP**: Â£6.05/hour
-- **Staff**: Â£4.95/hour
+- **HBP**: £6.05/hour
+- **Staff**: £4.95/hour

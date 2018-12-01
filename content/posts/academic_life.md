@@ -19,6 +19,10 @@ The majority of your own study time will be spent on examples papers. These are 
 Studying engineering will require you to be committed to your subject and willing to do quite a bit of work. But there is still plenty of time to enjoy the rest of Cambridge. I row for my college (which means my day often begins at seven not nine!) and I dance for the University DanceSport Team. There's also plenty of time to socialise in Emma's fantastic college bar or get slightly merry at formal hall before going on to one of Cambridge's clubs or a college Ent. Just remember though - you have to be back in the department by nine!
 
 
+## A Day in the Life of a Computer Scientist
+
+We go to lectures, and spend the rest of our time fixing other people's poorly-made websites
+
 ## A Day in the Life of a Linguist
 
 Ha! You mean that there's more to being a linguist than waking up at 12, doing a (very bad) translation and then going back to bed? Well, yes. Damn, maybe I should study English instead! All jokes aside, a day in the life of a linguist can be pretty hectic. Monday morning and your alarm goes off - you have a lecture at nine (groan). It could be anything from the use of magical realism in Latin American literature to Germany's reunification (that should keep them busy, chuckle the lecturers). After that, you may have a class; these are smaller than lecturers, composed of about 20 people and basically mean that you're more likely to be caught out for not having done any preparation.<br/><br/>
