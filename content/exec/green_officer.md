@@ -6,6 +6,6 @@ title: Green & Ethical Officer
 ---
 
 Hi I’m Isabella (she/her), a second-year geographer and nature enthusiast.
-										My role as your ECSU Green Officer is to promote environmental initiatives within Emma and beyond,
-										including raising awareness and improving sustainability practices in College.
-										If you have any ideas or questions, feel free to contact me via ik351/Facebook!
+My role as your ECSU Green Officer is to promote environmental initiatives within Emma and beyond,
+including raising awareness and improving sustainability practices in College.
+If you have any ideas or questions, feel free to contact me via ik351/Facebook!
