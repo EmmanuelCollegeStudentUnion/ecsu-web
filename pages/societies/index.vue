@@ -24,13 +24,8 @@
 import content from "@/content";
 export default {
   layout: "default",
-  asyncData: async ({ params }) => {
-    let societies = (await content("societies")).map(({ title, url }) => ({
-      title,
-      url
-    }));
-
-    return { societies };
-  }
+  asyncData: async ({ params }) => ({
+    societies: await content("societies")
+  })
 };
 </script>
