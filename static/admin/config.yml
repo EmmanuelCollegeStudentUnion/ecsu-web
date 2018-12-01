@@ -65,7 +65,64 @@ collections:
         - {label: "Content", name: "body", widget: "markdown", required: false}
       editor:
         preview: false
-        
+
+    - name: "rooms"
+      label: "Rooms"
+      folder: "content/rooms"
+      create: true
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Location", name: "location", widget: "relation", collection: "room_locations", searchFields: ["Title"], valueField: "Title"}
+        - {label: "Grade", name: "grade", widget: "number"}
+        - label: "Images"
+          name: "images"
+          widget: "list"
+          field: {label: Image, name: image, widget: image}
+        - label: "Network"
+          name: "network"
+          widget: "select"
+          options: ["Wireless Only", "Wired and Wireless"]
+        - label: "Has a basin?"
+          name: "basin"
+          widget: "select"
+          options: ["Yes", "No", "En-Suite"]
+        - label: "Living room?"
+          name: "living_room"
+          widget: "select"
+          options: ["Yes", "No", "Shared"]
+        - label: "CUDN?"
+          name: = "cudn"
+          widget: "boolean"
+        - label: "Floor"
+          name: "floor"
+          widget: "select"     
+          options: ["Basement", "Ground", "First", "Second", "Third", "Attic"]
+      editor:
+        preview: false
+
+    - name: "room_comments"
+      label: "Room Comments"
+      folder: "content/room_comments"
+      create: true
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Room", name: "room", widget: "relation", collection: "room", searchFields: ["Title"], valueField: "Title"}
+        - {label: "Year", name: "year", widget: "string", required: false}
+        - {label: "Content", name: "body", widget: "markdown", required: false}
+      editor:
+        preview: false
+
+    - name: "room_locations"
+      label: "Room Locations"
+      folder: "content/room_locations"
+      create: true
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+      editor:
+        preview: false
+
+
+      
 
 
 
