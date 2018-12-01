@@ -1,6 +1,5 @@
 ---
-room: Room J4a, Hostel
-title: 2012 Room J4a, Hostel
+title: Room J4a, Hostel
 year: '2012'
 ---
 

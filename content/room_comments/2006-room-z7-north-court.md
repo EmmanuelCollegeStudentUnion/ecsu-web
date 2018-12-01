@@ -1,7 +1,0 @@
----
-room: Room Z7, North Court
-title: 2006 Room Z7, North Court
-year: '2006'
----
-
-nice size for a grade 2. not that much storage, but lots of seats for having friends over. Over looks the bus stop, and no problem with people looking in. not that much noise from buses (at least it didnt bother me too much) but you do experience periodic moments of darkness as a double decker stops outside. the gritters passing by at 5am was what really got to me tho.
