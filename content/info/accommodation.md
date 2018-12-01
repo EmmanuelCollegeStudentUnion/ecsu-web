@@ -7,8 +7,8 @@ title: Accommodation
 All undergraduates are guaranteed accommodation, either in College or in a property owned and serviced by College, for the duration of their undergraduate course.<br/><br/>
 
 
-- [Rents and Charges](rents.html)
-- [Room Photos](/room_database/main.html)
+- [Rents and Charges](rents)
+- [Room Photos](/rooms)
 
 Every year the Buildings and Services Officer prepares the ECSU Accommodation Pack for 1st year students to guide them in through the room ballotting process. You can download the latest edition of the guide below.
 

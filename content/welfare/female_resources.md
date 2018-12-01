@@ -16,6 +16,4 @@ Morning after pills are available in multiple locations around Cambridge. Please
 - **Boots on 320 Newmarket Rd - 01223 357 487 - there is always a pharmacist available who can issue a prescription for free emergency contraception **
 ### Request an Pregnancy Kit
 
-If you would like to request a free anonymous pregnancy test, please click the button below. No personal information about you is collected; we will simply ask the [Women's Officer](womens_officer.html) to place a free pregnancy test inside an envelope in her pigeonhole for you to collect.
-
-- <input class="special" type="submit" value="Place Request"/>
+If you would like to request a free anonymous pregnancy test, please do so [Here](pregnacy_kit). No personal information about you is collected; we will simply ask the [Women's Officer](womens_officer) to place a free pregnancy test inside an envelope in her pigeonhole for you to collect.
