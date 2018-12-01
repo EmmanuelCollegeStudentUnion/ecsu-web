@@ -1,14 +1,9 @@
 ---
-image: null
-subtitle: null
 title: Academic Life
 ---
-
 As fun as all as the partying and socialising is, you **will** eventually have to do some work towards your degree. This, we know, is deeply upsetting, but Emma has a great library and computer rooms that are conveniently open 24 hours, 7 days a week to get you through that pesky essay/project/revision.<br/><br/>
 
 Other than Land Economy, it is possible to study all subjects offered by the university at Emma. However, it's important to consider that the number of students will vary by subject, as will competition for places.
-
-                                
 
 ## A Day in the Life of an Engineer
 
@@ -17,11 +12,6 @@ My day starts at 9am at the department, usually consisting of two lectures and a
 The majority of your own study time will be spent on examples papers. These are problem sheets which are released weekly and run alongside the lecture courses. Examples papers must be attempted so that any problems can be discussed at supervision. You will have 2-3 supervisions a week in which you and your supervision partner will be able to review the examples papers with your supervisor and ask any questions you still have. The difficulty of questions varies greatly, but you can expect to spend between 3 and 6 hours on a paper and will have to do about 3 papers a week.<br/><br/>
 
 Studying engineering will require you to be committed to your subject and willing to do quite a bit of work. But there is still plenty of time to enjoy the rest of Cambridge. I row for my college (which means my day often begins at seven not nine!) and I dance for the University DanceSport Team. There's also plenty of time to socialise in Emma's fantastic college bar or get slightly merry at formal hall before going on to one of Cambridge's clubs or a college Ent. Just remember though - you have to be back in the department by nine!
-
-
-## A Day in the Life of a Computer Scientist
-
-We go to lectures, and spend the rest of our time fixing other people's poorly-made websites
 
 ## A Day in the Life of a Linguist
 
