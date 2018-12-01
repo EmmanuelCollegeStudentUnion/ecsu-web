@@ -1,5 +1,5 @@
 ---
-image: ../images/trans.png
+image: /images/trans.png
 subtitle: Information concerning the LGBT+ Community
 title: LGBT+
 ---

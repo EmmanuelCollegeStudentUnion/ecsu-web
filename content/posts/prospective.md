@@ -1,5 +1,5 @@
 ---
-image: ../images/emma_chapel.jpg
+image: /images/emma_chapel.jpg
 subtitle: null
 title: Thinking of Joining Emma?
 ---

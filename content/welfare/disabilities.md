@@ -1,5 +1,5 @@
 ---
-image: ../images/accessibility.png
+image: /images/accessibility.png
 subtitle: Information regarding accessibility facilities in Emmanuel College
 title: Accessibility in College
 ---

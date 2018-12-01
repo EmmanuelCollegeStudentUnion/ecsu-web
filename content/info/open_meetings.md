@@ -1,5 +1,5 @@
 ---
-image: ../images/open.png
+image: /images/open.png
 subtitle: Details Regarding ECSU Open Meetings
 title: Open Meetings
 ---

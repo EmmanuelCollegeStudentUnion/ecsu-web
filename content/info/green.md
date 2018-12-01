@@ -1,5 +1,5 @@
 ---
-image: ../images/green.png
+image: /images/green.png
 subtitle: Information Regarding Emmanuel College Environment Credentials
 title: Green
 ---

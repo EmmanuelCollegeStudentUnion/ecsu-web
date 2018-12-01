@@ -1,5 +1,5 @@
 ---
-image: ../images/emma_guide.png
+image: /images/emma_guide.png
 subtitle: null
 title: Freshers' Week Information
 ---

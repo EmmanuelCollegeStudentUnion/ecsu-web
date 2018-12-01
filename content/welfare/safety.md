@@ -1,5 +1,5 @@
 ---
-image: ../images/safety.png
+image: /images/safety.png
 subtitle: Key Safety Advice in Cambridge
 title: Safety Advice
 ---

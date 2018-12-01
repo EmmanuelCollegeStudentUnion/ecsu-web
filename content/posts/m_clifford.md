@@ -1,5 +1,5 @@
 ---
-image: ../images/clifford.png
+image: /imagesfford.png
 subtitle: Geography Student from North London
 title: Maddy Clifford
 ---
