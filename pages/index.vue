@@ -105,27 +105,6 @@
 
     <!-- Sidebar -->
     <aside class="sidebar">
-      <section class="featured-posts">
-        <h2>What's On?</h2>
-        <article>
-          <a href="http://camnews.soc.srcf.net/wp" class="image fit">
-            <img src="/images/news.png" alt>
-          </a>
-          <header>
-            <span class="date">News and Events Curated by the ECSU Secretary</span>
-            <h3></h3>
-          </header>
-          <p>
-            Want to know more about what's currently happening around Emmanuel and Cambridge? Check out What's On, the
-            ECSU News portal run by Molly Biddell!
-          </p>
-          <ul class="actions">
-            <li>
-              <a href="http://camnews.soc.srcf.net/wp" class="button">See Other News</a>
-            </li>
-          </ul>
-        </article>
-      </section>
       <section>
         <h2>ECSU Hotlinks</h2>
         <ul class="posts">
