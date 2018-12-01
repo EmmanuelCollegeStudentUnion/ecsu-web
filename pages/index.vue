@@ -308,7 +308,7 @@
           </li>
           <li>
             <font size="4">
-              <a href="/info/female_resources">
+              <a href="/welfare/female_resources">
                 <img
                   src="/images/female_ico.png"
                   width="30"
