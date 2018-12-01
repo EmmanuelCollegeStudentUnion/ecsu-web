@@ -16,22 +16,19 @@
           <a href="#" class="icon fa-angle-down">Exec</a>
           <ul>
             <li>
-              <a href="/pages/about.html">About</a>
+              <nuxt-link to="/info/about">About</nuxt-link>
             </li>
             <li>
               <nuxt-link to="/exec">Exec</nuxt-link>
             </li>
             <li>
-              <a href="/pages/exec/index.html">Exec Control Panel</a>
-            </li>
-            <li>
-              <a href="/pages/exec_resources.html">Exec Resources</a>
+              <nuxt-link to="/info/exec_resources">Exec Resources</nuxt-link>
             </li>
             <li>
               <nuxt-link to="/protected/minutes">Minutes</nuxt-link>
             </li>
             <li>
-              <a href="/pages/open_meetings.html">Open Meetings</a>
+              <nuxt-link to="/info/open_meetings">Open Meetings</nuxt-link>
             </li>
             <li>
               <nuxt-link to="/protected/official_documents">Official Documents</nuxt-link>
@@ -88,7 +85,7 @@
               <nuxt-link to="/societies">Emmanuel Societies</nuxt-link>
             </li>
             <li>
-              <a href="/pages/society_funding.html">Funding &amp; FAQs</a>
+              <nuxt-link to="/info/society_funding">Funding &amp; FAQs</nuxt-link>
             </li>
           </ul>
         </li>
@@ -97,37 +94,37 @@
           <a href="#" class="icon fa-angle-down">Info</a>
           <ul>
             <li>
-              <a href="/pages/accommodation.html">Accommodation</a>
+              <nuxt-link to="/info/accommodation">Accommodation</nuxt-link>
             </li>
             <li>
-              <a href="/pages/bar.html">Bar</a>
+              <nuxt-link to="/info/bar">Bar</nuxt-link>
             </li>
             <li>
-              <a href="/pages/gym.html">College Gym</a>
+              <nuxt-link to="/info/gym">College Gym</nuxt-link>
             </li>
             <li>
-              <a href="/pages/insurance.html">College Insurance</a>
+              <nuxt-link to="/info/insurance">College Insurance</nuxt-link>
             </li>
             <li>
-              <a href="/pages/parents.html">College Parents</a>
+              <nuxt-link to="/info/parents">College Parents</nuxt-link>
             </li>
             <li>
-              <a href="/pages/computing.html">Computing</a>
+              <nuxt-link to="/info/computing">Computing</nuxt-link>
             </li>
             <li>
-              <a href="/pages/shop.html">ECSU Shop</a>
+              <nuxt-link to="/info/shop">ECSU Shop</nuxt-link>
             </li>
             <li>
-              <a href="/pages/ents.html">Emma Ents</a>
+              <nuxt-link to="/info/ents">Emma Ents</nuxt-link>
             </li>
             <li>
-              <a href="/pages/careers.html">Emma Careers</a>
+              <nuxt-link to="/info/careers">Emma Careers</nuxt-link>
             </li>
             <li>
-              <a href="/pages/formal.html">Formal Hall</a>
+              <nuxt-link to="/info/formal">Formal Hall</nuxt-link>
             </li>
             <li>
-              <a href="/pages/green.html">Green</a>
+              <nuxt-link to="/info/green">Green</nuxt-link>
             </li>
           </ul>
         </li>
@@ -136,7 +133,7 @@
           <a href="#" class="icon fa-angle-down">Resources</a>
           <ul>
             <li>
-              <a href="/pages/feedback.html">Anonymous Feedback</a>
+              <nuxt-link to="/feedback">Anonymous Feedback</nuxt-link>
             </li>
             <li>
               <a href="#">Online Booking</a>
@@ -150,16 +147,16 @@
               </ul>
             </li>
             <li>
-              <a href="/pages/request.html">Request a Feature</a>
+              <nuxt-link to="/feedback">Request a Feature</nuxt-link>
             </li>
             <li>
-              <a href="/pages/roar.html">ROAR</a>
+              <nuxt-link to="/info/roar">ROAR</nuxt-link>
             </li>
           </ul>
         </li>
 
         <li>
-          <a class="button" href="/pages/prospective.html">Prospective</a>
+          <a class="button" href="/info/prospective">Prospective</a>
         </li>
       </ul>
     </nav>

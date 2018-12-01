@@ -8,13 +8,13 @@
 
     <p>
       The Constitution outlines the role and responsibilities of ECSU and the
-      <a href="../pages/exec.html">Exec</a>. It,
+      <a href="/exec">Exec</a>. It,
       along with the Appendices, Contingency Fund Guidelines and Open Meeting Standing Orders, is available for download
       in PDF format.
     </p>
 
     <p>
-      <a href="minutes.html">Minutes of Exec and Open Meetings</a> are also available for download.
+      <a href="minutes">Minutes of Exec and Open Meetings</a> are also available for download.
     </p>
     <table class="download-container">
       <thead>
