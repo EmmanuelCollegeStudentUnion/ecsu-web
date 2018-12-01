@@ -1,5 +1,5 @@
 ---
-image: ../images/map.png
+image: /images/map.png
 subtitle: null
 title: College Map
 ---

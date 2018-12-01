@@ -1,5 +1,5 @@
 ---
-image: ../images/access/l_paparounas.jpeg
+image: /images/access/l_paparounas.jpeg
 subtitle: ''
 title: Lefteris Paparounas
 ---

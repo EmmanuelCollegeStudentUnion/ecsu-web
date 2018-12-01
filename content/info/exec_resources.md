@@ -1,5 +1,5 @@
 ---
-image: ../images/form.png
+image: /images/form.png
 subtitle: Digital Resources related to Exec Functions
 title: Exec Resources
 ---
@@ -8,8 +8,8 @@ Members of the Exec who incur expenses while doing something in their official c
 
 |File|Size
 |------
-|[Expenses Claim Form](../pdf/expenses.pdf)|22.38 KiB
+|[Expenses Claim Form](/imagespdf/expenses.pdf)|22.38 KiB
 
 ## Exec Wiki
 
-There is a private wiki for members of the Exec to store drafts of documents and copies of handover notes. It is available [here](../ecsu_wiki/) for Exec members.
+There is a private wiki for members of the Exec to store drafts of documents and copies of handover notes. It is available [here](/imagesecsu_wiki/) for Exec members.

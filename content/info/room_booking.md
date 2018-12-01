@@ -1,5 +1,5 @@
 ---
-image: ../images/emmanuel_logo.png
+image: /images/emmanuel_logo.png
 subtitle: Information regarding room bookings with College
 title: Room Booking Guidelines
 ---

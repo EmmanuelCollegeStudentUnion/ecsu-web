@@ -1,5 +1,5 @@
 ---
-image: ../images/access/l_schubert.jpeg
+image: /imagesschubert.jpeg
 subtitle: ''
 title: Laura Schubert
 ---

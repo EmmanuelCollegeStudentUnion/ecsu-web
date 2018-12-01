@@ -1,5 +1,5 @@
 ---
-image: ../images/cusu.png
+image: /images/cusu.png
 subtitle: Key Information and Points of Communication
 title: CUSU and University Support Services
 ---

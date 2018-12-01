@@ -1,5 +1,5 @@
 ---
-image: ../images/access/k_craven.jpeg
+image: /images/access/k_craven.jpeg
 subtitle: PBS Student from East Yorkshire
 title: Katie Craven
 ---

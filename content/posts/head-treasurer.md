@@ -1,5 +1,5 @@
 ---
-image: ../images/whitehead.jpg
+image: /images/whitehead.jpg
 subtitle: ECSU Treasurer
 title: Charlie Whitehead
 ---

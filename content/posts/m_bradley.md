@@ -1,5 +1,5 @@
 ---
-image: ../images/access/m_bradley.jpeg
+image: /imagesess/m_bradley.jpeg
 subtitle: ''
 title: Matt Bradley
 ---
