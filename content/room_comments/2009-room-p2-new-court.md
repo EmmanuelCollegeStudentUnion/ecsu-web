@@ -1,0 +1,7 @@
+---
+room: Room P2, New Court
+title: 2009 Room P2, New Court
+year: '2009'
+---
+
+Really nice room, get to chat to people passing by your window on the way to North Court. You can hear music in the old library (but it isn't too loud or annoying) and the kitchen staff chatting outside when they've got a meal on in the old library, but that isn't really offputting either, and you get all the staff gossip.
