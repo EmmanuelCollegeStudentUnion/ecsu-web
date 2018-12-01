@@ -12,16 +12,16 @@ In particular, for freshers just about to start at Emma, we have two Internation
 
 This is a short checklist of things you may need/want, it is in no way all-inclusive and not everyone will want all of these things.
 
-- Warm clothes â€“ in summer Cambridge is lovely, but can get pretty nippy in winter.
-- Waterproof clothes â€“ welcome to England.
-- Formal dress â€“ for fancy events like formals and matriculation.
-- Pillow case/sheets â€“ pretty self-explanatory.
-- Skype â€“ or something similar to keep in touch with distant friends and family for free.
-- UK sim card â€“ for new friends.
-- Stationery â€“ this can easily be purchased here, so no need to think too much about it.
-- Alarm, posters, blankets â€“ anything that you want to decorate your room with.
-- Pans, toaster, a kettle â€“ these are easily available here too so don't waste space if you donâ€™t want.
-- Open mind â€“ super cheesy I know, but you will have so many new experiences here.
+- Warm clothes – in summer Cambridge is lovely, but can get pretty nippy in winter.
+- Waterproof clothes – welcome to England.
+- Formal dress – for fancy events like formals and matriculation.
+- Pillow case/sheets – pretty self-explanatory.
+- Skype – or something similar to keep in touch with distant friends and family for free.
+- UK sim card – for new friends.
+- Stationery – this can easily be purchased here, so no need to think too much about it.
+- Alarm, posters, blankets – anything that you want to decorate your room with.
+- Pans, toaster, a kettle – these are easily available here too so don't waste space if you don’t want.
+- Open mind – super cheesy I know, but you will have so many new experiences here.
 
 ## Student Experiences
 
@@ -35,9 +35,9 @@ Of course, I still get homesick, but the best part is that Cambridge has so many
 
 ### Ruggero Chicco - HSPS - Italy
 
-I didnâ€™t really know what to expect coming to study at Emma; I couldnâ€™t possibly have anticipated the amazing time I was going to have here. As soon as I got through the porterâ€™s lodge, the fresherâ€™s reps where there to help me settle and show me around. From there on, everything went so fast that I had no time to think about anything else than enjoying myself. Meeting so many different and interesting people as well as participating in the amazing opportunities of fresherâ€™s week took all of my time. Eventually, later on, homesickness did momentarily hit but it was soon put aside by the amount of  support I was provided with. The continuous bustle of College is really what makes Emma so great: thereâ€™s always something to do, someone to meet or somewhere to be - youâ€™re just bound to feel welcome.
+I didn’t really know what to expect coming to study at Emma; I couldn’t possibly have anticipated the amazing time I was going to have here. As soon as I got through the porter’s lodge, the fresher’s reps where there to help me settle and show me around. From there on, everything went so fast that I had no time to think about anything else than enjoying myself. Meeting so many different and interesting people as well as participating in the amazing opportunities of fresher’s week took all of my time. Eventually, later on, homesickness did momentarily hit but it was soon put aside by the amount of  support I was provided with. The continuous bustle of College is really what makes Emma so great: there’s always something to do, someone to meet or somewhere to be - you’re just bound to feel welcome.
 
-Coming to England to study was a huge decision but one I definitely do not regret. Cambridge and Emma are amazingly welcoming places: no matter what you like to do or who you like to hang out with youâ€™re bound to find activities and people that will make you feel happy. Remember that although youâ€™re at Emma to learn, studying in Cambridge is above all a social experience: make the most out of it by meeting as many different persons and taking part in as many different events as possible!
+Coming to England to study was a huge decision but one I definitely do not regret. Cambridge and Emma are amazingly welcoming places: no matter what you like to do or who you like to hang out with you’re bound to find activities and people that will make you feel happy. Remember that although you’re at Emma to learn, studying in Cambridge is above all a social experience: make the most out of it by meeting as many different persons and taking part in as many different events as possible!
 
 ### Emile Okada - Maths - Japan
 
@@ -47,17 +47,17 @@ Life in college, while not exactly a calm oasis, was very different to what I ha
 
 Only in exam term did things get hectic and a bit bizarre. However, I really think the college did a great job at reducing the pressure and lowering stress levels. Restless weeks were offset by bouncy castles, puppies and cakes and we were rewarded for the stressful ordeal of exams with the may ball which was quite unlike anything I had attended before.
 
-The only hiccup I had as an international student was the great confusion/outrage met by terms like pants, chips and awesome, but Iâ€™d say they were minor issues with regards to an overall great year.
+The only hiccup I had as an international student was the great confusion/outrage met by terms like pants, chips and awesome, but I’d say they were minor issues with regards to an overall great year.
 
 ### Elsa Maishman - MML - Ireland
 
-There's a really lovely atmosphere at Emma, and international students are made to feel as welcome as any others â€“ whether you're from the other side of the world, or a demi-international like me.
+There's a really lovely atmosphere at Emma, and international students are made to feel as welcome as any others – whether you're from the other side of the world, or a demi-international like me.
 
 As a Brit who grew up in Ireland, I was never really sure whether or not I counted as an international student. Either way, however, from my college parents who greeted me on arrival; to the new friends who explained all unfamiliar slang; to my Director of Studies who never fails to acknowledge that I came from a different, broader education than my supervision partners, College has welcomed me with open arms regardless of the difference in my background.
 
-For me the best thing about Emma's attitude to international students is the amount of storage space we get, and how easy it is to store huge amounts of stuff during the vacation â€“ something that can be much more difficult at other colleges. 
+For me the best thing about Emma's attitude to international students is the amount of storage space we get, and how easy it is to store huge amounts of stuff during the vacation – something that can be much more difficult at other colleges. 
 
-Another thing that helps when you're alone in a new country is the wonderful atmosphere at Emma â€“ you'll hear it over and over again, but it's true that the college is a really friendly, welcoming environment. Freshers' week is full of activities designed to help you make new friends and find your way around, but even beyond that, the welfare provision and pastoral support system mean that college will help you with any problems you might have throughout the year â€“ including the odd bout of homesickness.
+Another thing that helps when you're alone in a new country is the wonderful atmosphere at Emma – you'll hear it over and over again, but it's true that the college is a really friendly, welcoming environment. Freshers' week is full of activities designed to help you make new friends and find your way around, but even beyond that, the welfare provision and pastoral support system mean that college will help you with any problems you might have throughout the year – including the odd bout of homesickness.
 
 ### Daniel Rasbash - AMES - Belgium/France
 

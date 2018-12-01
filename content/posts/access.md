@@ -8,46 +8,46 @@ title: Access Blog
 
 Find out more about Maddy, a Geographer from London.
 
-- [Learn More](m_clifford)
+- [Learn More](m_clifford.html)
 
 ### Jess Lister
 
 Find out more about Jess, a Historian from East Yorkshire.
 
-- [Learn More](j_lister)
+- [Learn More](/pages/j_lister.html)
 
 ### Katie Craven
 
 Find out more about Katie, a PBS Student and former President of ECSU from Yorkshire.
 
-- [Learn More](k_craven)
+- [Learn More](k_craven.html)
 
 ### Matt Bradley
 
 Find out more about Matt, a NatSci from Derbyshire.
 
-- [Learn More](m_bradley)
+- [Learn More](/pages/m_bradley.html)
 
 ### Laura Schubert
 
 Find out more about Laura, a HSPS student from Germany/ SW England.
 
-- [Learn More](l_schubert)
+- [Learn More](/pages/l_schubert.html)
 
 ### Patrick Warren
 
 Find out more about Patrick, a medic from Lancashire.
 
-- [Learn More](p_warren)
+- [Learn More](/pages/p_warren.html)
 
 ### Lefteris Paparounas
 
 Find out more about Lefteris, a linguistics student from Greece.
 
-- [Learn More](l_paparounas)
+- [Learn More](/pages/l_paparounas.html)
 
 ### Luke Smith
 
 Find out more about Luke, a medic from Sheffield.
 
-- [Learn More](l_smith)
+- [Learn More](/pages/l_smith.html)

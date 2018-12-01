@@ -22,7 +22,7 @@ Look out for an ECSU Committee FB post / email from the Treasurer.
 
 You need to be able to provide at least two contacts for your club,
 									your club's bank account details and details of any expected costs.
-									**If you donâ€™t have bank account** set up yet, please contact the Treasurer.
+									**If you don’t have bank account** set up yet, please contact the Treasurer.
 								
 
 ## What does ECSU do with my application?
@@ -36,8 +36,8 @@ Once all applications have been received, then the allocation committee
 
 ## How do ECSU decide how much to allocate to clubs and societies?
 
-ECSU has around Â£6000 / year to allocate clubs and societies,
-									but our funding request amount to around Â£12000 / year.
+ECSU has around £6000 / year to allocate clubs and societies,
+									but our funding request amount to around £12000 / year.
 									To allocate scarce resources against multiple needs,
 									the allocation committee follow the funding guidelines set out in the ECSU constitution:
 								
@@ -55,7 +55,7 @@ ECSU has around Â£6000 / year to allocate clubs and societies,
 											is gender specific sports.
 									</li>
 <li>Societies should advertise their presence and actively look for more
-											members, for example by running a stall at the freshersâ€™ fair.
+											members, for example by running a stall at the freshers’ fair.
 									</li>
 <li>The funding should be necessary for the running of the club.
 									</li>

@@ -14,8 +14,8 @@ The second round of University Challenge featuring Emmanuel College aired on Mon
 
 It's the most wonderful time of the year! Dance away those deadline stresses and come along to the Old Library on Tuesday 29th November from 9pm for a great evening of Christmassy-themed cocktails and the fantabulous playing of Emma's very own Big Band. A perfect event for after formal, and for before going out! 
 <br/><br/>
-**Entry:** Â£2, and then a free cocktail 
-After your one free cocktail, drinks will be Â£1.50 (Â£1 for the non-alcoholic option). 
+**Entry:** £2, and then a free cocktail 
+After your one free cocktail, drinks will be £1.50 (£1 for the non-alcoholic option). 
 
 This is always a great event in Emma, and really gets everyone into the festive spirit. So bring your santa hats, tinsel and elf ears - the best-dressed may even get a free cocktail! 
 
@@ -28,7 +28,7 @@ This event is for Emma students only, so please bring your uni cards!
 It's the musical event you've all been waiting for! ECMS invite you to our annual Michaelmas Concert, featuring amongst others: the talented singing of Emma Chorus, the glorious sounds of Big Band and the melodious playing of SECCO. And if that's not enough for you, we'll be offering wine, juice and mince pies after the concert to really get into the festive spirit! 
 <br/><br/>
 Start time: 28/11/16 8pm 
-Price: Â£3
+Price: £3
 Venue: Queen's Building Lecture Theatre 
 <br/><br/>
 We hope to see you there! 
@@ -43,7 +43,7 @@ Wesley Methodist Church <br/><br/>
 
 Following the success of last years pilot event, the University of Cambridge Philharmonic Orchestra is again joining forces with Cambridge University Ballet Club for an evening of overtures, waltzes and danced ballet suites. The programme will include: Sibelius' Karelia Suite, Humperdinck's Hansel and Gretel Overture, exerpts from Tchaikovsky's Swan Lake, Smetana's The Bartered Bride Overture and Act I (Les chasseresses) of Delibes' Sylvia. There will also be festive mulled beverages and mice pies available. Our conductors are Karol Jaworski, Laura Dunkling and James Grimwood.<br/><br/>
 
-Tickets: Â£5/Â£10 in advance, Â£7/Â£12 on the door<br/><br/>
+Tickets: £5/£10 in advance, £7/£12 on the door<br/><br/>
                                         Available from<br/> www.adcticketing.com or call 01223 300085
 
 ## Announcement
