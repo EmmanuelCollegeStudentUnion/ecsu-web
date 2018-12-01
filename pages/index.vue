@@ -14,7 +14,7 @@
             </p>
             <ul class="actions">
               <li>
-                <a class="button big" href="/pages/careers.html">Find Out More</a>
+                <a class="button big" href="/info/careers">Find Out More</a>
               </li>
             </ul>
           </div>
@@ -73,7 +73,7 @@
             <p>Find out more about the societies on offer within the college, ranging from sports through to quizzing.</p>
             <ul class="actions">
               <li>
-                <a class="button big" href="/pages/societies.html">Explore Societies</a>
+                <a class="button big" href="/societies">Explore Societies</a>
               </li>
             </ul>
           </div>
@@ -88,7 +88,7 @@
             </p>
             <ul class="actions">
               <li>
-                <a class="button big" href="/pages/prospective.html">Explore Cambridge</a>
+                <a class="button big" href="/info/prospective">Explore Cambridge</a>
               </li>
             </ul>
           </div>
@@ -107,13 +107,11 @@
             href="webmail-2.hermes.cam.ac.uk/"
           >Hermes</a>
           (the Cambridge webmail service) and our other online interactive forms; the ECSU
+          online
+          calendar and the booking form for
           <a
-            href="/pages/on.html"
-          >
-            online
-            calendar
-          </a> and the booking form for
-          <a href="/protected/laundry.html">laundry</a> (Raven required).
+            href="/protected/laundry.html"
+          >laundry</a> (Raven required).
         </p>
         <p>
           ECSU maintains two facebook groups -
@@ -168,7 +166,7 @@
       <!-- Spotlights -->
       <section class="spotlights alt">
         <article>
-          <a href="/pages/webmaster.html" class="image fit">
+          <a href="/exec/webmaster" class="image fit">
             <img src="/images/cropped/2018/webmaster_scale.jpg" alt>
           </a>
           <h3>Webmaster</h3>
@@ -178,19 +176,19 @@
           </p>
           <ul class="actions">
             <li>
-              <a href="/pages/webmaster.html" class="button">Learn More</a>
+              <a href="/exec/webmaster" class="button">Learn More</a>
             </li>
           </ul>
         </article>
         <article>
-          <a href="/pages/shop_manager.html" class="image fit">
+          <a href="/exec/shop_manager" class="image fit">
             <img src="/images/cropped/2018/shopmanager_scale.jpg" alt>
           </a>
           <h3>Shop Manager</h3>
           <p>Jack is our current Shop Manager, overseeing operations in the ECSU Shop located in Front Court, by the Pidge.</p>
           <ul class="actions">
             <li>
-              <a href="/pages/shop_manager.html" class="button">Learn More</a>
+              <a href="/exec/shop_manager" class="button">Learn More</a>
             </li>
           </ul>
         </article>
@@ -238,7 +236,7 @@
           </li>
           <li>
             <font size="4">
-              <a href="/pages/wpotw.html">
+              <a href="/wpotw.html">
                 <img
                   src="/images/trophy_black.gif"
                   width="30"
@@ -264,7 +262,7 @@
           </li>
           <li>
             <font size="4">
-              <a href="/pages/roar.html">
+              <a href="/info/roar">
                 <img
                   src="/images/roar_ico.png"
                   width="30"
@@ -277,7 +275,7 @@
           </li>
           <li>
             <font size="4">
-              <a href="/pages/societies.html">
+              <a href="/societies">
                 <img
                   src="/images/trainer_ico.png"
                   width="30"
@@ -303,14 +301,14 @@
           </li>
           <li>
             <font size="4">
-              <a href="/pages/welfare_in_college.html">
+              <a href="/info/welfare_in_college">
                 <img src="/images/aid_ico.png" width="30" height="30" style="vertical-align:middle"> Welfare
               </a>
             </font>
           </li>
           <li>
             <font size="4">
-              <a href="/pages/female_resources.html">
+              <a href="/info/female_resources">
                 <img
                   src="/images/female_ico.png"
                   width="30"
@@ -322,7 +320,7 @@
           </li>
           <li>
             <font size="4">
-              <a href="/pages/accommodation.html">
+              <a href="/info/accommodation">
                 <img src="/images/bed_ico.png" width="30" height="30" style="vertical-align:middle">
                 Accommodation
               </a>
@@ -330,7 +328,7 @@
           </li>
           <li>
             <font size="4">
-              <a href="/protected/laundry.html">
+              <a href="/protected/laundry">
                 <img
                   src="/images/washing_ico.jpg"
                   width="30"
@@ -355,11 +353,6 @@
             </font>
           </li>
         </ul>
-        <ul class="actions">
-          <li>
-            <a href="/pages/site_index.html" class="button">See Full Site Map</a>
-          </li>
-        </ul>
       </section>
       <section>
         <h2>Emma Access</h2>
@@ -375,7 +368,7 @@
 
         <ul class="actions">
           <li>
-            <a href="/pages/access.html" class="button">Learn More</a>
+            <a href="/info/access" class="button">Learn More</a>
           </li>
         </ul>
       </section>
@@ -387,7 +380,6 @@
 </template>
 <script>
 export default {
-  layout: "no-pad",
   head: {
     title: "ECSU | Emmanuel College Students' Union"
   }
