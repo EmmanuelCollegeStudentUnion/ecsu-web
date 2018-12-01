@@ -2,6 +2,7 @@ backend:
   name: github
   repo: 101hawn/ecsu
   base_url: https://nh487.user.srcf.net
+publish_mode: editorial_workflow
 collections:
     - name: "exec" # Used in routes, e.g., /admin/collections/blog
       label: "Exec" # Used in the UI
@@ -14,6 +15,9 @@ collections:
         - {label: "Name", name: "name", widget: "string"}
         - {label: "Image", name: "image", widget: "image", required: false}
         - {label: "Bio", name: "body", widget: "markdown", required: false}
+      editor:
+        preview: false
+
     - name: "societies"
       label: "Societies"
       folder: "content/societies"
@@ -22,15 +26,46 @@ collections:
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Image", name: "image", widget: "image", required: false}
         - {label: "Description", name: "body", widget: "markdown", required: false}
+      editor:
+        preview: false
+
     - name: "welfare"
       label: "Welfare information"
       folder: "content/welfare"
       create: true
       fields:
         - {label: "Title", name: "title", widget: "string"}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
         - {label: "Image", name: "image", widget: "image", required: false}
         - {label: "Content", name: "body", widget: "markdown", required: false}
-
+      editor:
+        preview: false
+        
+    - name: "posts"
+      label: "Blog posts"
+      folder: "content/posts"
+      slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+      create: true
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+        - {label: "Image", name: "image", widget: "image", required: false}
+        - {label: "Content", name: "body", widget: "markdown", required: false}
+      editor:
+        preview: false
+        
+    - name: "info"
+      label: "General information"
+      folder: "content/info"
+      create: true
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+        - {label: "Image", name: "image", widget: "image", required: false}
+        - {label: "Content", name: "body", widget: "markdown", required: false}
+      editor:
+        preview: false
+        
 
 
 
