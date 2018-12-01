@@ -118,6 +118,7 @@ collections:
       create: true
       fields:
         - {label: "Title", name: "title", widget: "string"}
+        - {label: "Description", name: "body", widget: "string"}
       editor:
         preview: false
 
