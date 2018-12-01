@@ -1,11 +1,10 @@
 <template>
   <section>
     <header>
-      <h1>Welfare information</h1>
+      <h1>Informational pages:</h1>
     </header>
-    <p>The ECSU committee have information on a range of welfare topics:</p>
     <ul>
-      <li v-for="post in welfare" v-bind:key="post.name">
+      <li v-for="post in info" v-bind:key="post.name">
         <a v-bind:href="post.url" v-bind:title="post.title">{{post.title}}</a>
       </li>
     </ul>
@@ -17,7 +16,7 @@ import content from "@/content";
 export default {
   layout: "default",
   asyncData: async ({ params }) => ({
-    welfare: await content("welfare")
+    info: await content("info")
   })
 };
 </script>
