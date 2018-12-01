@@ -104,9 +104,9 @@ collections:
       label: "Room Comments"
       folder: "content/room_comments"
       create: true
+      slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
       fields:
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Room", name: "room", widget: "relation", collection: "rooms", searchFields: ["title"], valueField: "title"}
+        - {label: "Room", name: "title", widget: "relation", collection: "rooms", searchFields: ["title"], valueField: "title"}
         - {label: "Year", name: "year", widget: "string", required: false}
         - {label: "Content", name: "body", widget: "markdown", required: false}
       editor:

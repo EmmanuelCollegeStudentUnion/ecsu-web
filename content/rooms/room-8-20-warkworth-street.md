@@ -8,5 +8,5 @@ living_room: 'No'
 location: Warkworth
 name: '8'
 network: Wireless Only
-title: Room 8,  20 Warkworth Street
+title: Room 8, 20 Warkworth Street
 ---

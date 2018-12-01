@@ -8,5 +8,5 @@ living_room: Shared
 location: Blantyre
 name: 32b
 network: Wired and Wireless
-title: Room 32b,  Blantyre
+title: Room 32b, Blantyre
 ---

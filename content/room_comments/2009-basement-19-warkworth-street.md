@@ -1,6 +1,5 @@
 ---
-room: Basement, 19 Warkworth Street
-title: 2009 Basement, 19 Warkworth Street
+title: Basement, 19 Warkworth Street
 year: '2009'
 ---
 

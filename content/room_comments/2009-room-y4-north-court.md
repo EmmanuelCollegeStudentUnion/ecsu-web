@@ -1,7 +1,0 @@
----
-room: Room Y4, North Court
-title: 2009 Room Y4, North Court
-year: '2009'
----
-
-An excellent room. The noise from the bus station is minimal and there is an attractive tree which makes you believe you are living in a rural paradise. Bring your own lamps, as light is scarce, although it is only grade two. The bed is comfortable. The only really bad thing is that the sink burps, which is not very romantic.

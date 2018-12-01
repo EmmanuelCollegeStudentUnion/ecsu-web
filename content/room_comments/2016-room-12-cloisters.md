@@ -1,6 +1,5 @@
 ---
-room: Room 12, Cloisters
-title: 2016 Room 12, Cloisters
+title: Room 12, Cloisters
 year: '2016'
 ---
 

@@ -1,6 +1,5 @@
 ---
-room: Room 7, 10 Park Terrace
-title: 2011 Room 7, 10 Park Terrace
+title: Room 7, 10 Park Terrace
 year: '2011'
 ---
 

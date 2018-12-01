@@ -1,7 +1,0 @@
----
-room: Room Z7, North Court
-title: 2014 Room Z7, North Court
-year: '2014'
----
-
-In general, a very good room. Though keep in mind that no sink is a bit of a pain. The major issue is card access on the staircase door and cards being needed to provide power to the room, you just have to learn to keep your card on you constantly!

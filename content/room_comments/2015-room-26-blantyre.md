@@ -1,6 +1,5 @@
 ---
-room: Room 26,  Blantyre
-title: 2015 Room 26,  Blantyre
+title: Room 26, Blantyre
 year: '2015'
 ---
 
