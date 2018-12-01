@@ -46,23 +46,23 @@ ECSU has around £6000 / year to allocate clubs and societies,
 **ECSU will fund societies more the more of these criteria they fulfil.**
 <ul>
 <li>Regular meetings should be run throughout the term if not the year, a
-										  continued existence in the summer term is preferable but seasonal
-											considerations are of course understood.
+  continued existence in the summer term is preferable but seasonal
+	considerations are of course understood.
 									</li>
 <li>The society should be open to all Emmanuel undergraduates. In the context
-											of sports teams or musical groups this means holding trials/auditions open to
-											everyone even if only the best are then chosen. The exception to this principle
-											is gender specific sports.
+	of sports teams or musical groups this means holding trials/auditions open to
+	everyone even if only the best are then chosen. The exception to this principle
+	is gender specific sports.
 									</li>
 <li>Societies should advertise their presence and actively look for more
-											members, for example by running a stall at the freshers’ fair.
+	members, for example by running a stall at the freshers’ fair.
 									</li>
 <li>The funding should be necessary for the running of the club.
 									</li>
 <li>Curricular based societies are not funded. There is a grey area within this but
-											for example a club that goes through Tripos questions or
-											the course will not be funded while a Union style
-											debating set up might well be despite the clear links to HSPS.
+	for example a club that goes through Tripos questions or
+	the course will not be funded while a Union style
+	debating set up might well be despite the clear links to HSPS.
 									</li>
 - The larger the society in terms of involvement the better.
 </ul>
@@ -71,11 +71,11 @@ ECSU has around £6000 / year to allocate clubs and societies,
 <ul>
 - Past funding of societies will be considered.
 <li>Societies with higher than average costs per person should not be surprised if
-											their members are asked to provide a subscription towards their relatively
-											expensive hobby.
+	their members are asked to provide a subscription towards their relatively
+	expensive hobby.
 									</li>
 <li>ECSU will meet essential needs (e.g. cuppers and league fees) before less
-											essential needs (e.g. equipment, refreshments)
+	essential needs (e.g. equipment, refreshments)
 									</li>
 </ul>
 
