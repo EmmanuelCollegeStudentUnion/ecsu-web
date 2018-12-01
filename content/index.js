@@ -15,7 +15,7 @@ export default async (contentType, contentName) => {
                     ...context(x[0]),
                     filename: x[1],
                     url: `/${contentType}/${x[1]}`,
-                    body: x[0]['__content']
+                    body: context(x[0])['__content']
                 }))
         )
 
