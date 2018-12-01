@@ -1,6 +1,6 @@
 ---
-room: Room 13, East Court
-title: 2015 Room 13, East Court
+room: Room 13,  East Court
+title: 2015 Room 13,  East Court
 year: '2015'
 ---
 
