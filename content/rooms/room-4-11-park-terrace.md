@@ -5,7 +5,7 @@ floor: First
 grade: 4
 images: []
 living_room: 'No'
-location: 11 Park Terrace
+location: Park Terrace
 name: '4'
 network: Wireless Only
 title: Room 4, 11 Park Terrace

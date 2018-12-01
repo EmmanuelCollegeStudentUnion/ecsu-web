@@ -1,6 +1,6 @@
 ---
-room: Room 3, 20 Warkworth Street
-title: 2008 Room 3, 20 Warkworth Street
+room: Room 3,  20 Warkworth Street
+title: 2008 Room 3,  20 Warkworth Street
 year: '2008'
 ---
 

@@ -5,7 +5,7 @@ floor: Basement
 grade: 5
 images: []
 living_room: 'No'
-location: 1 Park Terrace
+location: Park Terrace
 name: '1'
 network: Wireless Only
 title: Room 1, 1 Park Terrace

@@ -5,8 +5,8 @@ floor: Basement
 grade: 1
 images: []
 living_room: 'No'
-location: 20 Warkworth Street
+location: Warkworth
 name: '2'
 network: Wireless Only
-title: Room 2, 20 Warkworth Street
+title: Room 2,  20 Warkworth Street
 ---
