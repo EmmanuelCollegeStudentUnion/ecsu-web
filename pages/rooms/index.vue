@@ -4,8 +4,8 @@
       <h1>Room database</h1>
     </header>
 
-    <li v-for="room in rooms" v-bind:key="room.name">
-      <nuxt-link :to="room.url" :title="room.title" v-text="room.title"></nuxt-link>
+    <li v-for="location in locations" v-bind:key="location.name">
+      <nuxt-link :to="location.url" :title="location.title" v-text="location.title"></nuxt-link>
     </li>
   </section>
 </template>
@@ -15,7 +15,7 @@ import content from "@/content";
 export default {
   layout: "default",
   asyncData: async ({ params }) => ({
-    rooms: await content("rooms")
+    locations: await content("room_locations")
   })
 };
 </script>
