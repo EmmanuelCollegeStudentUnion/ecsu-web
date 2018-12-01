@@ -4,9 +4,7 @@ subtitle: null
 title: ROAR
 ---
 
-ROAR is the college satirical newsletter, published every Sunday morning. <br/><br/> Here you will find a back collection of issues of the Roar! newsletter. Roar! is edited by the [ROAR! Editor](roar_editor.html). If you have College news, stories, gossip or sports result please send them to the Roar! Editor, or alternatively, submit your own article piece using the form below:
-
-- <input class="special" type="submit" value="Send"/>
+ROAR is the college satirical newsletter, published every Sunday morning. <br/><br/> Here you will find a back collection of issues of the Roar! newsletter. Roar! is edited by the [ROAR! Editor](roar_editor.html). If you have College news, stories, gossip or sports result please send them to the Roar! Editor.
 
 If you want to get involved in helping to produce Roar! and potentially being a guest editor join the [Roar! Facebook Group](https://www.facebook.com/home.php?sk=group_218627764818399&amp;ap=1).
 
