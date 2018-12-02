@@ -279,5 +279,6 @@ export default {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  flex-direction: column;
 }
 </style>
