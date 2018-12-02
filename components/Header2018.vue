@@ -25,13 +25,13 @@
               <nuxt-link to="/info/exec_resources">Exec Resources</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/protected/minutes">Minutes</nuxt-link>
+              <a href="/protected/minutes">Minutes</a>
             </li>
             <li>
               <nuxt-link to="/info/open_meetings">Open Meetings</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/protected/official_documents">Official Documents</nuxt-link>
+              <a href="/protected/official_documents">Official Documents</a>
             </li>
           </ul>
         </li>
@@ -139,10 +139,10 @@
               <a href="#">Online Booking</a>
               <ul>
                 <li>
-                  <nuxt-link to="/protected/laundry">Laundry</nuxt-link>
+                  <a href="/protected/laundry">Laundry</a>
                 </li>
                 <li>
-                  <nuxt-link to="/protected/squash">Squash</nuxt-link>
+                  <a href="/protected/squash">Squash</a>
                 </li>
               </ul>
             </li>

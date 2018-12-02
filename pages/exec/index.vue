@@ -36,7 +36,7 @@
 
     <h2>How is the Exec formed?</h2>
     <p>The Exec is elected on a yearly basis, at the end of Michaelmas Term. The electoral procedure is described in the
-      <nuxt-link to="/protected/official_documents">Constitution</nuxt-link>. Elections will be publicised well in advance. Any student at Emmanuel can stand for election including Freshers.
+      <a to="/protected/official_documents">Constitution</a>. Elections will be publicised well in advance. Any student at Emmanuel can stand for election including Freshers.
     </p>
   </section>
 </template>
