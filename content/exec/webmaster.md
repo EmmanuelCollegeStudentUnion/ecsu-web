@@ -1,8 +1,8 @@
 ---
+title: Webmaster
 email: webmaster@ecsu.org.uk
-image: /images/Matteo communication and computing.jpg
 name: Matteo Pozzi
-title: Communications Officer
+image: /images/Matteo communication and computing.jpg
 ---
 
 Hi! My name is Matteo (he/him), I am a second year CompSci, and I will be your Webmaster this year. My job involves taking care of the ECSU website and other tech-related things,
