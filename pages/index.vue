@@ -123,7 +123,7 @@
           </li>
           <li>
             <font size="4">
-              <a href="/wpotw.html">
+              <a href="/welfare/wpotw.html">
                 <img
                   src="/images/trophy_black.gif"
                   width="30"
