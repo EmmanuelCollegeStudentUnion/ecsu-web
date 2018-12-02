@@ -11,7 +11,7 @@ if(!isset($_POST['submit']))
 		$message = wordwrap($message, 70);
 
 		$title = 'ECSU - Pregnancy Test Requested';
-		$addr = ‘bl389@cam.ac.uk’;
+		$addr = ‘webmaster@ecsu.org.uk’;
 
 		$header = "From: ECSU Website <website@ecsu.org.uk>\r\n";
 		$header .= "Reply-To: communications@ecsu.org.uk";

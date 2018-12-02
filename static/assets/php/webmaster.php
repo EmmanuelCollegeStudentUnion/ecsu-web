@@ -26,7 +26,7 @@ $email_subject = "New ECSU Form submission";
 $email_body = "You have received a new message from the user $name.\n".
     "Here is the message:\n $message \n".
 
-$to = "bl389@cam.ac.uk";//<== update the email address
+$to = "webmaster@ecsu.org.uk";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!

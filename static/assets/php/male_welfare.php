@@ -17,7 +17,7 @@ $email_body = "Hi Will, \n \n A new anonymous welfare form has been submitted vi
     
     "If there are any errors in this form, please let me know. \n \n Ciao, \n Blammin | ".
     
-$to = "wr258@cam.ac.uk";
+$to = "webmaster@ecsu.org.uk";
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
