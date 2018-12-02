@@ -2,7 +2,7 @@ backend:
   name: github
   repo: 101hawn/ecsu
   base_url: https://nh487.user.srcf.net
-publish_mode: editorial_workflow
+  
 collections:
     - name: "exec" # Used in routes, e.g., /admin/collections/blog
       label: "Exec" # Used in the UI
