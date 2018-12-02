@@ -123,7 +123,7 @@
           </li>
           <li>
             <font size="4">
-              <a href="/welfare/wpotw.html">
+              <a href="/welfare/ wpotw.html">
                 <img
                   src="/images/trophy_black.gif"
                   width="30"
@@ -279,6 +279,10 @@ export default {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  flex-direction: column;
+}
+@media screen and (max-width: 1280px) {
+  .layout-flex {
+    flex-direction: column;
+  }
 }
 </style>
