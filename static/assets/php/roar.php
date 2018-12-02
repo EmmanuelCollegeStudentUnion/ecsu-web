@@ -25,7 +25,7 @@ $email_from = 'ECSU';//<== update the email address
 $email_subject = "New ROAR Article Submission";
 $email_body = "You have received a new message from the user $name.\n".
     "Here is the message:\n $message \n\n To reply to $name, press 'reply' in your email client. Please attempt to action this email within 24 hours of receiving it. \n Any questions regarding the operation of this system should be directed to Ben Lammin, at bl389@cam.ac.uk \n The current address assigned for delivery is: ".
-$to = "seph2@cam.ac.uk, bl389@cam.ac.uk, dg480@cam.ac.uk, cgbm2@cam.ac.uk";//<== update the email address
+$to = "webmaster@ecsu.org.uk";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
