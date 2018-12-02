@@ -11,5 +11,3 @@ Want to know more about Emma? Then you're in the right place! If you just want t
 The Emmanuel College Alternative Prospectus has been written, edited and produced entirely by undergraduates at Emma, it's here to give you the low-down on life, work and play at Emma from the people who know it best: the students themselves. It aims to tell it as it really is. Click on the link below to access!
 
 [Prospectus](https://www.emma.cam.ac.uk/publications/Emma_Alt_Prospectus.pdf)
-
-### Thinking about Cambridge?
