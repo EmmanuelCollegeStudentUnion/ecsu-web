@@ -2,11 +2,10 @@
 const glob = require('glob')
 const path = require('path')
 import routes from "./routes"
-
-
 const urls = routes.map(x => [
     ...x.url,
-    ...x.items.map(item => item.url)
+    ...x.items.map(item => item.url),
+
 ])
 export default {
     build: {

@@ -18,6 +18,7 @@
           <template v-if="$route.path.startsWith(route.url)" v-for="item in route.items">
             <nuxt-link
               class="mdc-list-item"
+              v-if="item.showInNav"
               :key="item.url"
               :class="{
               'mdc-list-item--activated': item.url==$route.path

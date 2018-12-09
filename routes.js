@@ -3,7 +3,7 @@ const glob = require('glob')
 const path = require('path')
 const url = require('url');
 const fs = require('fs')
-function itemsForContent(contentType) {
+export function itemsForContent(contentType, showInNav) {
     const paths = glob.sync(`content/${contentType}/*.md`)
     return paths
         .map(filename => {
@@ -14,7 +14,8 @@ function itemsForContent(contentType) {
                 text: yamlFront.loadFront(file).title,
                 name: slug,
                 items: [],
-                url: urlText
+                url: urlText,
+                showInNav
             }
         })
 }
@@ -24,21 +25,25 @@ export default [
         text: "Home",
         icon: "home",
         url: "/",
+        showInNav: true,
         items: []
     },
     {
         text: "Current students",
         icon: "account_circle",
         url: "/members",
+        showInNav: true,
         items: [
             {
                 text: "Minutes",
                 url: "/members/minutes",
+                showInNav: true,
                 items: []
             },
             {
                 text: "Official Documents",
                 url: "/members/official_documents",
+                showInNav: true,
                 items: []
             }
         ]
@@ -47,36 +52,56 @@ export default [
         text: "Committee",
         icon: "assignment_ind",
         url: "/exec",
-        items: itemsForContent("exec")
+        showInNav: true,
+        items: itemsForContent("exec", true)
     },
     {
         text: "Posts",
         icon: "assignment",
         url: "/posts",
-        items: []
+        showInNav: true,
+        items: itemsForContent("posts", false)
     },
     {
         text: "Welfare",
         icon: "sentiment_very_satisfied",
         url: "/welfare",
-        items: itemsForContent("welfare")
+        showInNav: true,
+        items: [
+            ...itemsForContent("welfare", true),
+            {
+                text: "Pregnancy Kit",
+                url: "/welfare/pregnancy_kit",
+                showInNav: true,
+                items: []
+            },
+            {
+                text: "Welfare Request",
+                url: "/welfare/welfare_request",
+                showInNav: true,
+                items: []
+            }
+        ]
     },
     {
         text: "Societies",
         icon: "rowing",
         url: "/societies",
-        items: itemsForContent("societies")
+        showInNav: true,
+        items: itemsForContent("societies", true)
     },
     {
         text: "Room database",
         icon: "location_city",
         url: "/room_locations",
-        items: itemsForContent("room_locations")
+        showInNav: true,
+        items: itemsForContent("room_locations", true)
     },
     {
         text: "Info",
         icon: "info",
         url: "/info",
-        items: itemsForContent("info")
+        showInNav: true,
+        items: itemsForContent("info", true)
     }
 ]
