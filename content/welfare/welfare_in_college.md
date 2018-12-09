@@ -18,11 +18,11 @@ There will be highs. You will do some incredible things, meet some wonderful peo
 
 Hopefully these lows will pass, perhaps after you get your essay in, have a cup of tea with a friend, or call your mum. The welfare team also put on lots of welfare events, such as tea and cake and yoga; most of these events are often focused around weeks 4-6 when stress seems to peak, and Easter term, when exams happen, but some are more regular. Students have even said week 5 and exam term are their favourite times of term because so many wonderful welfare events are on!
 
-However, if the lows donât pass and you need further advice or help beyond that of your immediate friends or college welfare events, itâs ok: there is plenty out there for you, at college, university and national levels, whether theyâre for you, or for a friend you may be concerned about, and whatever the issue may be.
+However, if the lows don't pass and you need further advice or help beyond that of your immediate friends or college welfare events, it's ok: there is plenty out there for you, at college, university and national levels, whether they're for you, or for a friend you may be concerned about, and whatever the issue may be.
 
 In this section are links to various services at college, university and national levels. Find links to the services available by selecting the relevant topic from the drop-down menu of this welfare section.
 
-In addition, we encourage you to download and read the âBumper Welfare Documentâ, which contains this information all in one place, in a less daunting format.
+In addition, we encourage you to download and read the "Bumper Welfare Document', which contains this information all in one place, in a less daunting format.
 
 |File|Size
 |------
