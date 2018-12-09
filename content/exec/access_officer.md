@@ -1,8 +1,8 @@
 ---
+title: Access Officer
 email: access@ecsu.org.uk
-image: /images/Rhys Access.jpg
 name: Rhys Proud
-title: Emma Access Officer
+image: /images/Rhys Access.jpg
 ---
 
 Hi, I'm Rhys (he/him) and I'm the Access Officer.

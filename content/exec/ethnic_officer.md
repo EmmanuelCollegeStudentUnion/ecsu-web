@@ -1,8 +1,8 @@
 ---
+title: BME Officer
 email: minorities@ecsu.org.uk
-image: /images/hao_zhe_bme.png
 name: Hao Zhe Chun
-title: Ethnic Minorities Officer
+image: /images/hao_zhe_bme.png
 ---
 
 Hi all! My name is Hao Zhe (not Hao) and I use he/him pronouns.
