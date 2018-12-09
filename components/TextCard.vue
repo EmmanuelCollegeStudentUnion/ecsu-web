@@ -1,11 +1,11 @@
 <template>
   <article class="card mdc-card--outlined">
     <div class="mdc-typography--body2 card-content">
+      <div>
+        <div class="material-icons card-icon md-48">{{icon}}</div>
+      </div>
       <div class="text-card-header">
-        <i class="material-icons mdc-list-item__graphic card-icon">{{icon}}</i>
-        <span class="mdc-list-item__text">
-          <span class="mdc-list-item__primary-text center">{{title}}</span>
-        </span>
+        <span class="center">{{title}}</span>
       </div>
       <slot/>
     </div>
@@ -24,6 +24,7 @@ article.card:hover {
 }
 .card-content {
   padding: 24px;
+  text-align: center;
 }
 article.card {
   @extend .mdc-elevation-transition;
@@ -31,9 +32,6 @@ article.card {
   min-height: 300px;
   max-width: 450px;
   margin: auto;
-}
-.card-icon {
-  float: left;
 }
 .center {
   margin: auto;
