@@ -1,7 +1,6 @@
 <template>
-  <section>
-    <h1>{{title}}</h1>
-    <br>
+  <PostPage>
+    <template slot="title">{{title}}</template>
     <div>
       <ul>
         <li>Grade: {{grade}}</li>
@@ -12,7 +11,6 @@
         <li>Floor: {{floor}}</li>
       </ul>
     </div>
-
     <p>
       The information for this room is accurate to our best knowledge. If you believe it is inaccurate please contact the
       <a
@@ -46,13 +44,14 @@
       </div>
     </div>
     <p v-else>There are no photos for this room</p>
-  </section>
+  </PostPage>
 </template>
 
 <script>
 import content from "@/content";
+import PostPage from "@/components/PostPage";
 export default {
-  layout: "default",
+  components: { PostPage },
   asyncData: async ({ params }) => {
     const room = await content("rooms", params.name);
     const comments = (await content("room_comments")).filter(

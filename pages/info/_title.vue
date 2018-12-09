@@ -1,18 +1,21 @@
 <template>
-  <section>
-    <header>
-      <h1>{{title}}</h1>
-      <p>{{subtitle}}</p>
-    </header>
-    <img v-if="image" :src="image" width="300" alt style="float:right">
+  <PostPage>
+    <template slot="title">{{title}}</template>
+    <template slot="subtitle">{{subtitle}}</template>
+    <template slot="media">
+      <ImageCard :image="image"/>
+    </template>
     <div v-html="body"/>
-  </section>
+  </PostPage>
 </template>
 
 <script>
 import content from "@/content";
+import PostPage from "@/components/PostPage";
+import ImageCard from "@/components/ImageCard";
+
 export default {
-  layout: "default",
+  components: { PostPage, ImageCard },
   asyncData: ({ params }) => content("info", params.title)
 };
 </script>

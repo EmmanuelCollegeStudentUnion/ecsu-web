@@ -1,11 +1,22 @@
 <template>
-  <section>
-    <img src="/images/secure.png" align="right" width="100px" id="borderimg1">
-    <header>
-      <h1>Official Documents</h1>
-      <p>Official Documentation from ECSU</p>
-    </header>
-
+  <PostPage>
+    <template slot="title">
+      <span class="page-content">Documents</span>
+    </template>
+    <template slot="subtitle">
+      <span class="page-content">Official Documentation from ECSU</span>
+    </template>
+    <template slot="media">
+      <div
+        :style="{
+      'background': `url(/images/secure.png) top center / contain no-repeat`,
+      'background-fit': 'fit',
+      width: '100%',
+      height: '100%'
+      
+      }"
+      />
+    </template>
     <p>
       The Constitution outlines the role and responsibilities of ECSU and the
       <a href="/exec">Exec</a>. It,
@@ -86,5 +97,14 @@
         <a href="http://www.ico.gov.uk/">Information Commissioner</a>
       </li>
     </ul>
-  </section>
+  </PostPage>
 </template>
+
+
+<script>
+import PostPage from "@/components/PostPage";
+import ImageCard from "@/components/ImageCard";
+export default {
+  components: { PostPage, ImageCard }
+};
+</script>

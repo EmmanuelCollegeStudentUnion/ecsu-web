@@ -1,19 +1,19 @@
 <template>
-  <section>
-    <center>
-      <div class="animated flipInX">
-        <font size="5">
-          <h1>Your Message Has Been Sent!</h1>
-        </font>
-      </div>
-      <img src="/images/tick.gif">
-    </center>
-    <center>
-      <p>
-        <i>If your browser does not automatically redirect you, please click
-          <nuxt-link to="/">here</nuxt-link>.
-        </i>
-      </p>
-    </center>
-  </section>
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+    <h1>Your Message Has Been Sent!</h1>
+    <img src="/images/tick.gif" width="100%">
+
+    <p>
+      <i>If your browser does not automatically redirect you, please click
+        <nuxt-link to="/">here</nuxt-link>.
+      </i>
+    </p>
+  </div>
 </template>
+
+<script>
+import StandardPage from "@/components/StandardPage";
+export default {
+  components: { StandardPage }
+};
+</script>

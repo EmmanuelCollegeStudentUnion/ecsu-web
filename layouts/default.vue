@@ -1,34 +1,27 @@
 <template>
   <div>
-    <!-- Header. Yay code reuse! -->
-    <Header2018/>
-
-    <!-- Wrapper -->
-    <div class="wrapper">
-      <section class="main">
+    <header class="mdc-top-app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <span class="mdc-top-app-bar__title">
+            <img class="header-logo" src="/images/logo1.png" width="165px">
+          </span>
+        </section>
+      </div>
+    </header>
+    <div class="flex-container">
+      <Drawer/>
+      <div class="mdc-layout-grid page-surface" style="width:100%">
         <nuxt/>
-      </section>
+      </div>
     </div>
-
-    <!-- Footer -->
-    <Footer2018/>
-
-    <!-- Scripts -->
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/skel.min.js"></script>
-    <script src="/assets/js/util.js"></script>
-    <script src="/assets/js/jquery.dropotron.min.js"></script>
-    <script src="/assets/js/main.js"></script>
   </div>
 </template>
 <script>
-import Header2018 from "~/components/Header2018.vue";
-import Footer2018 from "~/components/Footer2018.vue";
+import "normalize.css";
+import Drawer from "@/components/Drawer";
 export default {
-  components: {
-    Header2018,
-    Footer2018
-  },
+  components: { Drawer },
   head: {
     meta: [
       { charset: "utf-8" },
@@ -73,13 +66,41 @@ export default {
         rel: "shortcut icon",
         sizes: "180x180",
         href: "/assets/favicon/favicon.ico"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons"
       }
     ]
   }
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "~/assets/scss/site.scss";
+.header-logo {
+  display: block;
+}
+.mdc-top-app-bar {
+  position: static;
+}
+.flex-container {
+  display: flex;
+}
 
-@import url("@/assets/css/main.css");
+body {
+  @extend .mdc-theme--background;
+}
+
+.page-content {
+  max-width: 820px;
+  margin: auto;
+}
+
+.page-surface {
+  background-color: white;
+  border-radius: 24px;
+  margin: 32px;
+}
 </style>

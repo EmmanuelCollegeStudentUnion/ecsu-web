@@ -1,25 +1,26 @@
 <template>
-  <section>
-    <header>
-      <h1>{{name}}</h1>
-      <span>{{title}}</span>
-    </header>
-
-    <div class="officer-page-main-content-div">
-      <div class="officer-page-text-content-div" v-html="body"></div>
-      <img v-if="image" :src="image" alt class="officer-page-image">
-    </div>
+  <PostPage>
+    <template slot="title">{{name}}</template>
+    <template slot="subtitle">{{title}}</template>
+    <template slot="media">
+      <ImageCard :image="image"/>
+    </template>
+    <Markdown :html="body"/>
     <span>
       Email me at:
       <a :href="mailto">{{email}}</a>
     </span>
-  </section>
+  </PostPage>
 </template>
 
 <script>
 import content from "@/content";
+import PostPage from "@/components/PostPage";
+import Markdown from "@/components/Markdown";
+import ImageCard from "@/components/ImageCard";
 export default {
   layout: "default",
+  components: { Markdown, PostPage, ImageCard },
   asyncData: async ({ params }) => {
     const post = content("exec", params.title).then(
       ({ name, title, image, __content, email }) => ({

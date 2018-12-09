@@ -1,0 +1,17 @@
+$mdc-theme-primary: #d926a5;
+$mdc-theme-secondary: #d926a5;
+$mdc-theme-background: #eceff1;
+@import "@material/typography/mdc-typography";
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/theme/mdc-theme";
+@import "@material/button/mdc-button";
+@import "@material/fab/mdc-fab";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+@import "@material/card/mdc-card";
+
+div{
+    
+  @extend .mdc-typography--body1;
+}

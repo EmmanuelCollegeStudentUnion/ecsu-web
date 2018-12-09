@@ -1,11 +1,18 @@
 <template>
-  <section>
-    <img src="/images/Notes.ico" align="right" width="150px" id="borderimg1">
-    <header>
-      <h1>Minutes</h1>
-      <p>Historic Minutes from ECSU Meetings</p>
-    </header>
-
+  <PostPage>
+    <template slot="title">Minutes</template>
+    <template slot="subtitle">Historic Minutes from ECSU Meetings</template>
+    <template slot="media">
+      <div
+        :style="{
+      'background': `url(/images/Notes.ico) top center / contain no-repeat`,
+      'background-fit': 'fit',
+      width: '100%',
+      height: '100%'
+      
+      }"
+      />
+    </template>
     <p>
       On here you can find the minutes of past ECSU Exec and Open Meetings. If the minutes for a meeting are missing
       please contact the
@@ -687,5 +694,12 @@
         class="also"
       >Secretary</a>.
     </p>
-  </section>
+  </PostPage>
 </template>
+
+<script>
+import PostPage from "@/components/PostPage";
+export default {
+  components: { PostPage }
+};
+</script>

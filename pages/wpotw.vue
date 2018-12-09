@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
     <header>
       <center>
         <h1>Wonderful Person of the Week</h1>
@@ -52,5 +52,6 @@
         would like to nominate X for WPotW for being excellent, even in the face of gross misuse of her socks.
       </p>
     </i>
-  </section>
+  </div>
 </template>
+

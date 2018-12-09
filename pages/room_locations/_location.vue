@@ -1,18 +1,17 @@
 <template>
-  <section>
-    <header>
-      <h1>{{location.title}}</h1>
-    </header>
-
+  <PostPage>
+    <template slot="title">{{location.title}}</template>
     <li v-for="room in rooms" :key="room.name">
       <nuxt-link :to="room.url" :title="room.title" v-text="room.title"></nuxt-link>
     </li>
-  </section>
+  </PostPage>
 </template>
 
 <script>
 import content from "@/content";
+import PostPage from "@/components/PostPage";
 export default {
+  components: { PostPage },
   asyncData: async ({ params }) => {
     const location = await content("room_locations", params.location);
     return {
@@ -24,6 +23,3 @@ export default {
   }
 };
 </script>
-
-<style>
-</style>

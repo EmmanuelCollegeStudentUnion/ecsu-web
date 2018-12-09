@@ -1,22 +1,22 @@
 <template>
-  <section id="error-page">
-    <div class="error-page-inner">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="text-center">
-              <div class="bg-404">
-                <div class="error-image">
-                  <img class="img-responsive" src="/images/404.png" alt>
-                </div>
-              </div>
-              <h2>PAGE NOT FOUND</h2>
-              <p>The page you are looking for might have been removed or had its name changed.</p>
-              <a href="http://www.ecsu.org.uk" class="btn btn-error">RETURN TO THE HOMEPAGE</a>
-            </div>
-          </div>
-        </div>
-      </div>
+  <StandardPage>
+    <template slot="title">Page not found</template>
+    <img
+      src="/images/404.png"
+      width="100%"
+      class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12"
+    >
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+      <p>The page you are looking for might have been removed or had its name changed.</p>
+      <nuxt-link to="/" class="btn btn-error">Return to homepage</nuxt-link>
     </div>
-  </section>
+  </StandardPage>
 </template>
+
+<script>
+import StandardPage from "@/components/StandardPage";
+import ImageCard from "@/components/ImageCard";
+export default {
+  components: { StandardPage, ImageCard }
+};
+</script>

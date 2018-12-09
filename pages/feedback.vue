@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
     <img src="/images/anon.png" align="right" id="imgborder1" width="70">
 
     <header>
@@ -12,5 +12,6 @@
       <br>
       <input type="submit" value="Send" class="special">
     </form>
-  </section>
+  </div>
 </template>
+
