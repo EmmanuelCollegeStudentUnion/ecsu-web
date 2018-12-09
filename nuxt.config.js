@@ -2,11 +2,12 @@
 const glob = require('glob')
 const path = require('path')
 import routes from "./routes"
-const urls = routes.map(x => [
-    ...x.url,
+const flatMap = (arr, f) => [].concat.apply([], arr.map(f))
+var urls = flatMap(routes, (x => [
+    x.url,
     ...x.items.map(item => item.url),
 
-])
+]))
 export default {
     build: {
         extend(config) {
