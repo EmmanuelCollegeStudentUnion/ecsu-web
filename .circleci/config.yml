@@ -18,23 +18,12 @@ jobs:
 
     steps:
       - checkout
-
-      - restore_cache:
-          keys:
-            - v1-git-lfs
-
-      
       - run:
           command: curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
       - run:
           command: sudo apt-get install git-lfs --upgrade
       - run:
           command: sudo chown -R circleci:circleci /usr/local/bin
-
-      - save_cache:
-          key: v1-gif-lfs
-          paths:
-            - /usr/local/bin/git-lfs
               
       - run: |
           git lfs install --force
