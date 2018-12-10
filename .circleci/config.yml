@@ -72,7 +72,7 @@ jobs:
     deploy:
         machine:
             enabled: true
-        step:
+        steps:
             - run:
                 name: Deploy
                 command: ssh nh487@shell.srcf.net "~/deploy/deploy.sh"
