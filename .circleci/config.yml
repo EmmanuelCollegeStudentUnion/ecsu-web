@@ -38,13 +38,16 @@ jobs:
           command:
               yarn build
       
-      - store_artifacts:
-          path: ~/repo/dist
-          destination: dist
+      - save_cache:
+          paths:
+            - dist
+          key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
   deploy:
     machine:
         enabled: true
-    steps:
+    steps:    
+      - restore_cache:
+          key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
       - run:
           name: Create archive
           command:
