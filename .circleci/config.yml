@@ -38,8 +38,7 @@ jobs:
               
       - run: |
           git lfs install --force
-          git pull
-          git checkout
+          git lfs pull
 
 
       # Download and cache dependencies
