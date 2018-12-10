@@ -39,8 +39,8 @@ jobs:
             - /usr/local/bin/git-lfs
               
       - run: |
-          git lfs install --local --skip-smudge
-          git lfs pull
+          git lfs install --local --skip-smudge --force
+          git lfs post-checkout "$@"
 
 
       # Download and cache dependencies
