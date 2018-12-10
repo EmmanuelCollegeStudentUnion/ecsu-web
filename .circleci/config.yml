@@ -43,6 +43,8 @@ jobs:
           destination: dist
   deploy:
     working_directory: ~/repo
+    machine:
+        enabled: true
     steps:
       - run:
           name: Create archive
