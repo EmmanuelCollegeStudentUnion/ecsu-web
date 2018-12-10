@@ -23,15 +23,13 @@ jobs:
           keys:
             - v1-git-lfs
 
+      
       - run:
-          name: "Install git lfs"
-          command: |
-            if ! [ -x "$(command -v git-lfs)" ]; then
-                curl -L -o /tmp/git-lfs.tar.gz \
-                  https://github.com/git-lfs/git-lfs/releases/download/v2.4.0/git-lfs-linux-amd64-2.4.0.tar.gz
-                tar xf /tmp/git-lfs.tar.gz -C /tmp
-                sudo /tmp/git-lfs-2.4.0/install.sh
-            fi
+          command: curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+      - run:
+          command: sudo apt-get install git-lfs --upgrade
+      - run:
+          command: sudo chown -R circleci:circleci /usr/local/bin
 
       - save_cache:
           key: v1-gif-lfs
@@ -39,6 +37,7 @@ jobs:
             - /usr/local/bin/git-lfs
               
       - run: |
+          git lfs install --force
           git pull
           git checkout
 
