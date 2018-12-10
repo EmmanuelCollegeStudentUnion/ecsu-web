@@ -1,18 +1,7 @@
 <template>
-  <PostPage>
+  <InfoPage>
     <template slot="title">Minutes</template>
     <template slot="subtitle">Historic Minutes from ECSU Meetings</template>
-    <template slot="media">
-      <div
-        :style="{
-      'background': `url(/images/Notes.ico) top center / contain no-repeat`,
-      'background-fit': 'fit',
-      width: '100%',
-      height: '100%'
-      
-      }"
-      />
-    </template>
     <p>
       On here you can find the minutes of past ECSU Exec and Open Meetings. If the minutes for a meeting are missing
       please contact the
@@ -21,7 +10,7 @@
       >Secretary</a>.
     </p>
 
-    <h1 id="easter-2018">Exec Meeting Minutes (Easter 2018)</h1>
+    <h4 id="easter-2018">Exec Meeting Minutes (Easter 2018)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -52,7 +41,7 @@
       </tbody>
     </table>
 
-    <h1 id="lent-2018">Exec Meeting Minutes (Lent 2018)</h1>
+    <h4 id="lent-2018">Exec Meeting Minutes (Lent 2018)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -103,7 +92,7 @@
       </tbody>
     </table>
 
-    <h1 id="easter-2014">Exec Meeting Minutes (Easter 2014)</h1>
+    <h4 id="easter-2014">Exec Meeting Minutes (Easter 2014)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -120,7 +109,7 @@
         </tr>
       </tbody>
     </table>
-    <h1 id="lent-2014">Exec Meeting Minutes (Lent 2014)</h1>
+    <h4 id="lent-2014">Exec Meeting Minutes (Lent 2014)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -162,7 +151,7 @@
       </tbody>
     </table>
 
-    <h1 id="lent-2013">Exec Meeting Minutes (Lent 2013)</h1>
+    <h4 id="lent-2013">Exec Meeting Minutes (Lent 2013)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -179,7 +168,7 @@
         </tr>
       </tbody>
     </table>
-    <h1 id="mich-2012">Exec Meeting Minutes (Michaelmas 2012)</h1>
+    <h4 id="mich-2012">Exec Meeting Minutes (Michaelmas 2012)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -232,7 +221,7 @@
         </tr>
       </tbody>
     </table>
-    <h1>Exec Meeting Minutes (Easter 2012)</h1>
+    <h4>Exec Meeting Minutes (Easter 2012)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -249,7 +238,7 @@
         </tr>
       </tbody>
     </table>
-    <h1 id="lent-2012">Exec Meeting Minutes (Lent 2012)</h1>
+    <h4 id="lent-2012">Exec Meeting Minutes (Lent 2012)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -310,7 +299,7 @@
         </tr>
       </tbody>
     </table>
-    <h1 id="lent-2011">Exec Meeting Minutes (Lent 2011)</h1>
+    <h4 id="lent-2011">Exec Meeting Minutes (Lent 2011)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -345,7 +334,7 @@
         </tr>
       </tbody>
     </table>
-    <h1 id="mich-2010">Exec Meeting Minutes (Michaelmas 2010)</h1>
+    <h4 id="mich-2010">Exec Meeting Minutes (Michaelmas 2010)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -392,13 +381,13 @@
         </tr>
         <tr>
           <td>
-            <a href="downloads/minutes/2010/MinutesMich1.pdf">Minutes 2010 - Michaelmas 1</a>
+            <a href="downloads/minutes/2010/MinutesMich4.pdf">Minutes 2010 - Michaelmas 1</a>
           </td>
           <td>346.11 KiB</td>
         </tr>
       </tbody>
     </table>
-    <h1 id="lent-2010">Exec Meeting Minutes (Lent 2010)</h1>
+    <h4 id="lent-2010">Exec Meeting Minutes (Lent 2010)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -463,7 +452,7 @@
         </tr>
       </tbody>
     </table>
-    <h1 id="easter-2009">Exec Meeting Minutes (Easter 2009)</h1>
+    <h4 id="easter-2009">Exec Meeting Minutes (Easter 2009)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -498,7 +487,7 @@
         </tr>
       </tbody>
     </table>
-    <h1 id="lent-2009">Exec Meeting Minutes (Lent 2009)</h1>
+    <h4 id="lent-2009">Exec Meeting Minutes (Lent 2009)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -557,7 +546,7 @@
         </tr>
       </tbody>
     </table>
-    <h1 id="lent-2008">Exec Meeting Minutes (Lent 2008)</h1>
+    <h4 id="lent-2008">Exec Meeting Minutes (Lent 2008)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -592,7 +581,7 @@
         </tr>
       </tbody>
     </table>
-    <h1 id="easter-2007">Exec Meeting Minutes (Easter 2007)</h1>
+    <h4 id="easter-2007">Exec Meeting Minutes (Easter 2007)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -621,7 +610,7 @@
         </tr>
       </tbody>
     </table>
-    <h1 id="lent-2007">Exec Meeting Minutes (Lent 2007)</h1>
+    <h4 id="lent-2007">Exec Meeting Minutes (Lent 2007)</h4>
     <table class="download-container">
       <thead>
         <tr>
@@ -694,12 +683,12 @@
         class="also"
       >Secretary</a>.
     </p>
-  </PostPage>
+  </InfoPage>
 </template>
 
 <script>
-import PostPage from "@/components/PostPage";
+import InfoPage from "@/components/InfoPage";
 export default {
-  components: { PostPage }
+  components: { InfoPage }
 };
 </script>

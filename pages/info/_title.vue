@@ -1,21 +1,18 @@
 <template>
-  <PostPage>
+  <InfoPage>
     <template slot="title">{{title}}</template>
     <template slot="subtitle">{{subtitle}}</template>
-    <template slot="media">
-      <ImageCard :image="image"/>
-    </template>
     <div v-html="body"/>
-  </PostPage>
+  </InfoPage>
 </template>
 
 <script>
 import content from "@/content";
-import PostPage from "@/components/PostPage";
+import InfoPage from "@/components/InfoPage";
 import ImageCard from "@/components/ImageCard";
 
 export default {
-  components: { PostPage, ImageCard },
+  components: { InfoPage, ImageCard },
   asyncData: ({ params }) => content("info", params.title)
 };
 </script>

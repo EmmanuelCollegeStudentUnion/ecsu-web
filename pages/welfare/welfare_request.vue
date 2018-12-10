@@ -1,6 +1,6 @@
 <template>
-  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-    <h1>General welfare request</h1>
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 page-content">
+    <h1 class="mdc-typography--headline2">General welfare request</h1>
     <form
       id="main-contact-form"
       name="contact-form"
