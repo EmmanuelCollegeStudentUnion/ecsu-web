@@ -38,7 +38,9 @@ jobs:
           paths:
             - /usr/local/bin/git-lfs
               
-      - run: git lfs pull
+      - run: |
+        git lfs install
+        git lfs pull
 
 
       # Download and cache dependencies
