@@ -39,7 +39,7 @@ jobs:
             - /usr/local/bin/git-lfs
               
       - run: |
-          git lfs install
+          git lfs install --local
           git lfs pull
 
 
