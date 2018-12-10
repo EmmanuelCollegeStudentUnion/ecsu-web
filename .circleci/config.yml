@@ -39,17 +39,16 @@ jobs:
               yarn build
       
       - store_artifacts:
-          path: ./dist
+          path: ~/repo/dist
           destination: dist
   deploy:
-    working_directory: ~/repo
     machine:
         enabled: true
     steps:
       - run:
           name: Create archive
           command:
-              tar -czvf /tmp/deploy.tar.gz ./dist
+              tar -czvf /tmp/deploy.tar.gz ~/repo/dist
 
 workflows:
   version: 2
