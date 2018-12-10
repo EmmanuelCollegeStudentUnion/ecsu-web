@@ -30,29 +30,29 @@ jobs:
                 git lfs pull
 
 
-        # Download and cache dependencies
-        - restore_cache:
-            keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
+            # Download and cache dependencies
+            - restore_cache:
+                keys:
+                - v1-dependencies-{{ checksum "package.json" }}
+                # fallback to using the latest cache if no exact match is found
+                - v1-dependencies-
 
-        - run: yarn install --frozen-lockfile
+            - run: yarn install --frozen-lockfile
 
-        - save_cache:
-            paths:
-                - node_modules
-            key: v1-dependencies-{{ checksum "package.json" }}
+            - save_cache:
+                paths:
+                    - node_modules
+                key: v1-dependencies-{{ checksum "package.json" }}
+                
+            - run:
+                name: Generate
+                command:
+                    yarn build
             
-        - run:
-            name: Generate
-            command:
-                yarn build
-        
-        - save_cache:
-            paths:
-                - dist
-            key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
+            - save_cache:
+                paths:
+                    - dist
+                key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
     upload:
         machine:
             enabled: true
