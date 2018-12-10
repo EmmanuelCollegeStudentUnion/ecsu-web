@@ -55,7 +55,7 @@ jobs:
       - run:
           name: Upload
           command:
-              scp /temp/deploy.tar.gz nh487@files.srcf.net:~/deploy/deploy.tar.gz
+              scp /tmp/deploy.tar.gz nh487@files.srcf.net:~/deploy/deploy.tar.gz
 
 workflows:
   version: 2
