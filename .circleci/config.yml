@@ -50,8 +50,8 @@ jobs:
           key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
       - run:
           name: Create archive
-          command:
-              cd ~/repo
+          command: |
+              cd ~/repo 
               tar -czvf /tmp/deploy.tar.gz ./dist
       - run:
           name: Upload
