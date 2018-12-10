@@ -20,8 +20,8 @@ jobs:
       - checkout
 
       - restore_cache:
-    keys:
-      - v1-git-lfs
+          keys:
+            - v1-git-lfs
 
       - run:
           name: "Install git lfs"
