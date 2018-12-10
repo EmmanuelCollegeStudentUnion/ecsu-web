@@ -19,8 +19,27 @@ jobs:
     steps:
       - checkout
 
+      - restore_cache:
+    keys:
+      - v1-git-lfs
+
+      - run:
+          name: "Install git lfs"
+          command: |
+          if ! [ -x "$(command -v git-lfs)" ]; then
+              curl -L -o /tmp/git-lfs.tar.gz \
+                https://github.com/git-lfs/git-lfs/releases/download/v2.4.0/git-lfs-linux-amd64-2.4.0.tar.gz
+              tar xf /tmp/git-lfs.tar.gz -C /tmp
+              sudo /tmp/git-lfs-2.4.0/install.sh
+          fi
+
+      - save_cache:
+          key: v1-gif-lfs
+          paths:
+            - /usr/local/bin/git-lfs
+              
       - run: git lfs pull
-        
+
 
       # Download and cache dependencies
       - restore_cache:
