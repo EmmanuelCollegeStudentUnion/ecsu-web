@@ -52,6 +52,9 @@ jobs:
           name: Create archive
           command:
               tar -czvf /tmp/deploy.tar.gz ~/repo/dist
+          name: Upload
+          command:
+              scp /temp/deploy.tar.gz nh487@files.srcf.net:~/deploy/deploy.tar.gz
 
 workflows:
   version: 2
