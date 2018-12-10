@@ -2,6 +2,7 @@
 image: /imagesfford.png
 subtitle: Geography Student from North London
 title: Maddy Clifford
+blog: Access Blog
 ---
 
 Hi, my name is Maddy Clifford and I am a second-year Geographer, originally from Muswell Hill in North London. I attended the local state secondary school for both my GCSEs and A level studies, which was a massive school of about 1600 students. Though I do not come from a deprived part of North London it was immediately apparent that there was a huge disparity between the resources and teaching facilities at my school compared with some of my friends at the grammar and private schools across London. The teachers were generally pretty good but classes were massive, books and chairs were often lacking and though this did not affect me as I had always pushed myself to do well many other students could easily fall through the cracks unnoticed in such an environment. 

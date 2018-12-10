@@ -29,6 +29,13 @@ export default [
         items: []
     },
     {
+        text: "Prospective students",
+        icon: "face",
+        url: "/prospective",
+        showInNav: true,
+        items: itemsForContent("prospective", true)
+    },
+    {
         text: "Current students",
         icon: "account_circle",
         url: "/members",
@@ -58,9 +65,9 @@ export default [
     {
         text: "Posts",
         icon: "assignment",
-        url: "/posts",
+        url: "/blogs",
         showInNav: true,
-        items: itemsForContent("posts", false)
+        items: itemsForContent("blogs", true)
     },
     {
         text: "Welfare",

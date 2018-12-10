@@ -2,6 +2,7 @@
 image: /images/access/p_warren.jpeg
 subtitle: ''
 title: Patrick Warren
+blog: Access Blog
 ---
 
 Hello, I'm Patrick and I'm from Lancashire, in the cold dark North. I went to a state secondary school and sixth-form college, and am now in my second year studying Medicine at Emmanuel College.<br/><br/>

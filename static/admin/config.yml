@@ -42,6 +42,18 @@ collections:
       editor:
         preview: false
         
+    - name: "blogs"
+      label: "Blogs"
+      label_singular: "Blog"
+      folder: "content/blogs"
+      slug: "{{slug}}"
+      create: true
+      fields:
+        - {label: "Name", name: "title", widget: "string"}
+        - {label: "Description", name: "description", widget: "string"}
+      editor:
+        preview: false
+
     - name: "posts"
       label: "Blog posts"
       label_singular: "Blog post"
@@ -49,6 +61,7 @@ collections:
       slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
       create: true
       fields:
+        - {label: "Blog", name: "blog", widget: "relation", collection: "blogs", searchFields: ["title"], valueField: "title"}
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
         - {label: "Image", name: "image", widget: "image", required: false}

@@ -2,6 +2,8 @@
 image: /images/access/l_paparounas.jpeg
 subtitle: ''
 title: Lefteris Paparounas
+blog: Access Blog
+
 ---
 
 Hello! I’m Lefteris and I’m in my second year studying Linguistics. Before coming to Cambridge, I went to a state school in my hometown in the northwest of the Greece. Few people from my town study abroad, while no one from my school had been to Oxbridge before.<br/><br/>

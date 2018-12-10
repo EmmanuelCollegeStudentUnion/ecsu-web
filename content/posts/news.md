@@ -1,7 +1,7 @@
 ---
 image: /images/uni_challenge.jpg
-subtitle: The Latest News and Events from Emmanuel
-title: News
+title: November 2016
+blog: Latest News
 ---
 
 ### [Emma Victory Continues on University Challenge](#)

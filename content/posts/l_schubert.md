@@ -2,6 +2,8 @@
 image: /imagesschubert.jpeg
 subtitle: ''
 title: Laura Schubert
+blog: Access Blog
+
 ---
 
 My name is Laura Schubert, and I'm German but grew up in the South West of England. I am now in my second year studying a course called Human, Social and Political Sciences (or HSPS), and more specifically my subjects this year are Archaeology and Biological Anthropology. When I applied I wasn't really sure what I wanted to do and now halfway through my degree I still have no idea what I want to do later, or which subject I enjoy most. I want to say that it's OK not to know and still take a step forward.<br/><br/>

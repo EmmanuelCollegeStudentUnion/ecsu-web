@@ -2,6 +2,7 @@
 image: /imagess/l_smith.jpeg
 subtitle: Medic from Sheffield
 title: Luke Smith
+blog: Access Blog
 ---
 
 It feels odd that a little over 2 years ago (2013) I was filling out that awful UCAS form and applying to university. Back then if you'd have told me I'd be going to the University of Cambridge I would have laughed at you. If you take one thing from this blog post, let it be this: believe in yourself. Believe that you can be right where I am now.<br/><br/>

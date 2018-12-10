@@ -2,6 +2,7 @@
 image: /images/access/k_craven.jpeg
 subtitle: PBS Student from East Yorkshire
 title: Katie Craven
+blog: Access Blog
 ---
 
 Hello! I'm Katie and I'm from a town near Hull, in East Yorkshire. Before coming to Cambridge, I went to a state secondary school, and then a sixth form college a bit further away from my house. No one in my family had been to university, so although my parents fully supported me it was still quite an abstract concept.<br/><br/>

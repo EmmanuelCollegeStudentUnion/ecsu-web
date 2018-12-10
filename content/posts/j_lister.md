@@ -2,6 +2,7 @@
 image: /images/access/j_lister.jpeg
 subtitle: History Student from Yorkshire
 title: Jess Lister
+blog: Access Blog
 ---
 
 Hi! My name is Jess Lister and I'm a current 2nd year Historian originally from Howden, a small village in East Yorkshire. I did my A-Levels at an FE college in York rather than traditional sixth form. It was a much bigger environment than I was used to; there were around 1000 people studying A-Levels in my year, which allowed for a lot of independence. When it came to applying for Cambridge therefore it was a case of being quite self-motivated – teachers were very willing to help out, but I had to decide to apply by myself which was nerve-wracking!<br/><br/>
