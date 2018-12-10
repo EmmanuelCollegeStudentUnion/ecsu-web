@@ -33,4 +33,12 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
         
+      - run:
+          name: Generate
+          command:
+              yarn build
+      
+      - store_artifacts:
+          path: /dist
+          destination: dist
 
