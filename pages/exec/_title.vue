@@ -1,26 +1,23 @@
 <template>
-  <PostPage>
+  <ProfilePage :image="image">
     <template slot="title">{{name}}</template>
     <template slot="subtitle">{{title}}</template>
-    <template slot="media">
-      <ImageCard :image="image"/>
-    </template>
     <Markdown :html="body"/>
     <span>
       Email me at:
       <a :href="mailto">{{email}}</a>
     </span>
-  </PostPage>
+  </ProfilePage>
 </template>
 
 <script>
 import content from "@/content";
-import PostPage from "@/components/PostPage";
+import ProfilePage from "@/components/ProfilePage";
 import Markdown from "@/components/Markdown";
 import ImageCard from "@/components/ImageCard";
 export default {
   layout: "default",
-  components: { Markdown, PostPage, ImageCard },
+  components: { Markdown, ProfilePage, ImageCard },
   asyncData: async ({ params }) => {
     const post = content("exec", params.title).then(
       ({ name, title, image, __content, email }) => ({
