@@ -1,7 +1,7 @@
 ---
 image: null
 subtitle: null
-title: Accessibility
+title: Website accessibility
 ---
 
 Our aim is to make ECSU.org.uk accessible to as many users as possible. Broadly, we strive to:
