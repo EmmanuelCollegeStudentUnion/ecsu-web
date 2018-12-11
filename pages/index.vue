@@ -20,7 +20,7 @@
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 center-button">
       <div class="button-padding">
-        <nuxt-link to="/exec" class="mdc-fab mdc-fab--extended">
+        <nuxt-link to="/prospective" class="mdc-fab mdc-fab--extended">
           <span class="mdc-fab__label">Prospective students</span>
         </nuxt-link>
       </div>
