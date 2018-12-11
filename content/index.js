@@ -5,7 +5,6 @@ const collator = new Intl.Collator(undefined, {
 export default async (contentType, contentName) => {
     const context = require.context(`@/content/`, true, /\.md$/)
     if (contentName) {
-        var err = new Error();
         const content = await context(`./${contentType}/${contentName}.md`)
         return {
             ...content,
