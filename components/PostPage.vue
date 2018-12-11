@@ -16,15 +16,6 @@
   </StandardPage>
 </template>
 
-<style lang="sass">
-
-  hr{
-      border: 1px solid #eceff1;
-      width: 100%;
-      border-radius: 24px;
-  }
-</style>
-
 <script>
 import StandardPage from "@/components/StandardPage";
 export default {

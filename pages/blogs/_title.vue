@@ -1,12 +1,18 @@
 <template>
   <PostPage>
     <template slot="title">{{blog.title}}</template>
-    <li v-for="post in posts" :key="post.name">
-      <nuxt-link :to="post.url" :title="post.title">
-        {{post.title}}
-        <template v-if="!!post.subtitle">- {{post.subtitle}}</template>
-      </nuxt-link>
-    </li>
+    <ul class="mdc-list mdc-list--two-line">
+      <li v-for="post in posts" :key="post.name">
+        <nuxt-link :to="post.url" class="unstyled-link mdc-theme--text-primary-on-background">
+          <div class="mdc-list-item mdc-ripple-upgraded">
+            <span class="mdc-list-item__text">
+              <span class="mdc-list-item__primary-text">{{post.title}}</span>
+              <span class="mdc-list-item__secondary-text">{{post.subtitle}}</span>
+            </span>
+          </div>
+        </nuxt-link>
+      </li>
+    </ul>
   </PostPage>
 </template>
 
@@ -26,3 +32,4 @@ export default {
   }
 };
 </script>
+

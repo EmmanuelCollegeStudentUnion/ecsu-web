@@ -42,6 +42,32 @@ collections:
       editor:
         preview: false
         
+    - name: "info"
+      label: "General information"
+      folder: "content/info"
+      create: true
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+        - {label: "Image", name: "image", widget: "image", required: false}
+        - {label: "Content", name: "body", widget: "markdown", required: false}
+      editor:
+        preview: false
+        
+    - name: "prospective"
+      label: "Prospective students"
+      folder: "content/prospective"
+      create: true
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+        - {label: "Image", name: "image", widget: "image", required: false}
+        - {label: "Content", name: "body", widget: "markdown", required: false}
+      editor:
+        preview: false
+
+        
+        
     - name: "blogs"
       label: "Blogs"
       label_singular: "Blog"
@@ -62,18 +88,6 @@ collections:
       create: true
       fields:
         - {label: "Blog", name: "blog", widget: "relation", collection: "blogs", searchFields: ["title"], valueField: "title"}
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
-        - {label: "Image", name: "image", widget: "image", required: false}
-        - {label: "Content", name: "body", widget: "markdown", required: false}
-      editor:
-        preview: false
-        
-    - name: "info"
-      label: "General information"
-      folder: "content/info"
-      create: true
-      fields:
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
         - {label: "Image", name: "image", widget: "image", required: false}
@@ -137,6 +151,7 @@ collections:
       fields:
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Description", name: "body", widget: "string"}
+        - {label: "Image", name: "image", widget: "image", required: false}
       editor:
         preview: false
 
