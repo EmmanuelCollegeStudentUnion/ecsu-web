@@ -12,9 +12,16 @@
       </i>
     </p>
     <p>A huge range of different sports clubs and societies exist at Emma - the list below is by no means exhaustive, although it contains most of the major sports clubs and societies in college:</p>
-    <ul>
-      <li v-for="society in societies" v-bind:key="society.name">
-        <a v-bind:href="society.url" v-bind:title="society.title">{{society.title}}</a>
+    <ul></ul>
+    <ul class="mdc-list mdc-list--one-line">
+      <li v-for="society in societies" :key="society.name">
+        <nuxt-link :to="society.url" class="unstyled-link mdc-theme--text-primary-on-background">
+          <div class="mdc-list-item mdc-ripple-upgraded">
+            <span class="mdc-list-item__text">
+              <span>{{society.title}}</span>
+            </span>
+          </div>
+        </nuxt-link>
       </li>
     </ul>
   </PostPage>
