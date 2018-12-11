@@ -1,9 +1,30 @@
 <template>
   <PostPage>
     <template slot="title">{{location.title}}</template>
-    <li v-for="room in rooms" :key="room.name">
-      <nuxt-link :to="room.url" :title="room.title" v-text="room.title"></nuxt-link>
-    </li>
+    <table style="width: fit">
+      <thead>
+        <tr>
+          <th>Room</th>
+          <th>Grade</th>
+          <th>Floor</th>
+          <th>Basin</th>
+          <th>Living Room</th>
+          <th>Network</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="room in rooms" :key="room.name">
+          <td>
+            <nuxt-link :to="room.url">{{room.title}}</nuxt-link>
+          </td>
+          <td>{{room.grade}}</td>
+          <td>{{room.floor}}</td>
+          <td>{{room.basin}}</td>
+          <td>{{room.living_room}}</td>
+          <td>{{room.network}}</td>
+        </tr>
+      </tbody>
+    </table>
   </PostPage>
 </template>
 
@@ -13,12 +34,18 @@ import PostPage from "@/components/PostPage";
 export default {
   components: { PostPage },
   asyncData: async ({ params }) => {
+    const collator = new Intl.Collator(undefined, {
+      numeric: true,
+      sensitivity: "base"
+    });
     const location = await content("room_locations", params.location);
+    const rooms = (await content("rooms")).filter(x => {
+      return x.location == location.title;
+    });
+    rooms.sort((x, y) => collator.compare(x.title, y.title));
     return {
       location,
-      rooms: (await content("rooms")).filter(x => {
-        return x.location == location.title;
-      })
+      rooms
     };
   }
 };
