@@ -1,3 +1,7 @@
+const collator = new Intl.Collator(undefined, {
+    numeric: true,
+    sensitivity: "base"
+});
 export default async (contentType, contentName) => {
     const context = require.context(`@/content/`, true, /\.md$/)
     if (contentName) {
@@ -18,6 +22,7 @@ export default async (contentType, contentName) => {
                     url: `/${contentType}/${x[1]}`,
                     body: context(x[0])['__content']
                 }))
+                .sort((x, y) => collator.compare(x.title, y.title))
         )
 
     }

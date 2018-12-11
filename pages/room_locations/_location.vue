@@ -34,15 +34,10 @@ import PostPage from "@/components/PostPage";
 export default {
   components: { PostPage },
   asyncData: async ({ params }) => {
-    const collator = new Intl.Collator(undefined, {
-      numeric: true,
-      sensitivity: "base"
-    });
     const location = await content("room_locations", params.location);
     const rooms = (await content("rooms")).filter(x => {
       return x.location == location.title;
     });
-    rooms.sort((x, y) => collator.compare(x.title, y.title));
     return {
       location,
       rooms
