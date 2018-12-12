@@ -2,7 +2,7 @@
   <transition name="slide">
     <aside
       class="mdc-drawer mdc-drawer--open mdc-top-app-bar--fixed-adjust"
-      v-if="open||!modal"
+      v-show="open||!modal"
       :class="{
         'mdc-drawer--modal': modal,
         'mdc-drawer--persistant': !modal

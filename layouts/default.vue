@@ -1,6 +1,6 @@
 <template>
   <div id="root">
-    <header class="mdc-top-app-bar">
+    <div class="mdc-top-app-bar">
       <div class="mdc-top-app-bar__row">
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
           <span class="mdc-top-app-bar__title">
@@ -8,14 +8,14 @@
           </span>
           <div style="margin:auto"/>
           <button
-            v-if="$mq!='lg'"
+            v-show="$mq!='lg'"
             class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
             style="float:right; --mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.71429; --mdc-ripple-left:10px; --mdc-ripple-top:10px;"
             v-on:click="drawerOpen=!drawerOpen"
           >menu</button>
         </section>
       </div>
-    </header>
+    </div>
     <Drawer :open="drawerOpen"/>
     <transition name="fade">
       <div class="mdc-drawer-scrim" v-on:click="drawerOpen=false" v-if="drawerOpen"/>
@@ -89,7 +89,6 @@ export default {
   },
   watch: {
     $route(to, from) {
-      console.log("hello");
       this.drawerOpen = false;
     }
   }
