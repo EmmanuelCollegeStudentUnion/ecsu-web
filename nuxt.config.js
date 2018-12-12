@@ -40,6 +40,9 @@ export default {
     env: {
         routes
     },
-    plugins: ['~/plugins/vue-progressive-image']
+    plugins: [
+        '~/plugins/vue-progressive-image',
+        '~/plugins/vue-mq'
+    ]
 }
 

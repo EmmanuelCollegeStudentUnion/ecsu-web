@@ -1,6 +1,6 @@
 <template>
   <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
       <div
         :style="{
           backgroundImage: `url('${image}')`,
@@ -11,12 +11,12 @@
           height: '300px',
           maxWidth: '300px',
           maxHeight: '300px',
-          float:'right',
+          margin:'auto',
           backgroundPositionX: 'center'}"
       />
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6" v-if="!!$slots.title">
-      <div style="margin: auto">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4" v-if="!!$slots.title">
+      <div style="text-align: center">
         <header>
           <h1 class="mdc-typography--headline2" v-if="!!$slots.title">
             <slot name="title"/>

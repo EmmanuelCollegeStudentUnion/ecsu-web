@@ -3,9 +3,7 @@
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
       <div class="page-content">
         <img src="/images/Sketch.png" width="100%">
-        <h1
-          class="mdc-typography--headline1 mdc-theme--text-secondary-on-light heading-smaller-margin"
-        >
+        <h1 class="mdc-typography--headline1 mdc-theme--text-secondary-on-light hero-heading">
           Welcome to
           <span class="mdc-theme--text-primary-on-light">ECSU</span>
         </h1>
@@ -29,7 +27,9 @@
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 center-heading">
       <h2 class="mdc-typography--headline2 layout-center">What Does ECSU Do?</h2>
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+    <div
+      class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop"
+    >
       <TextCard title="Liaises on Your Behalf" icon="account_balance">
         <p>
           ECSU is the primary medium through which the student can interact with the college at Emmanuel; be that for
@@ -37,7 +37,9 @@
         </p>
       </TextCard>
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+    <div
+      class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop"
+    >
       <TextCard title="Answers Your Questions" icon="question_answer">
         <p>
           ECSU is here to make sure you feel supported across your academic, extra-curricular and personal life, through
@@ -45,7 +47,9 @@
         </p>
       </TextCard>
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+    <div
+      class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop"
+    >
       <TextCard title="Keeps You Informed" icon="notifications">
         <p>
           Via Facebook, Twitter or ECSU Online, we are here to provide you with the latest information about events,
@@ -53,7 +57,9 @@
         </p>
       </TextCard>
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+    <div
+      class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop"
+    >
       <TextCard title="Keeps You Smiling" action="View Societies" icon="sentiment_very_satisfied">
         <p>
           Through Ents, Societies, Sports, the JCR and surprises throughout the term, ECSU promotes a fun and friendly
@@ -147,8 +153,13 @@ article.card-image {
 .button-padding {
   padding: 16px;
 }
-.heading-smaller-margin {
-  margin: 32px;
+.hero-heading {
+  margin: 32px 0;
+  font-size: 80px;
+  @media screen and (min-width: 1280px) {
+    font-size: 96px;
+    margin: 32px 32px;
+  }
 }
 .center-heading {
   margin: 16px auto;

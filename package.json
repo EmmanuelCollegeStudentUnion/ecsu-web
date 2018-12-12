@@ -23,6 +23,7 @@
         "sass-loader": "^7.1.0",
         "v-lazy-image": "^1.2.2",
         "vue-lazyload": "^1.2.6",
+        "vue-mq": "^1.0.0",
         "vue-progressive-image": "^3.2.0"
     },
     "devDependencies": {
