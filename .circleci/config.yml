@@ -83,14 +83,10 @@ workflows:
       - build
       - upload:
           requires:
-            - build       
-      - hold:
-          type: approval
-          requires: 
-           - upload
+            - build     
       - deploy:
           requires:
-            - hold       
+            - upload       
 
     
 
