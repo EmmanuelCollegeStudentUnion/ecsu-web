@@ -79,7 +79,7 @@ aside.mdc-drawer {
   transform: translateX(-100%);
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1280px) {
   .mdc-drawer--persistant {
     display: none
   }
