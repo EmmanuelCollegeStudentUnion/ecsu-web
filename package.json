@@ -1,5 +1,5 @@
 {
-    "name": "ecsu-web",
+    "name": "ECSU",
     "scripts": {
         "dev": "nuxt",
         "build": "nuxt generate"
@@ -14,6 +14,7 @@
         "@material/textfield": "^0.41.0",
         "@material/top-app-bar": "^0.41.0",
         "@material/typography": "^0.41.0",
+        "@nuxtjs/pwa": "^2.6.0",
         "front-matter-loader": "^0.2.0",
         "install": "^0.12.2",
         "netlify-cms-loader": "^0.4.1",

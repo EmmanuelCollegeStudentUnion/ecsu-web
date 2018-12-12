@@ -36,50 +36,7 @@ export default {
     drawerOpen: false
   }),
   head: {
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        name: "msapplication-config",
-        content: "/assets/favicon/browserconfig.xml"
-      },
-      { name: "theme-color", content: "#ffffff" },
-      { property: "og:image", content: "/images/thumbnail.png" }
-    ],
     link: [
-      {
-        rel: "apple-touch-icon",
-        sizes: "180x180",
-        href: "/assets/favicon/apple-touch-icon.png"
-      },
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "32x32",
-        href: "/assets/favicon/favicon-32x32.png"
-      },
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "16x16",
-        href: "/assets/favicon/favicon-16x16.png"
-      },
-      {
-        rel: "manifest",
-        sizes: "180x180",
-        href: "/assets/favicon/manifest.json"
-      },
-      {
-        rel: "mask-icon",
-        sizes: "180x180",
-        href: "/assets/favicon/safari-pinned-tab.svg",
-        color: "#5bbad5"
-      },
-      {
-        rel: "shortcut icon",
-        sizes: "180x180",
-        href: "/assets/favicon/favicon.ico"
-      },
       {
         rel: "stylesheet",
         href:
