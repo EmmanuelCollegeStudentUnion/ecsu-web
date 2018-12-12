@@ -86,6 +86,12 @@ export default {
           "//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons"
       }
     ]
+  },
+  watch: {
+    $route(to, from) {
+      console.log("hello");
+      this.drawerOpen = false;
+    }
   }
 };
 </script>

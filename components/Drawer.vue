@@ -64,7 +64,7 @@ export default {
 
 <style lang="sass">
 aside.mdc-drawer {
-  min-height: 100%;
+  min-height: 100vh;
   overflow: auto;
 }
 .mdc-drawer {
