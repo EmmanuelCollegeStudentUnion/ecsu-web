@@ -13,7 +13,7 @@
       </div>
       <br>
       <input
-        class="hero-button mdc-button mdc-button--outlined mdc-ripple-upgraded"
+        class="mdc-button mdc-button--outlined mdc-ripple-upgraded"
         type="submit"
         value="Place Request"
       >
