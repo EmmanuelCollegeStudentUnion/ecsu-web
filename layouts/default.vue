@@ -24,14 +24,16 @@
       <div class="mdc-layout-grid page-surface">
         <nuxt/>
       </div>
+      <Footer/>
     </div>
   </div>
 </template>
 <script>
 import "normalize.css";
 import Drawer from "@/components/Drawer";
+import Footer from "@/components/Footer";
 export default {
-  components: { Drawer },
+  components: { Drawer, Footer },
   data: () => ({
     drawerOpen: false
   }),
@@ -74,6 +76,7 @@ export default {
 .page-surface {
   background-color: white;
   border-radius: 24px;
+  min-height: 100vh;
 }
 .page-surface {
   margin: 32px 0;
