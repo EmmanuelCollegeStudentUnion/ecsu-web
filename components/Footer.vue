@@ -6,7 +6,8 @@
     <a href="/accessibility">Accessibility</a> |
     <a href="http://www.cusu.cam.ac.uk/">CUSU</a> |
     <a href="/info/map">College Map</a> |
-    <a href="https://www.emmamcr.org.uk/">MCR</a>
+    <a href="https://www.emmamcr.org.uk/">MCR</a> |
+    <a href="/exec">Contact us</a>
   </footer>
 </template>
 
