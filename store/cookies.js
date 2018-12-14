@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie'
 
 export const state = () => ({
-    consent: false
+    consent: true
 })
 
 export const mutations = {
