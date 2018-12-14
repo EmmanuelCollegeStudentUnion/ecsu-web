@@ -17,6 +17,7 @@
         "@nuxtjs/pwa": "^2.6.0",
         "front-matter-loader": "^0.2.0",
         "install": "^0.12.2",
+        "js-cookie": "^2.2.0",
         "netlify-cms-loader": "^0.4.1",
         "normalize.css": "^8.0.1",
         "nuxt": "^2.3.4",

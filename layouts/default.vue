@@ -26,14 +26,16 @@
       </div>
       <Footer/>
     </div>
+    <Cookies/>
   </div>
 </template>
 <script>
 import "normalize.css";
 import Drawer from "@/components/Drawer";
 import Footer from "@/components/Footer";
+import Cookies from "@/components/Cookies";
 export default {
-  components: { Drawer, Footer },
+  components: { Drawer, Footer, Cookies },
   data: () => ({
     drawerOpen: false
   }),

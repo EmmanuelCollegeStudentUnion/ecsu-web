@@ -42,16 +42,16 @@ export default {
     },
     plugins: [
         '~/plugins/vue-progressive-image',
-        '~/plugins/vue-mq'
+        '~/plugins/vue-mq',
     ],
     loading: {
         color: '#d926a5',
     },
     meta: {
         'ogImage': '/images/thumbnail.png'
-      },
+    },
     modules: [
-        '@nuxtjs/pwa',
+        '@nuxtjs/pwa'
     ]
 }
 
