@@ -155,6 +155,28 @@ collections:
       editor:
         preview: false
 
+    - label: "Pages"
+      name: "pages"
+      files:
+        - label: "Home"
+          name: "home"
+          file: "content/home.yml"
+          fields:
+            - label: What does ECSU do
+              name: ecsu_does
+              widget: list
+              fields:
+                - {label: Title, name: title, widget: string}
+                - {label: Icon, name: icon, widget: string}
+                - {label: Description, name: description, widget: string}
+            - label: What's here
+              name: whats_here
+              widget: list
+              fields:
+                - {label: Title, name: title, widget: string}
+                - {label: Image, name: image, widget: image}
+                - {label: Description, name: description, widget: string}
+
 
       
 
