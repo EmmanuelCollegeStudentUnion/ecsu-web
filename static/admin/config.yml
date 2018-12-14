@@ -160,7 +160,7 @@ collections:
       files:
         - label: "Home"
           name: "home"
-          file: "content/home.yml"
+          file: "content/pages/home.yml"
           fields:
             - label: What does ECSU do
               name: ecsu_does
