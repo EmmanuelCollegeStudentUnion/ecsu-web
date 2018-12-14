@@ -29,7 +29,7 @@
     </div>
     <div
       v-for="item in ecsu_does"
-      :key="item.name"
+      :key="item.title"
       class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop"
     >
       <TextCard :title="item.name" :icon="item.icon">

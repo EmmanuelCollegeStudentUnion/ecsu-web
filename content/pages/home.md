@@ -1,18 +1,18 @@
 ---
 ecsu_does:
-  - name: "Liaises on Your Behalf"
+  - title: "Liaises on Your Behalf"
     icon : "account_balance"
     description: "ECSU is the primary medium through which the student can interact with the college at Emmanuel; be that for building requests or suggestions for improvement."
 
-  - name: "Answers Your Questions"
+  - title: "Answers Your Questions"
     icon : "question_answer"
     description: "ECSU is here to make sure you feel supported across your academic, extra-curricular and personal life, through a dedicated team specialising in specific issues."
 
-  - name: "Keeps You Informed"
+  - title: "Keeps You Informed"
     icon : "notifications"
     description: "Via Facebook, Twitter or ECSU Online, we are here to provide you with the latest information about events, term dates and pretty much anything else run by the college."
 
-  - name: "Keeps You Smiling"
+  - title: "Keeps You Smiling"
     icon : "sentiment_very_satisfied"
     description: "Through Ents, Societies, Sports, the JCR and surprises throughout the term, ECSU promotes a fun and friendly atmosphere."
 
