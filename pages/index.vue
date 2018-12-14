@@ -28,104 +28,35 @@
       <h2 class="mdc-typography--headline2 layout-center">What Does ECSU Do?</h2>
     </div>
     <div
+      v-for="item in ecsu_does"
+      :key="item.name"
       class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop"
     >
-      <TextCard title="Liaises on Your Behalf" icon="account_balance">
-        <p>
-          ECSU is the primary medium through which the student can interact with the college at Emmanuel; be that for
-          building requests or suggestions for improvement.
-        </p>
+      <TextCard :title="item.name" :icon="item.icon">
+        <p>{{item.description}}</p>
       </TextCard>
-    </div>
-    <div
-      class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop"
-    >
-      <TextCard title="Answers Your Questions" icon="question_answer">
-        <p>
-          ECSU is here to make sure you feel supported across your academic, extra-curricular and personal life, through
-          a dedicated team specialising in specific issues.
-        </p>
-      </TextCard>
-    </div>
-    <div
-      class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop"
-    >
-      <TextCard title="Keeps You Informed" icon="notifications">
-        <p>
-          Via Facebook, Twitter or ECSU Online, we are here to provide you with the latest information about events,
-          term dates and pretty much anything else run by the college.
-        </p>
-      </TextCard>
-    </div>
-    <div
-      class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop"
-    >
-      <TextCard title="Keeps You Smiling" action="View Societies" icon="sentiment_very_satisfied">
-        <p>
-          Through Ents, Societies, Sports, the JCR and surprises throughout the term, ECSU promotes a fun and friendly
-          atmosphere.
-        </p>
-      </TextCard>
-    </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 center-button">
-      <div class="button-padding">
-        <nuxt-link to="/exec" class="mdc-fab mdc-fab--extended">
-          <span class="mdc-fab__label">Meet the 2017-18 ECSU committee</span>
-        </nuxt-link>
-      </div>
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 center-heading">
       <h2 class="mdc-typography--headline2 layout-center">What's here?</h2>
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-      <ImageCaptionCard
-        title="Emma Careers"
-        image="/images/careers.jpeg"
-        url="/info/careers"
-      >Whether you're a grad looking for a job or a first year wanting to hear more about LinkedIn, this is the workshop for you.</ImageCaptionCard>
-    </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-      <ImageCaptionCard
-        title="ECSU Room Database"
-        image="/images/slide02.jpg"
-        url="/room_locations"
-      >Access the Emmanuel Room Database, to help inform your decision when balloting.</ImageCaptionCard>
-    </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-      <ImageCaptionCard
-        title="Emmanuel Hall Menu"
-        image="/images/hall.jpg"
-        url="https://www.emma.cam.ac.uk/contact/students/catering/menus/"
-      >Find out what's on the menu for lunchtime and dinner today in Emmanuel, including information about food allergens and vegetarian options.</ImageCaptionCard>
-    </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-      <ImageCaptionCard
-        title="Meet the 2017-18 ECSU Exec"
-        image="/images/slide01.jpg"
-        url="/exec"
-      >Find out about ECSU's newest Executive Committee for 2018 - who they are, what they do and how to get in touch.</ImageCaptionCard>
-    </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-      <ImageCaptionCard
-        title="Emma Societies"
-        image="/images/slide03.jpg"
-        url="/societies/"
-      >Find out more about the societies on offer within the college, ranging from sports through to quizzing.</ImageCaptionCard>
-    </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-      <ImageCaptionCard
-        title="Prospective students"
-        image="/images/slide04.jpg"
-        url="/posts/prospective"
-      >Explore what Emmanuel College and Cambridge have to offer! Click on the button below to access our prospective page, as well as links to the Alternative Prospectus.</ImageCaptionCard>
+    <div
+      v-for="item in whats_here"
+      :key="item.title"
+      class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4"
+    >
+      <ImageCaptionCard :title="item.title" :image="item.image" :url="item.url">{{item.description}}</ImageCaptionCard>
     </div>
   </StandardPage>
 </template>
 <script>
+import content from "@/content";
 import TextCard from "@/components/TextCard";
 import ImageCaptionCard from "@/components/ImageCaptionCard";
 import StandardPage from "@/components/StandardPage";
 export default {
+  asyncData: async ({ params }) => {
+    return await content("pages", "home");
+  },
   components: {
     TextCard,
     ImageCaptionCard,
