@@ -4,6 +4,31 @@ backend:
   base_url: https://nh487.user.srcf.net
   
 collections:
+    - label: "Pages"
+      name: "pages"
+      editor:
+        preview: false
+      files:
+        - label: "Home"
+          name: "home"
+          file: "content/pages/home.md"
+          fields:
+            - label: What does ECSU do
+              name: ecsu_does
+              widget: list
+              fields:
+                - {label: Title, name: title, widget: string}
+                - {label: Icon, name: icon, widget: string}
+                - {label: Description, name: description, widget: string}
+            - label: What's here
+              name: whats_here
+              widget: list
+              fields:
+                - {label: Title, name: title, widget: string}
+                - {label: Image, name: image, widget: image}
+                - {label: Url, name: url, widget: string}
+                - {label: Description, name: description, widget: string}
+                
     - name: "exec" # Used in routes, e.g., /admin/collections/blog
       label: "Exec" # Used in the UI
       folder: "content/exec" # The path to the folder where the documents are stored
@@ -155,30 +180,6 @@ collections:
       editor:
         preview: false
 
-    - label: "Pages"
-      name: "pages"
-      editor:
-        preview: false
-      files:
-        - label: "Home"
-          name: "home"
-          file: "content/pages/home.md"
-          fields:
-            - label: What does ECSU do
-              name: ecsu_does
-              widget: list
-              fields:
-                - {label: Title, name: title, widget: string}
-                - {label: Icon, name: icon, widget: string}
-                - {label: Description, name: description, widget: string}
-            - label: What's here
-              name: whats_here
-              widget: list
-              fields:
-                - {label: Title, name: title, widget: string}
-                - {label: Image, name: image, widget: image}
-                - {label: Url, name: url, widget: string}
-                - {label: Description, name: description, widget: string}
                 
 
 
