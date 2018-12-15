@@ -26,3 +26,17 @@ export default async (contentType, contentName) => {
 
     }
 }
+
+export async function resolveImage(image) {
+    const context = require.context(`@/assets/images`, true, /\.(jpe?g|png)$/)
+    const asset = image.match(`\/assets\/images\/(.*)`)
+    if (asset && asset[0]) {
+        const res = await context(`./${asset[1]}`)
+        return {
+            src: res.src,
+            srcset: res.srcset
+        }
+    } else {
+        return { src: image };
+    }
+}

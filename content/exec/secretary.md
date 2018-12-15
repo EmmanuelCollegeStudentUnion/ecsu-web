@@ -1,6 +1,6 @@
 ---
 email: secretary@ecsu.org.uk
-image: /images/Matilda secretary.jpg
+image: /assets/images/Matilda secretary.jpg
 name: Matilda Spivey
 title: Secretary
 ---

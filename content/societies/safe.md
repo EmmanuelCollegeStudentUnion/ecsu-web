@@ -1,5 +1,5 @@
 ---
-image: /images/emma_safe.jpg
+image: /assets/images/emma_safe.jpg
 title: SAFE
 ---
 

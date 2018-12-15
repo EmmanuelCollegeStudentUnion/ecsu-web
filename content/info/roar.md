@@ -1,5 +1,5 @@
 ---
-image: /images/roar_ico.png
+image: /assets/images/roar_ico.png
 subtitle: null
 title: ROAR
 ---

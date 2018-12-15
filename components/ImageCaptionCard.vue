@@ -8,7 +8,7 @@
     >
       <div
         class="mdc-card__media mdc-card__media--16-9 image-caption-card__media"
-        :style="{backgroundImage: `url(${image})`}"
+        :style="{backgroundImage: `url(${image.src})`}"
       ></div>
       <div class="image-caption-card__primary">
         <h2 class="image-caption-card__title mdc-typography--headline6">{{title}}</h2>

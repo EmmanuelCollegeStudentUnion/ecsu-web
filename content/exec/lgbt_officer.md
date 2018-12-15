@@ -1,6 +1,6 @@
 ---
 email: lgbt-rep@ecsu.org.uk
-image: /images/Griffin LGBT+.jpg
+image: /assets/images/Griffin LGBT+.jpg
 name: Griffin Twemlow
 title: LGBT+ Officer
 ---

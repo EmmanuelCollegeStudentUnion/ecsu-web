@@ -18,37 +18,37 @@ ecsu_does:
 
 whats_here:
   - title: "Emma Careers"
-    image: "/images/careers.jpeg"
+    image: "/assets/images/careers.jpeg"
     url: "/info/careers"
     description: "Whether you're a grad looking for a job or a first year wanting to hear more about LinkedIn, this is the workshop for you."
 
 
   - title: "ECSU Room Database"
-    image: "/images/slide02.jpg"
+    image: "/assets/images/slide02.jpg"
     url: "/room_locations"
     description: "Access the Emmanuel Room Database, to help inform your decision when balloting."
 
 
   - title: "Emmanuel Hall Menu"
-    image: "/images/hall.jpg"
+    image: "/assets/images/hall.jpg"
     url: "https://www.emma.cam.ac.uk/contact/students/catering/menus/"
     description: "Find out what's on the menu for lunchtime and dinner today in Emmanuel, including information about food allergens and vegetarian options."
 
 
   - title: "Meet the 2017-18 ECSU Exec"
-    image: "/images/slide01.jpg"
+    image: "/assets/images/slide01.jpg"
     url: "/exec"
     description: "Find out about ECSU's newest Executive Committee for 2018 - who they are, what they do and how to get in touch."
 
 
   - title: "Emma Societies"
-    image: "/images/slide03.jpg"
+    image: "/assets/images/slide03.jpg"
     url: "/societies/"
     description: "Find out more about the societies on offer within the college, ranging from sports through to quizzing."
 
 
   - title: "Prospective students"
-    image: "/images/slide04.jpg"
+    image: "/assets/images/slide04.jpg"
     url: "/posts/prospective"
     description: "Explore what Emmanuel College and Cambridge have to offer! Click on the button below to access our prospective page, as well as links to the Alternative Prospectus."
 ---

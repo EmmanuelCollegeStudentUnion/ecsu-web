@@ -1,5 +1,5 @@
 ---
-image: /images/interview.jpg
+image: /assets/images/interview.jpg
 subtitle: null
 title: Admissions Procedure
 ---

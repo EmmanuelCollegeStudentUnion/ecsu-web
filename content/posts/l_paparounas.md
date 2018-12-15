@@ -1,5 +1,5 @@
 ---
-image: /images/access/l_paparounas.jpeg
+image: /assets/images/access/l_paparounas.jpeg
 subtitle: ''
 title: Lefteris Paparounas
 blog: Access Blog

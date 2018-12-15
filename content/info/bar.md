@@ -1,5 +1,5 @@
 ---
-image: /images/bar.jpg
+image: /assets/images/bar.jpg
 subtitle: Information Regarding the Bar
 title: The Bar
 ---

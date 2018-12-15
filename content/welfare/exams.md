@@ -1,5 +1,5 @@
 ---
-image: /images/pen.png
+image: /assets/images/pen.png
 subtitle: Key Information Regarding the Exam Period
 title: Exams
 ---

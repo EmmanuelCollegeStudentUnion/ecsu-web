@@ -31,7 +31,33 @@ export default {
 
                 }
             })
-            return config
+
+            /*
+            ** Let responsive-loader handle jpgs and png
+            */
+
+            config.module.rules.find(
+                rule => rule.loader === "url-loader" ||
+                    rule.use != undefined && rule.use.find(x => x.loader === "url-loader") !== undefined
+            ).exclude = /\.(jpe?g|png)$/;
+
+            /*
+            ** Configure responsive-loader
+            */
+
+            config.module.rules.push({
+                test: /\.(jpe?g|png)$/i,
+                loader: "responsive-loader",
+                options: {
+                    min: 350,
+                    max: 2800,
+                    steps: 7,
+                    placeholder: false,
+                    adapter: require("responsive-loader/sharp")
+                }
+            });
+
+            return config;
         }
     },
     generate: {

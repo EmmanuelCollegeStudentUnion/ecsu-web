@@ -1,5 +1,5 @@
 ---
-image: /images/duck.jpg
+image: /assets/images/duck.jpg
 subtitle: null
 title: Visiting Emma
 ---

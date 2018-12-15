@@ -1,6 +1,6 @@
 ---
 email: ents@ecsu.org.uk
-image: /images/Ents mojo ashwin.jpg
+image: /assets/images/Ents mojo ashwin.jpg
 name: Mojo Odiase & Ashwin Raj
 title: Ents Coordinators
 ---

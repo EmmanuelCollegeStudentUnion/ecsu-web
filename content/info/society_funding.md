@@ -1,5 +1,5 @@
 ---
-image: /images/pound.png
+image: /assets/images/pound.png
 subtitle: Information Regarding Society Funding
 title: Society Funding
 ---

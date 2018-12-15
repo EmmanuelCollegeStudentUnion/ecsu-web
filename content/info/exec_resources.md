@@ -1,5 +1,5 @@
 ---
-image: /images/form.png
+image: /assets/images/form.png
 subtitle: Digital Resources related to Exec Functions
 title: Exec Resources
 ---

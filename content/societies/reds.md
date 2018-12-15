@@ -1,5 +1,5 @@
 ---
-image: /images/REDSFreshersPlay2015.jpg
+image: /assets/images/REDSFreshersPlay2015.jpg
 title: REDS | Revived Emmanuel Dramatic Society
 ---
 

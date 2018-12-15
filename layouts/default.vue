@@ -4,7 +4,7 @@
       <div class="mdc-top-app-bar__row">
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
           <span class="mdc-top-app-bar__title">
-            <img class="header-logo" src="/images/logo1.png" width="165px">
+            <img class="header-logo" :src="logo.src" :srcset="logo.srcset" width="165px">
           </span>
           <div style="margin:auto"/>
           <button
@@ -51,6 +51,11 @@ export default {
   watch: {
     $route(to, from) {
       this.drawerOpen = false;
+    }
+  },
+  computed: {
+    logo() {
+      return require("@/assets/images/logo1.png");
     }
   }
 };

@@ -1,6 +1,6 @@
 ---
 email: treasurer@ecsu.org.uk
-image: /images/Vedanth Treasurer.jpg
+image: /assets/images/Vedanth Treasurer.jpg
 name: Vedanth Nair
 title: Treasurer
 ---

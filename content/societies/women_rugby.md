@@ -1,5 +1,5 @@
 ---
-image: /images/womens_rugby15.jpg
+image: /assets/images/womens_rugby15.jpg
 title: Women's Rugby
 ---
 

@@ -1,6 +1,6 @@
 ---
 email: roar@ecsu.org.uk
-image: /images/Roar ewan rohan.jpg
+image: /assets/images/Roar ewan rohan.jpg
 name: Rohan Gupta & Ewan Patel
 title: ROAR Editors
 ---

@@ -1,5 +1,5 @@
 ---
-image: /images/badminton.jpg
+image: /assets/images/badminton.jpg
 title: Badminton
 ---
 

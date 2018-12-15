@@ -1,5 +1,5 @@
 ---
-image: /images/people.jpg
+image: /assets/images/people.jpg
 subtitle: null
 title: Five Best Things About Emma
 ---

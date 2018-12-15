@@ -1,5 +1,5 @@
 ---
-image: /images/hostel.JPG
+image: /assets/images/hostel.JPG
 subtitle: Information Regarding Emmanuel Accommodation
 title: Accommodation
 ---

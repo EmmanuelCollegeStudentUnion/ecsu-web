@@ -1,5 +1,5 @@
 ---
-image: /images/access/j_lister.jpeg
+image: /assets/images/access/j_lister.jpeg
 subtitle: History Student from Yorkshire
 title: Jess Lister
 blog: Access Blog

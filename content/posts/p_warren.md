@@ -1,5 +1,5 @@
 ---
-image: /images/access/p_warren.jpeg
+image: /assets/images/access/p_warren.jpeg
 subtitle: ''
 title: Patrick Warren
 blog: Access Blog

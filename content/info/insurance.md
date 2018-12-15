@@ -1,5 +1,5 @@
 ---
-image: /images/shield.png
+image: /assets/images/shield.png
 subtitle: Information Regarding College Limited Insurance
 title: College Insurance
 ---

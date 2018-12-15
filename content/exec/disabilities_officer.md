@@ -1,6 +1,6 @@
 ---
 email: disabilities@ecsu.org.uk
-image: /images/chloe_disabilities.png
+image: /assets/images/chloe_disabilities.png
 name: Chloe Lansley
 title: Disabilities Officer
 ---
