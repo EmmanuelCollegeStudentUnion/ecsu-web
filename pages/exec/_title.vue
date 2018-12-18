@@ -1,11 +1,11 @@
 <template>
-  <ProfilePage :image="image">
-    <template slot="title">{{name}}</template>
-    <template slot="subtitle">{{title}}</template>
-    <Markdown :html="body"/>
+  <ProfilePage v-if="exec" :image="exec.image">
+    <template slot="title">{{exec.name}}</template>
+    <template slot="subtitle">{{exec.title}}</template>
+    <Markdown :html="exec.body"/>
     <span>
       Email me at:
-      <a :href="mailto">{{email}}</a>
+      <a :href="mailto">{{exec.email}}</a>
     </span>
   </ProfilePage>
 </template>
@@ -15,21 +15,40 @@ import content from "@/content";
 import ProfilePage from "@/components/ProfilePage";
 import Markdown from "@/components/Markdown";
 import ImageCard from "@/components/ImageCard";
+import gql from "graphql-tag";
+import { toGlobalId } from "graphql-relay";
+
 export default {
-  layout: "default",
   components: { Markdown, ProfilePage, ImageCard },
-  asyncData: async ({ params }) => {
-    const post = content("exec", params.title).then(
-      ({ name, title, image, __content, email }) => ({
-        name,
-        title,
-        image,
-        body: __content,
-        email,
-        mailto: "mailto:" + email
-      })
-    );
-    return post;
+  apollo: {
+    exec: {
+      query: gql`
+        query Exec($id: ID!) {
+          exec: node(id: $id) {
+            ... on exec {
+              name
+              title
+              url
+              image {
+                src
+              }
+              body
+              email
+            }
+          }
+        }
+      `,
+      variables() {
+        return {
+          id: toGlobalId("exec", this.$route.params.title)
+        };
+      }
+    }
+  },
+  computed: {
+    mailto() {
+      return `mailto:${this.exec ? this.exec.email : null}`;
+    }
   }
 };
 </script>

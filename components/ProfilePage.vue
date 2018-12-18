@@ -3,7 +3,7 @@
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
       <div
         :style="{
-          backgroundImage: `url('${image}')`,
+          backgroundImage: `url('${image.src}')`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           borderRadius: '50%',

@@ -3,7 +3,7 @@
     <template slot="title">Emma Societies</template>
     <template slot="description">A List of Societies Available in Emma</template>
     <template slot="media">
-      <ImageCard image="/images/trainer_ico.png"/>
+      <ImageCard :image="image"/>
     </template>
     <p>
       <i>
@@ -31,11 +31,27 @@
 import content from "@/content";
 import PostPage from "@/components/PostPage";
 import ImageCard from "@/components/ImageCard";
+import gql from "graphql-tag";
 export default {
   components: { PostPage, ImageCard },
-  layout: "default",
-  asyncData: async ({ params }) => ({
-    societies: await content("societies")
-  })
+  apollo: {
+    societies: gql`
+      {
+        societies {
+          title
+          image {
+            src
+          }
+          body
+          url
+        }
+      }
+    `
+  },
+  computed: {
+    image() {
+      return require("@/assets/images/trainer_ico.png");
+    }
+  }
 };
 </script>

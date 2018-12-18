@@ -146,7 +146,7 @@ collections:
           widget: "select"
           options: ["Yes", "No", "Shared"]
         - label: "CUDN?"
-          name: = "cudn"
+          name: "cudn"
           widget: "boolean"
         - label: "Floor"
           name: "floor"

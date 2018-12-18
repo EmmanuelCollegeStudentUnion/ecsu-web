@@ -8,24 +8,24 @@
       >Constitution</a>. The Exec meets weekly to discuss issues relating to students in Emma.
     </template>
     <template slot="media">
-      <ImageCard image="/images/exec17.jpg"/>
+      <ImageCard :image="image"/>
     </template>
     <h2 class="mdc-typography--headline3">Meet this year's Exec</h2>
 
     <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list">
-      <li v-for="exec in execs" v-bind:key="exec.name">
-        <nuxt-link :to="exec.url" class="unstyled-link mdc-theme--text-primary-on-background">
+      <li v-for="member in exec" v-bind:key="member.title">
+        <nuxt-link :to="member.url" class="unstyled-link mdc-theme--text-primary-on-background">
           <div class="mdc-list-item mdc-ripple-upgraded">
             <v-lazy-image
               class="mdc-list-item__graphic cover"
               height="40"
               width="40"
-              :src="exec.image"
+              :src="member.image.src"
               src-placeholder="/assets/favicon/favicon.ico"
             />
             <span class="mdc-list-item__text">
-              <span class="mdc-list-item__primary-text">{{exec.name}}</span>
-              <span class="mdc-list-item__secondary-text">{{exec.title}}</span>
+              <span class="mdc-list-item__primary-text">{{member.name}}</span>
+              <span class="mdc-list-item__secondary-text">{{member.title}}</span>
             </span>
           </div>
         </nuxt-link>
@@ -117,15 +117,32 @@
 import content from "@/content";
 import ImageCard from "@/components/ImageCard";
 import PostPage from "@/components/PostPage";
+import gql from "graphql-tag";
 export default {
   layout: "default",
   components: {
     ImageCard,
     PostPage
   },
-  asyncData: async ({ params }) => {
-    let execs = await content("exec");
-    return { execs };
+
+  computed: {
+    image() {
+      return require("@/assets/images/exec17.jpg");
+    }
+  },
+  apollo: {
+    exec: gql`
+      {
+        exec {
+          name
+          title
+          url
+          image {
+            src
+          }
+        }
+      }
+    `
   }
 };
 </script>

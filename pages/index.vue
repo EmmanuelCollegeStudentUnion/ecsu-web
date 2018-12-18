@@ -28,7 +28,7 @@
       <h2 class="mdc-typography--headline2 layout-center">What Does ECSU Do?</h2>
     </div>
     <div
-      v-for="item in ecsu_does"
+      v-for="item in ecsuDoes"
       :key="item.title"
       class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop"
     >
@@ -40,7 +40,7 @@
       <h2 class="mdc-typography--headline2 layout-center">What's here?</h2>
     </div>
     <div
-      v-for="item in whats_here"
+      v-for="item in whatsHere"
       :key="item.title"
       class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4"
     >
@@ -54,18 +54,9 @@ import { resolveImage } from "@/content";
 import TextCard from "@/components/TextCard";
 import ImageCaptionCard from "@/components/ImageCaptionCard";
 import StandardPage from "@/components/StandardPage";
+import gql from "graphql-tag";
 
 export default {
-  asyncData: async ({ params }) => {
-    const home = await content("pages", "home");
-    home.whats_here = await Promise.all(
-      home.whats_here.map(async x => ({
-        ...x,
-        image: await resolveImage(x.image)
-      }))
-    );
-    return home;
-  },
   components: {
     TextCard,
     ImageCaptionCard,
@@ -75,9 +66,40 @@ export default {
     title: "ECSU | Emmanuel College Students' Union"
   },
   computed: {
+    ecsuDoes() {
+      return this.pages ? this.pages.home.ecsu_does : [];
+    },
+    whatsHere() {
+      return this.pages ? this.pages.home.whats_here : [];
+    },
     sketchImage() {
       return require("@/assets/images/Sketch.png");
     }
+  },
+  apollo: {
+    pages: gql`
+      {
+        pages {
+          home {
+            whats_here {
+              title
+              url
+              description
+              image {
+                src
+                srcset
+              }
+            }
+
+            ecsu_does {
+              title
+              description
+              icon
+            }
+          }
+        }
+      }
+    `
   }
 };
 </script>

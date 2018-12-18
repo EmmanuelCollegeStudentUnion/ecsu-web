@@ -69,12 +69,18 @@ export default {
     plugins: [
         '~/plugins/vue-progressive-image',
         '~/plugins/vue-mq',
+        '~/plugins/vue-apollo',
     ],
     loading: {
         color: '#d926a5',
     },
     meta: {
         'ogImage': '/images/thumbnail.png'
+    },
+    apollo: {
+        clientConfigs: {
+            default: '~/apollo.config.js',
+        },
     },
     modules: [
         '@nuxtjs/pwa'

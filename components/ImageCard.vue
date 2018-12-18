@@ -7,7 +7,7 @@
     >
       <div
         class="mdc-card__media mdc-card__media--16-9 image-card__media"
-        :style="{backgroundImage: `url('${image}')`}"
+        :style="{backgroundImage: `url('${image.src}')`}"
       ></div>
     </div>
   </div>

@@ -2,7 +2,7 @@
   <PostPage>
     <template slot="title">Thinking of Joining Emma?</template>
     <template slot="media">
-      <ImageCard image="/images/emma_chapel.jpg"/>
+      <ImageCard :image="image"/>
     </template>
     <p>Find out more about Emmanuel College from its Student Union!</p>
 
@@ -37,6 +37,11 @@ export default {
   components: {
     ImageCard,
     PostPage
+  },
+  computed: {
+    image() {
+      return require("@/assets/images/emma_chapel.jpg");
+    }
   }
 };
 </script>
