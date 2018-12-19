@@ -1,6 +1,6 @@
 <template>
-  <PostPage>
-    <template slot="title">{{location.title}}</template>
+  <PostPage v-if="roomLocation">
+    <template slot="title">{{roomLocation.title}}</template>
     <table style="width: fit">
       <thead>
         <tr>
@@ -13,14 +13,14 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="room in rooms" :key="room.name">
+        <tr v-for="room in roomLocation.rooms" :key="room.title">
           <td>
             <nuxt-link :to="room.url">{{room.title}}</nuxt-link>
           </td>
           <td>{{room.grade}}</td>
           <td>{{room.floor}}</td>
           <td>{{room.basin}}</td>
-          <td>{{room.living_room}}</td>
+          <td>{{room.livingRoom}}</td>
           <td>{{room.network}}</td>
         </tr>
       </tbody>
@@ -31,17 +31,32 @@
 <script>
 import content from "@/content";
 import PostPage from "@/components/PostPage";
+import gql from "graphql-tag";
+
 export default {
   components: { PostPage },
-  asyncData: async ({ params }) => {
-    const location = await content("room_locations", params.location);
-    const rooms = (await content("rooms")).filter(x => {
-      return x.location == location.title;
-    });
-    return {
-      location,
-      rooms
-    };
+   apollo: {
+    roomLocation: {query:gql`
+      query RoomLocation($title:String!){
+        roomLocation(title:$title) {
+          title        
+          rooms{
+            title
+            grade
+            floor
+            basin
+            livingRoom
+            network
+            url
+          }    
+        }
+      }`,
+      variables() {
+        return {
+          title: this.$route.params.title
+        };
+      }
+    }
   }
 };
 </script>

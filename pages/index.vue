@@ -67,21 +67,20 @@ export default {
   },
   computed: {
     ecsuDoes() {
-      return this.pages ? this.pages.home.ecsu_does : [];
+      return this.homePage ? this.homePage.ecsuDoes : [];
     },
     whatsHere() {
-      return this.pages ? this.pages.home.whats_here : [];
+      return this.homePage ? this.homePage.whatsHere : [];
     },
     sketchImage() {
       return require("@/assets/images/Sketch.png");
     }
   },
   apollo: {
-    pages: gql`
+    homePage: gql`
       {
-        pages {
-          home {
-            whats_here {
+        homePage {
+            whatsHere {
               title
               url
               description
@@ -91,15 +90,13 @@ export default {
               }
             }
 
-            ecsu_does {
+            ecsuDoes {
               title
               description
               icon
             }
           }
-        }
-      }
-    `
+        }`
   }
 };
 </script>

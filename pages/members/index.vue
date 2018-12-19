@@ -1,7 +1,10 @@
 <template>
   <PostPage>
-    <template slot="title">Members section</template>
-    <template slot="subtitle">{{subtitle}}</template>
+    <template slot="title">Pages for current students:</template>
+    <ul>
+      <li><nuxt-link to="/members/minutes">Minutes</nuxt-link></li>
+      <li><nuxt-link to="/members/official_documents">Official documents</nuxt-link></li>
+    </ul>
   </PostPage>
 </template>
 

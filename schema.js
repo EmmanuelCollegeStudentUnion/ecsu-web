@@ -1,162 +1,154 @@
-import {
-  GraphQLObjectType,
-  GraphQLSchema,
-  GraphQLString,
-  GraphQLInt,
-  GraphQLBoolean,
-  GraphQLList
-} from 'graphql';
-import {
-  nodeDefinitions,
-  globalIdField,
-  fromGlobalId
-} from 'graphql-relay';
+import { makeExecutableSchema } from 'graphql-tools'
 import content from './content'
 import { resolveImage } from './content'
-const config = require("json-loader!yaml-loader!~/static/admin/config.yml")
-const collectionTypes = {}
-const queryFields = {}
-
-const GraphQLImage = new GraphQLObjectType({
-  name: "Image",
-  fields: () => ({
-    src: { type: GraphQLString },
-    srcset: { type: GraphQLString },
-  })
-})
-
-
-
-
-function fieldFor(field) {
-  if (field.widget == "string" || field.widget == "markdown" || field.widget == "select") {
-    return {
-      type: GraphQLString
-    };
-  } else if (field.widget == "number") {
-    return {
-      type: GraphQLInt
-    }
-  } else if (field.widget == "boolean") {
-    return {
-      type: GraphQLBoolean
-    }
-  } else if (field.widget == "image") {
-    return {
-      type: GraphQLImage,
-      resolve: obj => resolveImage(obj[field.name])
-    };
-  } else if (field.widget == "list") {
-    return listFor(field)
-  } else if (field.widget == "relation") {
-    return {
-      type: collectionTypes[field.collection],
-      resolve: obj => content(field.collection, obj.title)
-    }
+const typeDefs = `
+  type Image{
+    src: String
+    srcset: String
   }
-  throw new Error(`Unknown widget ${field.widget}`)
-}
-
-function listFor(field) {
-  var listType;
-  if (field.field) {
-    const singular = fieldFor(field.field)
-    listType = singular.type
-  } else {
-    listType = new GraphQLObjectType({
-      name: field.name,
-      fields: () => ({
-        ...fieldsFor(field)
-      })
-    });
+  type TextCard{
+    title: String
+    icon: String
+    description: String
   }
-  return {
-    type: GraphQLList(listType)
-  };
-}
-
-function fieldsFor(collection) {
-  const fields = {
-    url: { type: GraphQLString }
+  type ImageCaptionCard{
+    title: String
+    image: Image
+    description: String
+    url: String
   }
-  if (collection.files) {
-    collection.files.forEach(file => {
-      var fileType = new GraphQLObjectType({
-        name: file.name,
-        fields: () => ({
-          id: globalIdField(),
-          ...fieldsFor(file)
-        }),
-        interfaces: [nodeInterface]
-      });
-      fields[file.name] = {
-        type: fileType,
-        resolve: () => content(collection.name, file.name)
-      }
-    })
-  } else if (collection.fields) {
-    collection.fields.forEach(field => {
-      fields[field.name] = fieldFor(field)
-
-    })
+  type HomePage {
+    ecsuDoes: [TextCard]
+    whatsHere: [ImageCaptionCard]
   }
-  return fields;
-}
+  type Exec{
+    title: String
+    email: String
+    name: String
+    image: Image
+    body: String
+    url:String
+  }
+  type Society{
+    title:String
+    image:String
+    description: String
+  }
+  type InfoPage{
+    title: String
+    subtitle: String
+    image: Image
+    body: String
+    url: String
+  }
+  type Post{
+    title: String
+    subtitle: String
+    image: Image
+    body: String
+    url: String
+  }
+  type Blog{
+    title: String
+    description: String
+    posts: [Post]
+    url: String
+  }
+  type Comment{
+    year: String
+    body: String
+  }
+  type Room{
+    title:String
+    grade: Int
+    images: [Image]
+    network: String
+    basin: String
+    livingRoom: String
+    cudn: Boolean
+    floor: String
+    url: String
+    comments: [Comment]
+  }
+  type RoomLocation{
+    title: String
+    image: Image
+    url: String
+    body: String
+    rooms: [Room]
+  }
+  type Query {
+    homePage: HomePage
+    exec(title:String!): Exec
+    execs: [Exec]
+    society(title:String!): Society
+    societies: [Society]
+    welfarePage(title:String!): InfoPage
+    welfarePages: [InfoPage]
+    infoPage(title:String!): InfoPage
+    infoPages: [InfoPage]
+    prospectivePage(title:String!): InfoPage
+    prospectivePages: [InfoPage]
+    blog(title: String!): Blog
+    blogs: [Blog]
+    post(title:String!): Post
+    roomLocations: [RoomLocation]
+    roomLocation(title:String!): RoomLocation
+    room(title:String!): Room
+  }
+`;
 
-var {
-  nodeInterface,
-  nodeField
-} = nodeDefinitions(
-  (globalId) => {
-    var {
-      type,
-      id
-    } = fromGlobalId(globalId);
-    return content(type, id);
+// Resolvers define the technique for fetching the types in the
+// schema.  We'll retrieve books from the "books" array above.
+const resolvers = {
+  ImageCaptionCard: {
+    image: obj => resolveImage(obj.image)
   },
-  (obj) => {
-    return collectionTypes[obj.type]
-  });
-
-
-config.collections.forEach(collection => {
-  var collectionField = {}
-  if (collection.files) {
-    var collectionType = new GraphQLObjectType({
-      name: collection.name,
-      fields: () => ({
-        id: globalIdField(),
-        ...fieldsFor(collection)
-      })
-    });
-    collectionField = {
-      type: collectionType,
-      resolve: () => content(collection.name)
-    }
-  } else if (collection.fields) {
-    var collectionType = new GraphQLObjectType({
-      name: collection.name,
-      fields: () => ({
-        id: globalIdField(),
-        ...fieldsFor(collection)
-      }),
-      interfaces: [nodeInterface]
-    });
-    collectionField = {
-      type: GraphQLList(collectionType),
-      resolve: () => content(collection.name)
-    }
-  }
-  queryFields[collection.name] = collectionField
-  collectionTypes[collection.name] = collectionType
-})
-var queryType = new GraphQLObjectType({
-  name: 'Query',
-  fields: () => ({
-    node: nodeField,
-    ...queryFields
-  })
-});
-export default new GraphQLSchema({
-  query: queryType
-});
+  HomePage: {
+    ecsuDoes: obj => obj['ecsu_does'],
+    whatsHere: obj => obj['whats_here'],
+  },
+  Exec: {
+    image: obj => resolveImage(obj.image)
+  },
+  Society: {
+    image: obj => resolveImage(obj.image)
+  },
+  InfoPage: {},
+  Post: {
+    image: obj => resolveImage(obj.image)
+  },
+  Blog: {
+    posts: obj => content("posts").then(result => result.filter(x => x.blog == obj.title))
+  },
+  Comment: {},
+  Room: {
+    livingRoom: obj => obj['living_room'],
+    comments: obj => content("room_comments").then(result => result.filter(x => x.title == obj.title)),
+    images: obj => obj.images.map(resolveImage)
+  },
+  RoomLocation: {
+    image: obj => resolveImage(obj.image),
+    rooms: obj => content("rooms").then(result => result.filter(x => x.location == obj.title))
+  },
+  Query: {
+    homePage: obj => content("pages", "home"),
+    exec: (obj, args) => content("exec", args.title),
+    execs: obj => content("exec"),
+    society: (obj, args) => content("societies", args.title),
+    societies: obj => content("societies"),
+    welfarePage: (obj, args) => content("welfare", args.title),
+    welfarePages: obj => content("welfare"),
+    infoPage: (obj, args) => content("info", args.title),
+    infoPages: obj => content("info"),
+    prospectivePage: (obj, args) => content("prospective", args.title),
+    prospectivePages: obj => content("prospective"),
+    blog: (obj, args) => content("blogs", args.title),
+    blogs: obj => content("blogs"),
+    post: (obj, args) => content("posts", args.title),
+    roomLocations: obj => content("room_locations"),
+    roomLocation: (obj, args) => content("room_locations", args.title),
+    room: (obj, args) => content("rooms", args.title),
+  },
+};
+export default makeExecutableSchema({ typeDefs, resolvers })

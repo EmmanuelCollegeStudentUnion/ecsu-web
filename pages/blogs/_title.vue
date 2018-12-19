@@ -1,8 +1,8 @@
 <template>
-  <PostPage>
+  <PostPage v-if="blog">
     <template slot="title">{{blog.title}}</template>
     <ul class="mdc-list mdc-list--two-line">
-      <li v-for="post in posts" :key="post.name">
+      <li v-for="post in blog.posts" :key="post.name">
         <nuxt-link :to="post.url" class="unstyled-link mdc-theme--text-primary-on-background">
           <div class="mdc-list-item mdc-ripple-upgraded">
             <span class="mdc-list-item__text">
@@ -19,16 +19,29 @@
 <script>
 import content from "@/content";
 import PostPage from "@/components/PostPage";
+import gql from "graphql-tag";
 export default {
   components: { PostPage },
-  asyncData: async ({ params }) => {
-    const blog = await content("blogs", params.title);
-    return {
-      blog,
-      posts: (await content("posts")).filter(x => {
-        return x.blog == blog.title;
-      })
-    };
+  apollo: {
+    blog: {query:gql`
+      query Blog($title:String!){
+        blog(title:$title) {
+          title             
+          description
+          posts {
+            title
+            subtitle
+            url
+          }
+        }
+      }
+      `,
+      variables() {
+        return {
+          title: this.$route.params.title
+        };
+      }
+    }
   }
 };
 </script>

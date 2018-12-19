@@ -1,5 +1,5 @@
 <template>
-  <PostPage>
+  <PostPage v-if="execs">
     <template slot="title">The Committee</template>
     <template slot="description">
       The Exec is responsible for making decisions about the daily business of ECSU. Each of the Exec members have specific responsibilities, which are outlined in the
@@ -13,19 +13,19 @@
     <h2 class="mdc-typography--headline3">Meet this year's Exec</h2>
 
     <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list">
-      <li v-for="member in exec" v-bind:key="member.title">
-        <nuxt-link :to="member.url" class="unstyled-link mdc-theme--text-primary-on-background">
+      <li v-for="exec in execs" v-bind:key="exec.title">
+        <nuxt-link :to="exec.url" class="unstyled-link mdc-theme--text-primary-on-background">
           <div class="mdc-list-item mdc-ripple-upgraded">
             <v-lazy-image
               class="mdc-list-item__graphic cover"
               height="40"
               width="40"
-              :src="member.image.src"
+              :src="exec.image.src"
               src-placeholder="/assets/favicon/favicon.ico"
             />
             <span class="mdc-list-item__text">
-              <span class="mdc-list-item__primary-text">{{member.name}}</span>
-              <span class="mdc-list-item__secondary-text">{{member.title}}</span>
+              <span class="mdc-list-item__primary-text">{{exec.name}}</span>
+              <span class="mdc-list-item__secondary-text">{{exec.title}}</span>
             </span>
           </div>
         </nuxt-link>
@@ -131,9 +131,9 @@ export default {
     }
   },
   apollo: {
-    exec: gql`
+    execs: gql`
       {
-        exec {
+        execs {
           name
           title
           url

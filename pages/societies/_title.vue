@@ -12,7 +12,6 @@
 import content from "@/content";
 import PostPage from "@/components/PostPage";
 import ImageCard from "@/components/ImageCard";
-
 import gql from "graphql-tag";
 import { toGlobalId } from "graphql-relay";
 export default {

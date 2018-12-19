@@ -16,16 +16,13 @@ import ProfilePage from "@/components/ProfilePage";
 import Markdown from "@/components/Markdown";
 import ImageCard from "@/components/ImageCard";
 import gql from "graphql-tag";
-import { toGlobalId } from "graphql-relay";
 
 export default {
   components: { Markdown, ProfilePage, ImageCard },
   apollo: {
-    exec: {
-      query: gql`
-        query Exec($id: ID!) {
-          exec: node(id: $id) {
-            ... on exec {
+    exec: {query:gql`
+      query Exec($title:String!){
+        exec(title:$title) {
               name
               title
               url
@@ -34,13 +31,11 @@ export default {
               }
               body
               email
-            }
-          }
         }
-      `,
+      }`,
       variables() {
         return {
-          id: toGlobalId("exec", this.$route.params.title)
+          title: this.$route.params.title
         };
       }
     }

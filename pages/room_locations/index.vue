@@ -1,9 +1,9 @@
 <template>
-  <StandardPage>
+  <StandardPage v-if="roomLocations">
     <template slot="title">Room database</template>
     <hr class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
     <div
-      v-for="location in locations"
+      v-for="location in roomLocations"
       v-bind:key="location.name"
       class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4"
     >
@@ -19,12 +19,24 @@ import content from "@/content";
 import StandardPage from "@/components/StandardPage";
 import Markdown from "@/components/Markdown";
 import ImageCaptionCard from "@/components/ImageCaptionCard";
+import gql from "graphql-tag";
+
 export default {
   components: { StandardPage, ImageCaptionCard, Markdown },
-  layout: "default",
-  asyncData: async ({ params }) => ({
-    locations: await content("room_locations")
-  })
+  apollo: {
+    roomLocations: gql`
+      {
+        roomLocations {
+          title
+          image{
+            src
+            srcset
+          }
+          body
+          url
+        }
+      }`  
+  }
 };
 </script>
 

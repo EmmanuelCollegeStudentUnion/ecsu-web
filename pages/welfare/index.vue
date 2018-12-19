@@ -1,10 +1,10 @@
 <template>
-  <PostPage>
+  <PostPage v-if="welfarePages">
     <template slot="title">Welfare information</template>
     <p>The ECSU committee have information on a range of welfare topics:</p>
     <ul>
-      <li v-for="post in welfare" v-bind:key="post.name">
-        <a v-bind:href="post.url" v-bind:title="post.title">{{post.title}}</a>
+      <li v-for="page in welfarePages" v-bind:key="page.name">
+        <a v-bind:href="page.url" v-bind:title="page.title">{{page.title}}</a>
       </li>
     </ul>You can also request a pregnancy kit
     <nuxt-link to="/welfare/pregnancy_kit">here</nuxt-link>
@@ -16,10 +16,19 @@
 <script>
 import content from "@/content";
 import PostPage from "@/components/PostPage";
+import gql from "graphql-tag";
+
 export default {
   components: { PostPage },
-  asyncData: async ({ params }) => ({
-    welfare: await content("welfare")
-  })
+  apollo: {
+    welfarePages: gql`
+      {
+        welfarePages {
+          title
+          subtitle
+          url
+        }
+      }`  
+  }
 };
 </script>

@@ -1,8 +1,8 @@
 <template>
-  <PostPage>
+  <PostPage v-if="blogs">
     <template slot="title">Blogs</template>
     <ul class="mdc-list mdc-list--two-line">
-      <li v-for="blog in blogs" :key="blog.name">
+      <li v-for="blog in blogs" :key="blog.title">
         <nuxt-link :to="blog.url" class="unstyled-link mdc-theme--text-primary-on-background">
           <div class="mdc-list-item mdc-ripple-upgraded">
             <span class="mdc-list-item__text">
@@ -19,11 +19,19 @@
 <script>
 import content from "@/content";
 import PostPage from "@/components/PostPage";
+import gql from "graphql-tag";
 export default {
   components: { PostPage },
-  asyncData: async ({ params }) => ({
-    blogs: await content("blogs")
-  })
+  apollo: {
+    blogs: gql`
+      {
+        blogs {
+          title
+          description
+          url
+        }
+      }`
+  }
 };
 </script>
 
