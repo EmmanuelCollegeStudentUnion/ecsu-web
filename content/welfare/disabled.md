@@ -19,9 +19,9 @@ Hostel for students requiring care in Cambridge.
 
 ## Skill: National Bureau for Students with Disabilities
 
-0800 328 5050, Mon  Fri, 1.30  4.30 pm
+0800 328 5050, Mon - Fri, 1.30 - 4.30 pm
 
-0800 068 2422 (textphone), Mon  Fri: 1.30  4.30 pm
+0800 068 2422 (textphone), Mon - Fri: 1.30 - 4.30 pm
 
 [www.skill.org.uk](http://www.skill.org.uk/)
 

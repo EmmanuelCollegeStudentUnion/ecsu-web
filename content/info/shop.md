@@ -14,6 +14,6 @@ The shop rota for 2015-16 is:
 
 |Opening time|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday
 |------
-|**12:451:15pm<br/>(12:0012:30pm Sundays)**|Niamh|Aoife|Joanna|Tamisha|Connor (Il Duce)|Tom|Will D
-|**6:006:30pm**|Callum/Dan/Sam|Emily|Lydia|Dave/Frankie<font color="red"></font>|ECSU Meeting|Amy|Power
-|**6:307:00pm**|Will RS|Alex M|Molly|Jamie<font color="red"></font>|ECSU Meeting|Ben|Katie
+|**12:45-1:15pm(12:00-12:30pm Sundays)**|Niamh|Aoife|Joanna|Tamisha|Connor (Il Duce)|Tom|Will D
+|**6:00-6:30pm**|Callum/Dan/Sam|Emily|Lydia|Dave/Frankie|ECSU Meeting|Amy|Power
+|**6:30-7:00pm**|Will RS|Alex M|Molly|Jamie|ECSU Meeting|Ben|Katie

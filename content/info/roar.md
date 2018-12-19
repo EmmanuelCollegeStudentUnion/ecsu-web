@@ -58,5 +58,3 @@ Access previous editions of ROAR here
 |------
 |[Roar! Michaelmas 2010 - Issue 7](/pdf/roar/2010/RoarMich7.pdf)|4.3 MiB
 |[Roar! Michaelmas 2010 - Issue 5](/pdf/roar/2010/RoarMich5.pdf)|968.27 KiB
-
-# Submit Your Articles
