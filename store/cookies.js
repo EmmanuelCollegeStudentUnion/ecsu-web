@@ -10,7 +10,7 @@ export const mutations = {
     },
     consent(state) {
         state.consent = true
-        Cookies.set("_cookie_consent", "True")
+        Cookies.set("_cookie_consent", "True", { expires: 365 })
     },
     clear(state) {
         state.consent = false
