@@ -32,8 +32,9 @@ const typeDefs = `
   }
   type Society{
     title:String
-    image:String
-    description: String
+    image:Image
+    url: String
+    body: String
   }
   type InfoPage{
     title: String

@@ -22,7 +22,6 @@
         "front-matter-loader": "^0.2.0",
         "fs": "^0.0.1-security",
         "graphql": "^14.0.2",
-        "graphql-relay": "^0.5.5",
         "graphql-tag": "^2.10.0",
         "graphql-tools": "^4.0.3",
         "js-cookie": "^2.2.0",

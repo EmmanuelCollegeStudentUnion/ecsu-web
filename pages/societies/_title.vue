@@ -14,28 +14,24 @@ import PostPage from "@/components/PostPage";
 import ImageCard from "@/components/ImageCard";
 import Markdown from "@/components/Markdown";
 import gql from "graphql-tag";
-import { toGlobalId } from "graphql-relay";
 export default {
   components: { PostPage, ImageCard, Markdown },
-
   apollo: {
     society: {
       query: gql`
-        query Society($id: ID!) {
-          society: node(id: $id) {
-            ... on societies {
+        query Society($title: String!) {
+          society(title:$title){
               title
               image {
                 src
+                srcset
               }
               body
             }
-          }
-        }
-      `,
+          }`,
       variables() {
         return {
-          id: toGlobalId("societies", this.$route.params.name)
+          title: this.$route.params.title
         };
       }
     }
