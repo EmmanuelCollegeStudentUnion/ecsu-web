@@ -5,6 +5,7 @@ const typeDefs = `
   type Image{
     src: String
     srcset: String
+    placeholder: String
   }
   type TextCard{
     title: String

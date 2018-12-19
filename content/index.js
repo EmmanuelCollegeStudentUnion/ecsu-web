@@ -42,7 +42,8 @@ export async function resolveImage(image) {
         const res = await context(`./${asset[1]}`)
         return {
             src: res.src,
-            srcset: res.srcset
+            srcset: res.srcSet,
+            placeholder: res.placeholder
         }
     } else {
         return { src: image };

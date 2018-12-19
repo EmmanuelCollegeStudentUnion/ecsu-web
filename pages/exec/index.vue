@@ -21,7 +21,8 @@
               height="40"
               width="40"
               :src="exec.image.src"
-              src-placeholder="/assets/favicon/favicon.ico"
+              :srcset="exec.image.srcset"
+              :src-placeholder="exec.image.placeholder"
             />
             <span class="mdc-list-item__text">
               <span class="mdc-list-item__primary-text">{{exec.name}}</span>
@@ -139,6 +140,8 @@ export default {
           url
           image {
             src
+            srcset
+            placeholder
           }
         }
       }
