@@ -4,7 +4,7 @@ subtitle: null
 title: Drugs and Alcohol
 ---
 
-If either you or a friend are having any sort of drug or alcohol related problems there are lots of sources of support and information available.&gt;You can always talk to your tutor or the College Nurse about any issues which may be concerning you.<br/><br/>    You can also approach the University Counselling Service.<br/><br/>There are many different national and local organisations that you can contact confidentially for information or support on dependency issues.
+If either you or a friend are having any sort of drug or alcohol related problems there are lots of sources of support and information available.&gt;You can always talk to your tutor or the College Nurse about any issues which may be concerning you.    You can also approach the University Counselling Service.There are many different national and local organisations that you can contact confidentially for information or support on dependency issues.
 
 ## Drinkline
 

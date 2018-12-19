@@ -8,14 +8,14 @@ Welcome to Emma! This is your one-stop-shop for information about Freshers' Week
 
 # Freshers' Timetable
 
-A comprehensive guide to events running <br/>
-    over Freshers' Week to help acclimatise <br/> you to life at Emmanuel College!
+A comprehensive guide to events running 
+    over Freshers' Week to help acclimatise  you to life at Emmanuel College!
 
 # Freshers' Guide
 
 #### 2017 CUSU Edition
 
-A uni-wide publication which provides <br/> information about life generally in <br/> Cambridge. 
+A uni-wide publication which provides  information about life generally in  Cambridge. 
 
 ## Useful Links
 
@@ -94,12 +94,12 @@ A uni-wide publication which provides <br/> information about life generally in 
 
 
     Hey Freshers!!
-<br/>
-<br/>
+
+
     I’m Sammie and I’m one of the four fantastic Frepresentatives (Freshers’
     Rep) for you all this year!
-<br/>
-<br/>
+
+
     Congrats to all of you for making it here, it was worth every second of
     work I promise. Emma is an amazing place to be and I hope you guys have as
     great a first year as I did. I’m studying History of Art but I also do a
@@ -222,15 +222,15 @@ Facebook or email me at    [sjr204@cam.ac.uk](mailto:sjr204@cam.ac.uk). Also mak
 ### Kristen Yang
 
 
-   Hello there! I’m Kristen, a second year economist coming from China.<br/><br/>
+   Hello there! I’m Kristen, a second year economist coming from China.
 
-So first a massive congrads to everyone who took whichever exams and succeeded, battled on whether to come abroad and the wilder side of yourself won, and is finally packing up for a new journey. Cambridge – especially Emma! – is a choice you’re not gonna regret. There are just so many fantastic things going on here – rowing, drama, may balls, college bar, paddock ducks, societies, formals, people... (and above all of course the international freshers week!!) Personally I was involved in rowing, Chinese debate, consulting etc. and they are all truly awesome experience. So be prepared for the start of an exciting adventure!<br/><br/>
+So first a massive congrads to everyone who took whichever exams and succeeded, battled on whether to come abroad and the wilder side of yourself won, and is finally packing up for a new journey. Cambridge – especially Emma! – is a choice you’re not gonna regret. There are just so many fantastic things going on here – rowing, drama, may balls, college bar, paddock ducks, societies, formals, people... (and above all of course the international freshers week!!) Personally I was involved in rowing, Chinese debate, consulting etc. and they are all truly awesome experience. So be prepared for the start of an exciting adventure!
 
-I know it might feel daunting for some of you to kiss goodbye to your mother tongue and get settled at a new place so far away from home (Talking about culture shocks, I arrived at Cambridge not knowing how to properly use knife and fork!...) But you will soon find out that Emma is such an easy place to make you feel home. It is called the friendliest college for a reason, and you will have a bunch of moms and dads in all kinds of family systems who are always ready to help. Besides, you can always come to us – Simina and I will always be eager to help and chat for literally whatever you want! Feel free to add me on Facebook or drop me emails at dy271@cam.ac.uk !<br/><br/>
+I know it might feel daunting for some of you to kiss goodbye to your mother tongue and get settled at a new place so far away from home (Talking about culture shocks, I arrived at Cambridge not knowing how to properly use knife and fork!...) But you will soon find out that Emma is such an easy place to make you feel home. It is called the friendliest college for a reason, and you will have a bunch of moms and dads in all kinds of family systems who are always ready to help. Besides, you can always come to us – Simina and I will always be eager to help and chat for literally whatever you want! Feel free to add me on Facebook or drop me emails at dy271@cam.ac.uk !
 
-Excited to meet y’all very soon!<br/>
-<br/>
-Lots of ifreppy love<br/>
+Excited to meet y’all very soon!
+
+Lots of ifreppy love
 Kristen xx
 
       

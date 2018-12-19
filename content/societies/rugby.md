@@ -8,4 +8,3 @@ The standard of rugby is similar to what people will have experienced at school 
 Outside of playing rugby, the club is one of the best social hubs within Emma. Annual events include the AGM, an Old Boys match, and the annual Sportsday fixture against Exeter College, O*ford, while more regular socials happen fortnightly.
 You can follow the team’s progress on their Twitter or Instagram accounts.
 We’re always keen for new players - for more information, email the mens' captain Tom Birdseye, or the womens' captain Emma Nicholls.
-Return to Societies

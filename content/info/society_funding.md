@@ -66,7 +66,7 @@ ECSU has around £6000 / year to allocate clubs and societies,
 									</li>
 - The larger the society in terms of involvement the better.
 </ul>
-<br/>
+
 **In addition:**
 <ul>
 - Past funding of societies will be considered.

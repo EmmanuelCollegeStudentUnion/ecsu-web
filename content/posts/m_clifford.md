@@ -14,4 +14,3 @@ In contrast to what you may hear on the grape vine, students at Cambridge do par
 
 I am very involved in the green and sustainable activities at Emma. I currently sit on the Student Union as the Green and Ethical Officer and run the College’s Green Society. We have about 15-20 dedicated students who meet weekly-fortnightly and discuss ways to improve the sustainability of the college and increase student engagement through the organisation of posters and events throughout the year. This year, we embarked on the Green Impact Award scheme and managed to gain a Silver award for the college’s green credentials which has required a lot of work but has been so much fun to be a part of. 
 
-*[Return to Access Blog](javascript:javascript:history.go(-1))*

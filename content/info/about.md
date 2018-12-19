@@ -4,9 +4,9 @@ subtitle: null
 title: About ECSU
 ---
 
-ECSU is the Emmanuel College Students' Union, which is the representative body for students of Emmanuel College, Cambridge. ECSU provides a bar, common room and funding for sports and other societies, as well as acting as the channel of communication between the students and the College. <br/><br/>
+ECSU is the Emmanuel College Students' Union, which is the representative body for students of Emmanuel College, Cambridge. ECSU provides a bar, common room and funding for sports and other societies, as well as acting as the channel of communication between the students and the College. 
 
-ECSU is also responsible for running the well known club night, [Emma Ents](/info/ents), which attracts top DJs and MCs from across the world, and draws an eclectic crowd to the The Bar on Wednesday nights.<br/><br/>
+ECSU is also responsible for running the well known club night, [Emma Ents](/info/ents), which attracts top DJs and MCs from across the world, and draws an eclectic crowd to the The Bar on Wednesday nights.
 
 The daily business of ECSU is managed by the [ Executive ](/exec) or 'Exec', members of which have specific responsibilities. The Exec is elected on a yearly basis at the end of Michaelmas Term.
 

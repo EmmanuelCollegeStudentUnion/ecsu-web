@@ -4,7 +4,7 @@ subtitle: Information Regarding Emmanuel Accommodation
 title: Accommodation
 ---
 
-All undergraduates are guaranteed accommodation, either in College or in a property owned and serviced by College, for the duration of their undergraduate course.<br/><br/>
+All undergraduates are guaranteed accommodation, either in College or in a property owned and serviced by College, for the duration of their undergraduate course.
 
 
 - [Rents and Charges](rents)

@@ -4,7 +4,7 @@ subtitle: Information Regarding College Parents
 title: College Parents
 ---
 
-College Parents are a system used across Cambridge to help ease Freshers into their new life at University.<br/><br/> 
+College Parents are a system used across Cambridge to help ease Freshers into their new life at University. 
                             In Emmanuel College, College Parents are two students who are currently reading different degrees in their third year. They will be there on the first day a Fresher comes to Emmanuel to help them to settle in, and will be there throughout Freshers' Week to support students as they acclimatise to Cambridge.
 
 ## Rules

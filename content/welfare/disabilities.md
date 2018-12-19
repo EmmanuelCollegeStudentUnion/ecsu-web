@@ -10,14 +10,14 @@ Queen's Building (gender neutral, accessible by lift); second floor of library (
 
 ## Social Spaces
 
-The bottom level of the bar is currently wheelchair inaccessible, with 5 deep steps. Drinks can be ordered and then served to the upper level upon request; we are also in the process of campaigning for a wheelchair lift, and uncluttering the upper level as to provide more space.<br/>
+The bottom level of the bar is currently wheelchair inaccessible, with 5 deep steps. Drinks can be ordered and then served to the upper level upon request; we are also in the process of campaigning for a wheelchair lift, and uncluttering the upper level as to provide more space.
 
 The Old JCR is also inaccessible, with 40+ steps (the saving grace here is that it is not frequently in use).
 
 
 ## Food and Dining
 
-There are no steps to the main area of hall (used for all meal times, including formal hall), and double doors. Upper hall, however, is inaccessible, with 26 steep steps, no lift, and double doors that are much more difficult to open. <br/>
+There are no steps to the main area of hall (used for all meal times, including formal hall), and double doors. Upper hall, however, is inaccessible, with 26 steep steps, no lift, and double doors that are much more difficult to open. 
 
 If you require accessibility adjustments in formal hall, please email Matt Carter (mc256@emma.cam.ac.uk). Please also make use of the online booking form by selecting "nut free", and using this space to clarify the adjustments (the information you provide will be circulated to all catering staff).  
 

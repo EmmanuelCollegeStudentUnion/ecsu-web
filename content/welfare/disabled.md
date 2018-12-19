@@ -25,10 +25,10 @@ Hostel for students requiring care in Cambridge.
 
 [www.skill.org.uk](http://www.skill.org.uk/)
 
-Chapter House<br/>
-	18-20 Crucifix Lane<br/>
-	London<br/>
-	SE1 3YW
+Chapter House
+18-20 Crucifix Lane
+London
+SE1 3YW
 
 ## DfE - Department for Education
 

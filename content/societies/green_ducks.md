@@ -9,4 +9,3 @@ Previous events include the annual Vintage Fashion Fair, vegetarian formal and s
 This year, the Green Society has been embarking on the Green Impact Award scheme and managed to complete over 40 tasks in the workbook that should hopefully lead to a Silver Award for the College in the summer (fingers crossed). Initiatives to reach this target have included putting recycling stickers on all undergraduate bins, re-vamping the college Green boards and liaising with multiple members of staff on the college's environmental policy.
 The Green Society is happy to welcome new members at any point in the year who are passionate about the environment and improving the quality of life in the college. It is a really fun way of changing the college for the better and making some friends in the process.
 If you are interested in being involved, please contact the Green and Ethical Officer, Aoife Blanchard, who will be happy to answer any questions.
-Return to Societies

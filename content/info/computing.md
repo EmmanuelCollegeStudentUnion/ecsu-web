@@ -4,7 +4,7 @@ subtitle: Information Regarding IT services in Emmanuel
 title: Computing
 ---
 
-All rooms should have a network connection available to them. All rooms in college (with the exception of Old Court) have both Wired and Wireless connections. Most rooms outside of college only have Wireless connections ([a list is available here](https://www.emma.cam.ac.uk/teaching/computing/connect/outside/)).<br/><br/>
+All rooms should have a network connection available to them. All rooms in college (with the exception of Old Court) have both Wired and Wireless connections. Most rooms outside of college only have Wireless connections ([a list is available here](https://www.emma.cam.ac.uk/teaching/computing/connect/outside/)).
 
 To connect to the Wired network you will need a network cable (available upon request from the [Computing Office](http://www.emma.cam.ac.uk/co/), also given out to Freshers' during Freshers' Week). To connect to the Wireless network you will need a wireless enabled machine: most modern laptops have this built in but desktops usually require additional hardware. The Computing Office has [guides](https://www.emma.cam.ac.uk/teaching/computing/connect/) on how to connect to the networks, please make sure you read and agree to the Rules &amp; Requirements before connecting.
 

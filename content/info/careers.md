@@ -14,8 +14,8 @@ We hold termly LinkedIn Brunches, where you can get advice on how to set up/ imp
 If you have a profile we would encourage you to join the
 [Emmanuel Alumni Group](https://www.linkedin.com/groups?bout=&amp;gid=152071).
 
-<br/>
-<br/>
+
+
 
 Additionally, you can access the Emmanuel Alumni Database at: [Careers &amp; Networking | Members | Emmanuel College, Cambridge](https://www.emma.cam.ac.uk/members/careers/)
 

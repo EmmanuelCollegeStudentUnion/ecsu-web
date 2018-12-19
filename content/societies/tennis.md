@@ -13,4 +13,3 @@ are free to use at any time. Also, during summer term, three grass courts
 are erected on the Emmanuel paddock for the use of anyone that fancies a
 hit. Rackets and balls can be borrowed from the porter's lodge.
 Please feel free to contact 
-Return to Societies

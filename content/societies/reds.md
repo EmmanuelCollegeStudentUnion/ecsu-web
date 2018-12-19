@@ -8,4 +8,3 @@ The Revived Emmanuel Dramatic Society is the resident theatre company of Emmanue
  REDS aims to encourage students to take part in Drama in all areas from acting to backstage and producing and directing. By striking a balance between commercial success and an emphasis on creativity and originality, REDS continues to ensure that it is one of Cambridge's most consistently profitable and artistically rewarding drama societies. 
 Each year in Michaelmas term, REDS puts on its own Freshers' Play - a play directed, produced, teched, designed and acted entirely by Emmanuel freshers. It's the perfect way to get involved with Cambridge drama and to meet loads of new people. Recent REDS Freshers' Plays have been Lady Windermere's Fan and Servant of Two Masters. 
 If you want to get involved in any aspect of drama - whether it's acting, directing, working backstage, or anything else - then feel free to get in touch with the committee.
-Return to Societies

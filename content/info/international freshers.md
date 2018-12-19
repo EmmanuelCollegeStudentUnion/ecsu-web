@@ -8,14 +8,14 @@ Welcome to Emma! This is your one-stop-shop for information about Freshers' Week
 
 # Freshers' Timetable
 
-A comprehensive guide to events running <br/>
-    over Freshers' Week to help acclimatise <br/> you to life at Emmanuel College!
+A comprehensive guide to events running 
+    over Freshers' Week to help acclimatise  you to life at Emmanuel College!
 
 # Freshers' Guide
 
 #### 2017 CUSU Edition
 
-A uni-wide publication which provides <br/> information about life generally in <br/> Cambridge. 
+A uni-wide publication which provides  information about life generally in  Cambridge. 
 
 ## Useful Links
 
@@ -94,12 +94,12 @@ A uni-wide publication which provides <br/> information about life generally in 
 
 
     Hey Freshers!!
-<br/>
-<br/>
+
+
     I’m Sammie and I’m one of the four fantastic Frepresentatives (Freshers’
     Rep) for you all this year!
-<br/>
-<br/>
+
+
     Congrats to all of you for making it here, it was worth every second of
     work I promise. Emma is an amazing place to be and I hope you guys have as
     great a first year as I did. I’m studying History of Art but I also do a
