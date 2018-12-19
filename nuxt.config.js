@@ -49,10 +49,10 @@ export default {
                 test: /\.(jpe?g|png)$/i,
                 loader: "responsive-loader",
                 options: {
-                    min: 350,
+                    min: 1000,
                     max: 2800,
-                    steps: 7,
-                    placeholder: false,
+                    steps: 4,
+                    placeholder: true,
                     adapter: require("responsive-loader/sharp")
                 }
             });
