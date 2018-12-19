@@ -2,17 +2,18 @@
   <InfoPage v-if="welfarePage">
     <template slot="title">{{welfarePage.title}}</template>
     <template slot="subtitle">{{welfarePage.subtitle}}</template>
-    <div v-html="welfarePage.body"/>
+    <Markdown :html="welfarePage.body"/>
   </InfoPage>
 </template>
 
 <script>
 import content from "@/content";
 import InfoPage from "@/components/InfoPage";
+import Markdown from "@/components/Markdown";
 import gql from "graphql-tag";
 
 export default {
-  components: { InfoPage },
+  components: { InfoPage, Markdown },
   apollo: {
     welfarePage: {query:gql`
       query Welfare($title:String!){

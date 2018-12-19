@@ -2,7 +2,7 @@
   <InfoPage v-if="infoPage">
     <template slot="title">{{infoPage.title}}</template>
     <template slot="subtitle">{{infoPage.subtitle}}</template>
-    <div v-html="infoPage.body"/>
+    <Markdown :html="infoPage.body"/>
   </InfoPage>
 </template>
 
@@ -10,10 +10,11 @@
 import content from "@/content";
 import InfoPage from "@/components/InfoPage";
 import ImageCard from "@/components/ImageCard";
+import Markdown from "@/components/Markdown";
 import gql from "graphql-tag";
 
 export default {
-  components: { InfoPage, ImageCard },  
+  components: { InfoPage, ImageCard, Markdown },  
   apollo: {
     infoPage: {query:gql`
       query Info($title:String!){

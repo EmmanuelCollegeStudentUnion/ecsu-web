@@ -4,7 +4,7 @@
     <template slot="media">
       <ImageCard v-if="!!society.image" :image="society.image"/>
     </template>
-    <div v-html="society.body"/>
+    <Markdown :html="society.body"/>
   </PostPage>
 </template>
 
@@ -12,10 +12,11 @@
 import content from "@/content";
 import PostPage from "@/components/PostPage";
 import ImageCard from "@/components/ImageCard";
+import Markdown from "@/components/Markdown";
 import gql from "graphql-tag";
 import { toGlobalId } from "graphql-relay";
 export default {
-  components: { PostPage, ImageCard },
+  components: { PostPage, ImageCard, Markdown },
 
   apollo: {
     society: {
