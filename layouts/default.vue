@@ -81,7 +81,8 @@ export default {
 .page-content {
   max-width: 820px;
   margin: auto;
-  width: 100%
+  width: 100%;
+  overflow: auto;
 }
 
 .page-surface {
