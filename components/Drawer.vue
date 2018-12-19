@@ -68,7 +68,10 @@ aside.mdc-drawer {
   overflow: auto;
 }
 .mdc-drawer {
-  position: absolute
+  position: absolute;
+  @media screen and (min-width: 1280px) {
+    position: fixed;
+  }
 }
 .slide-enter-active,
 .slide-leave-active {
