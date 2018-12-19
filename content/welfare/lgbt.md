@@ -11,7 +11,7 @@ ECSU has an LGBT+ rep whose job is to provide welfare support to LGBT+ students,
 
 Since 2018 we’ve been running an Emma LGBT+ parenting scheme for freshers to help them get to know other LGBT+ people at Emma - keep an eye on your emails for the sign up sheet or contact the LGBT+ rep for more details!
 
-If you are questioning your sexuality, or concerned about issues such as coming out or sexual health, then you can contact the LGBT+ Officer at <mailto:lgbt-rep@ecsu.org.uk> for confidential help and advice. Condoms are available from the ECSU Shop, and there should be condoms, dental dams and lube in the welfare cupboard in the pidge room.
+If you are questioning your sexuality, or concerned about issues such as coming out or sexual health, then you can contact the LGBT+ Officer at [lgbt-rep@ecsu.org.uk](mailto:lgbt-rep@ecsu.org.uk) for confidential help and advice. Condoms are available from the ECSU Shop, and there should be condoms, dental dams and lube in the welfare cupboard in the pidge room.
 
 # CUSU LGBT+
 
@@ -19,7 +19,7 @@ CUSU LGBT+ is one of the liberation campaigns run by the Cambridge University St
 
 CUSU LGBT+ website:
 
-[www.lgbt.cusu.cam.ac.uk](www.lgbt.cusu.cam.ac.uk)
+<www.lgbt.cusu.cam.ac.uk>
 
 CUSU LGBT+ Facebook group:
 
@@ -31,4 +31,4 @@ Glitterbomb happens every Tuesday night at Vinyl (aka Life), which is on Sidney 
 
 There are also other LGBT+ nights - Dot Cotton happens on the first Saturday of every month at Q Club, and there are also LGBT+ nights held at the Cornerhouse and at Junction.
 
-[ https://en-gb.facebook.com/glitterbombcambridge/](https://en-gb.facebook.com/glitterbombcambridge/)
+<https://en-gb.facebook.com/glitterbombcambridge/>
