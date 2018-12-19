@@ -1,5 +1,5 @@
 ---
-image: /imagesschubert.jpeg
+image: /assets/images/access/l_schubert.jpeg
 subtitle: ''
 title: Laura Schubert
 blog: Access Blog

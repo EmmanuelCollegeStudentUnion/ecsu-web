@@ -25,6 +25,10 @@ export default {
   border-radius: 24px;
 }
 
+.image-card__media{  
+  background-position: top;
+}
+
 .image-card--hero {
   margin: 0;
 }

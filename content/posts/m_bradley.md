@@ -1,5 +1,5 @@
 ---
-image: /imagesess/m_bradley.jpeg
+image: /assets/images/m_bradley.jpeg
 subtitle: ''
 title: Matt Bradley
 blog: Access Blog

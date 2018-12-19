@@ -1,5 +1,5 @@
 ---
-image: /imagess/l_smith.jpeg
+image: /assets/images/l_smith.jpeg
 subtitle: Medic from Sheffield
 title: Luke Smith
 blog: Access Blog
