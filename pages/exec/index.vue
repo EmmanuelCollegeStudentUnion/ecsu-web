@@ -32,12 +32,12 @@
       </li>
     </ul>
     <h2 class="mdc-typography--headline3">Open Meetings</h2>
-    <p class="mdc-typography--body1 page-content">
+    <p class="mdc-typography--body1">
       The Exec members will be present at
       <a href="open_meetings.html">Open Meetings</a>, where they will formally answer any questions you might have. However, if you've got a more informal or urgent question, don't hesitate to get in touch! You can find all the email addresses of each Exec member on their page, just use the menu at the top to find the member you need.
     </p>
     <h2 class="mdc-typography--headline3">How is the Exec formed?</h2>
-    <p class="mdc-typography--body1 page-content">
+    <p class="mdc-typography--body1">
       The Exec is elected on a yearly basis, at the end of Michaelmas Term. The electoral procedure is described in the
       <a
         to="/protected/official_documents"

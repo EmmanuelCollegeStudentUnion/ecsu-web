@@ -20,7 +20,7 @@
     <transition name="fade">
       <div class="mdc-drawer-scrim" v-on:click="drawerOpen=false" v-if="drawerOpen"/>
     </transition>
-    <div class="mdc-top-app-bar--fixed-adjust app-content" style="width:100%">
+    <div class="mdc-top-app-bar--fixed-adjust app-content">
       <div class="mdc-layout-grid page-surface">
         <nuxt/>
       </div>
@@ -68,6 +68,9 @@ export default {
 }
 .mdc-top-app-bar {
   position: absolute;
+  @media screen and (max-width: 1280px) {
+    position: fixed;
+  }
 }
 #root {
   @extend .mdc-theme--background;
@@ -84,20 +87,18 @@ export default {
   background-color: white;
   border-radius: 24px;
   min-height: 100vh;
-}
-.page-surface {
   margin: 32px 0;
-}
-@media screen and (min-width: 1280px) {
-  .page-surface {
+  @media screen and (min-width: 1280px) {
     margin: 32px;
     margin-left: 288px;
   }
 }
 .app-content {
   flex: auto;
-  overflow: auto;
   position: relative;
+  @media screen and (min-width: 1280px) {
+    overflow: auto
+  }
 }
 
 .fade-enter-active,
