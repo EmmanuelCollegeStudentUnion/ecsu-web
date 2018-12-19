@@ -10,7 +10,7 @@ Easter term is here at last, which means that the sun is shining, there are load
 
 |File|Size
 |------
-|[Easter Term Welfare Timetable 2015](../pdf/welfareeaster2015.pdf)|376.92 KiB
+|[Easter Term Welfare Timetable 2015](/pdf/welfareeaster2015.pdf)|376.92 KiB
 
 ## Exam Tips
 
@@ -42,4 +42,4 @@ The two most important sources of help are your **Tutor** and your **Director of
 - [The Disabilities Resource Centre](http://www.cam.ac.uk/cambuniv/disability/about.html), Keynes House, Old Addenbrookes Site, Trumpington Street, Cambridge, CB2 1QA, Tel: 01223 322301
 - [Linkline](http://www.linkline.org.uk),  For non-judgemental support drop in to 17 St Edward's Passage (between 7pm-11pm), Cambridge, or Tel : 01223 367575 / 01223 744444 (7pm-7am every night in full term).
 - [CambsMentalHealth](http://www.cambsmentalhealth.info/)
-Visit the [Sleep](sleep.html) and [Staying Healthy](health.html) pages for more advice.
+Visit the [Sleep](/welfare/sleep) and [Staying Healthy](/welfare/health) pages for more advice.

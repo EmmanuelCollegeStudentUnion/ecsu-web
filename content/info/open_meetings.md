@@ -10,4 +10,4 @@ The Open Meetings are governed by a set of Standing Orders, which are available 
 
 |File|Size
 |------
-|[Open Meeting Standing Orders](../pdf/open_meetings.pdf)|52.55 KiB
+|[Open Meeting Standing Orders](/pdf/open_meetings.pdf)|52.55 KiB

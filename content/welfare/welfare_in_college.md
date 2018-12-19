@@ -10,7 +10,7 @@ title: Welfare in College
 -  [Confidentiality Policy](https://docs.google.com/document/d/1RYgyNXiyxQ35xMOq1CPx5qQaL0qXWZy9RnuzNpn4OQI/edit)
 -  [Where to find help in Cambridge](https://docs.google.com/document/d/1xW7WGbrafSBJ3iPO51HIeM3tX8UTuBHm0Sp1YAfFPZ8/edit)
 
-Student welfare is a top priority for the [Exec](exec.html), and there are dedicated [Welfare Officers](female_welfare.html) who strive to ensure that students at Emma at Emma are happy and healthy.
+Student welfare is a top priority for the [Exec](/exec), and there are dedicated [Welfare Officers](/female_welfare) who strive to ensure that students at Emma at Emma are happy and healthy.
 
 University can and should overall be an amazing experience: studying a subject you enjoy, meeting interesting people that share your same interests, and beginning to find your way in the adult world.
 
@@ -26,16 +26,16 @@ In addition, we encourage you to download and read the "Bumper Welfare Document'
 
 |File|Size
 |------
-|[Bumper Welfare Document](../pdf/bumperwelfare.pdf)|153.62 KiB
+|[Bumper Welfare Document](/pdf/bumperwelfare.pdf)|153.62 KiB
 
 ## Points of Contact
 
 ## ECSU Welfare Team
 
-- [Welfare Officer (Female)](female_welfare.html)
-- [Welfare Officer (Male)](male_welfare.html)
-- [Women's Officer](womens_officer.html)
-- [LGBT+ Officer](lgbt_officer.html)
+- [Welfare Officer (Female)](/exec/female_welfare)
+- [Welfare Officer (Male)](/exec/male_welfare)
+- [Women's Officer](/exec/womens_officer)
+- [LGBT+ Officer](/exec/lgbt_officer)
 
 ## College Counsellor
 

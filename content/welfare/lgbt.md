@@ -7,7 +7,7 @@ Emmanuel has a lively LGBT+ community, with regular events including formals, sw
 
 # ECSU LGBT+
 
-ECSU has an LGBT+ rep whose job is to provide welfare support to LGBT+ students, lobby college on issues affecting LGBT+ students, and run social events to create a fun and friendly LGBT+ community at Emma. You can find out who the current LGBT+ rep is here: http://www.ecsu.org.uk/pages/lgbt_officer.html. To keep up to date with what’s going on with Emma LGBT+ email [lgbt-rep@ecsu.org.uk](mailto:lgbt-rep@ecsu.org.uk) to join the secret mailing list or join the Emma LGBT+ Facebook group here: <https://www.facebook.com/groups/144142425731523/>
+ECSU has an LGBT+ rep whose job is to provide welfare support to LGBT+ students, lobby college on issues affecting LGBT+ students, and run social events to create a fun and friendly LGBT+ community at Emma. You can find out who the current LGBT+ rep is here: <http://www.ecsu.org.uk/exec/lgbt_officer.html>. To keep up to date with what’s going on with Emma LGBT+ email [lgbt-rep@ecsu.org.uk](mailto:lgbt-rep@ecsu.org.uk) to join the secret mailing list or join the Emma LGBT+ Facebook group here: <https://www.facebook.com/groups/144142425731523/>
 
 Since 2018 we’ve been running an Emma LGBT+ parenting scheme for freshers to help them get to know other LGBT+ people at Emma - keep an eye on your emails for the sign up sheet or contact the LGBT+ rep for more details!
 

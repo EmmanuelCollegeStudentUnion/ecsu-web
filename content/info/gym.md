@@ -4,7 +4,7 @@ subtitle: Information Regarding Emma's Gym
 title: Emma Gym
 ---
 
-The college gym is located in the basement of 22 Parkside. For any gym related enquiries please contact the [Buildings &amp; Services Officer](building_services_officer.html).
+The college gym is located in the basement of 22 Parkside. For any gym related enquiries please contact the [Buildings & Services Officer](/exec/building_services_officer).
 
 ### Gym Inductions
 

@@ -21,8 +21,8 @@ A uni-wide publication which provides <br/> information about life generally in 
 
 - [🔗 CUSU Freshers](http://www.freshers.cusu.co.uk)
 - [🔗 Hermes Webmail](https://webmail.hermes.cam.ac.uk/)
-- [🔗 Female Welfare](http://ecsu.org.uk/pages/female_resources.html)
-- [🔗 Exec Info](http://ecsu.org.uk/pages/exec.html)
+- [🔗 Female Welfare](http://ecsu.org.uk/welfare/female_resources)
+- [🔗 Exec Info](/exec)
 
 ## Useful Numbers
 
@@ -32,7 +32,7 @@ A uni-wide publication which provides <br/> information about life generally in 
 
 ## Map of Emma
 
-*Click to Expand*
+[View map](/info/map)
 
 #  International Fresher Reps 
 

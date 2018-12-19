@@ -4,7 +4,7 @@ subtitle: null
 title: Accommodation
 ---
 
-Accommodation at Emma is provided for by the college for the entire period of your degree. It typically comprises of three 10 week blocks per academic year based around the 3 terms, but can be extended if necessary. There are a range of options available depending on your year. Every room is graded on the scale of 1-8, with one being the cheapest rooms. Grading obviously reflects size, but also encompasses facilities, views, location and potential noise (i.e. the bus station). Room rents correlate to the grading system, and information on the exact rents can be found at [Rents and Charges](rents.html).
+Accommodation at Emma is provided for by the college for the entire period of your degree. It typically comprises of three 10 week blocks per academic year based around the 3 terms, but can be extended if necessary. There are a range of options available depending on your year. Every room is graded on the scale of 1-8, with one being the cheapest rooms. Grading obviously reflects size, but also encompasses facilities, views, location and potential noise (i.e. the bus station). Room rents correlate to the grading system, and information on the exact rents can be found at [Rents and Charges](/info/rents).
 
 ## 1st Years
 

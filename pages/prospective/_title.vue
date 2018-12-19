@@ -2,7 +2,7 @@
   <InfoPage v-if="prospectivePage">
     <template slot="title">{{prospectivePage.title}}</template>
     <template slot="subtitle">{{prospectivePage.subtitle}}</template>
-    <div v-html="body"/>
+    <div v-html="prospectivePage.body"/>
   </InfoPage>
 </template>
 

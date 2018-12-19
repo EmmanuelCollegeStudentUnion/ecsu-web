@@ -25,7 +25,7 @@ Every year the Buildings and Services Officer prepares the ECSU Accommodation Pa
 
 ## Room Database
 
-- [Room Database](/room_database/main.html)
+- [Room Database](/room_locations)
 
 ## Accommodation for Graduate Students
 
