@@ -69,7 +69,7 @@ aside.mdc-drawer {
 }
 .mdc-drawer {
   position: absolute;
-  @media screen and (min-width: 1280px) {
+  @media screen and (max-width: 1280px) {
     position: fixed;
   }
 }
