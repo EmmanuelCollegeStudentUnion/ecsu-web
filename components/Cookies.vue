@@ -51,6 +51,7 @@ export default {
   max-width: 95%;
   width: fit-content;
   border-radius: 16px;
+  display: table;
 }
 .cookies-content {
   display: flex;

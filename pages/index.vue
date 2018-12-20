@@ -116,6 +116,7 @@ article.card-image {
 }
 .button-padding {
   padding: 16px;
+  text-align: center;//ie
 }
 .hero-heading {
   margin: 32px 0;

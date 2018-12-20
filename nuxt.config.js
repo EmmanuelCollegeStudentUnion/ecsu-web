@@ -89,6 +89,11 @@ export default {
     },
     modules: [
         '@nuxtjs/pwa'
-    ]
+    ],
+    head: {
+        script: [
+            { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Object.entries,IntersectionObserver' },
+        ],
+    }
 }
 
