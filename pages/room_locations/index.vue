@@ -28,14 +28,16 @@ export default {
       {
         roomLocations {
           title
-          image{
+          image {
             src
             srcSet
+            placeholder
           }
           body
           url
         }
-      }`  
+      }
+    `
   }
 };
 </script>

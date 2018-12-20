@@ -1,6 +1,6 @@
 ---
 title: Old Court
-image: /room_database/images/old.jpg
+image: /assets/images/old.jpg
 
 ---
 
