@@ -9,6 +9,7 @@ The amount of time you spend giving your mind and body some well deserved rest i
 ## What does it do and how much do we need?
 - For peak performance during the day about four or five 90-minute sleep cycles are needed to rest and re-charge the brain.
 - Each cycle combines deep sleep that brings rest, and REM (rapid-eye movement) sleep during which it's believed brain chemicals are released that help tasks such as learning to be performed more easily.
+
 ## Overcoming sleep problems
 
 Here are some tips on getting good sleep:
@@ -16,6 +17,7 @@ Here are some tips on getting good sleep:
 - Keep your bedroom for sleep, not work and TV.
 - Avoid heavy meals, caffeine ,nicotine , and alcohol for 3-4 hours before going to bed. 
 - Don't exercise within 3 hours of bedtime. 
+
 ## You getting enough?
 
 If you can answer 'no' to all of these then you are probably getting enough sleep: 
