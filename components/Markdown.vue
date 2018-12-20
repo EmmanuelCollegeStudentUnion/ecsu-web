@@ -2,16 +2,20 @@
   <div class="markdown" v-html="html"></div>
 </template>
 
+
+
 <script>
 export default {
   props: ["html"]
 };
 </script>
-<style>
+
+<style lang="scss">
+@import "@material/typography/mdc-typography";
 .markdown>h1{
-  font-weight: 400;
+  @extend .mdc-typography--headline4;
 }
 .markdown>h2{
-  font-weight: 400;
+  @extend .mdc-typography--headline5;
 }
 </style>
