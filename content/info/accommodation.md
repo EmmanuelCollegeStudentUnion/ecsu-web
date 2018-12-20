@@ -12,9 +12,9 @@ All undergraduates are guaranteed accommodation, either in College or in a prope
 
 Every year the Buildings and Services Officer prepares the ECSU Accommodation Pack for 1st year students to guide them in through the room ballotting process. You can download the latest edition of the guide below.
 
-### Accommodation Pack
+## Accommodation Pack
 
-### Regrading Information
+## Regrading Information
 
 ## Room Balloting
 

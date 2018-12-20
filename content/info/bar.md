@@ -14,7 +14,7 @@ The bar serves a wide range of draught and bottled beers and ciders, many spirit
 | Regular Shift    | £24.75 | £18.15     | £11.00     | -          | -          |
 | Wednesday (Ents) | £33.00 | -          | -          | £20.35     | £13.20     |
 
-### Bar Extensions
+## Bar Extensions
 
 Bar extensions
 

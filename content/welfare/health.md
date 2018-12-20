@@ -34,9 +34,9 @@ Foods in the fifth group, i.e. foods containing fat and foods containing sugar, 
 
 ## Travelling
 
-###  The Essential Guide to Travelling with a Medical Condition 
+##  The Essential Guide to Travelling with a Medical Condition 
 
-###  Tips for Travelling with Diabetes 
+##  Tips for Travelling with Diabetes 
 
 ## Vitamins and Minerals
 

@@ -4,9 +4,9 @@ subtitle: Information Regarding the Formal Hall System in Emmanuel College
 title: Formal Hall
 ---
 
-### Menu
+## Menu
 
-### Booking
+## Booking
 
 Booking for formal hall is quite simple:
 
@@ -18,7 +18,7 @@ Booking for formal hall is quite simple:
 	    OR click the 'Book Formal Hall Online' link a bit further down the right-hand side of the page.)</li>
 1. You should now be at the Formal Hall booking web page. Book away!
 
-### Guidance For Behaviour At Formal Hall
+## Guidance For Behaviour At Formal Hall
 
 - Formal Hall is a special occasion and students should always have regard for their fellow diners, staff and college property.  The following points should also be maintained.
 - Gowns should always be worn by members of the College in Formal Hall and everyone is expected to arrive promptly at 7.30pm.

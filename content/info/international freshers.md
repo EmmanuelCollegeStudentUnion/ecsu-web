@@ -13,7 +13,7 @@ A comprehensive guide to events running
 
 # Freshers' Guide
 
-#### 2017 CUSU Edition
+## 2017 CUSU Edition
 
 A uni-wide publication which provides  information about life generally in  Cambridge. 
 
@@ -36,7 +36,7 @@ A uni-wide publication which provides  information about life generally in  Camb
 
 #  International Fresher Reps 
 
-###  Olivia Malmose O'Connor
+##  Olivia Malmose O'Connor
 
 
     Hey Future Freshers!
@@ -90,7 +90,7 @@ A uni-wide publication which provides  information about life generally in  Camb
 ---
 
 
-###  Sammie Ruston
+##  Sammie Ruston
 
 
     Hey Freshers!!
@@ -124,7 +124,7 @@ Facebook or email me at    [sjr204@cam.ac.uk](mailto:sjr204@cam.ac.uk). Also mak
 ---
 
 
-###  Callum Swanston
+##  Callum Swanston
 
 
     Hey Freshers!!
@@ -168,7 +168,7 @@ Facebook or email me at    [sjr204@cam.ac.uk](mailto:sjr204@cam.ac.uk). Also mak
 ---
 
 
-###  Ellie Cole
+##  Ellie Cole
 
 
     Hello, Hello, wonderful freshers!

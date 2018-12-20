@@ -8,12 +8,12 @@ title: Safety Advice
 
 This is a breakdown of the main points of advice from the Crime Reduction Officer with Parkside Police.
 
-#### Crime
+## Crime
 - 1 in 3 students are victims of crime.
 - Students are a high risk group : Thieves know that you are likely to have a laptop, camera, DVD player, mobile phone, wallet and that as you just have one room, that is where it will all be.
 - The statistics from 03-04 state that there were 557 bicycle thefts reported, and 110 burlaries, of which, 76 were due to walk ins. 
 
-#### Prevention
+## Prevention
 - 65% of students leave their door unlocked! If you treat your room door as though it opens out on to the street and always lock it (even if you pop over to a friend or for a long bath) - that way you're far less likely to be a victim of crime.
 - The Laptop Marking System is useful - thieves have to get rid of laptops very quickly, so if yours is marked it will make it less appealing.
 - Thieves look through windows! - make sure your valuables are not strewn across the room, this is practically an invitation!
