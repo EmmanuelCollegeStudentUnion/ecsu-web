@@ -10,24 +10,10 @@
     >
       <div class="mdc-drawer__content">
         <nav class="mdc-list">
-          <template v-for="route in routes">
-            <nuxt-link
-              class="mdc-list-item"
-              :key="route.url"
-              :class="{
-              'mdc-list-item--activated': route.url==$route.path
-            }"
-              :to="route.url"
-              aria-selected="true"
-            >
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">{{route.icon}}</i>
-              <span class="mdc-list-item__text">{{route.text}}</span>
-            </nuxt-link>
-            <template v-if="$route.path.startsWith(route.url)" v-for="item in route.items">
+          <transition-group name="nav-routes">
+            <div v-for="item in navItems" class="nav-routes-item" :key="item.url">
               <nuxt-link
                 class="mdc-list-item"
-                v-if="item.showInNav"
-                :key="item.url"
                 :class="{
               'mdc-list-item--activated': item.url==$route.path
             }"
@@ -37,8 +23,8 @@
                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">{{item.icon}}</i>
                 <span class="mdc-list-item__text">{{item.text}}</span>
               </nuxt-link>
-            </template>
-          </template>
+            </div>
+          </transition-group>
         </nav>
       </div>
     </aside>
@@ -57,6 +43,18 @@ export default {
   computed: {
     modal() {
       return this.$mq !== "lg";
+    },
+    navItems() {
+      const items = [];
+      this.routes.forEach(route => {
+        items.push(route);
+        if (this.$route.path.startsWith(route.url)) {
+          route.items.forEach(item => {
+            items.push(item);
+          });
+        }
+      });
+      return items;
     }
   }
 };
@@ -65,7 +63,6 @@ export default {
 <style lang="sass">
 aside.mdc-drawer {
   min-height: 100vh;
-  overflow: auto;
   position: fixed;
 }
 .slide-enter-active,
@@ -83,4 +80,16 @@ aside.mdc-drawer {
   }
 }
 
+.nav-routes-item {
+  transition: all 0.5s, opacity 0.2s;
+  display: inline-block;
+  width: 100%;
+}
+.nav-routes-enter, .nav-routes-leave-to{
+  opacity: 0;
+}
+.nav-routes-leave-active{
+  position: absolute;
+  right: 0;
+}
 </style>
