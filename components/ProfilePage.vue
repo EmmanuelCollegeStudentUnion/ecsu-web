@@ -1,22 +1,10 @@
 <template>
   <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-      <div
-        :style="{
-          backgroundImage: `url('${image.src}')`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          borderRadius: '50%',
-          width: '300px',
-          height: '300px',
-          maxWidth: '300px',
-          maxHeight: '300px',
-          margin:'auto',
-          backgroundPositionX: 'center'}"
-      />
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 center">
+      <img class="circle-image mdc-card--outlined" :src="image.src" :srcset="image.srcSet">
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4" v-if="!!$slots.title">
-      <div style="text-align: center">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5 center" v-if="!!$slots.title">
+      <div>
         <header>
           <h1 class="mdc-typography--headline2" v-if="!!$slots.title">
             <slot name="title"/>
@@ -47,3 +35,21 @@ export default {
   props: ["image"]
 };
 </script>
+
+<style scoped>
+.circle-image {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  margin: auto;
+  object-position: 50% 0;
+  border-width: 3px;
+}
+.center {
+  margin: auto;
+}
+</style>
+

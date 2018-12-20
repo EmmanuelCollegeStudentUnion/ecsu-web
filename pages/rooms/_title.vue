@@ -40,7 +40,7 @@
 
     <div class="photobox" v-if="room.images.length!=0">
       <div v-for="image in room.images" :key="image.url">
-        <img :srcset="image.srcset"  :src="image.src" style="width:100%">
+        <img :srcset="image.srcSet"  :src="image.src" style="width:100%">
       </div>
     </div>
     <p v-else>There are no photos for this room</p>
@@ -65,7 +65,7 @@ export default {
             network
             images{
               src
-              srcset
+              srcSet
             }
             comments{
               year

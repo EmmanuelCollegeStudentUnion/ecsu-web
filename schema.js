@@ -4,7 +4,7 @@ import { resolveImage } from './content'
 const typeDefs = `
   type Image{
     src: String
-    srcset: String
+    srcSet: String
     placeholder: String
   }
   type TextCard{

@@ -49,8 +49,8 @@ export default {
                 test: /\.(jpe?g|png)$/i,
                 loader: "responsive-loader",
                 options: {
-                    min: 1000,
-                    max: 2800,
+                    min: 300,
+                    max: 2000,
                     steps: 4,
                     placeholder: true,
                     adapter: require("responsive-loader/sharp")

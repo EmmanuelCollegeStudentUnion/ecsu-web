@@ -4,7 +4,7 @@
       <div class="mdc-top-app-bar__row">
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
           <span class="mdc-top-app-bar__title">
-            <img class="header-logo" :src="logo.src" :srcset="logo.srcset" width="165px">
+            <img class="header-logo" :src="logo.src" :srcset="logo.srcSet" width="165px">
           </span>
           <div style="margin:auto"/>
           <button

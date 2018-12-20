@@ -21,7 +21,7 @@
               height="40"
               width="40"
               :src="exec.image.src"
-              :srcset="exec.image.srcset"
+              :srcset="exec.image.srcSet"
               :src-placeholder="exec.image.placeholder"
             />
             <span class="mdc-list-item__text">
@@ -140,7 +140,7 @@ export default {
           url
           image {
             src
-            srcset
+            srcSet
             placeholder
           }
         }

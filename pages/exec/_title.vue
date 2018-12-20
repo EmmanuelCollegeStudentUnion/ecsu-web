@@ -20,19 +20,22 @@ import gql from "graphql-tag";
 export default {
   components: { Markdown, ProfilePage, ImageCard },
   apollo: {
-    exec: {query:gql`
-      query Exec($title:String!){
-        exec(title:$title) {
-              name
-              title
-              url
-              image {
-                src
-              }
-              body
-              email
+    exec: {
+      query: gql`
+        query Exec($title: String!) {
+          exec(title: $title) {
+            name
+            title
+            url
+            image {
+              src
+              srcSet
+            }
+            body
+            email
+          }
         }
-      }`,
+      `,
       variables() {
         return {
           title: this.$route.params.title

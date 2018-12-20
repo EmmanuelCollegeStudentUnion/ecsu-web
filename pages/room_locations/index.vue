@@ -30,7 +30,7 @@ export default {
           title
           image{
             src
-            srcset
+            srcSet
           }
           body
           url

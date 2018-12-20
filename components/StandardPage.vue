@@ -1,6 +1,6 @@
 <template>
   <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6" v-if="!!$slots.title">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 center" v-if="!!$slots.title">
       <header>
         <h1 class="mdc-typography--headline2" v-if="!!$slots.title">
           <slot name="title"/>
@@ -24,3 +24,10 @@
     <slot/>
   </div>
 </template>
+
+
+<style scoped>
+.center {
+  margin: auto;
+}
+</style>

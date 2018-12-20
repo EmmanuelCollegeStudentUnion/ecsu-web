@@ -86,7 +86,7 @@ export default {
               description
               image {
                 src
-                srcset
+                srcSet
               }
             }
 

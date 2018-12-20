@@ -1,15 +1,6 @@
 <template>
-  <div class="mdc-card--outlined image-card">
-    <div
-      class="mdc-card__primary-action mdc-ripple-upgraded"
-      tabindex="0"
-      style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:28.5px, 11.0156px; --mdc-ripple-fg-translate-end:70px, 60.4375px;"
-    >
-      <div
-        class="mdc-card__media mdc-card__media--16-9 image-card__media"
-        :style="{backgroundImage: `url('${image.src}')`}"
-      ></div>
-    </div>
+  <div class="image-card">
+    <img class="mdc-card--outlined image-card__media" :src="image.src" :srcset="image.srcSet">
   </div>
 </template>
 
@@ -19,39 +10,21 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style scoped>
 .image-card {
-  min-width: 250px;
+  height: 100%;
+  width: 100%;
+  max-height: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.image-card__media {
+  height: 300px;
+  max-width: 100%;
   border-radius: 24px;
-}
-
-.image-card__media{  
-  background-position: top;
-}
-
-.image-card--hero {
-  margin: 0;
-}
-
-.image-card__primary {
-  padding: 1rem;
-}
-
-.image-card__title {
-  margin: 0;
-}
-
-.image-card__subtitle {
-  color: rgba(0, 0, 0, 0.54);
-  /* @alternate */
-  color: var(--mdc-theme-text-secondary-on-background, rgba(0, 0, 0, 0.54));
-  margin: 0;
-}
-
-.image-card__secondary {
-  color: rgba(0, 0, 0, 0.54);
-  /* @alternate */
-  color: var(--mdc-theme-text-secondary-on-background, rgba(0, 0, 0, 0.54));
-  padding: 0 1rem 8px 1rem;
+  object-fit: contain;
+  margin: auto;
+  border-width: 2px;
 }
 </style>
