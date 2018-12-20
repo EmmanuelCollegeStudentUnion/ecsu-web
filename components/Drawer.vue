@@ -66,12 +66,7 @@ export default {
 aside.mdc-drawer {
   min-height: 100vh;
   overflow: auto;
-}
-.mdc-drawer {
-  position: absolute;
-  @media screen and (max-width: 1280px) {
-    position: fixed;
-  }
+  position: fixed;
 }
 .slide-enter-active,
 .slide-leave-active {

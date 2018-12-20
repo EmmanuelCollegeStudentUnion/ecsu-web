@@ -67,14 +67,11 @@ export default {
   display: block;
 }
 .mdc-top-app-bar {
-  position: absolute;
-  @media screen and (max-width: 1280px) {
-    position: fixed;
-  }
+  position: fixed;
 }
 #root {
   @extend .mdc-theme--background;
-  height: 100vh;
+  height: 100%;
   display: flex;
 }
 
@@ -97,10 +94,6 @@ export default {
 }
 .app-content {
   flex: auto;
-  position: relative;
-  @media screen and (min-width: 1280px) {
-    overflow: auto
-  }
 }
 
 .fade-enter-active,
