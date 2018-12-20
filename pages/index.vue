@@ -80,23 +80,25 @@ export default {
     homePage: gql`
       {
         homePage {
-            whatsHere {
-              title
-              url
-              description
-              image {
-                src
-                srcSet
-              }
-            }
-
-            ecsuDoes {
-              title
-              description
-              icon
+          whatsHere {
+            title
+            url
+            description
+            image {
+              src
+              srcSet
+              placeholder
             }
           }
-        }`
+
+          ecsuDoes {
+            title
+            description
+            icon
+          }
+        }
+      }
+    `
   }
 };
 </script>
@@ -116,7 +118,7 @@ article.card-image {
 }
 .button-padding {
   padding: 16px;
-  text-align: center;//ie
+  text-align: center; //ie
 }
 .hero-heading {
   margin: 32px 0;

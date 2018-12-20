@@ -6,11 +6,12 @@
       style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:28.5px, 11.0156px; --mdc-ripple-fg-translate-end:70px, 60.4375px;"
       :href="url"
     >
-      <img
+      <v-lazy-image
         class="mdc-card__media image-caption-card__media"
         :src="image.src"
         :srcset="image.srcSet"
-      >
+        :src-placeholder="image.placeholder"
+      />
       <div class="image-caption-card__primary">
         <h2 class="image-caption-card__title mdc-typography--headline6">{{title}}</h2>
         <h3 class="image-caption-card__subtitle mdc-typography--subtitle2">{{subtitle}}</h3>

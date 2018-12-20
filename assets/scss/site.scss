@@ -52,3 +52,12 @@ hr{
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+
+.v-lazy-image {
+  filter: blur(1px) saturate(0);
+  transition: filter 1s;
+}
+
+.v-lazy-image-loaded {
+  filter: blur(0) saturate(1);
+}

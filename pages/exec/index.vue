@@ -16,14 +16,16 @@
       <li v-for="exec in execs" v-bind:key="exec.title">
         <nuxt-link :to="exec.url" class="unstyled-link mdc-theme--text-primary-on-background">
           <div class="mdc-list-item mdc-ripple-upgraded">
-            <v-lazy-image
-              class="mdc-list-item__graphic cover"
-              height="40"
-              width="40"
-              :src="exec.image.src"
-              :srcset="exec.image.srcSet"
-              :src-placeholder="exec.image.placeholder"
-            />
+            <div class="mdc-list-item__graphic list-item-graphic">
+              <v-lazy-image
+                class="cover"
+                height="40"
+                width="40"
+                :src="exec.image.src"
+                :srcset="exec.image.srcSet"
+                :src-placeholder="exec.image.placeholder"
+              />
+            </div>
             <span class="mdc-list-item__text">
               <span class="mdc-list-item__primary-text">{{exec.name}}</span>
               <span class="mdc-list-item__secondary-text">{{exec.title}}</span>
@@ -150,11 +152,14 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .unstyled-link {
   text-decoration: none;
 }
 .cover {
   object-fit: cover;
+}
+.list-item-graphic {
+  overflow: hidden;
 }
 </style>

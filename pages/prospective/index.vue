@@ -25,7 +25,7 @@
     </p>
 
     <p>
-      <a href="/publications/Emma_Alt_Prospectus.pdf">Prospectus</a>
+      <a href="http://www.emma.cam.ac.uk/publications/Emma_Alt_Prospectus.pdf">Prospectus</a>
     </p>
   </PostPage>
 </template>
