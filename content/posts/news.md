@@ -4,13 +4,13 @@ title: November 2016
 blog: Latest News
 ---
 
-## [Emma Victory Continues on University Challenge](#)
+## Emma Victory Continues on University Challenge
 
 The second round of University Challenge featuring Emmanuel College aired on Monday, 28th November 2016. The show saw the quiz team of Tom Hill, Leah Ward, Bobby Seagull and Bruno Barton-Singer up against SOAS, who were beaten 195 to 130.
 
-## Announcement
+# Announcement
 
-## [ECMS Jazz and Cocktails](#)
+## ECMS Jazz and Cocktails
 
 It's the most wonderful time of the year! Dance away those deadline stresses and come along to the Old Library on Tuesday 29th November from 9pm for a great evening of Christmassy-themed cocktails and the fantabulous playing of Emma's very own Big Band. A perfect event for after formal, and for before going out! 
 
@@ -21,9 +21,9 @@ This is always a great event in Emma, and really gets everyone into the festive 
 
 This event is for Emma students only, so please bring your uni cards!
 
-## Announcement
+# Announcement
 
-## [ECMS Michaelmas Concert](#)
+## ECMS Michaelmas Concert
 
 It's the musical event you've all been waiting for! ECMS invite you to our annual Michaelmas Concert, featuring amongst others: the talented singing of Emma Chorus, the glorious sounds of Big Band and the melodious playing of SECCO. And if that's not enough for you, we'll be offering wine, juice and mince pies after the concert to really get into the festive spirit! 
 
@@ -34,9 +34,9 @@ Venue: Queen's Building Lecture Theatre
 We hope to see you there! 
 
 
-## Announcement
+# Announcement
 
-## [UCPO Winter Gala Concert](#)
+## UCPO Winter Gala Concert
 
 UCPO Winter Gala Concert, Saturday 3rd December at 8pm 
 Wesley Methodist Church 
@@ -46,9 +46,9 @@ Following the success of last years pilot event, the University of Cambridge Phi
 Tickets: £5/£10 in advance, £7/£12 on the door
         Available from www.adcticketing.com or call 01223 300085
 
-## Announcement
+# Announcement
 
-## [English Tutor Fixed-Term Job Opportunity in New Zealand](#)
+## English Tutor Fixed-Term Job Opportunity in New Zealand
 
 Christ's College is one of New Zealand's leading independent boys' schools. Situated in the heart of Christchurch, the South Island's largest city, it has a student roll of 630 boys. Further details about Christ's can be found at www.christscollege.com. 
 
