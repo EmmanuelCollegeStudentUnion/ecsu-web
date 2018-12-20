@@ -6,7 +6,6 @@
           <span class="mdc-top-app-bar__title">
             <img class="header-logo" :src="logo.src" :srcset="logo.srcSet" width="165px">
           </span>
-          <div style="margin:auto"/>
           <button
             v-show="$mq!='lg'"
             class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
@@ -96,6 +95,7 @@ export default {
 }
 .app-content {
   flex: auto;
+  width: 100%; //ie
 }
 
 .fade-enter-active,

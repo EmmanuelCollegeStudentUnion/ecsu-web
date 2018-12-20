@@ -20,7 +20,7 @@
     </p>
 
     <h2>Comments</h2>
-    <table style="width: 100%" v-if="room.comments.length!=0">
+    <table v-if="room.comments.length!=0">
       <thead>
         <tr>
           <th>Year</th>

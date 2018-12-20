@@ -4,7 +4,7 @@
     <p>The ECSU committee have information on a range of welfare topics:</p>
     <ul>
       <li v-for="page in welfarePages" v-bind:key="page.name">
-        <a v-bind:href="page.url" v-bind:title="page.title">{{page.title}}</a>
+        <nuxt-link :to="page.url" :title="page.title">{{page.title}}</nuxt-link>
       </li>
     </ul>You can also request a pregnancy kit
     <nuxt-link to="/welfare/pregnancy_kit">here</nuxt-link>
@@ -28,7 +28,8 @@ export default {
           subtitle
           url
         }
-      }`  
+      }
+    `
   }
 };
 </script>
