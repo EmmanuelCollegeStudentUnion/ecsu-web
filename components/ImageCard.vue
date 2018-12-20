@@ -20,7 +20,7 @@ export default {
 }
 
 .image-card__media {
-  height: 300px;
+  max-height: 300px;
   max-width: 100%;
   border-radius: 24px;
   object-fit: contain;
