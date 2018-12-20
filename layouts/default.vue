@@ -22,7 +22,9 @@
     </transition>
     <div class="mdc-top-app-bar--fixed-adjust app-content">
       <div class="mdc-layout-grid page-surface">
-        <nuxt/>
+        <transition name="fade">
+          <nuxt/>
+        </transition>
       </div>
       <Footer/>
     </div>
