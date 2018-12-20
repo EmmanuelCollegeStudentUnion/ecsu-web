@@ -3,6 +3,7 @@ email: vicepresident@ecsu.org.uk
 image: /assets/images/matilda_vp.jpg
 name: Matilda Schwefel
 title: Vice President
+ordering: 1
 ---
 
 I’m Matilda (she/her), a second year classicist, as Vice President my job is to be a primary point of contact between students, college staff and CUSU. I also organise events like Halfway hall and Hustings.

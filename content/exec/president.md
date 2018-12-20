@@ -3,6 +3,7 @@ email: president@ecsu.org.uk
 image: /assets/images/Olivia VP.jpg
 name: Olivia Malmose-O'Connor
 title: President
+ordering: 2
 ---
 
 I’m Liv (she/her) a Second Year HSPSer, as President my job is to be a primary point of contact between students, college staff and CUSU.

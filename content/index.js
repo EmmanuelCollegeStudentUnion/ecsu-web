@@ -2,6 +2,19 @@ const collator = new Intl.Collator(undefined, {
     numeric: true,
     sensitivity: "base"
 });
+
+function ordering(x) {
+    return x.ordering ? x.ordering : 0
+}
+function compare(x, y) {
+    if (ordering(y) !== ordering(x)) {
+        return ordering(y) - ordering(x)
+    } else {
+        return collator.compare(x.title, y.title)
+
+    }
+
+}
 export default async (contentType, contentName) => {
     const context = require.context(`@/content/`, true, /\.md$/)
     if (contentName) {
@@ -28,7 +41,7 @@ export default async (contentType, contentName) => {
                         type: contentType
                     }
                 })
-                .sort((x, y) => collator.compare(x.title, y.title))
+                .sort(compare)
         )
 
     }
@@ -42,7 +55,7 @@ export async function resolveImage(image) {
         const res = await context(`./${asset[1]}`)
         return {
             src: res.src,
-            srcset: res.srcSet,
+            srcSet: res.srcSet,
             placeholder: res.placeholder
         }
     } else {
