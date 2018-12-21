@@ -8,7 +8,7 @@
       action="/assets/php/pregnancytest.php"
     >
       <div ref="inputField" class="mdc-text-field text-field mdc-text-field--textarea">
-        <textarea id="text-field--textarea" class="mdc-text-field__input">
+        <textarea name="message" id="text-field--textarea" class="mdc-text-field__input">
           I would like to request a pregnancy kit.
           </textarea>
         <label class="mdc-floating-label" for="text-field--textarea">Message</label>

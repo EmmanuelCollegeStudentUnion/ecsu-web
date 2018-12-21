@@ -103,7 +103,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .card-image-content {
   background-size: cover;
   background-position: center;
