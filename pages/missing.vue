@@ -4,6 +4,7 @@
     <img
       :src="image.src"
       :srcset="image.srcSet"
+      style="width: 50%"
       alt="404"
       width="100%"
       class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12"
