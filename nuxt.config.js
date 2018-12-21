@@ -2,12 +2,14 @@
 const glob = require('glob')
 const path = require('path')
 import routes from "./routes"
+import { itemsForContent } from "./routes"
 const flatMap = (arr, f) => [].concat.apply([], arr.map(f))
 var urls = flatMap(routes, (x => [
     x.url,
     ...x.items.map(item => item.url),
 
-]))
+])).concat(itemsForContent("rooms", false).map(item => item.url),
+    itemsForContent("posts", false).map(item => item.url));
 export default {
     build: {
         extend(config) {
@@ -61,7 +63,7 @@ export default {
         }
     },
     generate: {
-        routes: urls
+        routes() { return urls }
     },
     env: {
         routes

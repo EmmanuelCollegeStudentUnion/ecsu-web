@@ -2,7 +2,7 @@
     "name": "ECSU",
     "scripts": {
         "dev": "nuxt",
-        "build": "nuxt generate"
+        "build": "nuxt-generate -w 4 -v -b"
     },
     "dependencies": {
         "@material/button": "^0.41.0",
@@ -30,6 +30,7 @@
         "netlify-cms-loader": "^0.4.1",
         "normalize.css": "^8.0.1",
         "nuxt": "^2.3.4",
+        "nuxt-generate-cluster": "^2.0.2",
         "require-context": "^1.1.0",
         "responsive-loader": "^1.1.0",
         "sass-loader": "^7.1.0",
