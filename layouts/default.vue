@@ -3,7 +3,7 @@
     <div class="mdc-top-app-bar">
       <div class="mdc-top-app-bar__row">
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-          <span class="mdc-top-app-bar__title">
+          <span class="mdc-top-app-bar__title top-app-bar">
             <img class="header-logo" :src="logo.src" :srcset="logo.srcSet" width="165px">
           </span>
           <button
@@ -108,5 +108,8 @@ export default {
 }
 .mdc-top-app-bar {
   z-index: 7;
+}
+.top-app-bar {
+  width: 100%;
 }
 </style>
