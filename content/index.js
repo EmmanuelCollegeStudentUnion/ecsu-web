@@ -47,7 +47,7 @@ export default async (contentType, contentName) => {
     }
 }
 
-export async function resolveImage(image) {
+export async function resolveImage(image, alt) {
     if (image == null) return null
     const context = require.context(`@/assets/images`, true, /\.(jpe?g|png)$/)
     const asset = image.match(`\/assets\/images\/(.*)`)
@@ -56,9 +56,10 @@ export async function resolveImage(image) {
         return {
             src: res.src,
             srcSet: res.srcSet,
-            placeholder: res.placeholder
+            placeholder: res.placeholder,
+            alt
         }
     } else {
-        return { src: image };
+        return { src: image, alt };
     }
 }

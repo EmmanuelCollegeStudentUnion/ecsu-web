@@ -2,7 +2,7 @@
   <StandardPage>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
       <div class="page-content">
-        <img :srcset="sketchImage.srcSet" :src="sketchImage.src" width="100%">
+        <img :srcset="sketchImage.srcSet" :src="sketchImage.src" alt="front court" width="100%">
         <h1 class="mdc-typography--headline1 mdc-theme--text-secondary-on-light hero-heading">
           Welcome to
           <span class="mdc-theme--text-primary-on-light">ECSU</span>
@@ -87,6 +87,7 @@ export default {
             image {
               src
               srcSet
+              alt
               placeholder
             }
           }

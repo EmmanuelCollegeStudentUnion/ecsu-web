@@ -4,7 +4,13 @@
       <div class="mdc-top-app-bar__row">
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
           <span class="mdc-top-app-bar__title top-app-bar">
-            <img class="header-logo" :src="logo.src" :srcset="logo.srcSet" width="165px">
+            <img
+              class="header-logo"
+              :src="logo.src"
+              :srcset="logo.srcSet"
+              alt="ECSU logo"
+              width="165px"
+            >
           </span>
           <button
             v-show="$mq!='lg'"

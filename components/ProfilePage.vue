@@ -1,7 +1,7 @@
 <template>
   <div class="mdc-layout-grid__inner">
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 center">
-      <img class="circle-image mdc-card--outlined" :src="image.src" :srcset="image.srcSet">
+      <img class="circle-image mdc-card--outlined" :src="image.src" :srcset="image.srcSet" :alt="image.alt">
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5 center" v-if="!!$slots.title">
       <div>

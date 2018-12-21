@@ -1,6 +1,6 @@
 <template>
   <div class="image-card">
-    <img class="mdc-card--outlined image-card__media" :src="image.src" :srcset="image.srcSet">
+    <img class="mdc-card--outlined image-card__media" :src="image.src" :srcset="image.srcSet" :alt="image.alt">
   </div>
 </template>
 

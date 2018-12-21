@@ -66,6 +66,7 @@ export default {
             images{
               src
               srcSet
+              alt
             }
             comments{
               year

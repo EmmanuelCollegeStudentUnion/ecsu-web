@@ -6,6 +6,7 @@ const typeDefs = `
     src: String
     srcSet: String
     placeholder: String
+    alt: String
   }
   type TextCard{
     title: String
@@ -101,24 +102,24 @@ const typeDefs = `
 `;
 
 // Resolvers define the technique for fetching the types in the
-// schema.  We'll retrieve books from the "books" array above.
+// schema. 
 const resolvers = {
   ImageCaptionCard: {
-    image: obj => resolveImage(obj.image)
+    image: obj => resolveImage(obj.image, obj.title)
   },
   HomePage: {
     ecsuDoes: obj => obj['ecsu_does'],
     whatsHere: obj => obj['whats_here'],
   },
   Exec: {
-    image: obj => resolveImage(obj.image)
+    image: obj => resolveImage(obj.image, obj.name)
   },
   Society: {
-    image: obj => resolveImage(obj.image)
+    image: obj => resolveImage(obj.image, obj.title)
   },
   InfoPage: {},
   Post: {
-    image: obj => resolveImage(obj.image)
+    image: obj => resolveImage(obj.image, obj.title)
   },
   Blog: {
     posts: obj => content("posts").then(result => result.filter(x => x.blog == obj.title))
@@ -127,7 +128,7 @@ const resolvers = {
   Room: {
     livingRoom: obj => obj['living_room'],
     comments: obj => content("room_comments").then(result => result.filter(x => x.title == obj.title)),
-    images: obj => obj.images.map(resolveImage)
+    images: obj => obj.images.map(x => resolveImage(x, obj.title))
   },
   RoomLocation: {
     image: obj => resolveImage(obj.image),

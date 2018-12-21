@@ -30,6 +30,8 @@ export default {
             image {
               src
               srcSet
+              alt
+              placeholder
             }
             body
             email

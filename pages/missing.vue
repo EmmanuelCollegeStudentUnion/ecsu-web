@@ -2,7 +2,9 @@
   <StandardPage>
     <template slot="title">Page not found</template>
     <img
-      src="/images/404.png"
+      :src="image.src"
+      :srcset="image.srcSet"
+      alt="404"
       width="100%"
       class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12"
     >
@@ -17,6 +19,11 @@
 import StandardPage from "@/components/StandardPage";
 import ImageCard from "@/components/ImageCard";
 export default {
-  components: { StandardPage, ImageCard }
+  components: { StandardPage, ImageCard },
+  computed: {
+    image() {
+      return require("@/assets/images/404.png");
+    }
+  }
 };
 </script>
