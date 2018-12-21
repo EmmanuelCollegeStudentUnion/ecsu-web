@@ -26,20 +26,20 @@
       <tbody>
         <tr>
           <td>
-            <a href="downloads/official_documents/ECSU_Ents_Constitution.pdf">Ents Constitution</a>
+            <a href="/protected/downloads/official_documents/ECSU_Ents_Constitution.pdf">Ents Constitution</a>
           </td>
           <td>90.06 KiB</td>
         </tr>
         <tr class="even">
           <td>
-            <a href="downloads/official_documents/Constitution.pdf">Constitution</a>
+            <a href="/protected/downloads/official_documents/Constitution.pdf">Constitution</a>
           </td>
           <td>362.81 KiB</td>
         </tr>
         <tr>
           <td>
             <a
-              href="downloads/official_documents/Constitution Appendices.pdf"
+              href="/protected/downloads/official_documents/Constitution Appendices.pdf"
             >Constitutional Appendices</a>
           </td>
           <td>316.17 KiB</td>
@@ -47,7 +47,7 @@
         <tr class="even">
           <td>
             <a
-              href="downloads/official_documents/Contingency Fund Guidelines.pdf"
+              href="/protected/downloads/official_documents/Contingency Fund Guidelines.pdf"
             >Contingency Fund Guidelines</a>
           </td>
           <td>44.1 KiB</td>
@@ -55,7 +55,7 @@
         <tr>
           <td>
             <a
-              href="downloads/official_documents/Open Meeting Standing Orders.pdf"
+              href="/protected/downloads/official_documents/Open Meeting Standing Orders.pdf"
             >Open Meeting Standing Orders</a>
           </td>
           <td>52.55 KiB</td>
@@ -63,7 +63,7 @@
         <tr class="even">
           <td>
             <a
-              href="downloads/official_documents/Sexual harassment advice.pdf"
+              href="/protected/downloads/official_documents/Sexual harassment advice.pdf"
             >Sexual Harassment Advice</a>
           </td>
           <td>541.53 KiB</td>
