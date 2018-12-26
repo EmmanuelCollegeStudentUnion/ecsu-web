@@ -13,11 +13,7 @@
         <label class="mdc-floating-label" for="text-field--textarea">Message</label>
       </div>
       <br>
-      <input
-        class="mdc-button mdc-button--outlined mdc-ripple-upgraded"
-        type="submit"
-        value="Place Request"
-      >
+      <input class="mdc-button mdc-button--outlined mdc-ripple-upgraded" type="submit" value="Send">
     </form>
   </div>
 </template>
