@@ -10,7 +10,7 @@
           <button
             class="mdc-button mdc-button--outlined mdc-ripple-upgraded dismiss-button"
             v-on:click="consent"
-          >Dismiss</button>
+          >Accept</button>
         </div>
       </div>
     </div>
