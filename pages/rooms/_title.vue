@@ -7,7 +7,10 @@
         <li>Living Room: {{room.livingRoom}}</li>
         <li>Basin: {{room.basin}}</li>
         <li>Network: {{room.network}}</li>
-        <li>CUDN Access: {{room.cudn}}</li>
+        <li>CUDN Access:
+          <template v-if="room.cudn">Yes</template>
+          <template v-else>No</template>
+        </li>
         <li>Floor: {{room.floor}}</li>
       </ul>
     </div>
@@ -40,7 +43,7 @@
 
     <div class="photobox" v-if="room.images.length!=0">
       <div v-for="image in room.images" :key="image.url">
-        <img :srcset="image.srcSet"  :src="image.src" style="width:100%">
+        <img :srcset="image.srcSet" :src="image.src" style="width:100%">
       </div>
     </div>
     <p v-else>There are no photos for this room</p>
@@ -53,27 +56,30 @@ import PostPage from "@/components/PostPage";
 import gql from "graphql-tag";
 export default {
   components: { PostPage },
-   apollo: {
-    room: {query:gql`
-      query Room($title:String!){
-        room(title:$title) {
+  apollo: {
+    room: {
+      query: gql`
+        query Room($title: String!) {
+          room(title: $title) {
             title
             grade
             floor
             basin
             livingRoom
+            cudn
             network
-            images{
+            images {
               src
               srcSet
               alt
             }
-            comments{
+            comments {
               year
               body
             }
-          }    
-        }`,
+          }
+        }
+      `,
       variables() {
         return {
           title: this.$route.params.title
