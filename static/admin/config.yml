@@ -49,7 +49,7 @@ collections:
       create: true
       fields:
         - {label: "Title", name: "title", widget: "string"}
-        - {label: "Date", name: "date", widget: "data"}
+        - {label: "Date", name: "date", widget: "date"}
         - {label: "Image", name: "image", widget: "image"}
         - {label: "Content", name: "body", widget: "markdown"}
       editor:
