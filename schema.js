@@ -23,6 +23,13 @@ const typeDefs = `
     ecsuDoes: [TextCard]
     whatsHere: [ImageCaptionCard]
   }
+  type WhatsOnEvent{
+    title: String
+    date: String
+    image: Image
+    body: String
+    url:String
+  }
   type Exec{
     title: String
     email: String
@@ -82,6 +89,8 @@ const typeDefs = `
   }
   type Query {
     homePage: HomePage
+    whatsOn(title:String!): WhatsOnEvent
+    whatsOnEvents: [WhatsOnEvent]
     exec(title:String!): Exec
     execs: [Exec]
     society(title:String!): Society
@@ -131,11 +140,16 @@ const resolvers = {
     images: obj => obj.images.map(x => resolveImage(x, obj.title))
   },
   RoomLocation: {
-    image: obj => resolveImage(obj.image),
+    image: obj => resolveImage(obj.image, obj.title),
     rooms: obj => content("rooms").then(result => result.filter(x => x.location == obj.title))
+  },
+  WhatsOnEvent: {
+    image: obj => resolveImage(obj.image, obj.title),
   },
   Query: {
     homePage: obj => content("pages", "home"),
+    whatsOn: (obj, args) => content("whatson", args.title),
+    whatsOnEvents: obj => content("whatson"),
     exec: (obj, args) => content("exec", args.title),
     execs: obj => content("exec"),
     society: (obj, args) => content("societies", args.title),

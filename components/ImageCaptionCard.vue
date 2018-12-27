@@ -14,6 +14,7 @@
       />
       <div class="image-caption-card__primary">
         <h2 class="image-caption-card__title mdc-typography--headline6">{{title}}</h2>
+        <h3 v-if="subtitle" class="image-caption-card__title mdc-typography--subtitle1">{{subtitle}}</h3>
       </div>
       <div class="image-caption-card__secondary mdc-typography--body2">
         <slot/>
@@ -24,7 +25,7 @@
 
 <script>
 export default {
-  props: ["title", "image", "url"]
+  props: ["title", "image", "url", "subtitle"]
 };
 </script>
 

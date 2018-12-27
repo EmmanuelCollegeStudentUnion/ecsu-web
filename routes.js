@@ -21,10 +21,16 @@ export function itemsForContent(contentType, showInNav) {
 }
 export default [
     {
-        name: "index",
         text: "Home",
         icon: "home",
         url: "/",
+        showInNav: true,
+        items: []
+    },
+    {
+        text: "What's On",
+        icon: "today",
+        url: "/whatson",
         showInNav: true,
         items: []
     },
