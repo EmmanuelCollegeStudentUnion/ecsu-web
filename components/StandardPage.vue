@@ -1,6 +1,13 @@
 <template>
   <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 center" v-if="!!$slots.title">
+    <div
+      class="mdc-layout-grid__cell center"
+      v-if="!!$slots.title"
+      :class="{
+      'mdc-layout-grid__cell--span-6': !!$slots.media,
+      'mdc-layout-grid__cell--span-12': !$slots.media,
+    }"
+    >
       <header>
         <h1 class="mdc-typography--headline2" v-if="!!$slots.title">
           <slot name="title"/>

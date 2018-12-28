@@ -113,7 +113,7 @@ export default {
                         title: item.title,
                         id: item.url,
                         link: item.url,
-                        date: new Date(item.date),
+                        date: item.pubDate,
                         description: item.description,
                         content: item['__content']
                     })

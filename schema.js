@@ -25,7 +25,8 @@ const typeDefs = `
   }
   type WhatsOnEvent{
     title: String
-    date: String
+    datetime: String
+    pubDate: String
     image: Image
     body: String
     url:String

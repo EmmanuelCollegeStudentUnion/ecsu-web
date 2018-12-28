@@ -1,26 +1,30 @@
 <template>
-  <InfoPage v-if="whatsOn">
+  <PostPage v-if="whatsOn">
     <template slot="title">{{whatsOn.title}}</template>
-    <template slot="subtitle">{{whatsOn.date}}</template>
+    <template slot="subtitle">{{whatsOn.datetime}}</template>
+    <template slot="media">
+      <ImageCard v-if="whatsOn.image" :image="whatsOn.image"/>
+    </template>
     <Markdown :html="whatsOn.body"/>
-  </InfoPage>
+  </PostPage>
 </template>
 
 <script>
 import content from "@/content";
-import InfoPage from "@/components/InfoPage";
+import PostPage from "@/components/PostPage";
 import Markdown from "@/components/Markdown";
+import ImageCard from "@/components/ImageCard";
 import gql from "graphql-tag";
 
 export default {
-  components: { InfoPage, Markdown },
+  components: { PostPage, Markdown, ImageCard },
   apollo: {
     whatsOn: {
       query: gql`
         query WhatsOn($title: String!) {
           whatsOn(title: $title) {
             title
-            date
+            datetime
             image {
               src
               srcSet

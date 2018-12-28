@@ -10,7 +10,7 @@
     >
       <ImageCaptionCard
         :title="item.title"
-        :subtitle="item.date"
+        :subtitle="item.datetime"
         :image="item.image"
         :url="item.url"
       >{{item.description}}</ImageCaptionCard>
@@ -31,7 +31,7 @@ export default {
       {
         whatsOnEvents {
           title
-          date
+          datetime
           image {
             src
             srcSet
@@ -45,3 +45,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.center-heading {
+  margin: 16px auto;
+}
+</style>
