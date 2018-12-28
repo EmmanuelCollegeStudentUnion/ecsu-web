@@ -113,7 +113,7 @@ export default {
                         title: item.title,
                         id: item.url,
                         link: item.url,
-                        image: `http://nh487.user.srcf.net/${item.image}`,
+                        image: item.image,
                         date: item.pubDate,
                         description: item.description,
                         content: item['__content']
