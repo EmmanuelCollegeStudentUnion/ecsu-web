@@ -23,22 +23,23 @@ import gql from "graphql-tag";
 export default {
   components: { PostPage },
   apollo: {
-    blog: {query:gql`
-      query Blog($title:String!){
-        blog(title:$title) {
-          title             
-          description
-          posts {
+    blog: {
+      query: gql`
+        query Blog($slug: String!) {
+          blog(slug: $slug) {
             title
-            subtitle
-            url
+            description
+            posts {
+              title
+              subtitle
+              url
+            }
           }
         }
-      }
       `,
       variables() {
         return {
-          title: this.$route.params.title
+          slug: this.$route.params.slug
         };
       }
     }

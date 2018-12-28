@@ -19,19 +19,20 @@ export default {
   apollo: {
     society: {
       query: gql`
-        query Society($title: String!) {
-          society(title:$title){
-              title
-              image {
-                src
-                srcSet
-              }
-              body
+        query Society($slug: String!) {
+          society(slug: $slug) {
+            title
+            image {
+              src
+              srcSet
             }
-          }`,
+            body
+          }
+        }
+      `,
       variables() {
         return {
-          title: this.$route.params.title
+          slug: this.$route.params.slug
         };
       }
     }

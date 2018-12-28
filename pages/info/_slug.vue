@@ -14,19 +14,21 @@ import Markdown from "@/components/Markdown";
 import gql from "graphql-tag";
 
 export default {
-  components: { InfoPage, ImageCard, Markdown },  
+  components: { InfoPage, ImageCard, Markdown },
   apollo: {
-    infoPage: {query:gql`
-      query Info($title:String!){
-        infoPage(title:$title) {
-          title             
-          subtitle
-          body
+    infoPage: {
+      query: gql`
+        query Info($slug: String!) {
+          infoPage(slug: $slug) {
+            title
+            subtitle
+            body
+          }
         }
-      }`,
+      `,
       variables() {
         return {
-          title: this.$route.params.title
+          slug: this.$route.params.slug
         };
       }
     }

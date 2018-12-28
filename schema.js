@@ -90,24 +90,24 @@ const typeDefs = `
   }
   type Query {
     homePage: HomePage
-    whatsOn(title:String!): WhatsOnEvent
+    whatsOn(slug:String!): WhatsOnEvent
     whatsOnEvents: [WhatsOnEvent]
-    exec(title:String!): Exec
+    exec(slug:String!): Exec
     execs: [Exec]
-    society(title:String!): Society
+    society(slug:String!): Society
     societies: [Society]
-    welfarePage(title:String!): InfoPage
+    welfarePage(slug:String!): InfoPage
     welfarePages: [InfoPage]
-    infoPage(title:String!): InfoPage
+    infoPage(slug:String!): InfoPage
     infoPages: [InfoPage]
-    prospectivePage(title:String!): InfoPage
+    prospectivePage(slug:String!): InfoPage
     prospectivePages: [InfoPage]
-    blog(title: String!): Blog
+    blog(slug: String!): Blog
     blogs: [Blog]
-    post(title:String!): Post
+    post(slug:String!): Post
     roomLocations: [RoomLocation]
-    roomLocation(title:String!): RoomLocation
-    room(title:String!): Room
+    roomLocation(slug:String!): RoomLocation
+    room(slug:String!): Room
   }
 `;
 
@@ -150,24 +150,24 @@ const resolvers = {
   },
   Query: {
     homePage: obj => content("pages", "home"),
-    whatsOn: (obj, args) => content("whatson", args.title),
+    whatsOn: (obj, args) => content("whatson", args.slug),
     whatsOnEvents: obj => content("whatson"),
-    exec: (obj, args) => content("exec", args.title),
+    exec: (obj, args) => content("exec", args.slug),
     execs: obj => content("exec"),
-    society: (obj, args) => content("societies", args.title),
+    society: (obj, args) => content("societies", args.slug),
     societies: obj => content("societies"),
-    welfarePage: (obj, args) => content("welfare", args.title),
+    welfarePage: (obj, args) => content("welfare", args.slug),
     welfarePages: obj => content("welfare"),
-    infoPage: (obj, args) => content("info", args.title),
+    infoPage: (obj, args) => content("info", args.slug),
     infoPages: obj => content("info"),
-    prospectivePage: (obj, args) => content("prospective", args.title),
+    prospectivePage: (obj, args) => content("prospective", args.slug),
     prospectivePages: obj => content("prospective"),
-    blog: (obj, args) => content("blogs", args.title),
+    blog: (obj, args) => content("blogs", args.slug),
     blogs: obj => content("blogs"),
-    post: (obj, args) => content("posts", args.title),
+    post: (obj, args) => content("posts", args.slug),
     roomLocations: obj => content("room_locations"),
-    roomLocation: (obj, args) => content("room_locations", args.title),
-    room: (obj, args) => content("rooms", args.title),
+    roomLocation: (obj, args) => content("room_locations", args.slug),
+    room: (obj, args) => content("rooms", args.slug),
   },
 };
 export default makeExecutableSchema({ typeDefs, resolvers })

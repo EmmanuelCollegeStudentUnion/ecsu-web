@@ -59,8 +59,8 @@ export default {
   apollo: {
     room: {
       query: gql`
-        query Room($title: String!) {
-          room(title: $title) {
+        query Room($slug: String!) {
+          room(slug: $slug) {
             title
             grade
             floor
@@ -82,7 +82,7 @@ export default {
       `,
       variables() {
         return {
-          title: this.$route.params.title
+          slug: this.$route.params.slug
         };
       }
     }

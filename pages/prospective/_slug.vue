@@ -15,17 +15,19 @@ import gql from "graphql-tag";
 export default {
   components: { InfoPage, Markdown },
   apollo: {
-    prospectivePage: {query:gql`
-      query Prospective($title:String!){
-        prospectivePage(title:$title) {
-          title             
-          subtitle
-          body
+    prospectivePage: {
+      query: gql`
+        query Prospective($slug: String!) {
+          prospectivePage(slug: $slug) {
+            title
+            subtitle
+            body
+          }
         }
-      }`,
+      `,
       variables() {
         return {
-          title: this.$route.params.title
+          slug: this.$route.params.slug
         };
       }
     }

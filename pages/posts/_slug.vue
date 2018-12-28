@@ -21,8 +21,8 @@ export default {
   apollo: {
     post: {
       query: gql`
-        query Post($title: String!) {
-          post(title: $title) {
+        query Post($slug: String!) {
+          post(slug: $slug) {
               title              
               image {
                 src
@@ -34,7 +34,7 @@ export default {
       `,
       variables() {
         return {
-          title: this.$route.params.title
+          slug: this.$route.params.slug
         };
       }
     }

@@ -22,8 +22,8 @@ export default {
   apollo: {
     exec: {
       query: gql`
-        query Exec($title: String!) {
-          exec(title: $title) {
+        query Exec($slug: String!) {
+          exec(slug: $slug) {
             name
             title
             url
@@ -40,7 +40,7 @@ export default {
       `,
       variables() {
         return {
-          title: this.$route.params.title
+          slug: this.$route.params.slug
         };
       }
     }

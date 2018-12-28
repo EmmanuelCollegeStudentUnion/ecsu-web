@@ -15,17 +15,19 @@ import gql from "graphql-tag";
 export default {
   components: { InfoPage, Markdown },
   apollo: {
-    welfarePage: {query:gql`
-      query Welfare($title:String!){
-        welfarePage(title:$title) {
-          title             
-          subtitle
-          body
+    welfarePage: {
+      query: gql`
+        query Welfare($slug: String!) {
+          welfarePage(slug: $slug) {
+            title
+            subtitle
+            body
+          }
         }
-      }`,
+      `,
       variables() {
         return {
-          title: this.$route.params.title
+          slug: this.$route.params.slug
         };
       }
     }

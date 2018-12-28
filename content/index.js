@@ -24,13 +24,13 @@ function compare(x, y) {
     }
 
 }
-export default async (contentType, contentName) => {
+export default async (contentType, contentSlug) => {
     const context = require.context(`@/content/`, true, /\.md$/)
-    if (contentName) {
-        const content = await context(`./${contentType}/${contentName}.md`)
+    if (contentSlug) {
+        const content = await context(`./${contentType}/${contentSlug}.md`)
         return {
             ...content,
-            id: contentName,
+            id: contentSlug,
             body: content['__content'],
             type: contentType
         }

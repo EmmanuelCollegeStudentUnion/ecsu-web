@@ -35,25 +35,27 @@ import gql from "graphql-tag";
 
 export default {
   components: { PostPage },
-   apollo: {
-    roomLocation: {query:gql`
-      query RoomLocation($title:String!){
-        roomLocation(title:$title) {
-          title        
-          rooms{
+  apollo: {
+    roomLocation: {
+      query: gql`
+        query RoomLocation($slug: String!) {
+          roomLocation(slug: $slug) {
             title
-            grade
-            floor
-            basin
-            livingRoom
-            network
-            url
-          }    
+            rooms {
+              title
+              grade
+              floor
+              basin
+              livingRoom
+              network
+              url
+            }
+          }
         }
-      }`,
+      `,
       variables() {
         return {
-          title: this.$route.params.title
+          slug: this.$route.params.slug
         };
       }
     }

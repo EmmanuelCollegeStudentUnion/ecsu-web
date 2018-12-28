@@ -21,8 +21,8 @@ export default {
   apollo: {
     whatsOn: {
       query: gql`
-        query WhatsOn($title: String!) {
-          whatsOn(title: $title) {
+        query WhatsOn($slug: String!) {
+          whatsOn(slug: $slug) {
             title
             datetime
             image {
@@ -37,7 +37,7 @@ export default {
       `,
       variables() {
         return {
-          title: this.$route.params.title
+          slug: this.$route.params.slug
         };
       }
     }
