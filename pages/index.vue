@@ -124,9 +124,11 @@ article.card-image {
 .hero-heading {
   margin: 32px 0;
   font-size: 80px;
+  text-align: center;
   @media screen and (min-width: 1280px) {
     font-size: 96px;
     margin: 32px 32px;
+    text-align: left;
   }
 }
 .center-heading {
