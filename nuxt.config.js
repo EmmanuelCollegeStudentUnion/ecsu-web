@@ -9,6 +9,7 @@ var urls = flatMap(routes, (x => [
     ...x.items.map(item => item.url),
 
 ])).concat(
+    "whatson.xml",
     itemsForContent("rooms").map(item => item.url),
     itemsForContent("whatson").map(item => item.url),
     itemsForContent("posts").map(item => item.url));
