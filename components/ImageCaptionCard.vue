@@ -31,7 +31,6 @@ export default {
 
 <style scoped lang="scss">
 .image-caption-card {
-  min-width: 250px;
   border-radius: 24px;
 }
 
