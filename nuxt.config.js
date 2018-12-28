@@ -113,6 +113,7 @@ export default {
                         title: item.title,
                         id: item.url,
                         link: item.url,
+                        image: item.image,
                         date: item.pubDate,
                         description: item.description,
                         content: item['__content']
