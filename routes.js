@@ -3,19 +3,20 @@ const glob = require('glob')
 const path = require('path')
 const url = require('url');
 const fs = require('fs')
-export function itemsForContent(contentType, showInNav) {
+export function itemsForContent(contentType, includeContent) {
     const paths = glob.sync(`content/${contentType}/*.md`)
     return paths
         .map(filename => {
             const slug = filename.match(`^content/${contentType}\/(.*)\.md`, 'utf8')[1]
             const urlText = url.resolve(`/${contentType}/`, slug);
-            const file = fs.readFileSync(filename)
+            const file = fs.readFileSync(filename);
+            const content = yamlFront.loadFront(file);
             return {
-                text: yamlFront.loadFront(file).title,
+                text: content.title,
                 name: slug,
                 items: [],
                 url: urlText,
-                showInNav
+                ...(includeContent ? content : {})
             }
         })
 }
@@ -24,39 +25,33 @@ export default [
         text: "Home",
         icon: "home",
         url: "/",
-        showInNav: true,
         items: []
     },
     {
         text: "What's On",
         icon: "today",
         url: "/whatson",
-        showInNav: true,
         items: []
     },
     {
         text: "Prospective students",
         icon: "face",
         url: "/prospective",
-        showInNav: true,
-        items: itemsForContent("prospective", true)
+        items: itemsForContent("prospective")
     },
     {
         text: "Current students",
         icon: "account_circle",
         url: "/members",
-        showInNav: true,
         items: [
             {
                 text: "Minutes",
                 url: "/members/minutes",
-                showInNav: true,
                 items: []
             },
             {
                 text: "Official Documents",
                 url: "/members/official_documents",
-                showInNav: true,
                 items: []
             }
         ]
@@ -65,33 +60,28 @@ export default [
         text: "Committee",
         icon: "assignment_ind",
         url: "/exec",
-        showInNav: true,
-        items: itemsForContent("exec", true)
+        items: itemsForContent("exec")
     },
     {
         text: "Posts",
         icon: "assignment",
         url: "/blogs",
-        showInNav: true,
-        items: itemsForContent("blogs", true)
+        items: itemsForContent("blogs")
     },
     {
         text: "Welfare",
         icon: "sentiment_very_satisfied",
         url: "/welfare",
-        showInNav: true,
         items: [
-            ...itemsForContent("welfare", true),
+            ...itemsForContent("welfare"),
             {
                 text: "Pregnancy Kit",
                 url: "/welfare/pregnancy_kit",
-                showInNav: true,
                 items: []
             },
             {
                 text: "Welfare Request",
                 url: "/welfare/welfare_request",
-                showInNav: true,
                 items: []
             }
         ]
@@ -100,21 +90,18 @@ export default [
         text: "Societies",
         icon: "rowing",
         url: "/societies",
-        showInNav: true,
-        items: itemsForContent("societies", true)
+        items: itemsForContent("societies")
     },
     {
         text: "Room database",
         icon: "location_city",
         url: "/room_locations",
-        showInNav: true,
-        items: itemsForContent("room_locations", true)
+        items: itemsForContent("room_locations")
     },
     {
         text: "Info",
         icon: "info",
         url: "/info",
-        showInNav: true,
-        items: itemsForContent("info", true)
+        items: itemsForContent("info")
     }
 ]

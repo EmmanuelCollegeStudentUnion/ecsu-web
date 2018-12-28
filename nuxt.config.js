@@ -8,8 +8,10 @@ var urls = flatMap(routes, (x => [
     x.url,
     ...x.items.map(item => item.url),
 
-])).concat(itemsForContent("rooms", false).map(item => item.url),
-    itemsForContent("posts", false).map(item => item.url));
+])).concat(
+    itemsForContent("rooms").map(item => item.url),
+    itemsForContent("whatson").map(item => item.url),
+    itemsForContent("posts").map(item => item.url));
 export default {
     build: {
         extend(config) {
@@ -90,12 +92,37 @@ export default {
         },
     },
     modules: [
-        '@nuxtjs/pwa'
+        '@nuxtjs/pwa',
+        '@nuxtjs/feed'
     ],
     head: {
         script: [
             { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Object.entries,IntersectionObserver' },
         ],
-    }
+    },
+    feed: [
+        {
+            path: '/whatson.xml',
+            async create(feed) {
+                feed.options = {
+                    title: "ECSU What's On",
+                }
+
+                itemsForContent("whatson", true).forEach(item => {
+                    console.log(item)
+                    feed.addItem({
+                        title: item.title,
+                        id: item.url,
+                        link: item.url,
+                        date: item.date,
+                        description: item.description,
+                        content: item['__content']
+                    })
+                })
+            },
+            cacheTime: 1000 * 60 * 15,
+            type: 'rss2'
+        }
+    ],
 }
 
