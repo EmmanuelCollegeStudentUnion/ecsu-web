@@ -9,7 +9,6 @@ var urls = flatMap(routes, (x => [
     ...x.items.map(item => item.url),
 
 ])).concat(
-    "whatson.xml",
     itemsForContent("rooms").map(item => item.url),
     itemsForContent("whatson").map(item => item.url),
     itemsForContent("posts").map(item => item.url));
@@ -110,12 +109,11 @@ export default {
                 }
 
                 itemsForContent("whatson", true).forEach(item => {
-                    console.log(item)
                     feed.addItem({
                         title: item.title,
                         id: item.url,
                         link: item.url,
-                        date: item.date,
+                        date: new Date(item.date),
                         description: item.description,
                         content: item['__content']
                     })
