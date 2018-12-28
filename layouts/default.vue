@@ -92,11 +92,11 @@ export default {
 .page-surface {
   background-color: white;
   border-radius: 24px;
-  min-height: 100vh;
-  margin: 32px 0;
-  @media screen and (min-width: 1280px) {
-    margin: 32px;
-    margin-left: 288px;
+  margin: 32px;
+  margin-left: 288px;
+  @media screen and (max-width: 1280px) {
+    min-height: 100vh;
+    margin: 32px 0;
   }
 }
 .app-content {
