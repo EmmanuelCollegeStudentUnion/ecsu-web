@@ -3,6 +3,11 @@ const glob = require('glob')
 const path = require('path')
 import routes from "./routes"
 import { itemsForContent } from "./routes"
+const nodeEnv = process.env.NODE_ENV || 'production';
+const gaId = {
+    'production': 'UA-131416461-1',
+    'development': 'UA-131416461-2'
+}[nodeEnv];
 const flatMap = (arr, f) => [].concat.apply([], arr.map(f))
 var urls = flatMap(routes, (x => [
     x.url,
@@ -103,14 +108,14 @@ export default {
             }
         }],
         ['@nuxtjs/google-analytics', {
-            id: 'UA-131416461-1',
+            id: gaId,
 
         }]
     ],
     head: {
         script: [
             { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Object.entries,IntersectionObserver' },
-            { innerHTML: "window['ga-disable-UA-131416461-1'] = true;", type: 'text/javascript', charset: 'utf-8' }
+            { innerHTML: `window['ga-disable-UA-${gaId}'] = true;`, type: 'text/javascript', charset: 'utf-8' }
         ],
         __dangerouslyDisableSanitizers: ['script']
     },
