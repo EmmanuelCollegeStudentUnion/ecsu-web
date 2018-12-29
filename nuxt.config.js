@@ -58,7 +58,7 @@ export default {
                     steps: 4,
                     placeholder: true,
                     adapter: require("responsive-loader/sharp")
-                }
+                },
             });
 
             return config;
@@ -93,12 +93,18 @@ export default {
     },
     modules: [
         '@nuxtjs/pwa',
-        '@nuxtjs/feed'
+        '@nuxtjs/feed',
+        'nuxt-webfontloader'
     ],
     head: {
         script: [
             { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Object.entries,IntersectionObserver' },
         ],
+    },
+    webfontloader: {
+        google: {
+            families: ['Material+Icons']
+        }
     },
     feed: [
         {

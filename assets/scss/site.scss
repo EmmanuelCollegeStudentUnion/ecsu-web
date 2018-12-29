@@ -11,10 +11,13 @@ $mdc-theme-background: #eceff1;
 @import "@material/list/mdc-list";
 @import "@material/card/mdc-card";
 
+//Standard font
 div{
-    
   @extend .mdc-typography--body1;
 }
+
+
+//Pretty table defaults
 
 td,
 th {
@@ -51,10 +54,17 @@ table{
   width: 100%;
 }
 
+
+
+//Alias icon sizes
+
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+
+
+//Nice picture loading
 
 .v-lazy-image {
   filter: blur(1px) saturate(0);
@@ -63,4 +73,14 @@ table{
 
 .v-lazy-image-loaded {
   filter: blur(0) saturate(1);
+}
+
+//Hide icons until loaded
+
+.material-icons{
+  visibility: hidden;
+}
+
+.wf-active * .material-icons {
+  visibility: visible;
 }

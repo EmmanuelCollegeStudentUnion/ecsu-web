@@ -32,6 +32,7 @@
         "normalize.css": "^8.0.1",
         "nuxt": "^2.3.4",
         "nuxt-generate-cluster": "^2.0.2",
+        "nuxt-webfontloader": "^1.0.0",
         "require-context": "^1.1.0",
         "responsive-loader": "^1.1.0",
         "sass-loader": "^7.1.0",
