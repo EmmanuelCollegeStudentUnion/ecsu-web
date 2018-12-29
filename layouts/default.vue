@@ -46,15 +46,6 @@ export default {
   data: () => ({
     drawerOpen: false
   }),
-  head: {
-    link: [
-      {
-        rel: "stylesheet",
-        href:
-          "//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic"
-      }
-    ]
-  },
   watch: {
     $route(to, from) {
       this.drawerOpen = false;
