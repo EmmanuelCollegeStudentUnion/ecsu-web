@@ -1,5 +1,5 @@
 ---
-image: 
+image: /assets/images/societies/ultimate.png
 title: ChrEmBroke House Ultimate Frisbee 
 ---
 
