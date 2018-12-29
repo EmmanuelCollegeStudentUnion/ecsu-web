@@ -102,7 +102,7 @@ workflows:
       - deploy:
           requires:
             - upload
-      - rollbar
+      - rollbar:
           requires:
             - deploy
 
