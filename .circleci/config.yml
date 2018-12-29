@@ -101,7 +101,8 @@ workflows:
             - build     
       - deploy:
           requires:
-            - upload       
+            - upload
+      - rollbar
 
     
 
