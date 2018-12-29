@@ -15,9 +15,9 @@ function dateTime(x) {
 function compare(x, y) {
     if (ordering(y) !== ordering(x)) {
         return ordering(y) - ordering(x)
-    } else if (dateTime(x) !== dateTime(y)) {
+    } else if (dateTime(x).getTime() !== dateTime(y).getTime()) {
         return +(dateTime(x) < dateTime(y)) - +(dateTime(y) < dateTime(x));
-    } else if (pubDate(x) !== pubDate(y)) {
+    } else if (pubDate(x).getTime() !== pubDate(y).getTime()) {
         return +(pubDate(x) < pubDate(y)) - +(pubDate(y) < pubDate(x));
     } else {
         return collator.compare(x.title, y.title)
