@@ -3,6 +3,7 @@ const glob = require('glob')
 const path = require('path')
 const url = require('url');
 const fs = require('fs')
+import compare from './content/compare';
 export function itemsForContent(contentType, includeContent) {
     const paths = glob.sync(`content/${contentType}/*.md`)
     return paths
@@ -13,12 +14,13 @@ export function itemsForContent(contentType, includeContent) {
             const content = yamlFront.loadFront(file);
             return {
                 text: content.title,
+                title: content.title,
                 name: slug,
                 items: [],
                 url: urlText,
                 ...(includeContent ? content : {})
             }
-        })
+        }).sort(compare)
 }
 export default [
     {
