@@ -85,8 +85,8 @@ export default {
   border-radius: 24px;
   margin: 32px;
   margin-left: 288px;
+  min-height: 100vh;
   @media screen and (max-width: 1280px) {
-    min-height: 100vh;
     margin: 32px 0;
   }
 }
