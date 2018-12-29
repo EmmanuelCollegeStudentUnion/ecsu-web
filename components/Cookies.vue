@@ -13,16 +13,19 @@
           >Accept</button>
         </div>
       </div>
+      <GoogleAnalytics/>
     </div>
   </transition>
 </template>
 
 <script>
 import { mapMutations } from "vuex";
+import GoogleAnalytics from "./GoogleAnalytics";
 export default {
   mounted: function() {
     this.readConsent();
   },
+  components: { GoogleAnalytics },
   methods: {
     ...mapMutations({
       readConsent: "cookies/readConsent",
@@ -31,7 +34,7 @@ export default {
   },
   computed: {
     cookies() {
-      return !this.$store.state.cookies.consent;
+      return this.$store.state.cookies.consent === false;
     }
   }
 };

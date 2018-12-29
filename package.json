@@ -15,6 +15,7 @@
         "@material/top-app-bar": "^0.41.0",
         "@material/typography": "^0.41.0",
         "@nuxtjs/feed": "^0.2.0",
+        "@nuxtjs/google-analytics": "^2.0.2",
         "@nuxtjs/pwa": "^2.6.0",
         "@vue/cli-shared-utils": "^3.2.0",
         "apollo-cache-inmemory": "^1.3.11",

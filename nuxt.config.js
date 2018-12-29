@@ -102,11 +102,17 @@ export default {
                 captureIp: 'anonymize'
             }
         }],
+        ['@nuxtjs/google-analytics', {
+            id: 'UA-131416461-1',
+
+        }]
     ],
     head: {
         script: [
             { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Object.entries,IntersectionObserver' },
+            { innerHTML: "window['ga-disable-UA-131416461-1'] = true;", type: 'text/javascript', charset: 'utf-8' }
         ],
+        __dangerouslyDisableSanitizers: ['script']
     },
     webfontloader: {
         google: {
