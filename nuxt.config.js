@@ -94,7 +94,14 @@ export default {
     modules: [
         '@nuxtjs/pwa',
         '@nuxtjs/feed',
-        'nuxt-webfontloader'
+        'nuxt-webfontloader',
+        ['nuxt-rollbar-module', {
+            serverAccessToken: '8c5b36a9377c42059e5bb2fca54d8b8f',
+            clientAccessToken: 'dfdb3ce2cf0e4428b26124d2a9fbb603',
+            config: {
+                captureIp: 'anonymize'
+            }
+        }],
     ],
     head: {
         script: [
