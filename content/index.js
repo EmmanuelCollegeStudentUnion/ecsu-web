@@ -1,7 +1,7 @@
 import compare from './compare'
 
 export default async (contentType, contentSlug) => {
-    const context = require.context(`@/content/`, true, /\.md$/)
+    const context = require.context(`@/content/`, true, /\.md$/, 'lazy-once')
     if (contentSlug) {
         const content = await context(`./${contentType}/${contentSlug}.md`)
         return {
@@ -11,30 +11,30 @@ export default async (contentType, contentSlug) => {
             type: contentType
         }
     } else {
-        return await Promise.all(
+        return (await Promise.all(
             context.keys()
                 .map(x => x.match(`\.\/${contentType}\/(.*).md`))
                 .filter(x => x)
-                .map(x => {
-                    const content = context(x[0])
+                .map(async x => {
+                    const content = await context(x[0])
                     return {
-                        ...context(x[0]),
+                        ...content,
                         filename: x[1],
                         url: `/${contentType}/${x[1]}`,
                         id: x[1],
                         body: content['__content'],
                         type: contentType
                     }
-                })
-                .sort(compare)
-        )
+                })))
+            .sort(compare)
+
 
     }
 }
 
 export async function resolveImage(image, alt) {
     if (image == null) return null
-    const context = require.context(`@/assets/images`, true, /\.(jpe?g|png)$/)
+    const context = require.context(`@/assets/images`, true, /\.(jpe?g|png)$/, 'lazy-once')
     const asset = image.match(`\/assets\/images\/(.*)`)
     if (asset && asset[0]) {
         const res = await context(`./${asset[1]}`)
