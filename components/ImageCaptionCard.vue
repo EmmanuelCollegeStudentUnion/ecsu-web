@@ -11,6 +11,7 @@
         :src="image.src"
         :srcset="image.srcSet"
         :src-placeholder="image.placeholder"
+        :alt="image.alt"
       />
       <div class="image-caption-card__primary">
         <h2 class="image-caption-card__title mdc-typography--headline6">{{title}}</h2>
