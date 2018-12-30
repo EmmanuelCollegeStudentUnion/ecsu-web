@@ -1,6 +1,7 @@
 
 const glob = require('glob')
 const path = require('path')
+var ImageminPlugin = require('imagemin-webpack-plugin').default
 import routes from "./routes"
 import { itemsForContent } from "./routes"
 const nodeEnv = process.env.NODE_ENV || 'production';
@@ -19,6 +20,14 @@ var urls = flatMap(routes, (x => [
     itemsForContent("posts").map(item => item.url));
 export default {
     build: {
+        plugins: [
+            new ImageminPlugin({
+                disable: nodeEnv !== 'production', // Disable during development
+                pngquant: {
+                    quality: '95-100'
+                }
+            })
+        ],
         babel: {
             plugins: [
                 "graphql-tag"
