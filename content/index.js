@@ -34,7 +34,7 @@ export default async (contentType, contentSlug) => {
 
 export async function resolveImage(image, alt) {
     if (image == null) return null
-    const context = require.context(`@/assets/images`, true, /\.(jpe?g|png)$/, 'lazy-once')
+    const context = require.context(`@/assets/images`, true, /\.(jpe?g|png)$/, 'lazy')
     const asset = image.match(`\/assets\/images\/(.*)`)
     if (asset && asset[0]) {
         const res = await context(`./${asset[1]}`)
