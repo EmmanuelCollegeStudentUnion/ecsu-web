@@ -19,6 +19,11 @@ var urls = flatMap(routes, (x => [
     itemsForContent("posts").map(item => item.url));
 export default {
     build: {
+        babel: {
+            plugins: [
+                "graphql-tag"
+            ]
+        },
         extend(config) {
             config.module.rules.push(
                 { test: /\.md$/, loader: 'markdown-with-front-matter-loader' }
