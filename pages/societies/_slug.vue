@@ -25,6 +25,8 @@ export default {
             image {
               src
               srcSet
+              placeholder
+              alt
             }
             body
           }
