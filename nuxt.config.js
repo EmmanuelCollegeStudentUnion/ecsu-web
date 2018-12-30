@@ -25,18 +25,19 @@ export default {
     build: {
         plugins: [
             new ImageminPlugin({
+                test: /\.(png|jpg)$/,
                 cache: true,
                 imageminOptions: {
-                  plugins: [
-                    imageminJpegtran({
-                      progressive: true
-                    }),
-                    imageminOptipng({
-                      optimizationLevel: 5
-                    }),
-                  ]
+                    plugins: [
+                        imageminJpegtran({
+                            progressive: true
+                        }),
+                        imageminOptipng({
+                            optimizationLevel: 5
+                        }),
+                    ]
                 }
-              })
+            })
         ],
         babel: {
             plugins: [
