@@ -10,7 +10,7 @@
         class="mdc-card__media image-caption-card__media"
         :src="image.src"
         :srcset="image.srcSet"
-        :src-placeholder="image.placeholder"
+        :src-placeholder="image.placeholder||image.src"
         :alt="image.alt"
       />
       <div class="image-caption-card__primary">
