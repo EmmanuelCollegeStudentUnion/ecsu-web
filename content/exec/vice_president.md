@@ -1,6 +1,6 @@
 ---
 email: vicepresident@ecsu.org.uk
-image: /assets/images/matilda_vp.jpg
+image: /assets/images/exec/matilda_vp.jpg
 name: Matilda Schwefel
 title: Vice President
 ordering: 1

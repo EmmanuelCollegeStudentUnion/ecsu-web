@@ -1,6 +1,6 @@
 ---
 title: North Court
-image: /assets/images/north.jpg
+image: /assets/images/room_locations/north.jpg
 
 ---
 

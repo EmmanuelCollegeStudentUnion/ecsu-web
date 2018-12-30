@@ -1,5 +1,5 @@
 ---
-image: /assets/images/fitness.jpg
+image: /assets/images/info/fitness.jpg
 subtitle: Information Regarding Emma's Gym
 title: Emma Gym
 ---

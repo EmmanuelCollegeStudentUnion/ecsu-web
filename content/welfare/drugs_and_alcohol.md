@@ -1,5 +1,5 @@
 ---
-image: /assets/images/medicalsymbol.jpg
+image: /assets/images/info/medicalsymbol.jpg
 subtitle: null
 title: Drugs and Alcohol
 ---

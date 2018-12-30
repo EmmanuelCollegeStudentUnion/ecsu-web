@@ -1,6 +1,6 @@
 ---
 title: Blantyre
-image: /assets/images/blantyre.jpg
+image: /assets/images/room_locations/blantyre.jpg
 ---
 
 Blantyre is accommodation for Emmanuel College

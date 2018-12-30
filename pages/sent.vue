@@ -17,7 +17,7 @@ export default {
   components: { StandardPage },
   computed: {
     tickImage() {
-      return require("@/assets/images/tick.gif");
+      return require("@/assets/images/site/tick.gif");
     }
   }
 };

@@ -23,7 +23,7 @@ export default {
   components: { StandardPage, ImageCard },
   computed: {
     image() {
-      return require("@/assets/images/404.png");
+      return require("@/assets/images/site/404.png");
     }
   }
 };

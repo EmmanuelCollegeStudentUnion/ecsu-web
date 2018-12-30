@@ -1,5 +1,5 @@
 ---
-image: /assets/images/huddle1.jpg
+image: /assets/images/societies/huddle1.jpg
 title: Rugby
 ---
 

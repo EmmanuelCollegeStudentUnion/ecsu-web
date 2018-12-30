@@ -15,6 +15,17 @@ const content = {
     'whatson': require.context(`@/content/whatson`, true, /\.md$/, 'lazy-once'),
 }
 
+const images = {
+    'access': require.context(`@/assets/images/access`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'exec': require.context(`@/assets/images/exec`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'info': require.context(`@/assets/images/info`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'pages/home': require.context(`@/assets/images/pages/home`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'prospective': require.context(`@/assets/images/prospective`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'room_locations': require.context(`@/assets/images/room_locations`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'site': require.context(`@/assets/images/site`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'societies': require.context(`@/assets/images/societies`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+}
+
 function filename(filepath) {
     return filepath.split('\\').pop().split('/').pop().split('.')[0]
 }
@@ -54,11 +65,10 @@ export default async (contentType, contentSlug) => {
 }
 
 export async function resolveImage(image, alt) {
-    if (image == null) return null
-    const context = require.context(`@/assets/images`, true, /\.(jpe?g|png)$/, 'lazy')
-    const asset = image.match(`\/assets\/images\/(.*)`)
-    if (asset && asset[0]) {
-        const res = await context(`./${asset[1]}`)
+    if (image == null) return null;
+    const asset = image.match(`\/assets\/images\/(.*)\/(.*)`);
+    if (asset && asset[1]) {
+        const res = await images[asset[1]](`./${asset[2]}`)
         return {
             src: res.src,
             srcSet: res.srcSet,

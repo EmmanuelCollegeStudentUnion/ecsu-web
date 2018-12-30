@@ -1,5 +1,5 @@
 ---
-image: /assets/images/formal.jpg
+image: /assets/images/info/formal.jpg
 subtitle: Information Regarding the Formal Hall System in Emmanuel College
 title: Formal Hall
 ---

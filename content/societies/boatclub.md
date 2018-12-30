@@ -1,5 +1,5 @@
 ---
-image: /assets/images/may_bumps.jpg
+image: /assets/images/societies/may_bumps.jpg
 title: Boat Club
 ---
 

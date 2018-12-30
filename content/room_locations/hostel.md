@@ -1,6 +1,6 @@
 ---
 title: Hostel
-image: /assets/images/hostel.jpg
+image: /assets/images/room_locations/hostel.jpg
 ---
 
 Hostel is accommodation for Emmanuel College

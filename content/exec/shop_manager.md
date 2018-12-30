@@ -1,6 +1,6 @@
 ---
 email: shop@ecsu.org.uk
-image: /assets/images/Jack shop.jpg
+image: /assets/images/exec/Jack shop.jpg
 name: Jack Irvine
 title: Shop Manager
 ---

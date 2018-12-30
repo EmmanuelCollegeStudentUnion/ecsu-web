@@ -1,6 +1,6 @@
 ---
 email: internationalsofficer@ecsu.org.uk
-image: /assets/images/Simina international.jpg
+image: /assets/images/exec/Simina international.jpg
 name: Simina Dragos
 title: International Officer
 ---

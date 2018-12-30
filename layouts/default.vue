@@ -65,7 +65,7 @@ export default {
   },
   computed: {
     logo() {
-      return require("@/assets/images/logo1.png");
+      return require("@/assets/images/site/logo1.png");
     }
   }
 };

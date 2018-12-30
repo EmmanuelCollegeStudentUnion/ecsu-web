@@ -1,6 +1,6 @@
 ---
 email: education@ecsu.org.uk
-image: /assets/images/Josh education.jpg
+image: /assets/images/exec/Josh education.jpg
 name: Josh Wharton
 title: Careers & Education Officer
 ---

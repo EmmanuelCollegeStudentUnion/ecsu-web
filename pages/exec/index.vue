@@ -130,7 +130,7 @@ export default {
 
   computed: {
     image() {
-      return require("@/assets/images/exec17.jpg");
+      return require("@/assets/images/exec/exec17.jpg");
     }
   },
   apollo: {

@@ -1,6 +1,6 @@
 ---
 email: womens@ecsu.org.uk
-image: /assets/images/Lydia Womens.jpg
+image: /assets/images/exec/Lydia Womens.jpg
 name: Lydia Phillips Lea
 title: Women's Officer
 ---

@@ -1,5 +1,5 @@
 ---
-image: /assets/images/ecms.jpg
+image: /assets/images/societies/ecms.jpg
 title: 'Emma Music Society | ECMS '
 ---
 

@@ -73,7 +73,7 @@ export default {
       return this.homePage ? this.homePage.whatsHere : [];
     },
     sketchImage() {
-      return require("@/assets/images/Sketch.png");
+      return require("@/assets/images/pages/home/Sketch.png");
     }
   },
   apollo: {

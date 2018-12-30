@@ -1,5 +1,5 @@
 ---
-image: /assets/images/panthers.jpg
+image: /assets/images/societies/panthers.jpg
 title: Emmanuel Football
 ---
 

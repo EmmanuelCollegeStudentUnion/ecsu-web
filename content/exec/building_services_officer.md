@@ -1,6 +1,6 @@
 ---
 email: buildingsandservices@ecsu.org.uk
-image: /assets/images/George Buildings and services.jpg
+image: /assets/images/exec/George Buildings and services.jpg
 name: George Cobley
 title: Buildings & Services Officer
 ---

@@ -1,5 +1,5 @@
 ---
-image: /assets/images/shop.png
+image: /assets/images/info/shop.png
 subtitle: Information Regarding ECSU Shop
 title: ECSU Shop
 ---

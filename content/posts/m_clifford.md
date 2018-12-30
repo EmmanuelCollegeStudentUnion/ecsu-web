@@ -1,5 +1,5 @@
 ---
-image: /assets/images/clifford.png
+image: /assets/images/access/clifford.png
 subtitle: Geography Student from North London
 title: Maddy Clifford
 blog: Access Blog

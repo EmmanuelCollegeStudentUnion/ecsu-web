@@ -1,5 +1,5 @@
 ---
-image: /assets/images/sleep.jpg
+image: /assets/images/info/sleep.jpg
 subtitle: Advice on how to achieve better sleeping patterns
 title: Sleep
 ---

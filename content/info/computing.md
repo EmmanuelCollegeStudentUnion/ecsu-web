@@ -1,5 +1,5 @@
 ---
-image: /assets/images/computer.png
+image: /assets/images/info/computer.png
 subtitle: Information Regarding IT services in Emmanuel
 title: Computing
 ---

@@ -1,5 +1,5 @@
 ---
-image: /assets/images/emmanuel_logo.png
+image: /assets/images/info/emmanuel_logo.png
 subtitle: null
 title: About ECSU
 ---

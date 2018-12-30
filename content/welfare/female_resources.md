@@ -1,5 +1,5 @@
 ---
-image: /assets/images/female_ico.png
+image: /assets/images/info/female_ico.png
 subtitle: Resources and Support for Women
 title: Female Welfare Resources
 ---

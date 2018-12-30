@@ -1,5 +1,5 @@
 ---
-image: /assets/images/fruit.jpg
+image: /assets/images/info/fruit.jpg
 subtitle: Information on Staying Healthy whilst at Cambridge
 title: Staying Healthy
 ---

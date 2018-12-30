@@ -50,7 +50,7 @@ export default {
   },
   computed: {
     image() {
-      return require("@/assets/images/trainer_ico.png");
+      return require("@/assets/images/societies/trainer_ico.png");
     }
   }
 };

@@ -1,5 +1,5 @@
 ---
-image: /assets/images/wheelchair.jpg
+image: /assets/images/info/wheelchair.jpg
 subtitle: Key Information and Points of Contact
 title: Students with Disabilities
 ---

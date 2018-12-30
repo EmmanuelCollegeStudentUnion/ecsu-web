@@ -1,5 +1,5 @@
 ---
-image: /assets/images/blantyre.jpg
+image: /assets/images/prospective/blantyre.jpg
 subtitle: null
 title: Accommodation
 ---

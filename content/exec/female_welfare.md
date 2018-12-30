@@ -1,6 +1,6 @@
 ---
 email: welfare-female@ecsu.org.uk
-image: /assets/images/Caitlin female welfare.jpg
+image: /assets/images/exec/Caitlin female welfare.jpg
 name: Caitlin Campbell
 title: Female Welfare Officer
 ---

@@ -1,6 +1,6 @@
 ---
 email: green@ecsu.org.uk
-image: /assets/images/isabella_green.jpg
+image: /assets/images/exec/isabella_green.jpg
 name: Isabella Kong
 title: Green & Ethical Officer
 ---

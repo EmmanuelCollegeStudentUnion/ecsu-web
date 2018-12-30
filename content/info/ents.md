@@ -1,5 +1,5 @@
 ---
-image: /assets/images/ents_logo.jpg
+image: /assets/images/info/ents_logo.jpg
 subtitle: Information Regarding Emma Ents
 title: Emma Ents
 ---

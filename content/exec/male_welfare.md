@@ -1,6 +1,6 @@
 ---
 email: welfare-male@ecsu.org.uk
-image: /assets/images/Dan male welfare.jpg
+image: /assets/images/exec/Dan male welfare.jpg
 name: Dan Smith
 title: Male Welfare Officer
 ---

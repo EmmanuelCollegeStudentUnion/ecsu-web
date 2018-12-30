@@ -1,6 +1,6 @@
 ---
 email: president@ecsu.org.uk
-image: /assets/images/Olivia VP.jpg
+image: /assets/images/exec/Olivia VP.jpg
 name: Olivia Malmose-O'Connor
 title: President
 ordering: 2

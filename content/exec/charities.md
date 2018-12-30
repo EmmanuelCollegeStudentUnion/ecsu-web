@@ -1,6 +1,6 @@
 ---
 email: charities@ecsu.org.uk
-image: /assets/images/Anjali Charities.jpg
+image: /assets/images/exec/Anjali Charities.jpg
 name: Anjali Gupta
 title: Charities Officer
 ---

@@ -1,5 +1,5 @@
 ---
-image: /assets/images/whitehead.jpg
+image: /assets/images/access/whitehead.jpg
 subtitle: ECSU Treasurer
 title: Charlie Whitehead
 blog: Access Blog

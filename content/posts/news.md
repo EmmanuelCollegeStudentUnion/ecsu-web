@@ -1,5 +1,5 @@
 ---
-image: /assets/images/uni_challenge.jpg
+image: /assets/images/site/uni_challenge.jpg
 title: November 2016
 blog: Latest News
 ---
