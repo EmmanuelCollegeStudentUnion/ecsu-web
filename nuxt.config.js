@@ -84,7 +84,12 @@ export default {
         }
     },
     generate: {
-        routes() { return urls }
+        routes() { return urls },
+        done({ duration, errors, workerInfo }) {
+            if (errors == true) {
+                process.exit(1)
+            }
+        }
     },
     env: {
         routes
