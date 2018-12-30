@@ -1,7 +1,10 @@
 
 const glob = require('glob')
 const path = require('path')
-var ImageminPlugin = require('imagemin-webpack-plugin').default
+const ImageminPlugin = require("imagemin-webpack");
+const imageminJpegtran = require("imagemin-jpegtran");
+const imageminOptipng = require("imagemin-optipng");
+
 import routes from "./routes"
 import { itemsForContent } from "./routes"
 const nodeEnv = process.env.NODE_ENV || 'production';
@@ -22,11 +25,18 @@ export default {
     build: {
         plugins: [
             new ImageminPlugin({
-                disable: nodeEnv !== 'production', // Disable during development
-                pngquant: {
-                    quality: '95-100'
+                cache: true,
+                imageminOptions: {
+                  plugins: [
+                    imageminJpegtran({
+                      progressive: true
+                    }),
+                    imageminOptipng({
+                      optimizationLevel: 5
+                    }),
+                  ]
                 }
-            })
+              })
         ],
         babel: {
             plugins: [
@@ -86,6 +96,7 @@ export default {
     generate: {
         routes() { return urls },
         done({ duration, errors, workerInfo }) {
+            console.error(errors);
             if (errors == true) {
                 process.exit(1)
             }
