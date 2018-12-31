@@ -19,6 +19,7 @@ var urls = flatMap(routes, (x => [
     itemsForContent("whatson").map(item => item.url),
     itemsForContent("posts").map(item => item.url));
 export default {
+    modern: nodeEnv === 'production' ? 'client' : false,
     build: {
         babel: {
             plugins: [
