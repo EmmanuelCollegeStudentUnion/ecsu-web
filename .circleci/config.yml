@@ -48,6 +48,11 @@ jobs:
                 name: Generate
                 command:
                     yarn build
+
+            - run:
+                name: Generate webp images
+                command:
+                    yarn webp
             
             - save_cache:
                 paths:
