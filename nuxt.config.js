@@ -1,9 +1,6 @@
 
 const glob = require('glob')
 const path = require('path')
-const ImageminPlugin = require("imagemin-webpack");
-const imageminJpegtran = require("imagemin-jpegtran");
-const imageminOptipng = require("imagemin-optipng");
 
 import routes from "./routes"
 import { itemsForContent } from "./routes"
@@ -23,22 +20,6 @@ var urls = flatMap(routes, (x => [
     itemsForContent("posts").map(item => item.url));
 export default {
     build: {
-        plugins: [
-            new ImageminPlugin({
-                test: /\.(png|jpg)$/,
-                cache: true,
-                imageminOptions: {
-                    plugins: [
-                        imageminJpegtran({
-                            progressive: true
-                        }),
-                        imageminOptipng({
-                            optimizationLevel: 5
-                        }),
-                    ]
-                }
-            })
-        ],
         babel: {
             plugins: [
                 "graphql-tag"
@@ -81,13 +62,13 @@ export default {
 
             config.module.rules.push({
                 test: /\.(jpe?g|png)$/i,
-                loader: "responsive-loader",
-                options: {
-                    min: 300,
-                    max: 2000,
-                    steps: 4,
-                    placeholder: true,
-                    adapter: require("responsive-loader/sharp")
+                    loader: "responsive-loader",
+                    options: {
+                        min: 300,
+                        max: 2000,
+                        steps: 4,
+                        placeholder: true,
+                        adapter: require("responsive-loader/sharp")
                 },
             });
 
