@@ -4,4 +4,5 @@ RewriteCond %{REQUEST_URI}  (?i)(.*)(\.jpe?g|\.png)$
 RewriteCond %{DOCUMENT_ROOT}%1.webp -f
 RewriteRule (?i)(.*)(\.jpe?g|\.png)$ %1\.webp [L,T=image/webp,R] 
 Header append Vary Accept env=REDIRECT_accept
+ExpiresActive on
 ExpiresDefault "access plus 1 day"
