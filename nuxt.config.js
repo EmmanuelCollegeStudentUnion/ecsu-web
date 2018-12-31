@@ -62,13 +62,13 @@ export default {
 
             config.module.rules.push({
                 test: /\.(jpe?g|png)$/i,
-                    loader: "responsive-loader",
-                    options: {
-                        min: 300,
-                        max: 2000,
-                        steps: 4,
-                        placeholder: true,
-                        adapter: require("responsive-loader/sharp")
+                loader: "responsive-loader",
+                options: {
+                    min: 300,
+                    max: 2000,
+                    steps: 4,
+                    placeholder: true,
+                    adapter: require("responsive-loader/sharp")
                 },
             });
 
@@ -93,7 +93,7 @@ export default {
         }
     },
     plugins: [
-        '~/plugins/vue-progressive-image',
+        '~/plugins/vue-lazyload',
         '~/plugins/vue-mq',
         '~/plugins/vue-apollo',
     ],
