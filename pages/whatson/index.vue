@@ -2,6 +2,7 @@
   <div class="mdc-layout-grid__inner">
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 center-heading">
       <h2 class="mdc-typography--headline2 layout-center">What's On?</h2>
+      <div v-if="whatsOnEvents.length==0">Coming soon...</div>
     </div>
     <div
       v-for="item in whatsOnEvents"
