@@ -7,6 +7,13 @@
       Email me at:
       <a :href="mailto">{{exec.email}}</a>
     </span>
+    <br>
+    <br>
+    <br>
+    <nuxt-link
+      to="/exec"
+      class="mdc-button mdc-button--outlined mdc-ripple-upgraded"
+    >&lt Back to Exec</nuxt-link>
   </ProfilePage>
 </template>
 
