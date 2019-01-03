@@ -76,7 +76,7 @@ aside.mdc-drawer {
 
 @media screen and (max-width: 1279px) {
   .mdc-drawer--persistant {
-    display: none
+    display: none !important;
   }
 }
 
