@@ -4,9 +4,6 @@ subtitle: Key Information and Points of Contact
 title: Students with Disabilities
 ---
 
-## College Disability Liason Officer
-<dt>Name</dt><dd>Chloe Lansley</dd><dt class="even">Email</dt><dd class="even">[cl723@cam.ac.uk](mailto:cl723@cam.ac.uk)</dd>
-
 Regulary in touch with the University's Disability Resource Centre to ensure all students receive adequate support.
 
 ## University Disability Resource Centre
