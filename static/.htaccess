@@ -26,7 +26,7 @@ RedirectPermanent /pages/computing.html /info/computing
 RedirectPermanent /pages/conditions.html /info/conditions
 RedirectPermanent /pages/cricket.html /societies/cricket
 RedirectPermanent /pages/cusu_support.html /info/cusu_support
-RedirectPermanent /pages/disabilities.html /info/disabilities
+RedirectPermanent /pages/disabilities.html /welfare/disabilities
 RedirectPermanent /pages/disabilities_officer.html /exec/disabilities_officer
 RedirectPermanent /pages/disabled.html /info/disabled
 RedirectPermanent /pages/drugs_and_alcohol.html /welfare/drugs_and_alcohol

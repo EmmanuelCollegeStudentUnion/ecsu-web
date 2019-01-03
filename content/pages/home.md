@@ -43,10 +43,10 @@ whats_here:
     title: Emmanuel Hall Menu
     url: 'https://www.emma.cam.ac.uk/contact/students/catering/menus/'
   - description: >-
-      Find out about ECSU's newest Executive Committee for 2018 - who they are,
+      Find out about ECSU's newest Executive Committee for 2019 - who they are,
       what they do and how to get in touch.
     image: /assets/images/pages/home/slide01.jpg
-    title: Meet the 2017-18 ECSU Exec
+    title: Meet the 2018-19 ECSU Exec
     url: /exec
   - description: >-
       Find out more about the societies on offer within the college, ranging
