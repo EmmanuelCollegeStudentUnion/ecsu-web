@@ -113,3 +113,4 @@ RedirectPermanent /pages/welfare_in_college.html /welfare/welfare_in_college
 RedirectPermanent /pages/welfare_request.html /welfare/welfare_request
 RedirectPermanent /pages/womens_officer.html /exec/womens_officer
 RedirectPermanent /pages/women_rugby.html /societies/women_rugby
+RedirectPermanent /pages/room_database/main.html /room_locations
