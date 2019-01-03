@@ -1,10 +1,8 @@
 ---
 email: charities@ecsu.org.uk
-image: /assets/images/exec/Anjali Charities.jpg
-name: Anjali Gupta
+image: /assets/images/exec/Charities.jpg
+name: Sophia Rodrigues 
 title: Charities Officer
 ---
 
-Hi, I’m Anjali (she/her), a Second Year Geographer and your new charities officer.
-My role is to promote volunteering opportunities and fundraise for charities chosen by Emma students.
-If you need me or if you have any ideas, please email asg52 or contact me via Facebook!
+ECSU Resolutions: To recruit a fabulous charities sub-committee and put on some really good fundraisers

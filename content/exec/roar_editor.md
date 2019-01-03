@@ -1,8 +1,8 @@
 ---
 email: roar@ecsu.org.uk
-image: /assets/images/exec/Roar ewan rohan.jpg
-name: Rohan Gupta & Ewan Patel
-title: ROAR Editors
+image: /assets/images/exec/Roar.jpg
+name: Yoseph Kilfie
+title: ROAR Editor
 ---
 
-Emmanuel ROAR stands for Really Obnoxious Awful Rubbish and we do a weekly thing at brunch
+ECSU Resolutions: Keep everyone entertained

@@ -1,10 +1,8 @@
 ---
 email: buildingsandservices@ecsu.org.uk
-image: /assets/images/exec/George Buildings and services.jpg
-name: George Cobley
+image: /assets/images/exec/Buildings.jpg
+name: Harvey Hughes
 title: Buildings & Services Officer
 ---
 
-I’m George Cobley (he/him), the Buildings and Services Officer for 2018.
-If you have any suggestions/queries/complaints about any of the college’s buildings or services
-(including rooms, hall, sports facilities, etc.), then please contact me at gc539@cam.ac.uk.
+ECSU Resolutions: To trial later squash times and continue themed formals (Get a good working relationship with the Bursar)

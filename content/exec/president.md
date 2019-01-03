@@ -1,11 +1,9 @@
 ---
 email: president@ecsu.org.uk
-image: /assets/images/exec/Olivia VP.jpg
-name: Olivia Malmose-O'Connor
+image: /assets/images/exec/matilda_vp.jpg
+name: Matilda Schwefel
 title: President
 ordering: 2
 ---
 
-I’m Liv (she/her) a Second Year HSPSer, as President my job is to be a primary point of contact between students, college staff and CUSU.
-My main aim is to improve college life for everyone, while maintaining the friendly Emma atmosphere!
-I am always interested to hear your ideas or any problems you may be facing so, please drop me a message at president@ecsu.org.uk
+ECSU Resolutions: To lead a happy, approachable, and representative committee.

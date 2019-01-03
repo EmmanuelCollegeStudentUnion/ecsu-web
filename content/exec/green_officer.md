@@ -1,11 +1,8 @@
 ---
 email: green@ecsu.org.uk
-image: /assets/images/exec/isabella_green.jpg
-name: Isabella Kong
+image: /assets/images/exec/Green.png
+name: Lucy Mahony	
 title: Green & Ethical Officer
 ---
 
-Hi I’m Isabella (she/her), a second-year geographer and nature enthusiast.
-My role as your ECSU Green Officer is to promote environmental initiatives within Emma and beyond,
-including raising awareness and improving sustainability practices in College.
-If you have any ideas or questions, feel free to contact me via ik351/Facebook!
+ECSU Resolutions: Make Emma not just a friendly college but an eco-friendly one ! :))))
