@@ -51,7 +51,7 @@ export default {
   max-width: 300px;
   max-height: 300px;
   margin: auto;
-  object-position: 50% 0;
+  object-position: 50% 50%;
   border-width: 3px;
 }
 .center {
