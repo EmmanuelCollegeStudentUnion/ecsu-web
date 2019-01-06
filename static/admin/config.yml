@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: 101hawn/ecsu
-  base_url: http://ecsu.soc.srcf.net/
+  base_url: https://nh487.user.srcf.net
   
 collections:
     - label: "Pages"
