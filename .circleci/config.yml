@@ -72,7 +72,7 @@ jobs:
             - run:
                 name: Upload
                 command:
-                    scp /tmp/deploy.tar.gz nh487@files.srcf.net:~/deploy/artifacts/{{ .Environment.CIRCLE_SHA1 }}.tar.gz
+                    scp /tmp/deploy.tar.gz nh487@files.srcf.net:~/deploy/artifacts/$CIRCLE_SHA1.tar.gz
     
     deployStaging:
         machine:
@@ -81,8 +81,8 @@ jobs:
             - run:
                 name: Deploy staging
                 command: |
-                    rm ~/deploy/deploy.tar.gz
-                    cp ~/artifacts/{{ .Environment.CIRCLE_SHA1 }}.tar.gz ~/deploy/deploy.tar.gz
+                    ssh nh487@shell.srcf.net -C "rm ~/deploy/deploy.tar.gz"
+                    ssh nh487@shell.srcf.net -C "cp ~/artifacts/$CIRCLE_SHA1.tar.gz ~/deploy/deploy.tar.gz"
                     ssh nh487@shell.srcf.net "~/deploy/deploy.sh"
                                     
     deployProduction:
@@ -92,8 +92,8 @@ jobs:
             - run:
                 name: Deploy into production
                 command: |
-                    rm ~/deploy/deploy.tar.gz
-                    cp ~/artifacts/{{ .Environment.CIRCLE_SHA1 }}.tar.gz ~/deploy/deploy-PRODUCTION.tar.gz
+                    ssh nh487@shell.srcf.net -C "rm ~/deploy/deploy.tar.gz"
+                    ssh nh487@shell.srcf.net -C "cp ~/artifacts/$CIRCLE_SHA1.tar.gz ~/deploy/deploy-PRODUCTION.tar.gz"
                     ssh nh487@shell.srcf.net "~/deploy/deploy-PRODUCTION.sh"
 
 
