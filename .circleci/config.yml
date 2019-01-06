@@ -127,9 +127,9 @@ workflows:
       - deployStaging:
           requires:
             - upload
-      - rollbar:
+      - rollbarStaging:
           requires:
-            - deploy
+            - deployStaging
   build_and_deploy_production:
     jobs:
       - build
@@ -139,13 +139,13 @@ workflows:
       - hold:
           type: approval
           requires:
-            - deploy
+            - upload
       - production:
           requires:
             - hold            
       - rollbarProduction:
           requires:
-            - deploy
+            - production
 
     
 
