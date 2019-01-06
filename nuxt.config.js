@@ -110,6 +110,7 @@ export default {
         },
     },
     modules: [
+        'nuxt-purgecss',
         '@nuxtjs/pwa',
         '@nuxtjs/feed',
         'nuxt-webfontloader',
@@ -125,6 +126,9 @@ export default {
 
         }]
     ],
+    purgeCSS: {
+        mode: 'postcss',
+    },
     head: {
         script: [
             { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Object.entries,IntersectionObserver' },
