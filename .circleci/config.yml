@@ -74,13 +74,22 @@ jobs:
                 command:
                     scp /tmp/deploy.tar.gz nh487@files.srcf.net:~/deploy/deploy.tar.gz
     
-    deploy:
+    deployStaging:
         machine:
             enabled: true
         steps:
             - run:
-                name: Deploy
+                name: Deploy staging
                 command: ssh nh487@shell.srcf.net "~/deploy/deploy.sh"
+                                    
+    deployProduction:
+        machine:
+            enabled: true
+        steps:
+            - run:
+                name: Deploy into production
+                command: ssh nh487@shell.srcf.net "~/deploy/deploy-PRODUCTION.sh"
+
 
     rollbarStaging:
         machine:
@@ -94,7 +103,6 @@ jobs:
                     -F environment=staging \
                     -F revision=$CIRCLE_SHA1 \
                     -F local_username=$CIRCLE_USERNAME 
-
     rollbarProduction:
         machine:
             enabled: true
@@ -107,14 +115,6 @@ jobs:
                     -F environment=production \
                     -F revision=$CIRCLE_SHA1 \
                     -F local_username=$CIRCLE_USERNAME 
-                                    
-    production:
-        machine:
-            enabled: true
-        steps:
-            - run:
-                name: Deploy into production
-                command: ssh nh487@shell.srcf.net "~/deploy/deploy-PRODUCTION.sh"
             
 workflows:
   version: 2
@@ -140,7 +140,7 @@ workflows:
           type: approval
           requires:
             - upload
-      - production:
+      - deployProduction:
           requires:
             - hold            
       - rollbarProduction:
