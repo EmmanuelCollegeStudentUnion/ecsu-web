@@ -69,7 +69,8 @@ export default {
                     max: 2000,
                     steps: 4,
                     placeholder: true,
-                    adapter: require("responsive-loader/sharp")
+                    adapter: require("responsive-loader/sharp"),
+                    disable: nodeEnv !== 'production'
                 },
             });
 
@@ -118,6 +119,7 @@ export default {
             serverAccessToken: '8c5b36a9377c42059e5bb2fca54d8b8f',
             clientAccessToken: 'dfdb3ce2cf0e4428b26124d2a9fbb603',
             config: {
+                enabled: nodeEnv === 'production',
                 captureIp: 'anonymize'
             }
         }],
