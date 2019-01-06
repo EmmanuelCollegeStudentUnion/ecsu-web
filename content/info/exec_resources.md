@@ -8,4 +8,4 @@ Members of the Exec who incur expenses while doing something in their official c
 
 |File|Size
 |------
-|[Expenses Claim Form](/imagespdf/expenses.pdf)|22.38 KiB
+|[Expenses Claim Form](/pdf/expenses.pdf)|22.38 KiB
