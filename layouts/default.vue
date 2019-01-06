@@ -13,6 +13,7 @@
             >
           </span>
           <button
+            aria-label="menu"
             v-show="$mq!='lg'"
             class="mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded menu-icon"
             style="float:right; --mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.71429; --mdc-ripple-left:10px; --mdc-ripple-top:10px;"
