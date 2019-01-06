@@ -131,6 +131,7 @@ workflows:
           requires:
             - deploy
   build_and_deploy_production:
+    jobs:
       - build
       - upload:
           requires:
