@@ -124,14 +124,14 @@ workflows:
       - upload:
           requires:
             - build     
-      - deployStaging:
-          requires:
-            - upload
           filters:
             branches:
               only: 
                 - develop
                 - master
+      - deployStaging:
+          requires:
+            - upload
       - rollbarStaging:
           requires:
             - deployStaging
@@ -145,13 +145,13 @@ workflows:
           type: approval
           requires:
             - upload
-      - deployProduction:
-          requires:
-            - hold
           filters:
             branches:
               only:
                 - master            
+      - deployProduction:
+          requires:
+            - hold
       - rollbarProduction:
           requires:
             - deployProduction
