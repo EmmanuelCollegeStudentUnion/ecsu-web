@@ -1,12 +1,12 @@
 ---
+title: 'Room 19, Cloisters'
+location: North Court
+grade: '8'
+images: []
+network: Wired and Wireless
 basin: En-Suite
+living_room: 'No'
 cudn: true
 floor: Second
-grade: 19
-images: []
-living_room: 'No'
-location: North Court
-name: '19'
-network: Wired and Wireless
-title: Room 19, Cloisters
 ---
+
