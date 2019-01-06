@@ -71,7 +71,7 @@ table{
   filter: blur(1px) saturate(0);
   transition: filter 1s;
 }
-
+/* purgecss ignore */
 .v-lazy-image-loaded {
   filter: blur(0) saturate(1);
 }
@@ -82,6 +82,7 @@ table{
   visibility: hidden;
 }
 
+/* purgecss ignore */
 .wf-active * .material-icons {
   visibility: visible;
 }
