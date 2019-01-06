@@ -127,6 +127,11 @@ workflows:
       - deployStaging:
           requires:
             - upload
+          filters:
+            branches:
+              only: 
+                - develop
+                - master
       - rollbarStaging:
           requires:
             - deployStaging
@@ -142,7 +147,11 @@ workflows:
             - upload
       - deployProduction:
           requires:
-            - hold            
+            - hold
+          filters:
+            branches:
+              only:
+                - master            
       - rollbarProduction:
           requires:
             - deployProduction
