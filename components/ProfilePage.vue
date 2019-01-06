@@ -7,6 +7,8 @@
         :srcset="image.srcSet"
         :src-placeholder="image.placeholder"
         :alt="image.alt"
+        width=300
+        height=300
       />
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5 center" v-if="!!$slots.title">
