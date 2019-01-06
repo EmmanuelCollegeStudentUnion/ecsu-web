@@ -82,7 +82,7 @@ jobs:
                 name: Deploy
                 command: ssh nh487@shell.srcf.net "~/deploy/deploy.sh"
 
-    rollbar:
+    rollbarStaging:
         machine:
             enabled: true
         steps:
@@ -92,6 +92,19 @@ jobs:
                     curl https://api.rollbar.com/api/1/deploy/ \
                     -F access_token='8c5b36a9377c42059e5bb2fca54d8b8f' \
                     -F environment=staging \
+                    -F revision=$CIRCLE_SHA1 \
+                    -F local_username=$CIRCLE_USERNAME 
+
+    rollbarProduction:
+        machine:
+            enabled: true
+        steps:
+            - run:
+                name: Deployment notification to Rollbar
+                command: |
+                    curl https://api.rollbar.com/api/1/deploy/ \
+                    -F access_token='8c5b36a9377c42059e5bb2fca54d8b8f' \
+                    -F environment=production \
                     -F revision=$CIRCLE_SHA1 \
                     -F local_username=$CIRCLE_USERNAME 
                                     
@@ -105,26 +118,33 @@ jobs:
             
 workflows:
   version: 2
-  build_and_deploy:
+  build_and_deploy_staging:
     jobs:
       - build
       - upload:
           requires:
             - build     
-      - deploy:
+      - deployStaging:
           requires:
             - upload
       - rollbar:
           requires:
             - deploy
+  build_and_deploy_production:
+      - build
+      - upload:
+          requires:
+            - build     
       - hold:
           type: approval
           requires:
             - deploy
       - production:
           requires:
-            - hold
-            
+            - hold            
+      - rollbarProduction:
+          requires:
+            - deploy
 
     
 
