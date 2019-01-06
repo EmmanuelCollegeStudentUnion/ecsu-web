@@ -94,7 +94,14 @@ jobs:
                     -F environment=staging \
                     -F revision=$CIRCLE_SHA1 \
                     -F local_username=$CIRCLE_USERNAME 
-                
+                                    
+    production:
+        machine:
+            enabled: true
+        steps:
+            - run:
+                name: Deploy into production
+                command: ssh nh487@shell.srcf.net "~/deploy/deploy-PRODUCTION.sh"
             
 workflows:
   version: 2
@@ -110,6 +117,14 @@ workflows:
       - rollbar:
           requires:
             - deploy
+      - hold:
+        type: approval
+          requires:
+            - deploy
+      - production:
+          requires:
+            - hold
+            
 
     
 
