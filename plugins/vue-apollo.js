@@ -9,21 +9,23 @@ Vue.use(VueApollo)
 
 const schemaLink = new SchemaLink({ schema })
 
-// Cache implementation
-const cache = new InMemoryCache()
 
-// Create the apollo client
-const apolloClient = new ApolloClient({
-    link: schemaLink,
-    cache,
-})
-
-
-const apolloProvider = new VueApollo({
-    defaultClient: apolloClient,
-})
 
 export default (ctx, inject) => {
+    // Cache implementation
+    const cache = new InMemoryCache()
+
+    // Create the apollo client
+    const apolloClient = new ApolloClient({
+        link: schemaLink,
+        cache,
+    })
+
+
+    const apolloProvider = new VueApollo({
+        defaultClient: apolloClient,
+    })
+
     const { app, beforeNuxtRender } = ctx
     // Allow access to the provider in the context
     app.apolloProvider = apolloProvider
@@ -37,8 +39,8 @@ export default (ctx, inject) => {
                     delete Component.options.apollo.$init
                 }
             })
-            await ApolloSSR.prefetchAll(apolloProvider, Components, ctx)
-            nuxtState.apollo = ApolloSSR.getStates(apolloProvider)
+            await ApolloSSR.prefetchAll(apolloProvider, Components, ctx);
+            nuxtState.apollo = ApolloSSR.getStates(apolloProvider);
         })
     }
     if (!process.server) {
