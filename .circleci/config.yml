@@ -121,7 +121,7 @@ jobs:
             
 workflows:
   version: 2
-  build_and_deploy_staging:
+  build_and_deploy:
     jobs:
       - build
       - upload:
@@ -134,8 +134,27 @@ workflows:
                 - master
       - deployStaging:
           requires:
-            - upload
+            - upload  
+          filters:
+            branches:
+              only: 
+                - develop
       - rollbarStaging:
+          requires:
+            - deployStaging
+                - master     
+      - hold:
+          type: approval
+          requires:
+            - upload
+          filters:
+            branches:
+              only: 
+                - master
+      - deployProduction:
+          requires:
+            - upload  
+      - rollbarProduction:
           requires:
             - deployStaging
 
