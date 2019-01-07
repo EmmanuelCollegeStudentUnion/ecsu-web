@@ -91,7 +91,7 @@ jobs:
             - run:
                 name: Deploy into production
                 command: |
-                    ssh nh487@shell.srcf.net "~/deploy/deploy-PRODUCTION.sh ~/artifacts/$CIRCLE_SHA1.tar.gz"
+                    ssh nh487@shell.srcf.net "~/deploy/deploy-PRODUCTION.sh ~/deploy/artifacts/$CIRCLE_SHA1.tar.gz"
 
 
     rollbarStaging:
