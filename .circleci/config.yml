@@ -81,9 +81,7 @@ jobs:
             - run:
                 name: Deploy staging
                 command: |
-                    ssh nh487@shell.srcf.net -C "rm ~/deploy/deploy.tar.gz"
-                    ssh nh487@shell.srcf.net -C "cp ~/artifacts/$CIRCLE_SHA1.tar.gz ~/deploy/deploy.tar.gz"
-                    ssh nh487@shell.srcf.net "~/deploy/deploy.sh"
+                    ssh nh487@shell.srcf.net "~/deploy/deploy.sh ~/artifacts/$CIRCLE_SHA1.tar.gz"
                                     
     deployProduction:
         machine:
@@ -92,9 +90,7 @@ jobs:
             - run:
                 name: Deploy into production
                 command: |
-                    ssh nh487@shell.srcf.net -C "rm ~/deploy/deploy.tar.gz"
-                    ssh nh487@shell.srcf.net -C "cp ~/artifacts/$CIRCLE_SHA1.tar.gz ~/deploy/deploy-PRODUCTION.tar.gz"
-                    ssh nh487@shell.srcf.net "~/deploy/deploy-PRODUCTION.sh"
+                    ssh nh487@shell.srcf.net "~/deploy/deploy-PRODUCTION.sh ~/artifacts/$CIRCLE_SHA1.tar.gz"
 
 
     rollbarStaging:
