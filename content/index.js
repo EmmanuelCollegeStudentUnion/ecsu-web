@@ -48,9 +48,9 @@ Object.keys(content).forEach(collection => {
 
 
 export default async (contentType, contentSlug) => {
-    if (!(contentType in mapping)) throw new Error("Content folder not found");
+    if (!(contentType in mapping)) throw new Error(`Content folder ${contentType} not found`);
     if (contentSlug) {
-        if (!(contentSlug in mapping[contentType])) throw new Error("Content not found");
+        if (!(contentSlug in mapping[contentType])) throw new Error(`Content ${contentSlug} not found in ${contentType}`);
         const content = await mapping[contentType][contentSlug]()
         return {
             ...content,
@@ -78,8 +78,10 @@ export async function resolveImage(image, alt) {
     if (image == null) return null;
     const asset = image.match(`\/assets\/images\/(.*)\/(.*)`);
     if (asset && asset[1]) {
-        if (!(asset[1] in images)) throw new Error("Image folder not found");
-        if (!(`./${asset[2]}` in images[asset[1]].keys())) throw new Error("Image not found");
+        if (!(asset[1] in images)) throw new Error(`Image folder ${asset[1]} not found`);
+        if (!(images[asset[1]].keys().includes(`./${asset[2]}`))) {
+            throw new Error(`Image ${asset[2]} not found in ${asset[1]}`);
+        }
 
         const res = await images[asset[1]](`./${asset[2]}`)
         return {
