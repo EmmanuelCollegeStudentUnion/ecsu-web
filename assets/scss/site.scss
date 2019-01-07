@@ -87,3 +87,9 @@ table{
 .wf-active * .material-icons {
   visibility: visible;
 }
+
+.nuxt-progress{
+  @extend .mdc-top-app-bar--fixed-adjust;
+  margin-top: 1px;
+  z-index: 5;
+}
