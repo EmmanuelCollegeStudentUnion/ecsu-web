@@ -71,7 +71,7 @@ jobs:
                     tar -czvf /tmp/deploy.tar.gz ./dist
             - run:
                 name: Upload
-                command:
+                command: |
                     ssh nh487@shell.srcf.net "rm -f ~/deploy/artifacts/*"
                     scp /tmp/deploy.tar.gz nh487@files.srcf.net:~/deploy/artifacts/$CIRCLE_SHA1.tar.gz
     
