@@ -81,7 +81,7 @@ jobs:
             - run:
                 name: Deploy staging
                 command: |
-                    ssh nh487@shell.srcf.net "~/deploy/deploy.sh ~/artifacts/$CIRCLE_SHA1.tar.gz"
+                    ssh nh487@shell.srcf.net "~/deploy/deploy.sh ~/deploy/artifacts/$CIRCLE_SHA1.tar.gz"
                                     
     deployProduction:
         machine:
@@ -137,26 +137,6 @@ workflows:
       - rollbarStaging:
           requires:
             - deployStaging
-  build_and_deploy_production:
-    jobs:
-      - build
-      - upload:
-          requires:
-            - build     
-      - hold:
-          type: approval
-          requires:
-            - upload
-          filters:
-            branches:
-              only:
-                - master            
-      - deployProduction:
-          requires:
-            - hold
-      - rollbarProduction:
-          requires:
-            - deployProduction
 
     
 
