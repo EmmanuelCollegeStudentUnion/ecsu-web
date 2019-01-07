@@ -29,6 +29,7 @@ const images = {
     'rooms/fc': require.context(`@/assets/images/rooms/fc`, true, /\.(jpe?g|png)$/, 'lazy-once'),
     'rooms/h': require.context(`@/assets/images/rooms/h`, true, /\.(jpe?g|png)$/, 'lazy-once'),
     'rooms/nc': require.context(`@/assets/images/rooms/nc`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'rooms/noc': require.context(`@/assets/images/rooms/noc`, true, /\.(jpe?g|png)$/, 'lazy-once'),
     'rooms/oc': require.context(`@/assets/images/rooms/oc`, true, /\.(jpe?g|png)$/, 'lazy-once'),
     'rooms/park_t': require.context(`@/assets/images/rooms/park_t`, true, /\.(jpe?g|png)$/, 'lazy-once'),
     'rooms/warkworth': require.context(`@/assets/images/rooms/warkworth`, true, /\.(jpe?g|png)$/, 'lazy-once'),
@@ -79,9 +80,8 @@ export async function resolveImage(image, alt) {
     const asset = image.match(`\/assets\/images\/(.*)\/(.*)`);
     if (asset && asset[1]) {
         if (!(asset[1] in images)) throw new Error(`Image folder ${asset[1]} not found`);
-        if (!(images[asset[1]].keys().includes(`./${asset[2]}`))) {
-            throw new Error(`Image ${asset[2]} not found in ${asset[1]}`);
-        }
+        if (!(images[asset[1]].keys().includes(`./${asset[2]}`))) throw new Error(`Image ${asset[2]} not found in ${asset[1]}`);
+
 
         const res = await images[asset[1]](`./${asset[2]}`)
         return {

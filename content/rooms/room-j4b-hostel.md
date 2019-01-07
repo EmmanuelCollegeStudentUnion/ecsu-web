@@ -4,7 +4,7 @@ cudn: true
 floor: Ground
 grade: 1
 images:
-- /assets/images/rooms/h/J4b_1.jpg
+- /assets/images/rooms/h/j4b_1.jpg
 - /assets/images/rooms/h/j4b_2.jpg
 - /assets/images/rooms/h/j4b_3.jpg
 living_room: 'No'
