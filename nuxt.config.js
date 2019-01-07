@@ -80,7 +80,7 @@ export default {
     generate: {
         routes() { return urls },
         done({ duration, errors, workerInfo }) {
-            if (errors == true) {
+            if (errors.length > 0) {
                 console.error(errors);
                 process.exitCode = 1;
             }
