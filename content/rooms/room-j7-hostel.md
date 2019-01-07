@@ -4,8 +4,8 @@ cudn: true
 floor: Ground
 grade: 6
 images:
-- /room_database/images/h/j7_1.JPG
-- /room_database/images/h/j7_2.JPG
+- /assets/images/rooms/h/j7_1.jpg
+- /assets/images/rooms/h/j7_2.jpg
 living_room: 'Yes'
 location: Hostel
 name: J7

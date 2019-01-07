@@ -4,10 +4,10 @@ cudn: true
 floor: First
 grade: 7
 images:
-- /room_database/images/h/J10%203.JPG
-- /room_database/images/h/J10%204.JPG
-- /room_database/images/h/J10%201.JPG
-- /room_database/images/h/J10%202.JPG
+- /assets/images/rooms/h/J10%203.jpg
+- /assets/images/rooms/h/J10%204.jpg
+- /assets/images/rooms/h/J10%201.jpg
+- /assets/images/rooms/h/J10%202.jpg
 living_room: 'Yes'
 location: Hostel
 name: J10

@@ -4,8 +4,8 @@ cudn: true
 floor: Ground
 grade: 5
 images:
-- /room_database/images/ec/ec18_1.JPG
-- /room_database/images/ec/ec18_2.JPG
+- /assets/images/rooms/ec/ec18_1.jpg
+- /assets/images/rooms/ec/ec18_2.jpg
 living_room: 'No'
 location: East Court
 name: '18'

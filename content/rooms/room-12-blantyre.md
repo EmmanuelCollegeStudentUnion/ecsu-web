@@ -4,10 +4,10 @@ cudn: true
 floor: First
 grade: 4
 images:
-- /room_database/images/blantyre/blantyre12_1.JPG
-- /room_database/images/blantyre/blantyre12_2.JPG
-- /room_database/images/blantyre/blantyre12_3.JPG
-- /room_database/images/blantyre/blantyre12_4.JPG
+- /assets/images/rooms/blantyre/blantyre12_1.jpg
+- /assets/images/rooms/blantyre/blantyre12_2.jpg
+- /assets/images/rooms/blantyre/blantyre12_3.jpg
+- /assets/images/rooms/blantyre/blantyre12_4.jpg
 living_room: 'No'
 location: Blantyre
 name: '12'

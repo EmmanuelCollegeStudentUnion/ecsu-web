@@ -4,11 +4,11 @@ cudn: true
 floor: Second
 grade: 8
 images:
-- /room_database/images/oc/g5.jpg
-- /room_database/images/oc/g5a.jpg
-- /room_database/images/oc/g5b.jpg
-- /room_database/images/oc/g5c.jpg
-- /room_database/images/oc/g5d.jpg
+- /assets/images/rooms/oc/g5.jpg
+- /assets/images/rooms/oc/g5a.jpg
+- /assets/images/rooms/oc/g5b.jpg
+- /assets/images/rooms/oc/g5c.jpg
+- /assets/images/rooms/oc/g5d.jpg
 living_room: Shared
 location: Old Court
 name: G5b

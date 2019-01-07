@@ -4,8 +4,8 @@ cudn: true
 floor: First
 grade: 8
 images:
-- /room_database/images/noc/cl12_1.JPG
-- /room_database/images/noc/cl12_2.JPG
+- /assets/images/rooms/noc/cl12_1.jpg
+- /assets/images/rooms/noc/cl12_2.jpg
 living_room: 'No'
 location: North Court
 name: '12'
