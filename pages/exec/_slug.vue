@@ -8,12 +8,7 @@
       <a :href="mailto">{{exec.email}}</a>
     </span>
     <br>
-    <br>
-    <br>
-    <nuxt-link
-      to="/exec"
-      class="mdc-button mdc-button--outlined mdc-ripple-upgraded"
-    >&lt Back to Exec</nuxt-link>
+    <nuxt-link to="/exec" class="mdc-button mdc-button--outlined back-button">&lt; Back to Exec</nuxt-link>
   </ProfilePage>
 </template>
 
@@ -80,5 +75,8 @@ export default {
   filter: drop-shadow(1px 1px 5px grey);
 
   width: 400px;
+}
+.back-button {
+  margin-top: 64px;
 }
 </style>

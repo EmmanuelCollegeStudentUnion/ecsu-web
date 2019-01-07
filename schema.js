@@ -58,6 +58,7 @@ const typeDefs = `
     image: Image
     body: String
     url: String
+    blog: Blog
   }
   type Blog{
     title: String
@@ -80,6 +81,7 @@ const typeDefs = `
     floor: String
     url: String
     comments: [Comment]
+    location: RoomLocation
   }
   type RoomLocation{
     title: String
@@ -129,7 +131,8 @@ const resolvers = {
   },
   InfoPage: {},
   Post: {
-    image: obj => resolveImage(obj.image, obj.title)
+    image: obj => resolveImage(obj.image, obj.title),
+    blog: obj => content("blogs").then(result => result.find(x => x.title == obj.blog))
   },
   Blog: {
     posts: obj => content("posts").then(result => result.filter(x => x.blog == obj.title))
@@ -138,7 +141,8 @@ const resolvers = {
   Room: {
     livingRoom: obj => obj['living_room'],
     comments: obj => content("room_comments").then(result => result.filter(x => x.title == obj.title)),
-    images: obj => obj.images.map(x => resolveImage(x, obj.title))
+    images: obj => obj.images.map(x => resolveImage(x, obj.title)),
+    location: obj => content("room_locations").then(locations => locations.find(x => x.title == obj.location))
   },
   RoomLocation: {
     image: obj => resolveImage(obj.image, obj.title),

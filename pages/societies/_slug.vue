@@ -5,6 +5,8 @@
       <ImageCard v-if="!!society.image" :image="society.image"/>
     </template>
     <Markdown :html="society.body"/>
+    <br>
+    <nuxt-link to="/societies" class="mdc-button mdc-button--outlined back-button">&lt; Back to societies</nuxt-link>
   </PostPage>
 </template>
 
@@ -42,5 +44,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.back-button {
+  margin-top: 64px;
+}
 </style>
+

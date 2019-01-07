@@ -8,6 +8,10 @@
           {{room.grade}}
         </li>
         <li>
+          {{room.floor}}
+          <span class="room-fact-header">Floor</span>
+        </li>
+        <li>
           {{room.livingRoom}}
           <span class="room-fact-header">Living Room</span>
         </li>
@@ -23,10 +27,6 @@
           <template v-if="room.cudn">Has</template>
           <template v-else>No</template>
           <span class="room-fact-header">CUDN Access</span>
-        </li>
-        <li>
-          {{room.floor}}
-          <span class="room-fact-header">Floor</span>
         </li>
       </ul>
     </div>
@@ -103,6 +103,11 @@
       </div>
     </div>
     <p v-else>There are no photos for this room</p>
+    <br>
+    <nuxt-link
+      :to="room.location.url"
+      class="mdc-button mdc-button--outlined back-button"
+    >&lt; Back to {{room.location.title}}</nuxt-link>
   </PostPage>
 </template>
 
@@ -146,6 +151,10 @@ export default {
               year
               body
             }
+            location {
+              title
+              url
+            }
           }
         }
       `,
@@ -181,7 +190,8 @@ export default {
 }
 .image-container {
   position: relative;
-  height: 700px;
+  height: 800px;
+  overflow: hidden;
 }
 .room-fact-header {
   color: var(--mdc-theme-primary);
