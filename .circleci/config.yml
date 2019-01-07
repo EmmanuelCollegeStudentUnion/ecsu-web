@@ -142,7 +142,6 @@ workflows:
       - rollbarStaging:
           requires:
             - deployStaging
-                - master     
       - hold:
           type: approval
           requires:
