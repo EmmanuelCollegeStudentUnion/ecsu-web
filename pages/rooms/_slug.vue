@@ -139,6 +139,7 @@ export default {
             images {
               src
               srcSet
+              placeholder
               alt
             }
             comments {
