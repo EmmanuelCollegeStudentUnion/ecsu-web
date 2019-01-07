@@ -130,6 +130,9 @@ export default {
     ],
     purgeCSS: {
         mode: 'postcss',
+        paths: [
+            'node_modules/@material/**/*.js'
+        ]
     },
     head: {
         script: [
