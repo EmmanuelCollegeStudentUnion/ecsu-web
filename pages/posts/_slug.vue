@@ -6,6 +6,11 @@
       <ImageCard v-if="post.image" :image="post.image"/>
     </template>
     <Markdown :html="post.body"/>
+    <br>
+    <nuxt-link
+      :to="post.blog.url"
+      class="mdc-button mdc-button--outlined back-button"
+    >&lt; Back to {{post.blog.title}}</nuxt-link>
   </PostPage>
 </template>
 
@@ -23,12 +28,15 @@ export default {
       query: gql`
         query Post($slug: String!) {
           post(slug: $slug) {
-              title              
-              image {
-                src
-              }
-              body
-            
+            title
+            image {
+              src
+            }
+            body
+            blog {
+              title
+              url
+            }
           }
         }
       `,
@@ -38,9 +46,14 @@ export default {
         };
       }
     }
-  },
+  }
 };
 </script>
 
-<style>
+<style scoped>
+.back-button {
+  margin-top: 64px;
+}
 </style>
+
+

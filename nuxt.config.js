@@ -80,9 +80,9 @@ export default {
     generate: {
         routes() { return urls },
         done({ duration, errors, workerInfo }) {
-            console.error(errors);
-            if (errors == true) {
-                process.exit(1)
+            if (errors.length > 0) {
+                console.error(errors);
+                process.exitCode = 1;
             }
         }
     },
@@ -130,6 +130,9 @@ export default {
     ],
     purgeCSS: {
         mode: 'postcss',
+        paths: [
+            'node_modules/@material/**/*.js'
+        ]
     },
     head: {
         script: [

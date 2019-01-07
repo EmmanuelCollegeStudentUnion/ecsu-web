@@ -3,6 +3,8 @@
     <template slot="title">{{infoPage.title}}</template>
     <template slot="subtitle">{{infoPage.subtitle}}</template>
     <Markdown :html="infoPage.body"/>
+    <br>
+    <nuxt-link to="/info" class="mdc-button mdc-button--outlined back-button">&lt; Back to info</nuxt-link>
   </InfoPage>
 </template>
 
@@ -36,5 +38,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.back-button {
+  margin-top: 64px;
+}
 </style>

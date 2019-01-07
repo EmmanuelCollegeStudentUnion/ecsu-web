@@ -13,6 +13,8 @@
         </nuxt-link>
       </li>
     </ul>
+    <br>
+    <nuxt-link to="/blogs" class="mdc-button mdc-button--outlined back-button">&lt; Back to Blogs</nuxt-link>
   </PostPage>
 </template>
 
@@ -46,4 +48,11 @@ export default {
   }
 };
 </script>
+
+
+<style scoped>
+.back-button {
+  margin-top: 64px;
+}
+</style>
 
