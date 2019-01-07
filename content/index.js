@@ -50,7 +50,7 @@ Object.keys(content).forEach(collection => {
 export default async (contentType, contentSlug) => {
     if (!(contentType in mapping)) throw new Error("Content folder not found");
     if (contentSlug) {
-        if (!(contentSlug in mapping[contentType]) throw new Error("Content not found");
+        if (!(contentSlug in mapping[contentType])) throw new Error("Content not found");
         const content = await mapping[contentType][contentSlug]()
         return {
             ...content,
