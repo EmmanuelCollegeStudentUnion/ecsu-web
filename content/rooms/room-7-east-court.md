@@ -4,9 +4,9 @@ cudn: true
 floor: Ground
 grade: 2
 images:
-- /room_database/images/ec/EC7_1.jpg
-- /room_database/images/ec/EC7_2.jpg
-- /room_database/images/ec/EC7_3.jpg
+- /assets/images/rooms/ec/EC7_1.jpg
+- /assets/images/rooms/ec/EC7_2.jpg
+- /assets/images/rooms/ec/EC7_3.jpg
 living_room: 'No'
 location: East Court
 name: '7'

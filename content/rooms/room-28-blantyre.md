@@ -4,7 +4,7 @@ cudn: true
 floor: First
 grade: 1
 images:
-- /room_database/images/blantyre/blant_28_1.jpg
+- /assets/images/rooms/blantyre/blant_28_1.jpg
 living_room: 'No'
 location: Blantyre
 name: '28'

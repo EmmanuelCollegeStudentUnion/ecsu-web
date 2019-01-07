@@ -4,9 +4,9 @@ cudn: true
 floor: Ground
 grade: 2
 images:
-- /room_database/images/blantyre/blant_3_1.JPG
-- /room_database/images/blantyre/blant_3_2.JPG
-- /room_database/images/blantyre/blant_3_3.JPG
+- /assets/images/rooms/blantyre/blant_3_1.jpg
+- /assets/images/rooms/blantyre/blant_3_2.jpg
+- /assets/images/rooms/blantyre/blant_3_3.jpg
 living_room: 'No'
 location: Blantyre
 name: '3'

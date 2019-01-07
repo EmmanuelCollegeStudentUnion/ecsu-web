@@ -4,7 +4,7 @@ cudn: true
 floor: Ground
 grade: 4
 images:
-- /room_database/images/park_t/pt6_3_1.jpg
+- /assets/images/rooms/park_t/pt6_3_1.jpg
 living_room: 'No'
 location: Park Terrace
 name: '3'

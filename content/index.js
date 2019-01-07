@@ -24,6 +24,14 @@ const images = {
     'room_locations': require.context(`@/assets/images/room_locations`, true, /\.(jpe?g|png)$/, 'lazy-once'),
     'site': require.context(`@/assets/images/site`, true, /\.(jpe?g|png)$/, 'lazy-once'),
     'societies': require.context(`@/assets/images/societies`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'rooms/blantyre': require.context(`@/assets/images/rooms/blantyre`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'rooms/ec': require.context(`@/assets/images/rooms/ec`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'rooms/fc': require.context(`@/assets/images/rooms/fc`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'rooms/h': require.context(`@/assets/images/rooms/h`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'rooms/nc': require.context(`@/assets/images/rooms/nc`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'rooms/oc': require.context(`@/assets/images/rooms/oc`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'rooms/park_t': require.context(`@/assets/images/rooms/park_t`, true, /\.(jpe?g|png)$/, 'lazy-once'),
+    'rooms/warkworth': require.context(`@/assets/images/rooms/warkworth`, true, /\.(jpe?g|png)$/, 'lazy-once'),
 }
 
 function filename(filepath) {

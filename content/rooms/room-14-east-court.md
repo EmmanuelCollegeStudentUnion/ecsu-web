@@ -4,8 +4,8 @@ cudn: true
 floor: First
 grade: 2
 images:
-- /room_database/images/ec/eastCourt14_2.JPG
-- /room_database/images/ec/eastCourt14_1.JPG
+- /assets/images/rooms/ec/eastCourt14_2.jpg
+- /assets/images/rooms/ec/eastCourt14_1.jpg
 living_room: 'No'
 location: East Court
 name: '14'

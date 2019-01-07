@@ -4,7 +4,7 @@ cudn: true
 floor: Basement
 grade: 2
 images:
-- /room_database/images/ec/ec6_1.JPG
+- /assets/images/rooms/ec/ec6_1.jpg
 living_room: 'No'
 location: East Court
 name: '6'
