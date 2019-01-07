@@ -156,7 +156,7 @@ workflows:
             - upload  
       - rollbarProduction:
           requires:
-            - deployStaging
+            - deployProduction
 
     
 
