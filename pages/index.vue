@@ -63,7 +63,15 @@ export default {
     StandardPage
   },
   head: {
-    title: "ECSU | Emmanuel College Students' Union"
+    title: "Emmanuel College Students' Union",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "ECSU is the Emmanuel College Students' Union, which is the representative body for students of Emmanuel College, Cambridge. The daily business of ECSU is managed by the Executive, or 'Exec', members of which have specific responsibilities. The Committee is elected on a yearly basis at the end of Michaelmas Term."
+      }
+    ]
   },
   computed: {
     ecsuDoes() {

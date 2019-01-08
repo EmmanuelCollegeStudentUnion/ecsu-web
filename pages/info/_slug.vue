@@ -17,6 +17,9 @@ import gql from "graphql-tag";
 
 export default {
   components: { InfoPage, ImageCard, Markdown },
+  head() {
+    return { title: this.infoPage ? this.infoPage.title : "Loading..." };
+  },
   apollo: {
     infoPage: {
       query: gql`

@@ -13,6 +13,9 @@ import PostPage from "@/components/PostPage";
 import ImageCard from "@/components/ImageCard";
 
 export default {
+  head: {
+    title: "Members"
+  },
   components: {
     PostPage,
     ImageCard

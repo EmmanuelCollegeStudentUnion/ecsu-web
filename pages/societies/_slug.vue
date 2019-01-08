@@ -18,6 +18,9 @@ import Markdown from "@/components/Markdown";
 import gql from "graphql-tag";
 export default {
   components: { PostPage, ImageCard, Markdown },
+  head() {
+    return { title: this.society ? this.society.title : "Loading..." };
+  },
   apollo: {
     society: {
       query: gql`

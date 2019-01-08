@@ -135,6 +135,7 @@ export default {
         ]
     },
     head: {
+        titleTemplate: 'ECSU | %s',
         script: [
             { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Object.entries,IntersectionObserver' },
             { innerHTML: `window['ga-disable-UA-${gaId}'] = true;`, type: 'text/javascript', charset: 'utf-8' }

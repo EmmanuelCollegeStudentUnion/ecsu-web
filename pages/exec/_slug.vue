@@ -21,6 +21,9 @@ import gql from "graphql-tag";
 
 export default {
   components: { Markdown, ProfilePage, ImageCard },
+  head() {
+    return { title: this.exec ? this.exec.title : "Loading..." };
+  },
   apollo: {
     exec: {
       query: gql`

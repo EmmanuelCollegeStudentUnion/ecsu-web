@@ -24,3 +24,11 @@
     </ul>This site is coded in valid HTML 5 with CSS 3.
   </div>
 </template>
+
+<script>
+export default {  
+  head: {
+    title: "Accessibility"
+  },
+}
+</script>

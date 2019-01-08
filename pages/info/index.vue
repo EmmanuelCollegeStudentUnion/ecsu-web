@@ -23,6 +23,9 @@ import gql from "graphql-tag";
 
 export default {
   components: { PostPage },
+  head: {
+    title: "Info"
+  },
   apollo: {
     infoPages: gql`
       {

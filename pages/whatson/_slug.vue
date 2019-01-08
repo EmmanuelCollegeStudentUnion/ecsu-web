@@ -18,6 +18,9 @@ import gql from "graphql-tag";
 
 export default {
   components: { PostPage, Markdown, ImageCard },
+  head() {
+    return { title: this.whatsOn ? this.whatsOn.title : "Loading..." };
+  },
   apollo: {
     whatsOn: {
       query: gql`
