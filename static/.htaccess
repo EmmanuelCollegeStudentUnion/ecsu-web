@@ -3,6 +3,9 @@ ErrorDocument 404 /missing/index
   Require all denied
 </Files>
 
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 RedirectPermanent /pages/404.html /missing
 RedirectPermanent /pages/about.html /info/about
