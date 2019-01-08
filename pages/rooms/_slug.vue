@@ -190,7 +190,7 @@ export default {
 }
 .image-container {
   position: relative;
-  height: 800px;
+  height: 100vh;
   overflow: hidden;
 }
 .room-fact-header {
