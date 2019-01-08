@@ -23,6 +23,9 @@ import gql from "graphql-tag";
 
 export default {
   components: { PostPage, Markdown, ImageCard },
+  head() {
+    return { title: this.post ? this.post.title : "Loading..." };
+  },
   apollo: {
     post: {
       query: gql`

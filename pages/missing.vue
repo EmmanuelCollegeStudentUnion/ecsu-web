@@ -24,6 +24,9 @@ import StandardPage from "@/components/StandardPage";
 import ImageCard from "@/components/ImageCard";
 export default {
   components: { StandardPage, ImageCard },
+  head: {
+    title: "Page missing"
+  },
   computed: {
     image() {
       return require("@/assets/images/site/404.png");

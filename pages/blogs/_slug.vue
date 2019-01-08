@@ -24,6 +24,9 @@ import PostPage from "@/components/PostPage";
 import gql from "graphql-tag";
 export default {
   components: { PostPage },
+  head() {
+    return { title: this.blog ? this.blog.title : "Loading..." };
+  },
   apollo: {
     blog: {
       query: gql`

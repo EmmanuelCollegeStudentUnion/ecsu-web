@@ -122,12 +122,10 @@ import ImageCard from "@/components/ImageCard";
 import PostPage from "@/components/PostPage";
 import gql from "graphql-tag";
 export default {
-  layout: "default",
-  components: {
-    ImageCard,
-    PostPage
+  components: { ImageCard, PostPage },
+  head: {
+    title: "Exec"
   },
-
   computed: {
     image() {
       return require("@/assets/images/exec/exec17.jpg");

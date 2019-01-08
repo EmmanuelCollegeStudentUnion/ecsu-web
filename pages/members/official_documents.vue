@@ -26,7 +26,9 @@
       <tbody>
         <tr>
           <td>
-            <a href="/protected/downloads/official_documents/ECSU_Ents_Constitution.pdf">Ents Constitution</a>
+            <a
+              href="/protected/downloads/official_documents/ECSU_Ents_Constitution.pdf"
+            >Ents Constitution</a>
           </td>
           <td>90.06 KiB</td>
         </tr>
@@ -94,7 +96,10 @@
 import InfoPage from "@/components/InfoPage";
 import ImageCard from "@/components/ImageCard";
 export default {
-  components: { InfoPage, ImageCard }
+  components: { InfoPage, ImageCard },
+  head: {
+    title: "Official documents"
+  }
 };
 </script>
 

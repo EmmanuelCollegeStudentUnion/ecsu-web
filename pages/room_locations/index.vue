@@ -23,6 +23,9 @@ import gql from "graphql-tag";
 
 export default {
   components: { StandardPage, ImageCaptionCard, Markdown },
+  head: {
+    title: "Room Database"
+  },
   apollo: {
     roomLocations: gql`
       {

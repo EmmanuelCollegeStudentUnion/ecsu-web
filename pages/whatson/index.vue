@@ -15,6 +15,9 @@ import gql from "graphql-tag";
 
 export default {
   components: { PostPage, ImageCaptionCard },
+  head: {
+    title: "What's On?"
+  },
   apollo: {
     whatsOnEvents: gql`
       {

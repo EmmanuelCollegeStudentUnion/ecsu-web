@@ -38,6 +38,9 @@ export default {
     ImageCard,
     PostPage
   },
+  head: {
+    title: "Prospective students"
+  },
   computed: {
     image() {
       return require("@/assets/images/prospective/emma_chapel.jpg");

@@ -15,6 +15,9 @@
 import StandardPage from "@/components/StandardPage";
 export default {
   components: { StandardPage },
+  head: {
+    title: "Message Sent"
+  },
   computed: {
     tickImage() {
       return require("@/assets/images/site/tick.gif");

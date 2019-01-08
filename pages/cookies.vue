@@ -9,3 +9,12 @@
     </ul>We currently do not collect any personally identifiable information about our users. Your IP address may be stored in server access logs but this is unavoidable.
   </div>
 </template>
+
+<script>
+export default {
+  
+  head: {
+    title: "Cookies"
+  },
+}
+</script>

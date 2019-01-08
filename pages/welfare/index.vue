@@ -20,6 +20,9 @@ import gql from "graphql-tag";
 
 export default {
   components: { PostPage },
+  head: {
+    title: "Welfare"
+  },
   apollo: {
     welfarePages: gql`
       {

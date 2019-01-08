@@ -119,6 +119,9 @@ import { MDCTabBar } from "@material/tab-bar";
 
 export default {
   components: { PostPage },
+  head() {
+    return { title: this.room ? this.room.title : "Loading..." };
+  },
   mounted() {
     if (this.$refs.tabBar) {
       const tabBar = new MDCTabBar(this.$refs.tabBar);
@@ -190,7 +193,7 @@ export default {
 }
 .image-container {
   position: relative;
-  height: 800px;
+  height: 100vh;
   overflow: hidden;
 }
 .room-fact-header {

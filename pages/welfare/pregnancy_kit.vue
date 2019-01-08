@@ -28,6 +28,9 @@ import { MDCTextField } from "@material/textfield";
 import StandardPage from "@/components/StandardPage";
 export default {
   components: { StandardPage },
+  head: {
+    title: "Pregnancy kit"
+  },
   mounted: function() {
     const r = this.$refs.inputField;
     const textField = new MDCTextField(r);

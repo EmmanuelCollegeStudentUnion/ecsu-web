@@ -22,6 +22,7 @@ import PostPage from "@/components/PostPage";
 import gql from "graphql-tag";
 export default {
   components: { PostPage },
+  head: { title: "Blogs" },
   apollo: {
     blogs: gql`
       {
@@ -30,7 +31,8 @@ export default {
           description
           url
         }
-      }`
+      }
+    `
   }
 };
 </script>

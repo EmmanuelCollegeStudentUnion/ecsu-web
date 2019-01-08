@@ -34,6 +34,9 @@ import ImageCard from "@/components/ImageCard";
 import gql from "graphql-tag";
 export default {
   components: { PostPage, ImageCard },
+  head: {
+    title: "Societies"
+  },
   apollo: {
     societies: gql`
       {

@@ -55,3 +55,10 @@
   </div>
 </template>
 
+<script>
+export default {
+  head: {
+    title: "Wonderful Person of the Week"
+  }
+};
+</script>
