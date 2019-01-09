@@ -30,7 +30,7 @@ export default {
               {
                 hid: "og:image",
                 property: "og:image",
-                content: this.society.image.src
+                content: "https://ecsu.org.uk" + this.society.image.src
               }
             ]
           : []

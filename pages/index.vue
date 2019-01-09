@@ -75,12 +75,12 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: sketchImage
+        content: "https://ecsu.org.uk" + sketchImage
       }
     ]
   },
-  data(){
-    return {sketchImage}
+  data() {
+    return { sketchImage };
   },
   computed: {
     ecsuDoes() {
