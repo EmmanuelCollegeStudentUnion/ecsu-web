@@ -6,7 +6,10 @@
     </template>
     <Markdown :html="society.body"/>
     <br>
-    <nuxt-link to="/societies" class="mdc-button mdc-button--outlined back-button">&lt; Back to societies</nuxt-link>
+    <nuxt-link
+      to="/societies"
+      class="mdc-button mdc-button--outlined back-button"
+    >&lt; Back to societies</nuxt-link>
   </PostPage>
 </template>
 
@@ -19,7 +22,19 @@ import gql from "graphql-tag";
 export default {
   components: { PostPage, ImageCard, Markdown },
   head() {
-    return { title: this.society ? this.society.title : "Loading..." };
+    return {
+      title: this.society ? this.society.title : "Loading...",
+      meta:
+        this.society && this.society.image
+          ? [
+              {
+                hid: "og:image",
+                property: "og:image",
+                content: this.society.image.src
+              }
+            ]
+          : []
+    };
   },
   apollo: {
     society: {

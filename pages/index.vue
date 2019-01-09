@@ -55,6 +55,7 @@ import TextCard from "@/components/TextCard";
 import ImageCaptionCard from "@/components/ImageCaptionCard";
 import StandardPage from "@/components/StandardPage";
 import gql from "graphql-tag";
+const sketchImage = require("@/assets/images/pages/home/Sketch.png");
 
 export default {
   components: {
@@ -70,8 +71,16 @@ export default {
         name: "description",
         content:
           "ECSU is the Emmanuel College Students' Union, which is the representative body for students of Emmanuel College, Cambridge. The daily business of ECSU is managed by the Executive, or 'Exec', members of which have specific responsibilities. The Committee is elected on a yearly basis at the end of Michaelmas Term."
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: sketchImage
       }
     ]
+  },
+  data(){
+    return {sketchImage}
   },
   computed: {
     ecsuDoes() {
@@ -79,9 +88,6 @@ export default {
     },
     whatsHere() {
       return this.homePage ? this.homePage.whatsHere : [];
-    },
-    sketchImage() {
-      return require("@/assets/images/pages/home/Sketch.png");
     }
   },
   apollo: {
