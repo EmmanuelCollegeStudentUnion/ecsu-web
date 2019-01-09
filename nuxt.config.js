@@ -114,6 +114,7 @@ export default {
         'nuxt-purgecss',
         '@nuxtjs/pwa',
         '@nuxtjs/feed',
+        '@nuxtjs/sitemap',
         'nuxt-webfontloader',
         ['nuxt-rollbar-module', {
             serverAccessToken: '8c5b36a9377c42059e5bb2fca54d8b8f',
@@ -123,10 +124,7 @@ export default {
                 captureIp: 'anonymize'
             }
         }],
-        ['@nuxtjs/google-analytics', {
-            id: gaId,
-
-        }]
+        ['@nuxtjs/google-analytics', { id: gaId }],
     ],
     purgeCSS: {
         mode: 'postcss',
@@ -171,5 +169,14 @@ export default {
             type: 'rss2'
         }
     ],
+    sitemap: {
+        path: '/sitemap.xml',
+        hostname: 'https://ecsu.org.uk',
+        generate: true,
+        exclude: [
+            '/admin/**'
+        ],
+        routes: urls
+    }
 }
 
