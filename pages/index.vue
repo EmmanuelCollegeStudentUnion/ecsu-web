@@ -56,6 +56,7 @@ import ImageCaptionCard from "@/components/ImageCaptionCard";
 import StandardPage from "@/components/StandardPage";
 import gql from "graphql-tag";
 const sketchImage = require("@/assets/images/pages/home/Sketch.png");
+sketchImage.src = sketchImage.images.slice(-1)[0].path;
 
 export default {
   components: {
@@ -75,7 +76,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://ecsu.org.uk" + sketchImage
+        content: "https://ecsu.org.uk" + sketchImage.src
       }
     ]
   },

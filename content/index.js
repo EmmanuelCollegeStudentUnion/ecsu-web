@@ -85,7 +85,7 @@ export async function resolveImage(image, alt) {
 
         const res = await images[asset[1]](`./${asset[2]}`)
         return {
-            src: res.src,
+            src: res.images.slice(-1)[0].path,
             srcSet: res.srcSet,
             placeholder: res.placeholder,
             alt

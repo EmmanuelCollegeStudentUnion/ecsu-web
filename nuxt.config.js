@@ -69,7 +69,6 @@ export default {
                 options: {
                     min: 300,
                     max: 2000,
-                    size: 867,
                     steps: 4,
                     placeholder: true,
                     adapter: require("responsive-loader/sharp"),
