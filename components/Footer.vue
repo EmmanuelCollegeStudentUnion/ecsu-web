@@ -1,26 +1,84 @@
 <template>
   <footer>
-    <a href="https://www.emma.cam.ac.uk">Emmanuel College</a> |
-    <a href="/cookies">Cookies</a> |
-    <a href="/conditions">Conditions of Use</a> |
-    <a href="/accessibility">Accessibility</a> |
-    <a href="http://www.cusu.cam.ac.uk/">CUSU</a> |
-    <a href="/info/map">College Map</a> |
-    <a href="https://www.emmamcr.org.uk/">MCR</a> |
-    <a href="/feedback">Feedback</a> |
-    <a href="/exec">Contact us</a>
+    <div class="mdc-layout-grid">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 logo">
+          <div
+            class="logo-image"
+            :style="{
+              backgroundImage: `url(${logo})`            
+            }"
+          ></div>
+          <div class="outer-logo">
+            <div class="logo-border">ECSU</div>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+          <h5>External links</h5>
+          <a class="mdc-button" href="https://www.emma.cam.ac.uk">Emmanuel College</a> |
+          <a class="mdc-button" href="http://www.cusu.cam.ac.uk/">CUSU</a> |
+          <a class="mdc-button" href="https://www.emmamcr.org.uk/">MCR</a>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+          <h5>Website</h5>
+          <nuxt-link class="mdc-button" to="/conditions">Conditions</nuxt-link>|
+          <nuxt-link class="mdc-button" to="/cookies">Cookies</nuxt-link>|
+          <nuxt-link class="mdc-button" to="/accessibility">Accessibility</nuxt-link>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+          <h5>Contact us</h5>
+          <nuxt-link class="mdc-button" to="/exec">The committee</nuxt-link>|
+          <nuxt-link class="mdc-button" to="/feedback">Feedback</nuxt-link>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
-<style scoped>
-footer {
-  position: inherit;
-  bottom: 5px;
-  width: 100%;
-  text-align: center;
+<script>
+const logo = require("@/assets/images/site/footer.png");
+export default {
+  data() {
+    return { logo };
+  }
+};
+</script>
+
+
+<style lang="scss" scoped>
+.mdc-layout-grid__inner {
+  margin: 32px;
+  margin-left: 288px;
+  @media screen and (max-width: 1279px) {
+    margin: 32px 0;
+  }
 }
-a {
-  border-bottom: dotted 1px;
-  color: rgba(0, 0, 0, 0.4);
+.logo-border {
+  border-top: 2px solid #d926a5;
+  border-bottom: 2px solid #d926a5;
+  text-align: center;
+  height: 25px;
+  position: absolute;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 200;
+}
+.outer-logo {
+  padding: 37px 0;
+  color: white;
+}
+.logo-image {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  left: 50%;
+  margin-left: -50px;
+  border-radius: 50%;
+}
+.logo {
+  position: relative;
 }
 </style>
