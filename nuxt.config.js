@@ -27,7 +27,7 @@ export default {
                 "graphql-tag"
             ]
         },
-        plugins: [new HardSourceWebpackPlugin()],
+        plugins: [...nodeEnv === 'production' ? [new HardSourceWebpackPlugin()] : []],
         extend(config) {
             config.module.rules.push(
                 { test: /\.md$/, loader: 'markdown-with-front-matter-loader' }
