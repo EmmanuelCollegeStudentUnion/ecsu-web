@@ -12,4 +12,6 @@ Have a look at the University Clubs’ webpages and Facebook as well:
 
 http://cusbc.soc.srcf.net
 
+http://cura.soc.srcf.net
+
 https://www.facebook.com/CURACUSBC/
