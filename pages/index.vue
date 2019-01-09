@@ -25,7 +25,7 @@
     </div>
 
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 center-heading">
-      <h2 class="mdc-typography--headline2 layout-center">What Does ECSU Do?</h2>
+      <h2 class="mdc-typography--headline2 center-text">What Does ECSU Do?</h2>
     </div>
     <div
       v-for="item in ecsuDoes"
@@ -37,7 +37,7 @@
       </TextCard>
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 center-heading">
-      <h2 class="mdc-typography--headline2 layout-center">What's here?</h2>
+      <h2 class="mdc-typography--headline2 center-text">What's here?</h2>
     </div>
     <div
       v-for="item in whatsHere"
@@ -148,5 +148,8 @@ article.card-image {
 }
 .center-heading {
   margin: 16px auto;
+}
+.center-text {
+  text-align: center;
 }
 </style>
