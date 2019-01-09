@@ -1,6 +1,6 @@
 ---
 title:  Emmanuel College Rifle Society
-images: /assets/images/rifle.jpg
+image: /assets/images/societies/rifle.jpg
 ---
 
 
