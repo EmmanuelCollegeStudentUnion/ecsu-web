@@ -29,6 +29,7 @@
         "graphql": "^14.0.2",
         "graphql-tag": "^2.10.0",
         "graphql-tools": "^4.0.3",
+        "hard-source-webpack-plugin": "^0.13.1",
         "imagemin-cli": "^4.0.0",
         "imagemin-jpegtran": "^6.0.0",
         "imagemin-optipng": "^6.0.0",

@@ -3,6 +3,7 @@ const glob = require('glob')
 const path = require('path')
 
 import routes from "./routes"
+import HardSourceWebpackPlugin from "hard-source-webpack-plugin";
 import { itemsForContent } from "./routes"
 const nodeEnv = process.env.NODE_ENV || 'production';
 const gaId = {
@@ -26,6 +27,7 @@ export default {
                 "graphql-tag"
             ]
         },
+        plugins: [new HardSourceWebpackPlugin()],
         extend(config) {
             config.module.rules.push(
                 { test: /\.md$/, loader: 'markdown-with-front-matter-loader' }
