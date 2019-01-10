@@ -2,7 +2,14 @@
   <StandardPage>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
       <div class="page-content">
-        <img :srcset="sketchImage.srcSet" :src="sketchImage.src" alt="front court" width="100%">
+        <div class="sketchImageContainer">
+          <img
+            :srcset="sketchImage.srcSet"
+            :src="sketchImage.src"
+            alt="front court"
+            width="100%"
+          >
+        </div>
         <h1 class="mdc-typography--headline1 mdc-theme--text-secondary-on-light hero-heading">
           Welcome to
           <span class="mdc-theme--text-primary-on-light">ECSU</span>
@@ -25,7 +32,7 @@
     </div>
 
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 center-heading">
-      <h2 class="mdc-typography--headline2 center-text">What Does ECSU Do?</h2>
+      <h2 class="mdc-typography--headline2 layout-center">What Does ECSU Do?</h2>
     </div>
     <div
       v-for="item in ecsuDoes"
@@ -37,7 +44,7 @@
       </TextCard>
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 center-heading">
-      <h2 class="mdc-typography--headline2 center-text">What's here?</h2>
+      <h2 class="mdc-typography--headline2 layout-center">What's here?</h2>
     </div>
     <div
       v-for="item in whatsHere"
@@ -120,6 +127,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.sketchImageContainer {
+  padding-bottom: 48%;
+  overflow: hidden;
+  height: 0;
+}
 .card-image-content {
   background-size: cover;
   background-position: center;
@@ -148,8 +160,5 @@ article.card-image {
 }
 .center-heading {
   margin: 16px auto;
-}
-.center-text {
-  text-align: center;
 }
 </style>
