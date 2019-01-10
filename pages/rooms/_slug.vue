@@ -34,7 +34,6 @@
       The information for this room is accurate to our best knowledge. If you believe it is inaccurate please contact the
       <a
         href="mailto:webmaster@ecsu.org.uk"
-        class="also"
       >Webmaster</a>.
     </p>
 

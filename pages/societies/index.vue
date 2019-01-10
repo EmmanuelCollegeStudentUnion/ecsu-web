@@ -6,9 +6,8 @@
       <ImageCard :image="image"/>
     </template>
     <p>
-      <i>
-        To access Society Funding information, click
-        <a href="/info/society_funding">here</a>
+      <i>To access Society Funding information, click
+        <nuxt-link to="/info/society_funding">here</nuxt-link>
       </i>
     </p>
     <p>A huge range of different sports clubs and societies exist at Emma - the list below is by no means exhaustive, although it contains most of the major sports clubs and societies in college:</p>

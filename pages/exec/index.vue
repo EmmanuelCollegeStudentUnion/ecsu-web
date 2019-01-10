@@ -1,11 +1,10 @@
 <template>
   <PostPage v-if="execs">
     <template slot="title">The Committee</template>
-    <template slot="description">
-      The Exec is responsible for making decisions about the daily business of ECSU. Each of the Exec members have specific responsibilities, which are outlined in the
-      <a
-        href="/about/official_documents"
-      >Constitution</a>. The Exec meets weekly to discuss issues relating to students in Emma.
+    <template
+      slot="description"
+    >The Exec is responsible for making decisions about the daily business of ECSU. Each of the Exec members have specific responsibilities, which are outlined in the
+      <nuxt-link to="/about/official_documents">Constitution</nuxt-link>. The Exec meets weekly to discuss issues relating to students in Emma.
     </template>
     <template slot="media">
       <ImageCard :image="image"/>
@@ -35,16 +34,14 @@
       </li>
     </ul>
     <h2 class="mdc-typography--headline3">Open Meetings</h2>
-    <p class="mdc-typography--body1">
-      The Exec members will be present at
-      <a href="/info/open_meetings">Open Meetings</a>, where they will formally answer any questions you might have. However, if you've got a more informal or urgent question, don't hesitate to get in touch! You can find all the email addresses of each Exec member on their page, just use the menu at the top to find the member you need.
+    <p class="mdc-typography--body1">The Exec members will be present at
+      <nuxt-link to="/info/open_meetings">Open Meetings</nuxt-link>, where they will fornuxt-linkally answer any questions you might have. However, if you've got a more informal or urgent question, don't hesitate to get in touch! You can find all the email addresses of each Exec member on their page, just use the menu at the top to find the member you need.
     </p>
     <h2 class="mdc-typography--headline3">How is the Exec formed?</h2>
-    <p class="mdc-typography--body1">
-      The Exec is elected on a yearly basis, at the end of Michaelmas Term. The electoral procedure is described in the
-      <a
-        to="/protected/official_documents"
-      >Constitution</a>. Elections will be publicised well in advance. Any student at Emmanuel can stand for election including Freshers.
+    <p
+      class="mdc-typography--body1"
+    >The Exec is elected on a yearly basis, at the end of Michaelmas Term. The electoral procedure is described in the
+      <nuxt-link to="/protected/official_documents">Constitution</nuxt-link>. Elections will be publicised well in advance. Any student at Emmanuel can stand for election including Freshers.
     </p>
     <h2 class="mdc-typography--headline3">Contact Us</h2>
     <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list">
@@ -52,6 +49,7 @@
         <a
           class="unstyled-link mdc-theme--text-primary-on-background"
           href="mailto:communications@ecsu.org.uk"
+          target="_blank"
         >
           <div class="mdc-list-item mdc-ripple-upgraded">
             <i class="mdc-list-item__graphic material-icons">email</i>
@@ -66,6 +64,7 @@
         <a
           class="unstyled-link mdc-theme--text-primary-on-background"
           href="https://www.facebook.com/groups/ECSU2011/"
+          target="_blank"
         >
           <div class="mdc-list-item mdc-ripple-upgraded">
             <svg class="mdc-list-item__graphic" style="width:40px;height:40px" viewBox="0 0 24 24">
@@ -83,6 +82,7 @@
         <a
           class="unstyled-link mdc-theme--text-primary-on-background"
           href="https://twitter.com/ECSU_cambridge"
+          target="_blank"
         >
           <div class="mdc-list-item mdc-ripple-upgraded">
             <svg class="mdc-list-item__graphic" style="width:40px;height:40px" viewBox="0 0 24 24">
@@ -100,6 +100,7 @@
         <a
           class="unstyled-link mdc-theme--text-primary-on-background"
           href="https://www.google.co.uk/maps/place/University+of+Cambridge,+Emmanuel+College/@52.2035723,0.1214127,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8709723b46fab:0x959fbe8634d164d9!8m2!3d52.203569!4d0.123596"
+          target="_blank"
         >
           <div class="mdc-list-item mdc-ripple-upgraded">
             <i class="material-icons mdc-list-item__graphic">home</i>

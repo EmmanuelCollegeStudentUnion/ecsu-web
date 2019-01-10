@@ -15,9 +15,9 @@
         </div>
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
           <h5>External links</h5>
-          <a class="mdc-button" href="https://www.emma.cam.ac.uk">Emmanuel College</a> |
-          <a class="mdc-button" href="http://www.cusu.cam.ac.uk/">CUSU</a> |
-          <a class="mdc-button" href="https://www.emmamcr.org.uk/">MCR</a>
+          <a class="mdc-button" target="_blank" href="https://www.emma.cam.ac.uk">Emmanuel College</a> |
+          <a class="mdc-button" target="_blank" href="http://www.cusu.cam.ac.uk/">CUSU</a> |
+          <a class="mdc-button" target="_blank" href="https://www.emmamcr.org.uk/">MCR</a>
         </div>
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
           <h5>Website</h5>
