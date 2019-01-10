@@ -55,9 +55,9 @@ whats_here:
     title: Emma Societies
     url: /societies/
   - description: >-
-      Explore what Emmanuel College and Cambridge have to offer! Click on the
-      button below to access our prospective page, as well as links to the
-      Alternative Prospectus.
+      Explore what Emmanuel College and Cambridge have to offer! Click here to
+      access our prospective page, as well as links to the Alternative
+      Prospectus.
     image: /assets/images/pages/home/slide04.jpg
     title: Prospective students
     url: /prospective
