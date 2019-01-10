@@ -62,6 +62,7 @@ export default {
   width: 100%;
   font-size: 20px;
   font-weight: 200;
+  line-height: 1.25;
 }
 .outer-logo {
   padding: 37px 0;
