@@ -52,6 +52,7 @@ collections:
       create: true
       fields:
         - {label: "Title", name: "title", widget: "string"}
+        - {label: "Category", name: "title", widget: "string"}
         - {label: "Publish date", name: "pubdate", widget: "date", hidden: true}
         - {label: "Event time", name: "datetime", widget: "datetime"}
         - {label: "Image", name: "image", widget: "image"}

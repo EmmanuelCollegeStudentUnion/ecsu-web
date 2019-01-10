@@ -1,7 +1,8 @@
 ---
-title: Queens May Ball performers
+title: Paid Opportunity 1
 pubdate: 2018-12-28T17:54:37.607Z
 datetime: 2019-1-1T00:00:00.007Z
+category: Paid Opportunity
 image: >-
   https://ucarecdn.com/015211b3-0327-4158-9f56-4ec79fdd874d/-/preview/-/enhance/50/
 ---
