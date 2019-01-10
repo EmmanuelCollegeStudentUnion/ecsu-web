@@ -25,6 +25,8 @@
         </tr>
       </tbody>
     </table>
+    <br>
+    <nuxt-link to="/room_locations" class="mdc-button mdc-button--outlined back-button">&lt; Back</nuxt-link>
   </PostPage>
 </template>
 
@@ -36,7 +38,9 @@ import gql from "graphql-tag";
 export default {
   components: { PostPage },
   head() {
-    return { title: this.roomLocation ? this.roomLocation.title : "Loading..." };
+    return {
+      title: this.roomLocation ? this.roomLocation.title : "Loading..."
+    };
   },
   apollo: {
     roomLocation: {
