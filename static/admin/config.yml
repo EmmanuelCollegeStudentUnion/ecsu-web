@@ -2,6 +2,7 @@ backend:
   name: github
   repo: 101hawn/ecsu
   base_url: https://nh487.user.srcf.net
+  branch: develop
 
 publish_mode: editorial_workflow
   
