@@ -3,7 +3,6 @@
     <a
       class="mdc-card__primary-action mdc-ripple-upgraded image-caption-primary-action"
       tabindex="0"
-      style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:28.5px, 11.0156px; --mdc-ripple-fg-translate-end:70px, 60.4375px;"
       :href="url"
     >
       <v-lazy-image
