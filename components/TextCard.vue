@@ -45,4 +45,7 @@ article.card {
   padding: 0 16px;
   overflow: hidden;
 }
+.card-icon {
+  height: 48px;
+}
 </style>
