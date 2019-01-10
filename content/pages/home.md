@@ -41,7 +41,7 @@ whats_here:
       including information about food allergens and vegetarian options.
     image: /assets/images/pages/home/hall.jpg
     title: Emmanuel Hall Menu
-    url: 'https://www.emma.cam.ac.uk/contact/students/catering/menus/'
+    url: '/hall_menu'
   - description: >-
       Find out about ECSU's newest Executive Committee for 2019 - who they are,
       what they do and how to get in touch.

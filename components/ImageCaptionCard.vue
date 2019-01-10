@@ -1,9 +1,9 @@
 <template>
   <div class="mdc-card--outlined image-caption-card">
-    <a
+    <nuxt-link
       class="mdc-card__primary-action mdc-ripple-upgraded image-caption-primary-action"
       tabindex="0"
-      :href="url"
+      :to="url"
     >
       <v-lazy-image
         class="mdc-card__media image-caption-card__media"
@@ -19,7 +19,7 @@
       <div class="image-caption-card__secondary mdc-typography--body2">
         <slot/>
       </div>
-    </a>
+    </nuxt-link>
   </div>
 </template>
 
