@@ -2,9 +2,8 @@ backend:
   name: github
   repo: 101hawn/ecsu
   base_url: https://nh487.user.srcf.net
-  branch: develop
+  branch: cms
 
-publish_mode: editorial_workflow
   
 collections:
     - label: "Pages"
