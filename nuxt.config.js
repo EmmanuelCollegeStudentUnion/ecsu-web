@@ -30,7 +30,9 @@ export default {
         plugins: [...nodeEnv === 'production' ? [new HardSourceWebpackPlugin()] : []],
         extend(config) {
             config.module.rules.push(
-                { test: /\.md$/, loader: 'markdown-with-front-matter-loader' }
+                {
+                    test: /\.md$/, use: [path.resolve('./content/image-remap-external.js'), 'markdown-with-front-matter-loader']
+                }
             )
             // Configure scss for material designs imports style (relative to node_modules)
             // Solution found in https://github.com/material-components/material-components-web/issues/351#issuecomment-298796798
@@ -159,8 +161,8 @@ export default {
                     feed.addItem({
                         title: item.title,
                         id: item.url,
-                        link: item.url,
-                        image: item.image,
+                        link: `https://ecsu.org.uk${item.url}`,
+                        image: `https://ecsu.org.uk${item.image}`,
                         date: item.pubDate,
                         description: item.description,
                         content: item['__content']

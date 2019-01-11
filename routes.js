@@ -4,14 +4,16 @@ const path = require('path')
 const url = require('url');
 const fs = require('fs')
 import compare from './content/compare';
+import { string } from 'postcss-selector-parser';
+const imageRemapExternal = require('./content/image-remap-external');
 export function itemsForContent(contentType, includeContent) {
     const paths = glob.sync(`content/${contentType}/*.md`)
     return paths
         .map(filename => {
             const slug = filename.match(`^content/${contentType}\/(.*)\.md`, 'utf8')[1]
             const urlText = url.resolve(`/${contentType}/`, slug);
-            const file = fs.readFileSync(filename);
-            const content = yamlFront.loadFront(file);
+            const file = fs.readFileSync(filename, "utf8");
+            const content = yamlFront.loadFront(imageRemapExternal(file));
             return {
                 text: content.title,
                 title: content.title,

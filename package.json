@@ -3,7 +3,8 @@
     "scripts": {
         "dev": "nuxt",
         "build": "nuxt-generate -w 4 -v -b",
-        "webp": "yarn imagemin ./dist/_nuxt --out-dir=./dist/_nuxt/ --plugin=webp"
+        "webp": "yarn imagemin ./dist/_nuxt --out-dir=./dist/_nuxt/ --plugin=webp",
+        "downloadExternal": "bash download-external.sh"
     },
     "dependencies": {
         "@material/button": "^0.41.0",
@@ -39,6 +40,7 @@
         "js-cookie": "^2.2.0",
         "js-yaml": "^3.12.0",
         "json-loader": "^0.5.7",
+        "md5": "^2.2.1",
         "netlify-cms-loader": "^0.4.1",
         "normalize.css": "^8.0.1",
         "nuxt": "^2.3.4",
