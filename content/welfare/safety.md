@@ -46,4 +46,4 @@ Paired with college's Respect and Dignity policy and new Sexual Harassment polic
 
 |File|Size
 |------
-|[Sexual Harassment Advice](../protected/downloads/official_documents/Sexual%20harassment%20advice.pdf)|541.53 KiB
+|[Sexual Harassment Advice](../downloads/protected/official_documents/Sexual%20harassment%20advice.pdf)|541.53 KiB
