@@ -1,3 +1,3 @@
 #! /bin/bash 
-./scripts/download-dropbox.sh
-./scripts/download-uploadcare.sh
+bash ./scripts/download-dropbox.sh
+bash ./scripts/download-uploadcare.sh
