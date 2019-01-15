@@ -34,7 +34,7 @@ Access previous editions of ROAR here
 
 |File|Size
 |------
-|[ Roar! Lent 2012 - Issue 1](/downloads/LentRoar1.pdf)|1.64 MiB
+|[ Roar! Lent 2012 - Issue 1](/downloads/lentroar1.pdf)|1.64 MiB
 
 # Easter 2011
 
