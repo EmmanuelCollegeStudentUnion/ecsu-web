@@ -1,5 +1,5 @@
 ---
-title: TPP Careers Event Emmanuel College
+title: TPP Careers Event
 category: Careers
 pubdate: 2019-01-17T17:54:37.607Z
 datetime: 2019-02-07T00:00:00.007Z
