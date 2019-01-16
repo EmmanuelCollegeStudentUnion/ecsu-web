@@ -157,7 +157,6 @@ const resolvers = {
   },
   WhatsOnEvent: {
     image: obj => resolveImage(obj.image, obj.title),
-    datetime: obj => new Date(obj.datetime).toLocaleTimeString("en-gb", dateTimeFormatOptions)
   },
   Query: {
     homePage: obj => content("pages", "home"),
