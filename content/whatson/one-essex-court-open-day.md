@@ -1,6 +1,6 @@
 ---
 title: One Essex Court Open Day
-category: Academic Talk
+category: Careers
 pubdate: 2019-01-17T15:44:29.173Z
 datetime: 2019-01-28T15:44:30.632Z
 image: 'https://ucarecdn.com/dce3deaf-266f-42c7-bebd-a41b1f488dc5/'
