@@ -2,7 +2,7 @@
 title: One Essex Court Open Day
 category: Careers
 pubdate: 2019-01-17T15:44:29.173Z
-datetime: 2019-01-28T15:44:30.632Z
+datetime: 2019-01-28T12:00:30.632Z
 image: 'https://ucarecdn.com/dce3deaf-266f-42c7-bebd-a41b1f488dc5/'
 ---
 One Essex Court is a leading set of barristers’ Chambers, specialising in commercial litigation and arbitration. Their work embraces all aspects of domestic and international trade, commerce and finance.
