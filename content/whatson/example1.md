@@ -1,5 +1,5 @@
 ---
-title: Adaptive Brain Lab Psychological Studies
+title: Adaptive Brain Lab Psychological Studies (I)
 category: Paid Opportunity
 pubdate: 2019-01-17T17:54:37.607Z
 datetime: 2019-01-01T00:00:00.000Z
