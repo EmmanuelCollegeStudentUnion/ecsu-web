@@ -2,7 +2,7 @@
 title: Jesus May Ball 2019
 category: May Ball Workers
 pubdate: 2019-01-17T15:29:15.340Z
-datetime: 2019-02-14T12:00:17.658Z
+datetime: Application deadline is 14th Feb
 image: 'https://ucarecdn.com/a0c99884-1cc2-474f-bec9-15e00b04eb43/'
 ---
 Applications to work at the Jesus College May Ball 2019 on Monday 17th June are open! For the opportunity to experience one of the largest May Balls in Cambridge first-hand while earning money, complete an application form before Thursday 14th February by following the link below. You will also find more information on the May Ball and the job positions available.
