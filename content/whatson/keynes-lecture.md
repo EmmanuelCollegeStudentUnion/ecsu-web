@@ -1,8 +1,8 @@
 ---
 title: Keynes Lecture
 category: Academic Talk
-pubdate: 2019-01-17T15:35:11.341Z
-datetime: 2019-02-22T15:35:07.661Z
+pubdate: 2019-01-22T15:35:11.341Z
+datetime: '5pm, Friday 22nd Jan'
 image: 'https://ucarecdn.com/a72a768d-5735-4fc8-b5b7-0505f3d081a6/'
 ---
 We warmly invite you to attend the Keynes Lecture, a major event in the calendar of the Faculty of Economics and the University of Cambridge. 
