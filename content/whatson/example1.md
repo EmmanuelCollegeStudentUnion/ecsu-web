@@ -1,8 +1,8 @@
 ---
 title: Adaptive Brain Lab Psychological Studies (I)
 category: Paid Opportunity
-pubdate: 2019-01-17T17:54:37.607Z
-datetime: 2019-01-01T00:00:00.000Z
+pubdate: 2019-01-16T17:54:37.607Z
+datetime: Apply ASAP
 image: 'https://ucarecdn.com/53de5967-e53c-4fe9-afef-6eefabb334ee/'
 ---
 Adaptive Brain Lab are looking for paid volunteers for 3 studies that will take place in January and February. 
