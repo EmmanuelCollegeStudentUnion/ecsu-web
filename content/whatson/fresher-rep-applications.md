@@ -1,7 +1,7 @@
 ---
 title: Fresher Rep applications
 category: ECSU
-pubdate: 2019-01-15T11:44:06.256Z
+pubdate: 2019-01-23T11:44:06.256Z
 datetime: 'Application deadline: 12pm, 24th Jan'
 image: 'https://ucarecdn.com/367db800-fc52-431c-a9d3-15a0e6c11f61/'
 ---
