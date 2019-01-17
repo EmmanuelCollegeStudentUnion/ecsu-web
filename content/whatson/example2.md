@@ -1,7 +1,7 @@
 ---
 title: TPP Careers Event
 category: Careers
-pubdate: 2019-01-17T17:54:37.607Z
+pubdate: 2019-02-07T17:54:37.607Z
 datetime: '7pm, Thursday 7th February 2019'
 image: 'https://ucarecdn.com/b7ed7c54-c4c2-4971-a3f4-a9a3031225ee/'
 ---
