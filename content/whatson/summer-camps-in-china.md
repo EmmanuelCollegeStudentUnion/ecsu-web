@@ -2,7 +2,7 @@
 title: Summer Camps in China
 category: Summer Volunteering
 pubdate: 2019-01-17T15:23:45.113Z
-datetime: 2019-01-31T12:00:47.412Z
+datetime: Apply ASAP
 image: 'https://ucarecdn.com/6a56a520-9760-4748-84fd-62f6ae12c407/'
 ---
 Are you interested in spending 2-6 weeks this summer volunteering in China on a fully funded program? Apply for EduCamp 2019 for the best summer camp experience!
