@@ -2,7 +2,7 @@
 title: One Essex Court Open Day
 category: Careers
 pubdate: 2019-01-17T15:44:29.173Z
-datetime: 2019-01-28T12:00:30.632Z
+datetime: Monday 28th Jan
 image: 'https://ucarecdn.com/352a915b-ea93-4ca3-a256-6b43cd7ec316/'
 ---
 ![](https://ucarecdn.com/c49025f8-9a99-4da8-aef5-3a6a558e653d/ "Event programme")
