@@ -1,7 +1,7 @@
 ---
 title: Jesus May Ball 2019
 category: May Ball Workers
-pubdate: 2019-01-17T15:29:15.340Z
+pubdate: 2019-01-20T15:29:15.340Z
 datetime: 'Application deadline: 14th Feb'
 image: 'https://ucarecdn.com/a0c99884-1cc2-474f-bec9-15e00b04eb43/'
 ---
