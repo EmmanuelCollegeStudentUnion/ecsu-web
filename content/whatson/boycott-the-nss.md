@@ -1,7 +1,7 @@
 ---
 title: Boycott the NSS
 category: ECSU
-pubdate: 2019-01-16T13:49:09.493Z
+pubdate: 2019-01-23T13:49:09.493Z
 image: 'https://ucarecdn.com/579a1a05-c331-4986-ba4d-b165194cb675/'
 ---
 In line with the proposal passed by ECSU in Lent 2018 the committee is urging finalists NOT to complete the NSS Survey. 
