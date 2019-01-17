@@ -1,7 +1,7 @@
 ---
 title: Summer Camps in China
 category: Summer Volunteering
-pubdate: 2019-01-17T15:23:45.113Z
+pubdate: 2019-01-19T15:23:45.113Z
 datetime: Apply ASAP
 image: 'https://ucarecdn.com/6a56a520-9760-4748-84fd-62f6ae12c407/'
 ---
