@@ -1,8 +1,8 @@
 ---
 title: Adaptive Brain Lab Psychological Studies (I)
 category: Paid Opportunity
-pubdate: 2019-01-17T17:54:37.607Z
-datetime: 2019-01-01T00:00:00.000Z
+pubdate: 2019-01-18T17:54:37.607Z
+datetime: Apply ASAP
 image: 'https://ucarecdn.com/53de5967-e53c-4fe9-afef-6eefabb334ee/'
 ---
 Adaptive Brain Lab are looking for paid volunteers for 3 studies that will take place in January and February. 
@@ -36,5 +36,3 @@ NB – We are looking for individuals that are highly likely to complete all ses
 Eligibility Criteria: 18-35 years of age, right handed, native or native-like English proficiency, normal or corrected-to-normal vision and hearing, no history of psychological or neurological conditions.
 
 If you are interested or have any questions, please feel free to contact the researcher (smk63@cam.ac.uk).
-
-\*\*For the 2nd and 3rd studies please complete and return a soft copy of the attached MRI_Screening and TMS_Screening respectively\*\*
