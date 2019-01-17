@@ -1,7 +1,7 @@
 ---
 title: Gonville & Caius May Ball 2019
 category: May Ball Workers
-pubdate: 2019-01-21T17:54:37.607Z
+pubdate: 2019-01-20T17:54:37.607Z
 datetime: >-
   Application deadlines are Monday 21st Jan and Tuesday 5th Feb for Supervisors
   and Workers respectively
