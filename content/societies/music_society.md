@@ -2,11 +2,36 @@
 image: /assets/images/societies/ecms.jpg
 title: 'Emma Music Society | ECMS '
 ---
+Emmanuel College Music Society is one of the oldest and largest in 
+Cambridge, and as such has something for everyone to enjoy! We run a 
+weekly recital series at 9pm on Sundays which attracts some of the top 
+performers from Cambridge, as well as running many ensembles that Emma 
+students can get involved with:
 
-Emmanuel College has one of the strongest and most active music societies of any of the colleges in Cambridge. Concerts and Recitals by different groups and in many different styles are given regularly around the college, with good audiences at all.
-The Emmanuel College Orchestra is proud to be one of few complete symphony orchestras in the Cambridge colleges and made up entirely of non-auditioned players. Recent performances have included Mozart's Horn Concerto No.4 in Eb Major, Mendelssohn's Hebrides Overture, Bizet's Carmen Suite, and a selection from Bernstein's West Side Story. Players of any standard are very warmly invited to join.
-The Emma Chorus is open to anybody who enjoys singing. It performs a huge range of repertoire, from classical to barbershop to musicals, and its performances are always huge successes. Again, anyone of any ability is welcome to join. Never sang outside the shower before? Why not start your singing career with us!
-The Emma Big Band is one of the most exciting and flexible groups in college. Not only do they perform at concerts, but also provide music for events ranging from Jazz and Cocktails to May Balls. Jazz players of any standard are warmly welcomed to join the band, as well as anyone who wish to play a little bit of jazz in addition to their classical repertoire. EBB also wants singers, so contact us if you are interested!
-There are also a huge number of smaller groups around college; everything from string trios and guitar quartets, to brilliant solo singers and instrumentalists, to bands and DJs. Whatever your style or level of playing, Emmanuel will have something for you. Additionally the college has a number of funds that can pay for lessons for students who take part in college music.
-Freshers are invited to prepare a piece to perform at the Freshers' concert which will take place in Michaelmas Term. Additionally, there are many opportunities to conduct recitals throughout the academic calendar, so if you wish to light up Sunday evening with a performance then please contact our recitals rep for details. If you just wish to come along for a listen they are usually at 9pm; check the posters and the website to see when the next one is!
-To get involved, or to find out more information, please see the Music Society Website or contact the following people.
+Emma Jazz - a high standard auditioned jazz band who perform a large 
+variety of music at events throughout Cambridge
+
+Emma Big Band - a non-auditioned, lower commitment jazz band who play 
+music from Frank Sinatra to Beyonce and perform for various events at 
+Emma and elsewhere
+
+Emma Chorus - a non-auditioned bunch of fun loving singers who get 
+together on Monday evenings and perform in the end of term concerts
+
+Folk Band - rehearsing on Sunday evenings, the folk band performs in 
+multiple ceilidhs each term
+
+Orchestra - a fun, friendly, non-auditioned ensemble of players from 
+across the university, largely Emma, who rehearse weekly on Sunday 
+afternoons and perform a combination of classical favourites and film 
+classics in end of term concerts
+
+Chamber music - ECMS is happy to support anyone who wants to get 
+involved with chamber music, please get in touch
+
+For any more information on how to get involved please contact 
+president@emmamusic.co.uk
+To enquire about hiring our equipment, please contact 
+hires@emmamusic.co.uk
+To stay informed please join our facebook group at 
+www.facebook.com/EmmanuelCollegeMusicSociety
