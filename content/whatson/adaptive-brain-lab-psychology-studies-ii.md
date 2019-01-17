@@ -1,8 +1,8 @@
 ---
 title: Adaptive Brain Lab Psychological Studies (II)
 category: Paid Opportunity
-pubdate: 2019-01-17T15:36:50.265Z
-datetime: 2019-01-01T15:36:51.929Z
+pubdate: 2019-01-19T15:36:50.265Z
+datetime: Apply ASAP
 image: 'https://ucarecdn.com/d83beb9d-e4ca-4f57-8445-4629fa921d0a/'
 ---
 The Adaptive Brain Lab is currently looking for participants to take part in one of two studies:
