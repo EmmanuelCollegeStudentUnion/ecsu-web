@@ -9,7 +9,7 @@
         class="mdc-card__media image-caption-card__media"
         :src="image.src"
         :srcset="image.srcSet"
-        :src-placeholder="image.placeholder||image.src"
+        :src-placeholder="image.placeholder||placeholder"
         :alt="image.alt"
       />
       <div class="image-caption-card__primary">
@@ -24,8 +24,12 @@
 </template>
 
 <script>
+import placeholder from "@/assets/images/site/placeholder.jpg";
 export default {
-  props: ["title", "image", "url", "subtitle"]
+  props: ["title", "image", "url", "subtitle"],
+  data() {
+    return { placeholder: placeholder.src };
+  }
 };
 </script>
 

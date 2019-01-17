@@ -1,0 +1,9 @@
+Order allow,deny
+       Allow from .cam.ac.uk
+       AuthType Ucam-WebAuth
+       Require valid-user
+       Satisfy any
+
+<Files *.pdf>
+       Header set Content-Disposition attachment
+</Files>

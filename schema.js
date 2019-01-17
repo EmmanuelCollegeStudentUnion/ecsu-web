@@ -1,6 +1,12 @@
 import { makeExecutableSchema } from 'graphql-tools'
 import content from './content'
 import { resolveImage } from './content'
+
+const dateTimeFormatOptions = {
+  weekday: "long", year: "numeric", month: "short",
+  day: "numeric", hour: "2-digit", minute: "2-digit"
+};
+
 const typeDefs = `
   type Image{
     src: String
@@ -27,6 +33,7 @@ const typeDefs = `
     title: String
     datetime: String
     pubDate: String
+    category: String
     image: Image
     body: String
     url:String
@@ -150,7 +157,6 @@ const resolvers = {
   },
   WhatsOnEvent: {
     image: obj => resolveImage(obj.image, obj.title),
-    datetime: obj => new Date(obj.datetime).toLocaleString()
   },
   Query: {
     homePage: obj => content("pages", "home"),

@@ -6,6 +6,11 @@
       <ImageCard v-if="whatsOn.image" :image="whatsOn.image"/>
     </template>
     <Markdown :html="whatsOn.body"/>
+    <br>
+    <nuxt-link
+      to="/whatson"
+      class="mdc-button mdc-button--outlined back-button"
+    >&lt; Back to What's on</nuxt-link>
   </PostPage>
 </template>
 
