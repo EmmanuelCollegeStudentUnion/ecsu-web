@@ -101,7 +101,8 @@ export default {
     plugins: [
         '~/plugins/vue-lazyload',
         '~/plugins/vue-mq',
-        '~/plugins/vue-apollo',
+        '~/plugins/vue-apollo'
+
     ],
     loading: {
         color: '#d926a5',
