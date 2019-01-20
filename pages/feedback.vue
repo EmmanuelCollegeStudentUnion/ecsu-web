@@ -1,5 +1,5 @@
 <template>
-  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 page-content">
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
     <h1 class="mdc-typography--headline2">Anonymous Feedback</h1>
     <h5 class="mdc-typography--headline6">Send Your Messages to ECSU Anonymously</h5>
     <form

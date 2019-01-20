@@ -1,5 +1,5 @@
 <template>
-  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 page-content">
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
     <h1 class="mdc-typography--headline2">Request a pregnancy kit</h1>
     <form
       id="main-contact-form"
@@ -7,11 +7,20 @@
       method="post"
       action="/assets/php/pregnancytest.php"
     >
-      <div ref="inputField" class="mdc-text-field text-field mdc-text-field--textarea">
+      <div ref="inputField" class="mdc-text-field mdc-text-field--textarea text-field">
         <textarea name="message" id="text-field--textarea" class="mdc-text-field__input">
           I would like to request a pregnancy kit.
           </textarea>
-        <label class="mdc-floating-label" for="text-field--textarea">Message</label>
+        <div class="mdc-notched-outline">
+          <div class="mdc-notched-outline__leading"></div>
+          <div class="mdc-notched-outline__notch">
+            <label
+              class="mdc-floating-label mdc-floating-label--float-above"
+              for="text-field--textarea"
+            >Message</label>
+          </div>
+          <div class="mdc-notched-outline__trailing"></div>
+        </div>
       </div>
       <br>
       <input
@@ -40,4 +49,8 @@ export default {
 
 <style lang="scss">
 @import "@material/textfield/mdc-text-field";
+.text-field {
+  width: 100%;
+  margin: 16px;
+}
 </style>
