@@ -5,6 +5,7 @@
       <thead>
         <tr>
           <th>Room</th>
+          <th>Photos</th>
           <th>Grade</th>
           <th>Floor</th>
           <th>Basin</th>
@@ -16,6 +17,10 @@
         <tr v-for="room in roomLocation.rooms" :key="room.title">
           <td>
             <nuxt-link :to="room.url">{{room.title}}</nuxt-link>
+          </td>
+          <td>
+            <template v-if="room.images.length>1">Yes</template>
+            <template v-else>No</template>
           </td>
           <td>{{room.grade}}</td>
           <td>{{room.floor}}</td>
@@ -56,6 +61,9 @@ export default {
               livingRoom
               network
               url
+              images {
+                alt
+              }
             }
           }
         }
