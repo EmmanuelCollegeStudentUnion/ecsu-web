@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import content from "@/content";
+
 import PostPage from "@/components/PostPage";
 import ImageCaptionCard from "@/components/ImageCaptionCard";
 import gql from "graphql-tag";

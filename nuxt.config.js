@@ -2,23 +2,21 @@
 const glob = require('glob')
 const path = require('path')
 
-import routes from "./routes"
+import fetch from 'node-fetch'
+
 import HardSourceWebpackPlugin from "hard-source-webpack-plugin";
-import { itemsForContent } from "./routes"
 const nodeEnv = process.env.NODE_ENV || 'production';
 const gaId = {
     'production': 'UA-131416461-1',
     'development': 'UA-131416461-2'
 }[nodeEnv];
-const flatMap = (arr, f) => [].concat.apply([], arr.map(f))
-var urls = flatMap(routes, (x => [
-    x.url,
-    ...x.items.map(item => item.url),
 
-])).concat(
-    itemsForContent("rooms").map(item => item.url),
-    itemsForContent("whatson").map(item => item.url),
-    itemsForContent("posts").map(item => item.url));
+const routes = fetch('https://nh487.user.srcf.net/api/graphql?query={routes{url}}')
+    .then(x => x.json())
+    .then(x => x.data.routes.map(route => route.url))
+routes.then(x => x.forEach(x => {
+}))
+
 export default {
     modern: nodeEnv === 'production' ? 'client' : false,
     build: {
@@ -29,11 +27,6 @@ export default {
         },
         plugins: [...nodeEnv === 'production' ? [new HardSourceWebpackPlugin()] : []],
         extend(config) {
-            config.module.rules.push(
-                {
-                    test: /\.md$/, use: [path.resolve('./content/image-remap-external.js'), 'markdown-with-front-matter-loader']
-                }
-            )
             // Configure scss for material designs imports style (relative to node_modules)
             // Solution found in https://github.com/material-components/material-components-web/issues/351#issuecomment-298796798
             config.module.rules.forEach((rule) => {
@@ -82,7 +75,9 @@ export default {
         }
     },
     generate: {
-        routes() { return urls },
+        routes() {
+            return routes
+        },
         done({ duration, errors, workerInfo }) {
             if (errors.length > 0) {
                 console.error(errors);
@@ -91,7 +86,7 @@ export default {
         }
     },
     env: {
-        routes
+
     },
     router: {
         scrollBehavior: function (to, from, savedPosition) {
@@ -158,6 +153,8 @@ export default {
                     title: "ECSU What's On",
                 }
 
+                /*
+
                 itemsForContent("whatson", true).forEach(item => {
                     feed.addItem({
                         title: item.title,
@@ -169,19 +166,11 @@ export default {
                         content: item['__content']
                     })
                 })
+                */
             },
             cacheTime: 1000 * 60 * 15,
             type: 'rss2'
         }
-    ],
-    sitemap: {
-        path: '/sitemap.xml',
-        hostname: 'https://ecsu.org.uk',
-        generate: true,
-        exclude: [
-            '/admin/**'
-        ],
-        routes: urls
-    }
+    ]
 }
 

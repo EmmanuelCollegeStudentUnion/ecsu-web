@@ -1,13 +1,14 @@
 import Vue from 'vue'
 import { ApolloClient } from 'apollo-client'
-import { SchemaLink } from 'apollo-link-schema'
+import { createHttpLink } from "apollo-link-http";
+import fetch from 'node-fetch'
+
 import { InMemoryCache } from 'apollo-cache-inmemory'
-import schema from '../schema'
 import VueApollo from 'vue-apollo'
 Vue.use(VueApollo)
 
 
-const schemaLink = new SchemaLink({ schema })
+const link = createHttpLink({ uri: "https://nh487.user.srcf.net/api/graphql", fetch });
 
 
 
@@ -17,8 +18,9 @@ export default (ctx, inject) => {
 
     // Create the apollo client
     const apolloClient = new ApolloClient({
-        link: schemaLink,
+        link,
         cache,
+
     })
 
 

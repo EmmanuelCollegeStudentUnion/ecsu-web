@@ -8,14 +8,14 @@
       class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4"
     >
       <ImageCaptionCard :title="location.title" :image="location.image" :url="location.url">
-        <Markdown :html="location.body"/>
+        <Markdown :markdown="location.body"/>
       </ImageCaptionCard>
     </div>
   </StandardPage>
 </template>
 
 <script>
-import content from "@/content";
+
 import StandardPage from "@/components/StandardPage";
 import Markdown from "@/components/Markdown";
 import ImageCaptionCard from "@/components/ImageCaptionCard";

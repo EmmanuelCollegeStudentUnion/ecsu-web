@@ -5,7 +5,7 @@
     <template slot="media">
       <ImageCard v-if="whatsOn.image" :image="whatsOn.image"/>
     </template>
-    <Markdown :html="whatsOn.body"/>
+    <Markdown :markdown="whatsOn.body"/>
     <br>
     <nuxt-link
       to="/whatson"
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import content from "@/content";
+
 import PostPage from "@/components/PostPage";
 import Markdown from "@/components/Markdown";
 import ImageCard from "@/components/ImageCard";

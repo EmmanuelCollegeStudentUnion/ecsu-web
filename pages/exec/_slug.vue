@@ -2,7 +2,7 @@
   <ProfilePage v-if="exec" :image="exec.image">
     <template slot="title">{{exec.name}}</template>
     <template slot="subtitle">{{exec.title}}</template>
-    <Markdown :html="exec.body"/>
+    <Markdown :markdown="exec.body"/>
     <span>
       Email me at:
       <a :href="mailto">{{exec.email}}</a>
@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import content from "@/content";
+
 import ProfilePage from "@/components/ProfilePage";
 import Markdown from "@/components/Markdown";
 import ImageCard from "@/components/ImageCard";

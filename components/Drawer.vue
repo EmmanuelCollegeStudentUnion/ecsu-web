@@ -11,7 +11,7 @@
       <div class="mdc-drawer__content">
         <nav class="mdc-list">
           <transition-group name="nav-routes">
-            <div v-for="item in navItems" class="nav-routes-item" :key="item.url">
+            <div v-for="item in flatNavItems" class="nav-routes-item" :key="item.url">
               <nuxt-link
                 class="mdc-list-item"
                 :class="{
@@ -32,6 +32,7 @@
 </template>
 
 <script>
+import gql from "graphql-tag";
 export default {
   props: ["open"],
   data: function() {
@@ -40,20 +41,40 @@ export default {
       url: "/"
     };
   },
+  apollo: {
+    navItems: gql`
+      {
+        navItems {
+          text
+          icon
+          url
+          routes {
+            title
+            url
+          }
+        }
+      }
+    `
+  },
   computed: {
     modal() {
       return this.$mq !== "lg";
     },
-    navItems() {
+    flatNavItems() {
       const items = [];
-      this.routes.forEach(route => {
-        items.push(route);
-        if (this.$route.path.startsWith(route.url)) {
-          route.items.forEach(item => {
-            items.push(item);
-          });
-        }
-      });
+      if (this.navItems) {
+        this.navItems.forEach(route => {
+          items.push(route);
+          if (this.$route.path.startsWith(route.url)) {
+            route.routes.forEach(item => {
+              items.push({
+                text: item.title,
+                url: item.url
+              });
+            });
+          }
+        });
+      }
       return items;
     }
   }
