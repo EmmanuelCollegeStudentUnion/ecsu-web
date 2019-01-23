@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import { ApolloClient } from 'apollo-client'
-import { createHttpLink } from "apollo-link-http";
+import { createUploadLink } from 'apollo-upload-client'
 import fetch from 'node-fetch'
 
 import { InMemoryCache } from 'apollo-cache-inmemory'
@@ -8,7 +8,7 @@ import VueApollo from 'vue-apollo'
 Vue.use(VueApollo)
 
 
-const link = createHttpLink({ uri: "https://nh487.user.srcf.net/api/graphql", fetch });
+const link = createUploadLink({ uri: "https://nh487.user.srcf.net/api/graphql", fetch });
 
 
 

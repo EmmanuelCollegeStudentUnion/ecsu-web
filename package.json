@@ -29,6 +29,7 @@
         "apollo-client": "^2.4.7",
         "apollo-link-http": "^1.5.9",
         "apollo-link-schema": "^1.1.4",
+        "apollo-upload-client": "^10.0.0",
         "front-matter-loader": "^0.2.0",
         "fs": "^0.0.1-security",
         "graphql": "^14.0.2",
