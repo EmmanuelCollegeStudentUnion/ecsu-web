@@ -9,13 +9,11 @@ Outreach event at Downing College to train members of the community to create Wi
 
 Wikipedia is one of the most-used websites in the world, and is an important resource for science. This event will train attendees to contribute to and improve the coverage of notable underrepresented scientists on Wikipedia. Dr Jess Wade (physics postdoc at Imperial College London) and Dr Alice White (Wikimedian in Residence at the Wellcome Library) will be joining us to lead the session. Dr Jess Wade was recently elected as one of Nature's 10 People Who Mattered This Year and has received fantastic news coverage of her recent efforts, given that she has written hundreds Wikipedia pages to increase the visibility of female and underrepresented scientists!
 
- Bring your own laptop!
+Bring your own laptop!
 
 Refreshments will be provided.
 
 Free registration required: https://www.eventbrite.co.uk/e/wikipedia-diversithon-tickets-54371499619
-
- 
 
 1:00-2:00pm: Talks by Dr Jess Wade (Imperial College London) and Dr Alice White (Wellcome Trust)
 
