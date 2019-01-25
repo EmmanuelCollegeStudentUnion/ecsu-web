@@ -2,19 +2,41 @@ import Vue from 'vue'
 import { ApolloClient } from 'apollo-client'
 import { createUploadLink } from 'apollo-upload-client'
 import fetch from 'node-fetch'
+import { setContext } from 'apollo-link-context';
+import Cookies from 'js-cookie'
+
+
 
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import VueApollo from 'vue-apollo'
 Vue.use(VueApollo)
 
 
-const link = createUploadLink({ uri: "https://nh487.user.srcf.net/api/graphql", fetch });
 
 
 
 export default (ctx, inject) => {
     // Cache implementation
     const cache = new InMemoryCache()
+
+    const authLink = setContext((_, { headers }) => {
+        var token = null;
+        if (ctx.isServer) {
+            token = ctx.req.cookies.auth
+        } else {
+            token = Cookies.get("auth")
+        }
+        // return the headers to the context so httpLink can read them
+        return {
+            headers: {
+                ...headers,
+                authorization: token ? `Bearer ${token}` : "",
+            }
+        }
+    });
+
+
+    const link = authLink.concat(createUploadLink({ uri: "https://nh487.user.srcf.net/api/graphql", fetch }));
 
     // Create the apollo client
     const apolloClient = new ApolloClient({

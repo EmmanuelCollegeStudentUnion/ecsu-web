@@ -19,7 +19,7 @@
             <nuxt-link :to="room.url">{{room.title}}</nuxt-link>
           </td>
           <td>
-            <template v-if="room.images.length>1">Yes</template>
+            <template v-if="room.hasImages">Yes</template>
             <template v-else>No</template>
           </td>
           <td>{{room.grade}}</td>
@@ -36,7 +36,6 @@
 </template>
 
 <script>
-
 import PostPage from "@/components/PostPage";
 import gql from "graphql-tag";
 
@@ -61,9 +60,7 @@ export default {
               livingRoom
               network
               url
-              images {
-                alt
-              }
+              hasImages
             }
           }
         }
