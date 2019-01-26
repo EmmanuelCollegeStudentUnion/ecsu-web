@@ -22,9 +22,9 @@ export default (ctx, inject) => {
     const authLink = setContext((_, { headers }) => {
         var token = null;
         if (ctx.isServer) {
-            token = ctx.req.cookies.auth
+            token = ctx.req.cookies["access_token"]
         } else {
-            token = Cookies.get("auth")
+            token = Cookies.get("access_token")
         }
         // return the headers to the context so httpLink can read them
         return {

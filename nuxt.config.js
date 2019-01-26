@@ -89,12 +89,12 @@ export default {
 
     },
     router: {
-        middleware: 'auth',
         scrollBehavior: function (to, from, savedPosition) {
             return { x: 0, y: 0 }
         }
     },
     plugins: [
+        '~/plugins/auth',
         '~/plugins/vue-lazyload',
         '~/plugins/vue-mq',
         '~/plugins/vue-apollo'

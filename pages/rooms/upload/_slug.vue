@@ -24,6 +24,9 @@ export default {
     return { url: "https://www.ecsu.org.uk" };
   },
   mounted() {
+    if (this.$route.query["WLS-Response"]) {
+      this.$router.replace({ query: { "WLS-Response": undefined } });
+    }
     this.url = window.location.href;
   },
   apollo: {
