@@ -11,7 +11,7 @@ const gaId = {
     'development': 'UA-131416461-2'
 }[nodeEnv];
 
-const routes = fetch('https://nh487.user.srcf.net/api/graphql?query={routes{url}}')
+const routes = fetch('https://ecsu.org.uk/api/graphql?query={routes{url}}')
     .then(x => x.json())
     .then(x => x.data.routes.map(route => route.url))
 routes.then(x => x.forEach(x => {
