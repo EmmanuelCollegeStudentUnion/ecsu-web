@@ -69,7 +69,7 @@ export default {
         }
       });
       if (value.data) {
-        window.location = "done";
+        window.location = "https://ecsu.org.uk/rooms/upload/done/";
       }
     }
   }
