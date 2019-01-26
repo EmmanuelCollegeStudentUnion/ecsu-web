@@ -10,8 +10,10 @@
         <input class="mdc-button" ref="fileUpload" type="file" required>
         <input class="mdc-button mdc-button--outlined" type="submit" value="Upload">
       </form>
+      <br>Any problems?
+      <nuxt-link to="/exec/webmaster">Contact me</nuxt-link>
     </template>
-    <template v-else>
+    <template v-else-if="authUrl">
       <a class="mdc-button mdc-button--outlined" :href="authUrl">Sign in</a>
     </template>
   </div>
@@ -21,13 +23,19 @@
 import gql from "graphql-tag";
 export default {
   data() {
-    return { url: "https://www.ecsu.org.uk" };
+    return { authUrl: "" };
   },
   mounted() {
     if (this.$route.query["WLS-Response"]) {
       this.$router.replace({ query: { "WLS-Response": undefined } });
     }
-    this.url = window.location.href;
+    this.$nextTick(() => {
+      this.authUrl = String(
+        `https://raven.cam.ac.uk/auth/authenticate.html?ver=3&url=${
+          window.location.href
+        }&desc=ECSU&msg=&iact=`
+      );
+    });
   },
   apollo: {
     user: {
@@ -63,13 +71,6 @@ export default {
       if (value.data) {
         window.location = "done";
       }
-    }
-  },
-  computed: {
-    authUrl() {
-      return `https://raven.cam.ac.uk/auth/authenticate.html?ver=3&url=${
-        this.url
-      }&desc=ECSU&msg=&iact=`;
     }
   }
 };
