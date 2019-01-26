@@ -164,6 +164,7 @@ export default {
           }
         }
       `,
+      fetchPolicy: "no-cache",
       variables() {
         return {
           slug: this.$route.params.slug
