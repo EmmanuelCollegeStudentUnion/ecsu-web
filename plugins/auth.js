@@ -3,7 +3,7 @@ export default async function ({ router, route, store, isServer, res }) {
     const wlsResponse = route.query['WLS-Response']
     if (wlsResponse) {
         try {
-            const response = await fetch(`https://ecsu.org.uk/token?WLS-Response=${wlsResponse}`)
+            const response = await fetch(`https://ecsu.org.uk/api/token?WLS-Response=${wlsResponse}`)
             const json = await response.json()
             if (process.server) {
                 res.setHeader('Set-Cookie', [`access_token=${json.token}`]); // Server-side
