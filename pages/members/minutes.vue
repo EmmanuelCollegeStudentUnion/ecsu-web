@@ -14,10 +14,10 @@
       <h3 class="mdc-list-group__subheader group-subheader mdc-typography--headline2">{{year.year}}</h3>
       <ul class="mdc-list mdc-list--two-line">
         <li role="separator" class="mdc-list-divider"></li>
-        <nuxt-link
+        <a
           v-for="item in year.minutes"
           :key="item.url"
-          :to="item.url"
+          :href="item.url"
           class="unstyled-link mdc-theme--text-primary-on-background"
         >
           <li class="mdc-list-item">
@@ -26,7 +26,7 @@
               <span class="mdc-list-item__secondary-text">{{item.subtitle}}</span>
             </span>
           </li>
-        </nuxt-link>
+        </a>
       </ul>
     </div>
   </InfoPage>
