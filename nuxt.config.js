@@ -94,10 +94,10 @@ export default {
         }
     },
     plugins: [
+        '~/plugins/vue-apollo',
         '~/plugins/auth',
         '~/plugins/vue-lazyload',
         '~/plugins/vue-mq',
-        '~/plugins/vue-apollo'
 
     ],
     loading: {

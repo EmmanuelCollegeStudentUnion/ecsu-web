@@ -1,5 +1,6 @@
 import fetch from 'node-fetch'
-export default async function ({ router, route, store, isServer, res }) {
+export default async function (ctx) {
+    const { router, route, store, isServer, res } = ctx
     const wlsResponse = route.query['WLS-Response']
     if (wlsResponse) {
         try {
@@ -13,6 +14,8 @@ export default async function ({ router, route, store, isServer, res }) {
         } catch (e) {
             console.error(e)
         }
+        if (process.client) {
+            ctx.app.apolloProvider.defaultClient.resetStore()
+        }
     }
-
 }
