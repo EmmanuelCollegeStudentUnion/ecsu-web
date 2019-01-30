@@ -42,6 +42,11 @@ export default (ctx, inject) => {
     const apolloClient = new ApolloClient({
         link,
         cache,
+        defaultOptions: {
+            query: {
+                fetchPolicy: 'cache-and-network'
+            },
+        }
 
     })
 
