@@ -2,33 +2,40 @@
   <InfoPage>
     <template slot="title">Minutes</template>
     <template slot="subtitle">Historic Minutes from ECSU Meetings</template>
-    <p>
-      On here you can find the minutes of past ECSU Exec and Open Meetings. If the minutes for a meeting are missing
-      please contact the
-      <a
-        href="/exec/secretary"
-      >Secretary</a>
-      .
-    </p>
-    <div class="mdc-list-group" v-for="year in years" :key="year.url">
-      <h3 class="mdc-list-group__subheader group-subheader mdc-typography--headline2">{{year.year}}</h3>
-      <ul class="mdc-list mdc-list--two-line">
-        <li role="separator" class="mdc-list-divider"></li>
+    <template v-if="user&&user.crsid">
+      <p>
+        On here you can find the minutes of past ECSU Exec and Open Meetings. If the minutes for a meeting are missing
+        please contact the
         <a
-          v-for="item in year.minutes"
-          :key="item.url"
-          :href="item.url"
-          class="unstyled-link mdc-theme--text-primary-on-background"
-        >
-          <li class="mdc-list-item">
-            <span class="mdc-list-item__text">
-              <span class="mdc-list-item__primary-text">{{item.title}}</span>
-              <span class="mdc-list-item__secondary-text">{{item.subtitle}}</span>
-            </span>
-          </li>
-        </a>
-      </ul>
-    </div>
+          href="/exec/secretary"
+        >Secretary</a>
+        .
+      </p>
+      <div class="mdc-list-group" v-for="year in years" :key="year.url">
+        <h3
+          class="mdc-list-group__subheader group-subheader mdc-typography--headline2"
+        >{{year.year}}</h3>
+        <ul class="mdc-list mdc-list--two-line">
+          <li role="separator" class="mdc-list-divider"></li>
+          <a
+            v-for="item in year.minutes"
+            :key="item.url"
+            :href="item.url"
+            class="unstyled-link mdc-theme--text-primary-on-background"
+          >
+            <li class="mdc-list-item">
+              <span class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">{{item.title}}</span>
+                <span class="mdc-list-item__secondary-text">{{item.subtitle}}</span>
+              </span>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </template>
+    <template v-else-if="authUrl">
+      <a class="mdc-button mdc-button--outlined" :href="authUrl">Sign in</a>
+    </template>
   </InfoPage>
 </template>
 
@@ -36,6 +43,7 @@
 import InfoPage from "@/components/InfoPage";
 import gql from "graphql-tag";
 import _ from "lodash";
+import Cookies from "js-cookie";
 export default {
   components: { InfoPage },
   head: {
@@ -54,12 +62,42 @@ export default {
           }
         }
       `
+    },
+    user: {
+      query: gql`
+        {
+          user {
+            crsid
+          }
+        }
+      `,
+      fetchPolicy: "no-cache"
     }
+  },
+
+  data() {
+    return { authUrl: "" };
+  },
+  mounted() {
+    if (this.$route.query["WLS-Response"]) {
+      this.$router.replace({ query: { "WLS-Response": undefined } });
+    }
+    this.$nextTick(() => {
+      this.authUrl = String(
+        `https://raven.cam.ac.uk/auth/authenticate.html?ver=3&url=${
+          window.location.href
+        }&desc=ECSU&msg=&iact=`
+      );
+    });
   },
   computed: {
     years() {
       if (!this.minutes) {
         return [];
+      }
+      var token = "";
+      if (process.client) {
+        token = Cookies.get("access_token") || "";
       }
       const years = [...new Set(this.minutes.map(x => x.year))];
       return years
@@ -80,7 +118,8 @@ export default {
                 return {
                   title,
                   subtitle,
-                  ...minutes
+                  ...minutes,
+                  url: `${minutes.url}?auth=${token}`
                 };
               }),
             [
