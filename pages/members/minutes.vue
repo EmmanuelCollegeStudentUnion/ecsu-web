@@ -2,15 +2,15 @@
   <InfoPage>
     <template slot="title">Minutes</template>
     <template slot="subtitle">Historic Minutes from ECSU Meetings</template>
+    <p>
+      On here you can find the minutes of past ECSU Exec and Open Meetings. If the minutes for a meeting are missing
+      please contact the
+      <a
+        href="/exec/secretary"
+      >Secretary</a>
+      .
+    </p>
     <template v-if="user&&user.crsid">
-      <p>
-        On here you can find the minutes of past ECSU Exec and Open Meetings. If the minutes for a meeting are missing
-        please contact the
-        <a
-          href="/exec/secretary"
-        >Secretary</a>
-        .
-      </p>
       <div class="mdc-list-group" v-for="year in years" :key="year.url">
         <h3
           class="mdc-list-group__subheader group-subheader mdc-typography--headline2"
@@ -33,10 +33,27 @@
         </ul>
       </div>
     </template>
-    <template v-else-if="authUrl">
+    <template v-else-if="user&&authUrl">
       <br>
-      <p> Sign in to view minutes </p>
+      <p>Sign in to view minutes</p>
       <a class="mdc-button mdc-button--outlined" :href="authUrl">Sign in</a>
+    </template>
+    <template v-else>
+      <content-loader
+        :height="300"
+        :width="400"
+        :speed="2"
+        primaryColor="#f3f3f3"
+        secondaryColor="#ecebeb"
+      >
+        <rect x="0" y="30" rx="5" ry="5" width="280" height="10"/>
+        <rect x="0" y="60" rx="5" ry="5" width="280" height="10"/>
+        <rect x="0" y="90" rx="5" ry="5" width="280" height="10"/>
+        <rect x="0" y="150" rx="5" ry="5" width="280" height="10"/>
+        <rect x="0" y="180" rx="5" ry="5" width="280" height="10"/>
+        <rect x="0" y="210" rx="5" ry="5" width="280" height="10"/>
+        <rect x="0" y="240" rx="5" ry="5" width="280" height="10"/>
+      </content-loader>
     </template>
   </InfoPage>
 </template>
@@ -46,8 +63,10 @@ import InfoPage from "@/components/InfoPage";
 import gql from "graphql-tag";
 import _ from "lodash";
 import Cookies from "js-cookie";
+
+import { ContentLoader } from "vue-content-loader";
 export default {
-  components: { InfoPage },
+  components: { InfoPage, ContentLoader },
   head: {
     title: "Minutes"
   },
@@ -63,7 +82,8 @@ export default {
             term
           }
         }
-      `
+      `,
+      fetchPolicy: "no-cache"
     },
     user: {
       query: gql`
