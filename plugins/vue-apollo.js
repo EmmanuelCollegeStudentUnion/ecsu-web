@@ -72,7 +72,4 @@ export default (ctx, inject) => {
             nuxtState.apollo = ApolloSSR.getStates(apolloProvider);
         })
     }
-    if (!process.server) {
-        cache.restore(window.__NUXT__ ? window.__NUXT__.apollo.defaultClient : null)
-    }
 }
