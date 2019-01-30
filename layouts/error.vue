@@ -1,6 +1,6 @@
 <template>
   <div class="mdc-layout-grid__inner">
-    <template v-if="error.statusCode === 404">
+    <template v-if="typeof(error)!='undefined'&&error.statusCode === 404">
       <div class="mdc-layout-grid__cell--span-12">
         <h1 class="mdc-typography--headline2">Page not found</h1>
       </div>
