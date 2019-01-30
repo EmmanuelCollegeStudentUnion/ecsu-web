@@ -33,7 +33,7 @@
         </ul>
       </div>
     </template>
-    <template v-else-if="user&&authUrl">
+    <template v-else-if="user&&user.anonymous&&authUrl">
       <br>
       <p>Sign in to view minutes</p>
       <a class="mdc-button mdc-button--outlined" :href="authUrl">Sign in</a>
@@ -90,6 +90,7 @@ export default {
         {
           user {
             crsid
+            anonymous
           }
         }
       `,
