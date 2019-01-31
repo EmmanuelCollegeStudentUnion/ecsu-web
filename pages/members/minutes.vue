@@ -33,7 +33,7 @@
         </ul>
       </div>
     </template>
-    <template v-else-if="user&&user.anonymous&&authUrl">
+    <template v-else-if="this.$apolloData.loading==0&&user&&user.anonymous&&authUrl">
       <br>
       <p>Sign in to view minutes</p>
       <a class="mdc-button mdc-button--outlined" :href="authUrl">Sign in</a>
@@ -82,8 +82,7 @@ export default {
             term
           }
         }
-      `,
-      fetchPolicy: "no-cache"
+      `
     },
     user: {
       query: gql`
@@ -93,8 +92,7 @@ export default {
             anonymous
           }
         }
-      `,
-      fetchPolicy: "no-cache"
+      `
     }
   },
 

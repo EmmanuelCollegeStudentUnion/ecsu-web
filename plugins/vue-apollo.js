@@ -42,7 +42,12 @@ export default (ctx, inject) => {
     const apolloClient = new ApolloClient({
         link,
         cache,
+
         defaultOptions: {
+
+            watchQuery: {
+                fetchPolicy: 'cache-and-network',
+            },
             query: {
                 fetchPolicy: 'cache-and-network'
             },
@@ -62,17 +67,10 @@ export default (ctx, inject) => {
         const ApolloSSR = require('vue-apollo/ssr')
         Vue.use(ApolloSSR)
         beforeNuxtRender(async ({ Components, nuxtState }) => {
-            Components.forEach((Component) => {
-                // Fix https://github.com/nuxt-community/apollo-module/issues/19
-                if (Component.options && Component.options.apollo && Component.options.apollo.$init) {
-                    delete Component.options.apollo.$init
-                }
-            })
             await ApolloSSR.prefetchAll(apolloProvider, Components, ctx);
             nuxtState.apollo = ApolloSSR.getStates(apolloProvider);
         })
-    }
-    if (!process.server) {
+    } else {
         cache.restore(window.__NUXT__ ? window.__NUXT__.apollo.defaultClient : null)
     }
 }
