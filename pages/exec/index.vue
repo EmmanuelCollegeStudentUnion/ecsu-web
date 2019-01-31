@@ -118,7 +118,6 @@
 </template>
 
 <script>
-import content from "@/content";
 import ImageCard from "@/components/ImageCard";
 import PostPage from "@/components/PostPage";
 import gql from "graphql-tag";
@@ -129,7 +128,7 @@ export default {
   },
   computed: {
     image() {
-      return require("@/assets/images/exec/exec17.jpg");
+      return require("@/assets/images/site/exec17.jpg");
     }
   },
   apollo: {

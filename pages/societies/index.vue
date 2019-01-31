@@ -27,7 +27,6 @@
 </template>
 
 <script>
-import content from "@/content";
 import PostPage from "@/components/PostPage";
 import ImageCard from "@/components/ImageCard";
 import gql from "graphql-tag";
@@ -52,7 +51,7 @@ export default {
   },
   computed: {
     image() {
-      return require("@/assets/images/societies/trainer_ico.png");
+      return require("@/assets/images/site/trainer_ico.png");
     }
   }
 };

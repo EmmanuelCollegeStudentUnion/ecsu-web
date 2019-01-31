@@ -1,24 +1,56 @@
 import Vue from 'vue'
 import { ApolloClient } from 'apollo-client'
-import { SchemaLink } from 'apollo-link-schema'
+import { createUploadLink } from 'apollo-upload-client'
+import fetch from 'node-fetch'
+import { setContext } from 'apollo-link-context';
+import Cookies from 'js-cookie'
+
 import { InMemoryCache } from 'apollo-cache-inmemory'
-import schema from '../schema'
 import VueApollo from 'vue-apollo'
 Vue.use(VueApollo)
 
-
-const schemaLink = new SchemaLink({ schema })
-
+const gql = require("graphql-tag")
+const globalQuery = gql`{
+        navItems {
+          text
+          icon
+          url
+          routes {
+            title
+            url
+          }
+        }
+      }
+`; //Prefetch nav bar
 
 
 export default (ctx, inject) => {
     // Cache implementation
     const cache = new InMemoryCache()
 
+    const authLink = setContext((_, { headers }) => {
+        var token = null;
+        if (ctx.isServer) {
+            token = ctx.req.cookies["access_token"]
+        } else {
+            token = Cookies.get("access_token")
+        }
+        // return the headers to the context so httpLink can read them
+        return {
+            headers: {
+                ...headers,
+                authorization: token ? `Bearer ${token}` : "",
+            }
+        }
+    });
+
+
+    const link = authLink.concat(createUploadLink({ uri: "https://ecsu.org.uk/api/graphql", fetch }));
+
     // Create the apollo client
     const apolloClient = new ApolloClient({
-        link: schemaLink,
-        cache,
+        link,
+        cache
     })
 
 
@@ -33,17 +65,11 @@ export default (ctx, inject) => {
         const ApolloSSR = require('vue-apollo/ssr')
         Vue.use(ApolloSSR)
         beforeNuxtRender(async ({ Components, nuxtState }) => {
-            Components.forEach((Component) => {
-                // Fix https://github.com/nuxt-community/apollo-module/issues/19
-                if (Component.options && Component.options.apollo && Component.options.apollo.$init) {
-                    delete Component.options.apollo.$init
-                }
-            })
             await ApolloSSR.prefetchAll(apolloProvider, Components, ctx);
+            await apolloClient.query({ query: globalQuery })
             nuxtState.apollo = ApolloSSR.getStates(apolloProvider);
         })
-    }
-    if (!process.server) {
+    } else {
         cache.restore(window.__NUXT__ ? window.__NUXT__.apollo.defaultClient : null)
     }
 }

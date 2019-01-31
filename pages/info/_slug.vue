@@ -2,14 +2,14 @@
   <InfoPage v-if="infoPage">
     <template slot="title">{{infoPage.title}}</template>
     <template slot="subtitle">{{infoPage.subtitle}}</template>
-    <Markdown :html="infoPage.body"/>
+    <Markdown :markdown="infoPage.body"/>
     <br>
     <nuxt-link to="/info" class="mdc-button mdc-button--outlined back-button">&lt; Back to info</nuxt-link>
   </InfoPage>
 </template>
 
 <script>
-import content from "@/content";
+
 import InfoPage from "@/components/InfoPage";
 import ImageCard from "@/components/ImageCard";
 import Markdown from "@/components/Markdown";

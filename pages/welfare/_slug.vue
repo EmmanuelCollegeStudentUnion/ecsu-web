@@ -2,13 +2,13 @@
   <InfoPage v-if="welfarePage">
     <template slot="title">{{welfarePage.title}}</template>
     <template slot="subtitle">{{welfarePage.subtitle}}</template>
-    <Markdown :html="welfarePage.body"/>
+    <Markdown :markdown="welfarePage.body"/>
     <nuxt-link to="/welfare" class="mdc-button mdc-button--outlined back-button">&lt; Back to welfare</nuxt-link>
   </InfoPage>
 </template>
 
 <script>
-import content from "@/content";
+
 import InfoPage from "@/components/InfoPage";
 import Markdown from "@/components/Markdown";
 import gql from "graphql-tag";

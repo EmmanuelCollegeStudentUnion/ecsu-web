@@ -56,8 +56,7 @@
   </StandardPage>
 </template>
 <script>
-import content from "@/content";
-import { resolveImage } from "@/content";
+
 import TextCard from "@/components/TextCard";
 import ImageCaptionCard from "@/components/ImageCaptionCard";
 import StandardPage from "@/components/StandardPage";

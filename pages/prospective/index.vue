@@ -43,7 +43,7 @@ export default {
   },
   computed: {
     image() {
-      return require("@/assets/images/prospective/emma_chapel.jpg");
+      return require("@/assets/images/site/emma_chapel.jpg");
     }
   }
 };

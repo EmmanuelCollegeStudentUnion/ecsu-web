@@ -5,7 +5,7 @@
     <template slot="media">
       <ImageCard v-if="post.image" :image="post.image"/>
     </template>
-    <Markdown :html="post.body"/>
+    <Markdown :markdown="post.body"/>
     <br>
     <nuxt-link
       :to="post.blog.url"
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import content from "@/content";
+
 import PostPage from "@/components/PostPage";
 import Markdown from "@/components/Markdown";
 import ImageCard from "@/components/ImageCard";

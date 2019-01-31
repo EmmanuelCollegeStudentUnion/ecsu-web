@@ -102,7 +102,10 @@
       </div>
     </div>
     <p v-else>There are no photos for this room</p>
+    <br>Your room?
+    <nuxt-link :to="`/rooms/upload/${room.id}`" class="mdc-button">Upload photo</nuxt-link>
     <br>
+
     <nuxt-link
       :to="room.location.url"
       class="mdc-button mdc-button--outlined back-button"
@@ -111,7 +114,6 @@
 </template>
 
 <script>
-import content from "@/content";
 import PostPage from "@/components/PostPage";
 import gql from "graphql-tag";
 import { MDCTabBar } from "@material/tab-bar";
@@ -136,6 +138,7 @@ export default {
       query: gql`
         query Room($slug: String!) {
           room(slug: $slug) {
+            id
             title
             grade
             floor
@@ -143,6 +146,7 @@ export default {
             livingRoom
             cudn
             network
+            url
             images {
               src
               srcSet
@@ -160,6 +164,7 @@ export default {
           }
         }
       `,
+      fetchPolicy: "no-cache",
       variables() {
         return {
           slug: this.$route.params.slug

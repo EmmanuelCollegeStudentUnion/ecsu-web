@@ -4,7 +4,7 @@
     <template slot="media">
       <ImageCard v-if="!!society.image" :image="society.image"/>
     </template>
-    <Markdown :html="society.body"/>
+    <Markdown :markdown="society.body"/>
     <br>
     <nuxt-link
       to="/societies"
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import content from "@/content";
+
 import PostPage from "@/components/PostPage";
 import ImageCard from "@/components/ImageCard";
 import Markdown from "@/components/Markdown";

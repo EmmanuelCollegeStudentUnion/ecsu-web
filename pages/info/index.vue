@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import content from "@/content";
+
 import PostPage from "@/components/PostPage";
 import gql from "graphql-tag";
 

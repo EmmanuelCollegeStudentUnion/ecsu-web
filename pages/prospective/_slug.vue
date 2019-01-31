@@ -2,12 +2,12 @@
   <InfoPage v-if="prospectivePage">
     <template slot="title">{{prospectivePage.title}}</template>
     <template slot="subtitle">{{prospectivePage.subtitle}}</template>
-    <Markdown :html="prospectivePage.body"/>
+    <Markdown :markdown="prospectivePage.body"/>
   </InfoPage>
 </template>
 
 <script>
-import content from "@/content";
+
 import InfoPage from "@/components/InfoPage";
 import Markdown from "@/components/Markdown";
 import gql from "graphql-tag";
