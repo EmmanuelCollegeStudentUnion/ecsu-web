@@ -92,7 +92,8 @@ export default {
             anonymous
           }
         }
-      `
+      `,
+      fetchPolicy: "network-only"
     }
   },
 
@@ -100,6 +101,8 @@ export default {
     return { authUrl: "" };
   },
   mounted() {
+    this.$apollo.queries.user.refetch();
+    this.$apollo.queries.minutes.refetch();
     if (this.$route.query["WLS-Response"]) {
       this.$router.replace({ query: { "WLS-Response": undefined } });
     }
