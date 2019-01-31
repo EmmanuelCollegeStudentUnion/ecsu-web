@@ -147,17 +147,9 @@ workflows:
       - rollbarStaging:
           requires:
             - deployStaging
-      - hold:
-          type: approval
-          requires:
-            - upload
-          filters:
-            branches:
-              only: 
-                - master
       - deployProduction:
           requires:
-            - hold  
+            -upload
       - rollbarProduction:
           requires:
             - deployProduction
