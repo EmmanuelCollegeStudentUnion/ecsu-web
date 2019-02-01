@@ -53,6 +53,12 @@ export default {
   methods: {
     async uploadFile(e) {
       console.log("Uploading..");
+      this.$ga.event(
+        "room_database",
+        "upload_attempt",
+        this.$route.params.slug
+      );
+
       const value = await this.$apollo.mutate({
         // Query
         mutation: gql`
@@ -70,6 +76,11 @@ export default {
       });
       if (value.data) {
         window.location = "https://ecsu.org.uk/rooms/upload/done/";
+        this.$ga.event(
+          "room_database",
+          "upload_success",
+          this.$route.params.slug
+        );
       }
     }
   }
