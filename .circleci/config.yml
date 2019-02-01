@@ -130,9 +130,9 @@ workflows:
     jobs:
       - build:            
           branches:
-            only: 
-            - develop
-            - master
+              only: 
+                - develop
+                - master
       - upload:
           requires:
             - build     
