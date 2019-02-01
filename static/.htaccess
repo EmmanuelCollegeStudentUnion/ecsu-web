@@ -1,4 +1,4 @@
-ErrorDocument 404 200.html
+ErrorDocument 404 /200.html
 <Files ".env">  
   Require all denied
 </Files>
