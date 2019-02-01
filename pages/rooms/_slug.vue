@@ -3,27 +3,27 @@
     <template slot="title">{{room.title}}</template>
     <div class="mdc-typography--headline5">
       <ul>
-        <li>
+        <li v-if="!!room.grade">
           <span class="room-fact-header">Grade</span>
           {{room.grade}}
         </li>
-        <li>
+        <li v-if="room.floor!==null">
           {{room.floor}}
           <span class="room-fact-header">Floor</span>
         </li>
-        <li>
+        <li v-if="room.livingRoom!==null">
           {{room.livingRoom}}
           <span class="room-fact-header">Living Room</span>
         </li>
-        <li>
+        <li v-if="room.basin!==null">
           {{room.basin}}
           <span class="room-fact-header">Basin</span>
         </li>
-        <li>
+        <li v-if="room.network!==null">
           {{room.network}}
           <span class="room-fact-header">Network</span>
         </li>
-        <li>
+        <li v-if="room.cudn!==null">
           <template v-if="room.cudn">Has</template>
           <template v-else>No</template>
           <span class="room-fact-header">CUDN Access</span>
@@ -124,6 +124,7 @@ export default {
     return { title: this.room ? this.room.title : "Loading..." };
   },
   mounted() {
+    this.$apollo.queries.room.refetch();
     if (this.$refs.tabBar) {
       const tabBar = new MDCTabBar(this.$refs.tabBar);
     }
@@ -164,7 +165,6 @@ export default {
           }
         }
       `,
-      fetchPolicy: "no-cache",
       variables() {
         return {
           slug: this.$route.params.slug
