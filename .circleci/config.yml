@@ -128,11 +128,12 @@ workflows:
   version: 2
   build_and_deploy:
     jobs:
-      - build:            
-          branches:
-            only: 
-            - develop
-            - master
+      - build:      
+          filters:         
+            branches:
+              only: 
+                - develop
+                - master
       - upload:
           requires:
             - build     
@@ -153,7 +154,7 @@ workflows:
             - deployStaging
       - deployProduction:
           requires:
-            -upload
+            - upload
       - rollbarProduction:
           requires:
             - deployProduction
