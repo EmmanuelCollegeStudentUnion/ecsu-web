@@ -41,6 +41,9 @@ import gql from "graphql-tag";
 
 export default {
   components: { PostPage },
+  mounted() {
+    this.$apollo.queries.roomLocation.refetch();
+  },
   head() {
     return {
       title: this.roomLocation ? this.roomLocation.title : "Loading..."
