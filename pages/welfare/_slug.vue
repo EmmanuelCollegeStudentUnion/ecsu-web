@@ -17,6 +17,9 @@ export default {
   components: { InfoPage, Markdown },
   head() {
     return { title: this.welfarePage ? this.welfarePage.title : "Loading..." };
+  },  
+  mounted() {
+    this.$apollo.queries.welfarePage.refetch();
   },
   apollo: {
     welfarePage: {
