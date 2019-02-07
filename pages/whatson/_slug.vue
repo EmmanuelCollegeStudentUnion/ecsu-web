@@ -26,6 +26,9 @@ export default {
   head() {
     return { title: this.whatsOn ? this.whatsOn.title : "Loading..." };
   },
+  mounted() {
+    this.$apollo.queries.whatsOn.refetch();
+  },
   apollo: {
     whatsOn: {
       query: gql`

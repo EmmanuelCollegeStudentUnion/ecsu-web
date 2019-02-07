@@ -45,6 +45,9 @@ export default {
   head: {
     title: "What's On?"
   },
+  mounted() {
+    this.$apollo.queries.whatsOnEvents.refetch();
+  },
   apollo: {
     whatsOnEvents: gql`
       {
