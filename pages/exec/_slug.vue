@@ -60,6 +60,9 @@ export default {
   data() {
     return { dialogOpen: false };
   },
+  mounted() {
+    this.$apollo.queries.exec.refetch();
+  },
   apollo: {
     exec: {
       query: gql`

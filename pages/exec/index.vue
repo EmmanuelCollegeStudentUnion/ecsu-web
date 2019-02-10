@@ -125,6 +125,9 @@ export default {
   components: { ImageCard, PostPage },
   head: {
     title: "Exec"
+  },  
+  mounted() {
+    this.$apollo.queries.execs.refetch();
   },
   computed: {
     image() {
