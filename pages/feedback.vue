@@ -77,6 +77,7 @@ export default {
 .captchaField {
   width: 100%;
   margin: 24px 0px;
+  border: none;
 }
 .captchaField:valid {
   visibility: hidden;
