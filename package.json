@@ -63,6 +63,7 @@
         "vue-markdown": "^2.2.4",
         "vue-mq": "^1.0.0",
         "vue-progressive-image": "^3.2.0",
+        "vue-recaptcha": "^1.1.1",
         "yaml-loader": "^0.5.0"
     },
     "devDependencies": {

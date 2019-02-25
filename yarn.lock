@@ -9041,6 +9041,10 @@ vue-progressive-image@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/vue-progressive-image/-/vue-progressive-image-3.2.0.tgz#a6443f78bda87846f94e900b119e7ed0b6f3365f"
 
+vue-recaptcha@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/vue-recaptcha/-/vue-recaptcha-1.1.1.tgz#be38f4ffab500e7f4775f149a279bb962cf91f07"
+
 vue-rollbar@^0.2.2:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/vue-rollbar/-/vue-rollbar-0.2.3.tgz#eb22f2b47776961dae5b982c742c0f4fe51b3e7d"
