@@ -65,7 +65,7 @@ export default {
               {
                 hid: "og:image",
                 property: "og:image",
-                content: "https://ecsu.org.uk" + this.exec.image.src
+                content: this.exec.image.src
               }
             ]
           : []

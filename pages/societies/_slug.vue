@@ -14,7 +14,6 @@
 </template>
 
 <script>
-
 import PostPage from "@/components/PostPage";
 import ImageCard from "@/components/ImageCard";
 import Markdown from "@/components/Markdown";
@@ -30,7 +29,7 @@ export default {
               {
                 hid: "og:image",
                 property: "og:image",
-                content: "https://ecsu.org.uk" + this.society.image.src
+                content: this.society.image.src
               }
             ]
           : []
