@@ -125,13 +125,13 @@ export default {
   components: { ImageCard, PostPage },
   head: {
     title: "Exec"
-  },  
+  },
   mounted() {
     this.$apollo.queries.execs.refetch();
   },
   computed: {
     image() {
-      return require("@/assets/images/site/exec17.jpg");
+      return require("@/assets/images/site/exec19.jpg");
     }
   },
   apollo: {
