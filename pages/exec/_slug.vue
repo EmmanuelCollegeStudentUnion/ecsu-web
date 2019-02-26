@@ -45,7 +45,6 @@
 </template>
 
 <script>
-
 import ProfilePage from "@/components/ProfilePage";
 import Markdown from "@/components/Markdown";
 import ImageCard from "@/components/ImageCard";
@@ -55,7 +54,22 @@ import { MDCDialog } from "@material/dialog";
 export default {
   components: { Markdown, ProfilePage, ImageCard },
   head() {
-    return { title: this.exec ? this.exec.title : "Loading..." };
+    return {};
+  },
+  head() {
+    return {
+      title: this.exec ? this.exec.title : "Loading...",
+      meta:
+        this.exec && this.exec.image
+          ? [
+              {
+                hid: "og:image",
+                property: "og:image",
+                content: "https://ecsu.org.uk" + this.exec.image.src
+              }
+            ]
+          : []
+    };
   },
   data() {
     return { dialogOpen: false };

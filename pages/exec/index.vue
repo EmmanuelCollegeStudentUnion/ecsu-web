@@ -124,7 +124,25 @@ import gql from "graphql-tag";
 export default {
   components: { ImageCard, PostPage },
   head: {
-    title: "Exec"
+    title: ""
+  },
+
+  head: {
+    title: "Exec",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "The Exec is elected on a yearly basis, at the end of Michaelmas Term. The electoral procedure is described in the Constitution. Elections will be publicised well in advance. Any student at Emmanuel can stand for election including Freshers."
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content:
+          "https://ecsu.org.uk" + require("@/assets/images/site/exec19.jpg").src
+      }
+    ]
   },
   mounted() {
     this.$apollo.queries.execs.refetch();
