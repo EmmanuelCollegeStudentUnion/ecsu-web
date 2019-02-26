@@ -56,8 +56,27 @@ import "normalize.css";
 import Drawer from "@/components/Drawer";
 import Footer from "@/components/Footer";
 import Cookies from "@/components/Cookies";
+const sketchImage = require("@/assets/images/pages/home/Sketch.png");
+sketchImage.src = sketchImage.images.slice(-1)[0].path;
 export default {
   components: { Drawer, Footer, Cookies },
+
+  head: {
+    title: "Emmanuel College Students' Union",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "ECSU is the Emmanuel College Students' Union, which is the representative body for students of Emmanuel College, Cambridge. The daily business of ECSU is managed by the Executive, or 'Exec', members of which have specific responsibilities. The Committee is elected on a yearly basis at the end of Michaelmas Term."
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "https://ecsu.org.uk" + sketchImage.src
+      }
+    ]
+  },
   data: () => ({
     drawerOpen: false
   }),
