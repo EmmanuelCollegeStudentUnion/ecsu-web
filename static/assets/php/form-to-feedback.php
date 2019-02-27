@@ -7,7 +7,7 @@ if(!isset($_POST['submit']))
 $name = 'anonymous';
 $visitor_email = 'anonymous';
 $message = $_POST['message'];
-$captcha = $_POST['captcha-token'];
+$captcha = $_POST['g-recaptcha-response'];
 
 
 $email_from = 'ECSU';//<== update the email address
