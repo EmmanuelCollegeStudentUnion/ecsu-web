@@ -20,6 +20,9 @@ export default {
   head() {
     return { title: this.infoPage ? this.infoPage.title : "Loading..." };
   },
+  mounted() {
+    this.$apollo.queries.infoPage.refetch();
+  },
   apollo: {
     infoPage: {
       query: gql`
