@@ -7,12 +7,14 @@ if(!isset($_POST['submit']))
 $name = 'anonymous';
 $visitor_email = 'anonymous';
 $message = $_POST['message'];
+$captcha = $_POST['captcha-token'];
 
 
 $email_from = 'ECSU';//<== update the email address
 $email_subject = "New ECSU Form submission";
 $email_body = "You have received a new message from the user $name.\n".
     "Here is the message:\n $message \n".
+    "Captcha token:\n $captcha \n".
 
 $to = "webmaster@ecsu.org.uk";//<== update the email address
 $headers = "From: $email_from \r\n";
