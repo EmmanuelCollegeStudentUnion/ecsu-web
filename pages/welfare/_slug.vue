@@ -36,6 +36,11 @@ export default {
         return {
           slug: this.$route.params.slug
         };
+      },
+      error(error) {
+        if (error.gqlError.extensions.code == "NOT_FOUND") {
+          return this.$nuxt.error({ statusCode: 404, message: error.message });
+        }
       }
     }
   }
