@@ -126,9 +126,7 @@ export default {
   },
   mounted() {
     this.$apollo.queries.room.refetch();
-    if (this.$refs.tabBar) {
-      const tabBar = new MDCTabBar(this.$refs.tabBar);
-    }
+    const tabBar = new MDCTabBar(this.$refs.tabBar);
   },
   data() {
     return {
