@@ -3,12 +3,7 @@
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
       <div class="page-content">
         <div class="sketchImageContainer">
-          <img
-            :srcset="sketchImage.srcSet"
-            :src="sketchImage.src"
-            alt="front court"
-            width="100%"
-          >
+          <img :srcset="sketchImage.srcSet" :src="sketchImage.src" alt="front court" width="100%">
         </div>
         <h1 class="mdc-typography--headline1 mdc-theme--text-secondary-on-light hero-heading">
           Welcome to
@@ -24,7 +19,7 @@
       </div>
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 center-button">
-      <div class="button-padding">
+      <div class="call-to-action">
         <nuxt-link to="/prospective" class="mdc-fab mdc-fab--extended">
           <span class="mdc-fab__label">Prospective students</span>
         </nuxt-link>
@@ -56,7 +51,6 @@
   </StandardPage>
 </template>
 <script>
-
 import TextCard from "@/components/TextCard";
 import ImageCaptionCard from "@/components/ImageCaptionCard";
 import StandardPage from "@/components/StandardPage";
@@ -143,7 +137,8 @@ article.card-image {
 .center-button {
   margin: auto;
 }
-.button-padding {
+.call-to-action {
+  font-weight: 500;
   padding: 16px;
   text-align: center; //ie
 }
