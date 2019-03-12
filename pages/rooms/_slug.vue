@@ -1,7 +1,7 @@
 <template>
-  <PostPage v-if="room">
-    <template slot="title">{{room.title}}</template>
-    <div class="mdc-typography--headline5">
+  <PostPage v-show="room">
+    <template v-if="room" slot="title">{{room.title}}</template>
+    <div v-if="room" class="mdc-typography--headline5">
       <ul>
         <li v-if="!!room.grade">
           <span class="room-fact-header">Grade</span>
@@ -38,7 +38,7 @@
     </p>
 
     <h2 class="mdc-typography--headline3">Comments</h2>
-    <table v-if="room.comments.length!=0">
+    <table v-if="room&&room.comments.length!=0">
       <thead>
         <tr>
           <th>Year</th>
@@ -56,9 +56,9 @@
 
     <h2 class="mdc-typography--headline3">Photos</h2>
 
-    <div v-if="room.images.length!=0">
+    <div v-show="room&&room.images.length!=0">
       <div ref="tabBar" class="mdc-tab-bar" role="tablist">
-        <div class="mdc-tab-scroller">
+        <div v-if="room" class="mdc-tab-scroller">
           <div class="mdc-tab-scroller__scroll-area">
             <div class="mdc-tab-scroller__scroll-content">
               <button
@@ -85,7 +85,7 @@
           </div>
         </div>
       </div>
-      <div class="image-container">
+      <div v-if="room" class="image-container">
         <template v-for="i in room.images.length">
           <transition name="fade" :key="room.images[i-1].url" mode>
             <v-lazy-image
@@ -101,12 +101,13 @@
         </template>
       </div>
     </div>
-    <p v-else>There are no photos for this room</p>
+    <p v-if="room&&room.images.length==0">There are no photos for this room</p>
     <br>Your room?
-    <nuxt-link :to="`/rooms/upload/${room.id}`" class="mdc-button">Upload photo</nuxt-link>
+    <nuxt-link v-if="room" :to="`/rooms/upload/${room.id}`" class="mdc-button">Upload photo</nuxt-link>
     <br>
 
     <nuxt-link
+      v-if="room"
       :to="room.location.url"
       class="mdc-button mdc-button--outlined back-button"
     >&lt; Back to {{room.location.title}}</nuxt-link>
