@@ -5,7 +5,7 @@
       v-show="open||!modal"
       :class="{
         'mdc-drawer--modal': modal,
-        'mdc-drawer--persistant': !modal
+        'mdc-drawer--persistent': !modal
       }"
     >
       <div class="mdc-drawer__content">
@@ -96,7 +96,7 @@ aside.mdc-drawer {
 }
 
 @media screen and (max-width: 1279px) {
-  .mdc-drawer--persistant {
+  .mdc-drawer--persistent {
     display: none !important;
   }
 }

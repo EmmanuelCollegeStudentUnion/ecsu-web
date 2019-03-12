@@ -56,35 +56,10 @@
 
     <h2 class="mdc-typography--headline3">Photos</h2>
 
-    <div v-show="room&&room.images.length!=0">
-      <div ref="tabBar" class="mdc-tab-bar" role="tablist">
-        <div v-if="room" class="mdc-tab-scroller">
-          <div class="mdc-tab-scroller__scroll-area">
-            <div class="mdc-tab-scroller__scroll-content">
-              <button
-                v-for="i in room.images.length"
-                class="mdc-tab mdc-tab--active"
-                role="tab"
-                aria-selected="true"
-                tabindex="0"
-                v-on:click="imageTab=i"
-                :key="i"
-              >
-                <span class="mdc-tab__content">
-                  <span class="mdc-tab__text-label">Image {{i}}</span>
-                </span>
-                <span
-                  class="mdc-tab-indicator"
-                  :class="{' mdc-tab-indicator--active': imageTab===i}"
-                >
-                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-                </span>
-                <span class="mdc-tab__ripple"></span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div v-if="room&&room.images.length!=0">
+      <mdc-tab-bar @change="onTabSelected">
+        <mdc-tab :key="i" v-for="i in room.images.length">Image {{i}}</mdc-tab>
+      </mdc-tab-bar>
       <div v-if="room" class="image-container">
         <template v-for="i in room.images.length">
           <transition name="fade" :key="room.images[i-1].url" mode>
@@ -117,16 +92,11 @@
 <script>
 import PostPage from "@/components/PostPage";
 import gql from "graphql-tag";
-import { MDCTabBar } from "@material/tab-bar";
 
 export default {
   components: { PostPage },
   head() {
     return { title: this.room ? this.room.title : "Loading..." };
-  },
-  mounted() {
-    this.$apollo.queries.room.refetch();
-    const tabBar = new MDCTabBar(this.$refs.tabBar);
   },
   data() {
     return {
@@ -175,15 +145,17 @@ export default {
         }
       }
     }
+  },
+  methods: {
+    onTabSelected(i) {
+      this.imageTab = i + 1;
+    }
   }
 };
 </script>
 
-<style lang="scss" scoped>
-@import "@material/tab-bar/mdc-tab-bar";
-@import "@material/tab-scroller/mdc-tab-scroller";
-@import "@material/tab-indicator/mdc-tab-indicator";
-@import "@material/tab/mdc-tab";
+<style lang="scss">
+@import "vue-mdc-adapter/dist/tabs/styles";
 
 .fade-enter-active,
 .fade-leave-active {

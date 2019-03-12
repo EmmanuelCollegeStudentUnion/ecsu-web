@@ -7,11 +7,8 @@
       method="post"
       action="/assets/php/welfare_request.php"
     >
-      <div ref="inputField" class="mdc-text-field text-field mdc-text-field--textarea">
-        <textarea name="message" id="text-field--textarea" class="mdc-text-field__input"></textarea>
-        <label class="mdc-floating-label" for="text-field--textarea">Message</label>
-      </div>
-      <br>
+      <mdc-textfield v-model="message" fullwidth label="Message" name="message"/>
+      <p></p>
       <input
         class="mdc-button mdc-button--outlined mdc-ripple-upgraded"
         type="submit"
@@ -30,13 +27,13 @@ export default {
   head: {
     title: "Welfare request"
   },
-  mounted: function() {
-    const r = this.$refs.inputField;
-    const textField = new MDCTextField(r);
+  data() {
+    return { message: "" };
   }
 };
 </script>
 
 <style lang="scss">
-@import "@material/textfield/mdc-text-field";
+@import "vue-mdc-adapter/dist/textfield/styles";
 </style>
+

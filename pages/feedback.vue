@@ -9,10 +9,7 @@
       method="post"
       action="/assets/php/form-to-feedback.php"
     >
-      <div ref="inputField" class="mdc-text-field text-field mdc-text-field--textarea">
-        <textarea name="message" id="text-field--textarea" class="mdc-text-field__input"></textarea>
-        <label class="mdc-floating-label" for="text-field--textarea">Message</label>
-      </div>
+      <mdc-textfield v-model="message" label="Message" name="message" fullwidth/>
       <br>
       <br>
       <VueRecaptcha
@@ -36,7 +33,6 @@
 </template>
 
 <script>
-import { MDCTextField } from "@material/textfield";
 import VueRecaptcha from "vue-recaptcha";
 
 import StandardPage from "@/components/StandardPage";
@@ -54,11 +50,7 @@ export default {
     ]
   },
   data() {
-    return { captchaToken: "" };
-  },
-  mounted: function() {
-    const r = this.$refs.inputField;
-    const textField = new MDCTextField(r);
+    return { captchaToken: "", message: "" };
   },
   methods: {
     captchaDone: function(token) {
@@ -73,7 +65,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@material/textfield/mdc-text-field";
+@import "vue-mdc-adapter/dist/textfield/styles";
 .captchaField {
   width: 100%;
   margin: 24px 0px;

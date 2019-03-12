@@ -34,7 +34,6 @@
 </template>
 
 <script>
-
 import PostPage from "@/components/PostPage";
 import ImageCaptionCard from "@/components/ImageCaptionCard";
 import gql from "graphql-tag";
@@ -91,7 +90,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@material/select/mdc-select";
+@import "vue-mdc-adapter/dist/select/styles";
 .center-heading {
   margin: 16px auto;
 }
