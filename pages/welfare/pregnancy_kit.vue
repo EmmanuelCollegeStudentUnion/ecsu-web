@@ -7,7 +7,7 @@
       method="post"
       action="/assets/php/pregnancytest.php"
     >
-      <mdc-textfield v-model="message" fullwidth label="Message" name="message"/>
+      <TextField v-model="message" label="Message" name="message"/>
       <p></p>
       <input
         class="mdc-button mdc-button--outlined mdc-ripple-upgraded"
@@ -19,9 +19,10 @@
 </template>
 
 <script>
+import TextField from "@/components/TextField";
 import StandardPage from "@/components/StandardPage";
 export default {
-  components: { StandardPage },
+  components: { StandardPage, TextField },
   head: {
     title: "Pregnancy kit"
   },
@@ -32,5 +33,4 @@ export default {
 </script>
 
 <style lang="scss">
-@import "vue-mdc-adapter/dist/textfield/styles";
 </style>

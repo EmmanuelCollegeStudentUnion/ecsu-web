@@ -48,20 +48,6 @@
         "vue-apollo": "^3.0.0-beta.26",
         "vue-content-loader": "^0.2.1",
         "vue-markdown": "^2.2.4",
-        "vue-mdc-adapter": "^0.18.2",
-        "vue-mq": "^1.0.0",
-        "vue-progressive-image": "^3.2.0",
-        "vue-recaptcha": "^1.1.1",
-        "yaml-loader": "^0.5.0"
-    },
-    "devDependencies": {
-        "babel-plugin-graphql-tag": "^1.6.0",
-        "glob": "^7.1.3",
-        "imagemin-webp": "^5.0.0",
-        "markdown-with-front-matter-loader": "^0.1.0",
-        "node-sass": "^4.10.0"
-    },
-    "resolutions": {
         "@material/button": "^1.0.1",
         "@material/card": "^1.0.0",
         "@material/dialog": "^1.0.0",
@@ -78,6 +64,17 @@
         "@material/top-app-bar": "^1.0.0",
         "@material/theme": "^1.0.0",
         "@material/ripple": "^1.0.1",
-        "@material/typography": "^1.0.0"
+        "@material/typography": "^1.0.0",
+        "vue-mq": "^1.0.0",
+        "vue-progressive-image": "^3.2.0",
+        "vue-recaptcha": "^1.1.1",
+        "yaml-loader": "^0.5.0"
+    },
+    "devDependencies": {
+        "babel-plugin-graphql-tag": "^1.6.0",
+        "glob": "^7.1.3",
+        "imagemin-webp": "^5.0.0",
+        "markdown-with-front-matter-loader": "^0.1.0",
+        "node-sass": "^4.10.0"
     }
 }

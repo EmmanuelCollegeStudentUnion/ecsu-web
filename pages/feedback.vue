@@ -9,7 +9,7 @@
       method="post"
       action="/assets/php/form-to-feedback.php"
     >
-      <mdc-textfield v-model="message" label="Message" name="message" fullwidth/>
+      <TextField name="message" label="Message"/>
       <br>
       <br>
       <VueRecaptcha
@@ -35,9 +35,10 @@
 <script>
 import VueRecaptcha from "vue-recaptcha";
 
+import TextField from "@/components/TextField";
 import StandardPage from "@/components/StandardPage";
 export default {
-  components: { StandardPage, VueRecaptcha },
+  components: { StandardPage, VueRecaptcha, TextField },
   head: {
     title: "Feedback",
     script: [
@@ -65,7 +66,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "vue-mdc-adapter/dist/textfield/styles";
 .captchaField {
   width: 100%;
   margin: 24px 0px;

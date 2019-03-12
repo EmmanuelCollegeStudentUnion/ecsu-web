@@ -57,9 +57,9 @@
     <h2 class="mdc-typography--headline3">Photos</h2>
 
     <div v-if="room&&room.images.length!=0">
-      <mdc-tab-bar @change="onTabSelected">
-        <mdc-tab :key="i" v-for="i in room.images.length">Image {{i}}</mdc-tab>
-      </mdc-tab-bar>
+      <TabBar>
+        <Tab :key="i" v-for="i in room.images.length" @input="onTabSelected(i)">Image {{i}}</Tab>
+      </TabBar>
       <div v-if="room" class="image-container">
         <template v-for="i in room.images.length">
           <transition name="fade" :key="room.images[i-1].url" mode>
@@ -90,18 +90,21 @@
 </template>
 
 <script>
-import PostPage from "@/components/PostPage";
 import gql from "graphql-tag";
+import PostPage from "@/components/PostPage";
+import Tab from "@/components/Tab";
+import TabBar from "@/components/TabBar";
 
 export default {
-  components: { PostPage },
+  components: { PostPage, TabBar, Tab },
   head() {
     return { title: this.room ? this.room.title : "Loading..." };
   },
+  mounted() {
+    this.$apollo.queries.room.refetch();
+  },
   data() {
-    return {
-      imageTab: 1
-    };
+    return { imageTab: 1 };
   },
   apollo: {
     room: {
@@ -148,15 +151,13 @@ export default {
   },
   methods: {
     onTabSelected(i) {
-      this.imageTab = i + 1;
+      this.imageTab = i;
     }
   }
 };
 </script>
 
 <style lang="scss">
-@import "vue-mdc-adapter/dist/tabs/styles";
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;

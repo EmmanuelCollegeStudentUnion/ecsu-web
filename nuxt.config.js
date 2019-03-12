@@ -98,7 +98,6 @@ export default {
         '~/plugins/auth',
         '~/plugins/vue-lazyload',
         '~/plugins/vue-mq',
-        '~/plugins/vue-mdc',
 
     ],
     loading: {

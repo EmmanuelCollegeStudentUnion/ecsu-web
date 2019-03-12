@@ -4,19 +4,14 @@
       <h2 class="mdc-typography--headline2 layout-center">What's On?</h2>
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-      <div ref="select" class="mdc-select">
-        <i class="mdc-select__dropdown-icon"></i>
-        <select class="mdc-select__native-control" @change="onChange">
-          <option
-            v-for="category in categories"
-            :key="category"
-            :value="category"
-            :selected="selectedCategory===category"
-          >{{category}}</option>
-        </select>
-        <label class="mdc-floating-label mdc-floating-label--float-above">Category</label>
-        <div class="mdc-line-ripple"></div>
-      </div>
+      <Select @change="onChange">
+        <option
+          v-for="category in categories"
+          :key="category"
+          :value="category"
+          :selected="selectedCategory===category"
+        >{{category}}</option>
+      </Select>
     </div>
     <div
       v-for="item in filteredEvents"
@@ -36,11 +31,11 @@
 <script>
 import PostPage from "@/components/PostPage";
 import ImageCaptionCard from "@/components/ImageCaptionCard";
+import Select from "@/components/Select";
 import gql from "graphql-tag";
-import { MDCSelect } from "@material/select";
 
 export default {
-  components: { PostPage, ImageCaptionCard },
+  components: { PostPage, ImageCaptionCard, Select },
   head: {
     title: "What's On?"
   },
@@ -69,8 +64,8 @@ export default {
     return { selectedCategory: "All" };
   },
   methods: {
-    onChange(e) {
-      this.selectedCategory = e.target.value;
+    onChange(value) {
+      this.selectedCategory = value;
     }
   },
   computed: {
@@ -90,7 +85,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "vue-mdc-adapter/dist/select/styles";
 .center-heading {
   margin: 16px auto;
 }

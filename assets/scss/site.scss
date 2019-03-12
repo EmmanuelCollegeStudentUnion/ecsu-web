@@ -2,15 +2,15 @@ $mdc-theme-primary: #d926a5;
 $mdc-theme-secondary: #d926a5;
 $mdc-theme-background: #eceff1;
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic");
-@import "vue-mdc-adapter/dist/theme/styles";
-@import 'vue-mdc-adapter/dist/drawer/styles';
-@import 'vue-mdc-adapter/dist/typography/styles';
-@import 'vue-mdc-adapter/dist/layout-grid/styles';
-@import 'vue-mdc-adapter/dist/button/styles';
-@import 'vue-mdc-adapter/dist/fab/styles';
-@import 'vue-mdc-adapter/dist/top-app-bar/styles';
-@import "vue-mdc-adapter/dist/list/styles";
-@import 'vue-mdc-adapter/dist/card/styles';
+@import "@material/theme/mdc-theme";
+@import '@material/drawer/mdc-drawer';
+@import '@material/typography/mdc-typography';
+@import "@material/layout-grid/mdc-layout-grid";
+@import '@material/button/mdc-button';
+@import '@material/fab/mdc-fab';
+@import '@material/top-app-bar/mdc-top-app-bar';
+@import "@material/list/mdc-list";
+@import '@material/card/mdc-card';
 
 //Standard font
 div{

@@ -7,7 +7,7 @@
       method="post"
       action="/assets/php/welfare_request.php"
     >
-      <mdc-textfield v-model="message" fullwidth label="Message" name="message"/>
+      <TextField name="message" label="Message"/>
       <p></p>
       <input
         class="mdc-button mdc-button--outlined mdc-ripple-upgraded"
@@ -19,11 +19,10 @@
 </template>
 
 <script>
-import { MDCTextField } from "@material/textfield";
-
+import TextField from "@/components/TextField";
 import StandardPage from "@/components/StandardPage";
 export default {
-  components: { StandardPage },
+  components: { StandardPage, TextField },
   head: {
     title: "Welfare request"
   },
@@ -32,8 +31,4 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-@import "vue-mdc-adapter/dist/textfield/styles";
-</style>
 
