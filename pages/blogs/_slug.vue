@@ -27,6 +27,9 @@ export default {
   head() {
     return { title: this.blog ? this.blog.title : "Loading..." };
   },
+  mounted() {
+    this.$apollo.queries.blog.refetch();
+  },
   apollo: {
     blog: {
       query: gql`
