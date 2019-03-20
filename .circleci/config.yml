@@ -155,6 +155,10 @@ workflows:
       - deployProduction:
           requires:
             - upload
+          filters:
+            branches:
+              only: 
+                - master
       - rollbarProduction:
           requires:
             - deployProduction
