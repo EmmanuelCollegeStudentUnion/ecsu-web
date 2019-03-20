@@ -1,16 +1,21 @@
 <template>
-  <VueMarkdown class="markdown">{{markdown}}</VueMarkdown>
+  <div v-html="html"/>
 </template>
 
 
 
 <script>
-import VueMarkdown from "vue-markdown";
-
+import MarkdownIt from "markdown-it";
+var md = new MarkdownIt({
+  linkify: true,
+  typographer: true
+});
 export default {
   props: ["markdown"],
-  components: {
-    VueMarkdown
+  computed: {
+    html() {
+      return md.render(this.markdown);
+    }
   }
 };
 </script>
