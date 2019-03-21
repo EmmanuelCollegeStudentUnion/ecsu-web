@@ -33,7 +33,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: this.post ? this.post.subtitle || this.post.title : null
+          content: this.post ? this.post.description || this.post.subtitle || this.post.title : null
         }
       ]
     };
