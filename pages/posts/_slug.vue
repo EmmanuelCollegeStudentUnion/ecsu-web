@@ -45,6 +45,7 @@ export default {
           post(slug: $slug) {
             title
             subtitle
+            description
             image {
               src
             }
