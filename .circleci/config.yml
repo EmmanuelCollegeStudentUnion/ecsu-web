@@ -64,20 +64,20 @@ jobs:
                 command:
                     yarn ampify
             
-            - save_cache:
+            - persist_to_workspace:
+                root: '.'
                 paths:
                     - dist
-                key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
     upload:
         machine:
             enabled: true
         steps:    
-            - restore_cache:
-                key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
+            - attach_workspace:
+                at: /tmp/workspace
             - run:
                 name: Create archive
                 command: |
-                    cd ~/repo 
+                    cd /tmp/workspace 
                     tar -czvf /tmp/deploy.tar.gz ./dist
             - run:
                 name: Upload
