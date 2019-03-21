@@ -14,21 +14,27 @@
           </div>
         </div>
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-          <h5>External links</h5>
-          <a class="mdc-button" target="_blank" href="https://www.emma.cam.ac.uk">Emmanuel College</a> |
-          <a class="mdc-button" target="_blank" href="http://www.cusu.cam.ac.uk/">CUSU</a> |
-          <a class="mdc-button" target="_blank" href="https://www.emmamcr.org.uk/">MCR</a>
+          <span class="footer-heading">External links</span>
+          <p>
+            <a class="mdc-button" target="_blank" href="https://www.emma.cam.ac.uk">Emmanuel College</a> |
+            <a class="mdc-button" target="_blank" href="http://www.cusu.cam.ac.uk/">CUSU</a> |
+            <a class="mdc-button" target="_blank" href="https://www.emmamcr.org.uk/">MCR</a>
+          </p>
         </div>
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-          <h5>Website</h5>
-          <nuxt-link class="mdc-button" to="/conditions">Conditions</nuxt-link>|
-          <nuxt-link class="mdc-button" to="/cookies">Cookies</nuxt-link>|
-          <nuxt-link class="mdc-button" to="/accessibility">Accessibility</nuxt-link>
+          <span class="footer-heading">Website</span>
+          <p>
+            <nuxt-link class="mdc-button" to="/conditions">Conditions</nuxt-link>|
+            <nuxt-link class="mdc-button" to="/cookies">Cookies</nuxt-link>|
+            <nuxt-link class="mdc-button" to="/accessibility">Accessibility</nuxt-link>
+          </p>
         </div>
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-          <h5>Contact us</h5>
-          <nuxt-link class="mdc-button" to="/exec">The committee</nuxt-link>|
-          <nuxt-link class="mdc-button" to="/feedback">Feedback</nuxt-link>
+          <span class="footer-heading">Contact us</span>
+          <p>
+            <nuxt-link class="mdc-button" to="/exec">The committee</nuxt-link>|
+            <nuxt-link class="mdc-button" to="/feedback">Feedback</nuxt-link>
+          </p>
         </div>
       </div>
     </div>
@@ -81,5 +87,9 @@ export default {
 }
 .logo {
   position: relative;
+}
+.footer-heading {
+  font-size: 0.85em;
+  font-weight: bold;
 }
 </style>
