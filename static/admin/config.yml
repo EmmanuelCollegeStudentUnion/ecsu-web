@@ -130,9 +130,9 @@ collections:
       create: true
       fields:
         - {label: "Blog", name: "blog", widget: "relation", collection: "blogs", searchFields: ["title"], valueField: "title"}
-        - {label: "Description", name: "description", widget: "string", required: false}
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+        - {label: "Description", name: "description", widget: "string", required: false}
         - {label: "Image", name: "image", widget: "image", required: false}
         - {label: "Content", name: "body", widget: "markdown", required: false}
       editor:
