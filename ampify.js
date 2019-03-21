@@ -2,20 +2,13 @@
 
 const ampScript = '<script async src="https://cdn.ampproject.org/v0.js"></script>'
 const ampBoilerplate = '<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>'
+const Purgecss = require('purgecss')
+const purgeHtml = require('purge-from-html')
 
 function ampify(html) {
     // Add ⚡ to html tag
     html = html.replace(/<html/gi, '<html ⚡')
 
-    // Combine css into single tag
-    let styleConcat = ''
-
-    styleConcat += '.material-icons{visibility:visible !important}' //show material icons
-    html = html.replace(/<style[^>]*data-vue-ssr[^>]*>(.*?)?<\/style>/gis, (match, sub) => {
-        styleConcat += sub
-        return ''
-    })
-    html = html.replace('</head>', `<style amp-custom>${styleConcat}</style></head>`)
 
     //Load fonts
     let fontConcat = ''
@@ -28,14 +21,39 @@ function ampify(html) {
 
 
 
+    // Combine css into single tag
+    let styleConcat = ''
+
+    styleConcat += 'i.material-icons{visibility:visible !important}' //show material icons
+    html = html.replace(/<style[^>]*data-vue-ssr[^>]*>(.*?)?<\/style>/gis, (match, sub) => {
+        styleConcat += sub
+        return ''
+    })
+    styleConcat = styleConcat.replace(/\/\*\!.* \*\//, '')
+    const purgecss = new Purgecss({
+        content: [
+            {
+                raw: html,
+                extension: 'html'
+            }],
+        css: [{
+            raw: styleConcat
+        }]
+    })
+    styleConcat = purgecss.purge()[0].css
+    styleConcat = styleConcat.replace(/!important/gi, '') //important is disallowed
+    html = html.replace('</head>', `<style amp-custom>${styleConcat}</style></head>`)
+
+
     // Remove preload and prefetch tags
-    html = html.replace(/<link[^>]*rel="(?:preload|prefetch)?"[^>]*>/gi, '')
+    html = html.replace(/<link[^>]*rel="(?:preload|prefetch|modulepreload)?"[^>]*>/gi, '')
 
     // Remove amphtml tag
     html = html.replace(/<link[^>]*rel="(?:amphtml)?"[^>]*>/gi, '')
 
     // Remove data attributes from tags
-    html = html.replace(/[[\s]*data-(?:[^=>]*="[^"]*"|[^=>\s]*)/gi, '')
+    html = html.replace(/\[data[^\]]*\]/gi, '')
+    html = html.replace(/\s*data-(?:[^=>]*="[^"]*"|[^=>\s]*)/gi, '')
 
     // Remove JS script tags except for ld+json
     html = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, (match) => {
@@ -44,7 +62,11 @@ function ampify(html) {
 
     // Replace img tags with amp-img
     html = html.replace(/<img([^>]*)>/gi, (match, sub) => {
-        return `<amp-img ${sub}></amp-img>`
+        if (sub.includes("height") || sub.includes("width")) {
+            return `<amp-img ${sub}></amp-img>`
+        } else {
+            return ''
+        }
     })
 
     // Add AMP script before </head>

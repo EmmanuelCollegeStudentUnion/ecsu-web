@@ -57,6 +57,7 @@
         "nuxt-purgecss": "^0.2.0",
         "nuxt-rollbar-module": "^1.0.0",
         "nuxt-webfontloader": "^1.0.0",
+        "purge-from-html": "^1.0.3",
         "require-context": "^1.1.0",
         "responsive-loader": "^1.1.0",
         "sass-loader": "^7.1.0",

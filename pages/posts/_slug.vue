@@ -73,7 +73,9 @@ export default {
       return `https://ecsu.org.uk/posts/${this.$route.params.slug}`;
     },
     amp() {
-      return `https://ecsu.org.uk/posts/${this.$route.params.slug}.amp.html`;
+      return `https://ecsu.org.uk/posts/${
+        this.$route.params.slug
+      }/index.amp.html`;
     }
   }
 };
