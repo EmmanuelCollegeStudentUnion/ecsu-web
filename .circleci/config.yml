@@ -58,6 +58,11 @@ jobs:
                 name: Generate webp images
                 command:
                     yarn webp
+                    
+            - run:
+                name: Generate amp pages
+                command:
+                    yarn ampify
             
             - save_cache:
                 paths:

@@ -26,6 +26,7 @@ export default {
     return {
       title: this.post ? this.post.title : "Loading...",
       link: [{ rel: "canonical", href: this.canonical }],
+      link: [{ rel: "amphtml", href: this.canonical }],
       meta: [
         {
           hid: "description",
@@ -68,6 +69,9 @@ export default {
   computed: {
     canonical() {
       return `https://ecsu.org.uk/posts/${this.$route.params.slug}`;
+    },
+    amp() {
+      return `https://ecsu.org.uk/posts/${this.$route.params.slug}.amp.html`;
     }
   }
 };

@@ -1,8 +1,9 @@
-// plugins/ampify.js
+//Makes pages google amp compatible
+
 const ampScript = '<script async src="https://cdn.ampproject.org/v0.js"></script>'
 const ampBoilerplate = '<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>'
 
-module.exports = (html) => {
+function ampify(html) {
     // Add ⚡ to html tag
     html = html.replace(/<html/gi, '<html ⚡')
 
@@ -51,3 +52,27 @@ module.exports = (html) => {
 
     return html
 }
+
+
+const glob = require('glob')
+const path = require('path')
+const fs = require('fs')
+glob.sync(path.join(__dirname, './dist/**/*.html')).forEach(file => {
+    fs.readFile(file, 'utf8', function (err, data) {
+        if (err) {
+            return console.error(err);
+        }
+        else if (data.includes("amphtml")) { //This is an amp page
+            var result = ampify(data)
+            var ampFile = file.replace('.html', '.amp.html')
+            fs.writeFile(ampFile, result, 'utf8', function (err) {
+                if (err) {
+                    return console.error(err);
+                }
+                else {
+                    console.log(`Ampified ⚡  ${ampFile}`)
+                }
+            });
+        }
+    });
+})
