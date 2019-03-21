@@ -2,7 +2,7 @@
     "name": "ECSU",
     "scripts": {
         "dev": "nuxt",
-        "build": "nuxt-generate -w 4 -v -b",
+        "build": "nuxt generate",
         "webp": "yarn imagemin ./dist/_nuxt --out-dir=./dist/_nuxt/ --plugin=webp",
         "ampify": "node ampify.js",
         "downloadExternal": "bash download-external.sh"
