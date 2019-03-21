@@ -4,6 +4,7 @@
         "dev": "nuxt",
         "build": "nuxt-generate -w 4 -v -b",
         "webp": "yarn imagemin ./dist/_nuxt --out-dir=./dist/_nuxt/ --plugin=webp",
+        "ampify": "node ampify.js",
         "downloadExternal": "bash download-external.sh"
     },
     "dependencies": {
@@ -40,7 +41,6 @@
         "graphql": "^14.0.2",
         "graphql-tag": "^2.10.0",
         "graphql-tools": "^4.0.3",
-        "hard-source-webpack-plugin": "^0.13.1",
         "imagemin-cli": "^4.0.0",
         "imagemin-jpegtran": "^6.0.0",
         "imagemin-optipng": "^6.0.0",
@@ -54,7 +54,6 @@
         "netlify-cms-loader": "^0.4.1",
         "normalize.css": "^8.0.1",
         "nuxt": "^2.3.4",
-        "nuxt-generate-cluster": "^2.0.2",
         "nuxt-purgecss": "^0.2.0",
         "nuxt-rollbar-module": "^1.0.0",
         "nuxt-webfontloader": "^1.0.0",

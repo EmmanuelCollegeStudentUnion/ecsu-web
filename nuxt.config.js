@@ -3,8 +3,6 @@ const glob = require('glob')
 const path = require('path')
 
 import fetch from 'node-fetch'
-
-import HardSourceWebpackPlugin from "hard-source-webpack-plugin";
 const nodeEnv = process.env.NODE_ENV || 'production';
 const gaId = {
     'production': 'UA-131416461-1',
@@ -14,8 +12,6 @@ const gaId = {
 const routes = fetch('https://ecsu.org.uk/api/graphql?query={routes{url}}')
     .then(x => x.json())
     .then(x => x.data.routes.map(route => route.url))
-routes.then(x => x.forEach(x => {
-}))
 
 export default {
     modern: nodeEnv === 'production' ? 'client' : false,
@@ -25,7 +21,6 @@ export default {
                 "graphql-tag"
             ]
         },
-        plugins: [...nodeEnv === 'production' ? [new HardSourceWebpackPlugin()] : []],
         extend(config) {
             // Configure scss for material designs imports style (relative to node_modules)
             // Solution found in https://github.com/material-components/material-components-web/issues/351#issuecomment-298796798
