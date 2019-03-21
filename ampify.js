@@ -12,10 +12,6 @@ function ampify(html) {
     //Load fonts
     let fontConcat = ''
     fontConcat += '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">' //load material icons
-    html = html.replace(/\@import url\(([^)]*)\);/gis, (match, sub) => {
-        fontConcat += `<link rel="stylesheet" type="text/css" href="${sub}">`
-        return ''
-    })
     html = html.replace('</head>', `${fontConcat}</head>`)
 
 

@@ -134,6 +134,9 @@ export default {
             { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Object.entries,IntersectionObserver' },
             { innerHTML: `window['ga-disable-UA-${gaId}'] = true;`, type: 'text/javascript', charset: 'utf-8' }
         ],
+        link: [
+            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic' }
+        ],
         __dangerouslyDisableSanitizers: ['script']
     },
     webfontloader: {
