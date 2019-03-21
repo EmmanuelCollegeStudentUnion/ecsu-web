@@ -15,7 +15,7 @@
       </header>
 
       <p
-        class="mdc-typography--headline3 mdc-theme--text-secondary-on-light"
+        class="mdc-typography--headline5 mdc-theme--text-secondary-on-light"
         v-if="!!$slots.subtitle"
       >
         <slot name="subtitle"/>
