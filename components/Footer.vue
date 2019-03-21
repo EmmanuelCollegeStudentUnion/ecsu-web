@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="mdc-layout-grid">
-      <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__inner footer-grid-inner">
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 logo">
           <div
             class="logo-image"
@@ -46,7 +46,7 @@ export default {
 
 
 <style lang="scss" scoped>
-.mdc-layout-grid__inner {
+.footer-grid-inner {
   margin: 32px;
   margin-left: 288px;
   @media screen and (max-width: 1279px) {
