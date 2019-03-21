@@ -10,7 +10,7 @@
     <nuxt-link
       :to="post.blog.url"
       class="mdc-button mdc-button--outlined back-button"
-    >&lt; Back to {{post.blog.title}}</nuxt-link>
+    >Read more in this blog</nuxt-link>
   </PostPage>
 </template>
 
