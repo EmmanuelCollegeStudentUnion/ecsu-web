@@ -6,6 +6,8 @@ ErrorDocument 200 /200.html
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 RedirectPermanent /pages/404.html /missing
 RedirectPermanent /pages/about.html /info/about
