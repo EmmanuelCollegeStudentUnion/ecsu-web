@@ -109,7 +109,6 @@ export default {
     modules: [
         'nuxt-purgecss',
         '@nuxtjs/pwa',
-        '@nuxtjs/feed',
         '@nuxtjs/sitemap',
         'nuxt-webfontloader',
         ['nuxt-rollbar-module', {
@@ -144,32 +143,14 @@ export default {
             families: ['Material+Icons']
         }
     },
-    feed: [
-        {
-            path: '/whatson.xml',
-            async create(feed) {
-                feed.options = {
-                    title: "ECSU What's On",
-                }
-
-                /*
-
-                itemsForContent("whatson", true).forEach(item => {
-                    feed.addItem({
-                        title: item.title,
-                        id: item.url,
-                        link: `https://ecsu.org.uk${item.url}`,
-                        image: `https://ecsu.org.uk${item.image}`,
-                        date: item.pubDate,
-                        description: item.description,
-                        content: item['__content']
-                    })
-                })
-                */
-            },
-            cacheTime: 1000 * 60 * 15,
-            type: 'rss2'
+    sitemap: {
+        path: '/sitemap.xml',
+        hostname: 'https://ecsu.org.uk',
+        cacheTime: 1000 * 60 * 15,
+        generate: true,
+        routes() {
+            return routes;
         }
-    ]
+    }
 }
 
