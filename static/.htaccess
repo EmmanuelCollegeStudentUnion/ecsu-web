@@ -105,7 +105,7 @@ RedirectPermanent /pages/shop.html /info/shop
 RedirectPermanent /pages/shop_manager.html /exec/shop_manager
 RedirectPermanent /pages/ski_trip.html /societies/ski_trip
 RedirectPermanent /pages/sleep.html /welfare/sleep
-RedirectPermanent /pages/social.html /prospectie/social
+RedirectPermanent /pages/social.html /prospective/social
 RedirectPermanent /pages/societies.html /societies
 RedirectPermanent /pages/society_funding.html /info/society_funding
 RedirectPermanent /pages/squash_soc.html /societies/squash_soc
