@@ -45,7 +45,7 @@ export default (ctx, inject) => {
     });
 
 
-    const link = authLink.concat(createUploadLink({ uri: "https://ecsu.org.uk/api/graphql", fetch }));
+    const link = authLink.concat(createUploadLink({ uri: "https://api.ecsu.org.uk/graphql", fetch }));
 
     // Create the apollo client
     const apolloClient = new ApolloClient({
