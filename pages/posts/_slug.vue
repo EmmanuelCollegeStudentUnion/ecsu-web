@@ -26,7 +26,6 @@ export default {
     return {
       title: this.post ? this.post.title : "Loading...",
       link: [
-        { rel: "canonical", href: this.canonical },
         { rel: "amphtml", href: this.amp }
       ],
       meta: [
