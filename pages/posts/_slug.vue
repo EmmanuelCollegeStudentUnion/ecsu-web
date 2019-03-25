@@ -71,7 +71,7 @@ export default {
   },
   computed: {
     canonical() {
-      return `https://ecsu.org.uk/posts/${this.$route.params.slug}/`;
+      return `https://ecsu.org.uk${this.$route.path}`;
     },
     amp() {
       return `https://ecsu.org.uk/posts/${
