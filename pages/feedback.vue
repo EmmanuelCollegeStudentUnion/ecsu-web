@@ -12,6 +12,7 @@
       <TextField name="message" label="Message"/>
       <br>
       <br>
+      <input type="hidden" name="form_type" value="feedback">
       <VueRecaptcha
         sitekey="6Lf2vZMUAAAAAB4gxrZxicR8R-to7d-lIQZIGKC4"
         type="checkbox"
@@ -34,7 +35,6 @@
 
 <script>
 import VueRecaptcha from "vue-recaptcha";
-
 import TextField from "@/components/TextField";
 import StandardPage from "@/components/StandardPage";
 export default {
@@ -56,10 +56,6 @@ export default {
   methods: {
     captchaDone: function(token) {
       this.captchaToken = token;
-    },
-    banInput: function(e) {
-      alert(e);
-      return false;
     }
   }
 };

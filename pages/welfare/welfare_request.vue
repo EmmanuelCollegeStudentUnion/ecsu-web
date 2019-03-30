@@ -5,29 +5,48 @@
       id="main-contact-form"
       name="contact-form"
       method="post"
-      action="/assets/php/welfare_request.php"
+      action="/assets/php/form-to-feedback.php"
     >
       <TextField name="message" label="Message"/>
-      <p></p>
+      <br>
+      <br>
+      <input type="hidden" name="form_type" value="welffare">
+      <VueRecaptcha
+        sitekey="6Lf2vZMUAAAAAB4gxrZxicR8R-to7d-lIQZIGKC4"
+        type="checkbox"
+        v-on:verify="captchaDone"
+      ></VueRecaptcha>
       <input
-        class="mdc-button mdc-button--outlined mdc-ripple-upgraded"
-        type="submit"
-        value="Place Request"
+        type="text"
+        class="captchaField"
+        id="captcha-token"
+        :value="captchaToken"
+        required
+        placeholder="Please tick 'I am not a robot'"
+        v-on:keydown.prevent.stop
       >
+      <br>
+      <input class="mdc-button mdc-button--outlined mdc-ripple-upgraded" type="submit" value="Send">
     </form>
   </div>
 </template>
 
 <script>
+import VueRecaptcha from "vue-recaptcha";
 import TextField from "@/components/TextField";
 import StandardPage from "@/components/StandardPage";
 export default {
-  components: { StandardPage, TextField },
+  components: { StandardPage, TextField, VueRecaptcha },
   head: {
     title: "Welfare request"
   },
   data() {
-    return { message: "" };
+    return { captchaToken: "", message: "" };
+  },
+  methods: {
+    captchaDone: function(token) {
+      this.captchaToken = token;
+    }
   }
 };
 </script>
