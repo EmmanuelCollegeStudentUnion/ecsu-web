@@ -6,7 +6,7 @@ if(!isset($_POST['submit']))
 }
 $name = 'anonymous';
 $visitor_email = 'anonymous';
-$form_type = $_POST['form_type']
+$form_type = $_POST['form_type'];
 $message = $_POST['message'];
 $captcha = $_POST['g-recaptcha-response'];
 
@@ -14,7 +14,7 @@ $captcha = $_POST['g-recaptcha-response'];
 $email_from = 'ECSU';//<== update the email address
 $email_subject = "New ECSU Form submission";
 $email_body = "You have received a new message".
-    "Type:\n $form_type"
+    "Type:\n $form_type".
     "Here is the message:\n $message \n".
     "Captcha token:\n $captcha \n".
 
