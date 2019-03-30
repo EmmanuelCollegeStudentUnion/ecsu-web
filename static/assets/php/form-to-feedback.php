@@ -19,10 +19,16 @@ $email_body = "You have received a new message from the user $name.\n".
 $to = "webmaster@ecsu.org.uk";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
+if($captcha){
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
 header('Location: /sent');
+}else{
+    //robot. redirect to thank-you page.
+    header('Location: /robot');
+
+}
 
 
 
