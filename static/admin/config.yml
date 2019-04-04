@@ -2,7 +2,7 @@ backend:
   name: github
   repo: 101hawn/ecsu-server
   base_url: https://ecsu.org.uk/
-  branch: cms
+  branch: master
 
   
 collections:
