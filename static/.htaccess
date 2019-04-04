@@ -123,3 +123,4 @@ RedirectPermanent /pages/women_rugby.html /societies/women_rugby
 RedirectPermanent /pages/room_database/main.html /room_locations
 RedirectPermanent /societies_and_sport/reds.html /societies/reds
 RedirectPermanent /prospective_students/glossary.html /prospective/glossary
+RedirectPermanent /prospective/accom/ /prospective/accommodation/
