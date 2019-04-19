@@ -4,7 +4,7 @@
       <h2 class="mdc-typography--headline2 layout-center">What's On?</h2>
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-      <Select @change="onChange">
+      <Select v-model="selectedCategory">
         <option
           v-for="category in categories"
           :key="category"
@@ -62,11 +62,6 @@ export default {
   },
   data() {
     return { selectedCategory: "All" };
-  },
-  methods: {
-    onChange(value) {
-      this.selectedCategory = value;
-    }
   },
   computed: {
     categories() {
