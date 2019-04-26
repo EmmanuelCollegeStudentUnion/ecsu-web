@@ -6,10 +6,7 @@
         Uploading as {{this.user.crsid}}
         <br>
       </p>
-      <form v-on:submit.prevent="uploadFile">
-        <input class="mdc-button" ref="fileUpload" type="file" required>
-        <input class="mdc-button mdc-button--outlined" type="submit" value="Upload">
-      </form>
+      <button class="mdc-button mdc-button--outlined" @click="dialogOpen=true">Select files</button>
       <br>Any problems?
       <nuxt-link to="/exec/webmaster">Contact me</nuxt-link>
     </template>
@@ -21,9 +18,19 @@
 
 <script>
 import gql from "graphql-tag";
+const Tus = require("@uppy/tus");
+const Uppy = require("@uppy/core");
+const Dashboard = require("@uppy/dashboard");
+import Cookies from "js-cookie";
+const token = Cookies.get("access_token");
+
+// And their styles (for UI plugins)
+require("@uppy/core/dist/style.css");
+require("@uppy/dashboard/dist/style.css");
+
 export default {
   data() {
-    return { authUrl: "" };
+    return { authUrl: "", dialogOpen: false };
   },
   mounted() {
     if (this.$route.query["WLS-Response"]) {
@@ -34,6 +41,39 @@ export default {
         `https://raven.cam.ac.uk/auth/authenticate.html?ver=3&url=${
           window.location.href
         }&desc=ECSU&msg=&iact=`
+      );
+    });
+    this.uppy = Uppy({
+      meta: {
+        upload: "ROOM_DATABASE",
+        roomSlug: this.$route.params.slug,
+        authorization: token
+      },
+      onBeforeUpload: files => {
+        console.log(files);
+        Object.values(files).forEach(file => {
+          console.log(file);
+          this.uppy.setFileMeta(file.id, {
+            extension: file.name.split(".").pop()
+          });
+        });
+      }
+    })
+      .use(Dashboard, {
+        onRequestCloseModal: () => (this.dialogOpen = false),
+        showLinkToFileUploadResult: false
+      })
+      .use(Tus, {
+        endpoint: "http://localhost:3254/upload", // use your tus endpoint here
+        resume: true,
+        autoRetry: true,
+        retryDelays: [0, 1000, 3000, 5000]
+      });
+
+    this.uppy.on("complete", result => {
+      console.log(
+        "Upload complete! We’ve uploaded these files:",
+        result.successful
       );
     });
   },
@@ -50,37 +90,12 @@ export default {
       fetchPolicy: "no-cache"
     }
   },
-  methods: {
-    async uploadFile(e) {
-      console.log("Uploading..");
-      this.$ga.event(
-        "room_database",
-        "upload_attempt",
-        this.$route.params.slug
-      );
-
-      const value = await this.$apollo.mutate({
-        // Query
-        mutation: gql`
-          mutation RoomPhotoUpload($file: Upload!, $roomSlug: String!) {
-            roomPhotoUpload(roomSlug: $roomSlug, file: $file) {
-              src
-            }
-          }
-        `,
-        // Parameters
-        variables: {
-          file: this.$refs.fileUpload.files[0],
-          roomSlug: this.$route.params.slug
-        }
-      });
-      if (value.data) {
-        window.location = "https://ecsu.org.uk/rooms/upload/done/";
-        this.$ga.event(
-          "room_database",
-          "upload_success",
-          this.$route.params.slug
-        );
+  watch: {
+    dialogOpen(value) {
+      if (value) {
+        this.uppy.getPlugin("Dashboard").openModal();
+      } else {
+        this.uppy.getPlugin("Dashboard").closeModal();
       }
     }
   }
