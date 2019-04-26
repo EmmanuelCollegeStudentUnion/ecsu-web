@@ -50,9 +50,7 @@ export default {
         authorization: token
       },
       onBeforeUpload: files => {
-        console.log(files);
         Object.values(files).forEach(file => {
-          console.log(file);
           this.uppy.setFileMeta(file.id, {
             extension: file.name.split(".").pop()
           });
