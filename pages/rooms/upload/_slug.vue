@@ -64,7 +64,7 @@ export default {
         showLinkToFileUploadResult: false
       })
       .use(Tus, {
-        endpoint: "http://api.ecsu.org.uk/upload", // use your tus endpoint here
+        endpoint: "https://api.ecsu.org.uk/upload", // use your tus endpoint here
         resume: true,
         autoRetry: true,
         retryDelays: [0, 1000, 3000, 5000]
