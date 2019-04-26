@@ -126,7 +126,9 @@ export default {
         paths: [
             'node_modules/@material/**/*.js',
             'node_modules/@uppy/**/*.js',
-        ]
+        ],
+        whitelistPatterns: ['uppy'],
+        whitelistPatternsChildren: ['uppy']
     },
     head: {
         titleTemplate: 'ECSU | %s',
