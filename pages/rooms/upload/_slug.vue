@@ -22,7 +22,6 @@ const Tus = require("@uppy/tus");
 const Uppy = require("@uppy/core");
 const Dashboard = require("@uppy/dashboard");
 import Cookies from "js-cookie";
-const token = Cookies.get("access_token");
 
 // And their styles (for UI plugins)
 require("@uppy/core/dist/style.css");
@@ -52,7 +51,7 @@ export default {
         Object.values(files).forEach(file => {
           this.uppy.setFileMeta(file.id, {
             extension: file.name.split(".").pop(),
-            authorization: token
+            authorization: Cookies.get("access_token")
           });
         });
       }

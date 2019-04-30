@@ -32,7 +32,6 @@ const Tus = require("@uppy/tus");
 const Uppy = require("@uppy/core");
 const Dashboard = require("@uppy/dashboard");
 import Cookies from "js-cookie";
-const token = Cookies.get("access_token");
 
 // And their styles (for UI plugins)
 require("@uppy/core/dist/style.css");
@@ -74,7 +73,7 @@ export default {
             year: this.selectedYear,
             term: this.selectedTerm,
             number: this.selectedNumber,
-            authorization: token
+            authorization: Cookies.get("access_token")
           });
         });
       }
