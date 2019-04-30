@@ -63,7 +63,7 @@ export default {
       })
       .use(Tus, {
         endpoint: "https://api.ecsu.org.uk/upload", // use your tus endpoint here
-        resume: true,
+        resume: false,
         autoRetry: true,
         retryDelays: [0, 1000, 3000, 5000]
       });
