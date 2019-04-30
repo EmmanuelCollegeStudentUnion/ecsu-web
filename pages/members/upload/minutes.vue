@@ -64,8 +64,7 @@ export default {
     });
     this.uppy = Uppy({
       meta: {
-        upload: "MINUTES",
-        authorization: token
+        upload: "MINUTES"
       },
       onBeforeUpload: files => {
         Object.values(files).forEach(file => {
@@ -74,7 +73,8 @@ export default {
             type: this.selectedType,
             year: this.selectedYear,
             term: this.selectedTerm,
-            number: this.selectedNumber
+            number: this.selectedNumber,
+            authorization: token
           });
         });
       }

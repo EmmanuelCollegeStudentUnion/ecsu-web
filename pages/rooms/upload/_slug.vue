@@ -46,13 +46,13 @@ export default {
     this.uppy = Uppy({
       meta: {
         upload: "ROOM_DATABASE",
-        roomSlug: this.$route.params.slug,
-        authorization: token
+        roomSlug: this.$route.params.slug
       },
       onBeforeUpload: files => {
         Object.values(files).forEach(file => {
           this.uppy.setFileMeta(file.id, {
-            extension: file.name.split(".").pop()
+            extension: file.name.split(".").pop(),
+            authorization: token
           });
         });
       }
