@@ -7,13 +7,13 @@
         <br>
       </p>
       <form v-on:submit.prevent="uploadFile">
-        <Select v-model="selectedType">
+        <select v-model="selectedType">
           <option v-for="type in types" :name="type" :key="type" :value="type">{{type}}</option>
-        </Select>
+        </select>
         <input v-model="selectedYear" name="year" type="year" min="2000" max="2050">
-        <Select v-model="selectedTerm">
+        <select v-model="selectedTerm">
           <option v-for="term in terms" :name="term" :key="term" :value="term">{{term}}</option>
-        </Select>
+        </select>
         <input v-model="selectedNumber" name="number" type="number" min="1" max="100" value="1">
       </form>
       <button class="mdc-button mdc-button--outlined" @click="dialogOpen=true">Select file</button>
