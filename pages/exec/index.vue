@@ -48,14 +48,14 @@
       <li>
         <a
           class="unstyled-link mdc-theme--text-primary-on-background"
-          href="mailto:communications@ecsu.org.uk"
+          href="mailto:external@ecsu.org.uk"
           target="_blank"
         >
           <div class="mdc-list-item mdc-ripple-upgraded">
             <i class="mdc-list-item__graphic material-icons">email</i>
             <span class="mdc-list-item__text">
               <span class="mdc-list-item__primary-text">Email</span>
-              <span class="mdc-list-item__secondary-text">communications@ecsu.org.uk</span>
+              <span class="mdc-list-item__secondary-text">external@ecsu.org.uk</span>
             </span>
           </div>
         </a>
