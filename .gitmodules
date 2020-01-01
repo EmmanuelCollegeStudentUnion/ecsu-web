@@ -1,3 +1,6 @@
 [submodule "static/pdf"]
 	path = static/pdf
 	url = https://github.com/EmmanuelCollegeStudentUnion/ecsu-web-pdf
+[submodule "assets/images"]
+	path = assets/images
+	url = https://github.com/EmmanuelCollegeStudentUnion/ecsu-web-assets
