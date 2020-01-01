@@ -5,7 +5,7 @@ const path = require('path')
 import fetch from 'node-fetch'
 const nodeEnv = process.env.NODE_ENV || 'production';
 const gaId = {
-    'production': 'UA-131416461-1',
+    'production': 'UA-155232483-1',
     'development': 'UA-131416461-2'
 }[nodeEnv];
 

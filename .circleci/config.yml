@@ -39,10 +39,11 @@ jobs:
 
             - run: yarn install --frozen-lockfile
                 
-            - run:
-                name: Download external files
-                command:
-                    yarn downloadExternal
+            #Was pulling ext deps; not needed
+            #- run:
+            #    name: Download external files
+            #    command:
+            #        yarn downloadExternal
                 
             - run:
                 name: Generate
