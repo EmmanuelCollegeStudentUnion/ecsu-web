@@ -1,5 +1,0 @@
-Order allow,deny
-       Allow from .cam.ac.uk
-       AuthType Ucam-WebAuth
-       Require valid-user
-       Satisfy any
