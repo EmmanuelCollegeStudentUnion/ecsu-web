@@ -11,9 +11,9 @@
         </h1>
         <div class="mdc-typography--body1">
           <p>
-            ECSU is the Emmanuel College Students' Union, which is the representative body for students of Emmanuel
-            College, Cambridge. The daily business of ECSU is managed by the Executive, or 'Exec', members of which have
-            specific responsibilities. The Committee is elected on a yearly basis at the end of Michaelmas Term.
+            Emmanuel College Students' Union, or ECSU for short, is the representative body for students at 
+            Emmanuel College, Cambridge. The daily business of ECSU is managed by the Committee, whose members 
+            have specific responsibilities and are elected on a yearly basis at the end of Michaelmas Term.
           </p>
         </div>
       </div>
