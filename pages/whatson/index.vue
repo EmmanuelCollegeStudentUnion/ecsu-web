@@ -181,6 +181,7 @@ export default {
 
 <style lang="scss">
 @import "vue-multiselect/dist/vue-multiselect.min.css";
+@import url("https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css");
 
 .center-heading {
   margin: 16px auto;
