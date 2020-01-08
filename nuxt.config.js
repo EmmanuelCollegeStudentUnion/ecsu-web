@@ -26,18 +26,21 @@ export default {
             // Solution found in https://github.com/material-components/material-components-web/issues/351#issuecomment-298796798
             config.module.rules.forEach((rule) => {
                 // Get sass & scss loaders
-                if (['/\\.sass$/', '/\\.scss$/'].includes(rule.test.toString())) {
+                //if (['/\\.sass$/', '/\\.scss$/'].includes(rule.test.toString())) {
+                if (rule.test.toString().includes("css") || rule.test.toString().includes("sass")) {
+                    //console.log("MODIFYING!!!")
                     rule.oneOf.forEach(oneOf => {
                         const loader = oneOf.use.pop()
                         oneOf.use.push({
                             ...loader,
                             options: {
                                 includePaths: glob.sync(path.join(__dirname, 'node_modules/@material')).map((dir) => path.dirname(dir)),
+                                implementation: require('sass'),
                             }
                         })
                     })
-
                 }
+                //console.log(rule);
             })
 
             /*
@@ -93,7 +96,9 @@ export default {
         '~/plugins/auth',
         '~/plugins/vue-lazyload',
         '~/plugins/vue-mq',
-
+        '~/plugins/vue-moment',
+        //'~/plugins/vue-vuetify',
+        '~/plugins/vue-errorfix'
     ],
     loading: {
         color: '#d926a5',
@@ -111,6 +116,7 @@ export default {
         '@nuxtjs/pwa',
         '@nuxtjs/sitemap',
         'nuxt-webfontloader',
+        '@nuxtjs/vuetify',
         ['nuxt-rollbar-module', {
             serverAccessToken: '8c5b36a9377c42059e5bb2fca54d8b8f',
             clientAccessToken: 'dfdb3ce2cf0e4428b26124d2a9fbb603',

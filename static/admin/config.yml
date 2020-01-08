@@ -55,9 +55,10 @@ collections:
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Category", name: "category", widget: "string"}
         - {label: "Publish date", name: "pubdate", widget: "date", hidden: true}
-        #- {label: "Event time", name: "datetime", widget: "datetime", required: false}
-        #- {label: "End time", name: "dtend", widget: "datetime", required: false}
-        - {label: "Image", name: "image", widget: "image"}
+        - {label: "Event time", name: "datetime", widget: "datetime"}
+        - {label: "End time", name: "dtend", widget: "datetime", required: false}
+        - {label: "All day", name: "allDay", widget: "boolean", default: false}
+        - {label: "Image", name: "image", widget: "image", required: false, default: "https://ucarecdn.com/7fe81f7c-b30c-4cdb-8680-c3a9ad0768e4/"}
         - {label: "Content", name: "body", widget: "markdown"}
       editor:
         preview: false
