@@ -76,8 +76,10 @@ import moment from "moment";
 
 import Multiselect from 'vue-multiselect'
 
-/*
+
 import Vue from 'vue'
+
+/*
 import Vuetify from 'vuetify/lib'
 
 const vuetify = new Vuetify({
@@ -109,6 +111,7 @@ export default {
           title
           category
           datetime
+          dtend
           image {
             src
             srcSet
@@ -125,8 +128,9 @@ export default {
         type: "month",
         now: null,
         colors: ['blue', 'indigo', 'deep-purple', 'cyan', 'green', 'orange', 'grey darken-1'],
-        styleInterval: 'default',
-        selected: null
+        selected: null,
+        color: 'emma-pink',
+        $vuetify: {},
     };
   },
   methods: {
@@ -162,8 +166,9 @@ export default {
       evnt.forEach(element => {
           out.push({
               start: moment(element.datetime).format("YYYY-MM-DD"),
+              end: element.dtend ? moment(element.dtend).format("YYYY-MM-DD") : undefined,
               name: element.title,
-              color: 'primary',
+              color: 'emma-blue',
               url: element.url,
           })
       });
@@ -179,5 +184,15 @@ export default {
 
 .center-heading {
   margin: 16px auto;
+}
+
+.emma-pink {
+  background-color:rgb(217, 38, 165) !important;
+  border-color:rgb(217, 38, 165) !important;
+}
+
+.emma-blue {
+  background-color:rgb(21, 50, 110) !important;
+  border-color:rgb(21, 50, 110) !important;
 }
 </style>
