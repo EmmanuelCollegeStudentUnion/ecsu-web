@@ -10,6 +10,9 @@ $mdc-theme-background: #eceff1;
 @import '@material/top-app-bar/mdc-top-app-bar';
 @import "@material/list/mdc-list";
 @import '@material/card/mdc-card';
+@import '@material/card/mdc-card';
+@import "~/assets/scss/vuetify.min.scss";
+
 
 //Standard font
 div{
