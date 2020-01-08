@@ -179,9 +179,10 @@ export default {
 };
 </script>
 
+<style src="~/static/vuetify.min.css"/>
+
 <style lang="scss">
 @import "vue-multiselect/dist/vue-multiselect.min.css";
-
 .center-heading {
   margin: 16px auto;
 }
@@ -196,3 +197,4 @@ export default {
   border-color:rgb(21, 50, 110) !important;
 }
 </style>
+

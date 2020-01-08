@@ -1,7 +1,7 @@
 <template>
   <PostPage v-if="whatsOn">
     <template slot="title">{{whatsOn.title}}</template>
-    <template slot="subtitle">{{whatsOn.datetime}}</template>
+    <template slot="subtitle">{{whatsOn.datetime| moment('LLL')}}</template>
     <template slot="media">
       <ImageCard v-if="whatsOn.image" :image="whatsOn.image"/>
     </template>
@@ -20,6 +20,7 @@ import PostPage from "@/components/PostPage";
 import Markdown from "@/components/Markdown";
 import ImageCard from "@/components/ImageCard";
 import gql from "graphql-tag";
+import moment from "moment";
 
 export default {
   components: { PostPage, Markdown, ImageCard },
