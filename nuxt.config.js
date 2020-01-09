@@ -31,11 +31,13 @@ export default {
                     //console.log("MODIFYING!!!")
                     rule.oneOf.forEach(oneOf => {
                         const loader = oneOf.use.pop()
+                        var baseInclude = loader.options && loader.options.includePaths ? loader.options.includePaths : [];
+                        //console.log(loader);
                         oneOf.use.push({
                             ...loader,
                             options: {
-                                includePaths: glob.sync(path.join(__dirname, 'node_modules/@material')).map((dir) => path.dirname(dir)),
-                                implementation: require('sass'),
+                                includePaths: [...baseInclude, ...glob.sync(path.join(__dirname, 'node_modules/@material')).map((dir) => path.dirname(dir))],
+                                implementation: loader.loader == "sass-loader" ? require('sass') : undefined,
                             }
                         })
                     })
@@ -65,7 +67,7 @@ export default {
                     steps: 4,
                     placeholder: true,
                     adapter: require("responsive-loader/sharp"),
-                    disable: nodeEnv !== 'production'
+                    //disable: nodeEnv !== 'production'
                 },
             });
 
@@ -133,8 +135,9 @@ export default {
             'node_modules/@material/**/*.js',
             'node_modules/@uppy/**/*.js',
         ],
-        whitelistPatterns: [/uppy/],
-        whitelistPatternsChildren: [/uppy/]
+        whitelist: ["v-lazy-image-loaded"],
+        whitelistPatterns: [/uppy/, /multiselect/],
+        whitelistPatternsChildren: [/uppy/, /multiselect/],
     },
     head: {
         titleTemplate: 'ECSU | %s',
@@ -143,7 +146,8 @@ export default {
             { innerHTML: `window['ga-disable-UA-${gaId}'] = true;`, type: 'text/javascript', charset: 'utf-8' }
         ],
         link: [
-            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic' }
+            //{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic' }
+            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Material+Icons|Roboto:100,300,400,500,700,900italic' }
         ],
         __dangerouslyDisableSanitizers: ['script']
     },

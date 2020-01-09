@@ -3,7 +3,10 @@
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 center-heading">
       <h2 class="mdc-typography--headline2 layout-center">What's On?</h2>
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+      Filter: 
+    </div>
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-11">
       <!--
       <Select v-model="selectedCategory">
         <option
@@ -44,8 +47,8 @@
                   :event-color="getEventColor"
                 >
                 <template v-slot:event="{ event }">
-                  <div style="display: flex;" v-on:click="click(event)">
-                  {{event.name}}
+                  <div style="height: 100%;" v-on:click="click(event)">
+                    <div style="line-height: 20px !important;">{{event.name}}</div>
                   </div>
                 </template>
               </v-calendar>
@@ -79,9 +82,11 @@ import Multiselect from 'vue-multiselect'
 
 import Vue from 'vue'
 
-/*
-import Vuetify from 'vuetify/lib'
 
+//import Vuetify from 'vuetify'
+
+//Vue.use(Vuetify);
+/*
 const vuetify = new Vuetify({
   theme: {
     themes: {
@@ -96,13 +101,20 @@ const vuetify = new Vuetify({
 })
 */
 
+var calendarLoaded = false;
+
 export default {
   components: { PostPage, ImageCaptionCard, Select, Multiselect },
   head: {
     title: "What's On?"
   },
+  beforeMount() {
+    this.$apollo.queries.whatsOnEvents.refetch();
+    this.$forceUpdate();
+  },
   mounted() {
     this.$apollo.queries.whatsOnEvents.refetch();
+    this.$forceUpdate();
   },
   apollo: {
     whatsOnEvents: gql`
@@ -160,29 +172,23 @@ export default {
         );
     },
     vcevents() {
-      var evnt = this.filteredEvents;
-      if (evnt == undefined) return undefined;
-      var out = [];
-      evnt.forEach(element => {
-          out.push({
+      console.log("Updated calendar!");
+      return this.filteredEvents.map(element => ({
               start: moment(element.datetime).format("YYYY-MM-DD"),
               end: element.dtend ? moment(element.dtend).format("YYYY-MM-DD") : undefined,
               name: element.title,
               color: 'emma-blue',
               url: element.url,
-          })
-      });
-      return out;
+          }));
     },
   },
   
 };
 </script>
 
-<style src="~/static/vuetify.min.css"/>
+<style src="~/static/css/vuetify.min.css"/>
 
 <style lang="scss">
-@import "vue-multiselect/dist/vue-multiselect.min.css";
 .center-heading {
   margin: 16px auto;
 }
