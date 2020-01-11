@@ -4,7 +4,11 @@
       <h2 class="mdc-typography--headline2 layout-center">What's On?</h2>
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
-      Filter: 
+      <div class="call-to-action">
+        <div class="mdc-fab mdc-fab--extended">
+          <span class="mdc-fab__label">Filter: </span>
+        </div>
+      </div>
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-11">
       <!--
@@ -24,13 +28,27 @@
       >
       </multiselect>
     </div>
-    <!-- TODO 
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-      <button v-on:click="$refs.calendar.prev()">
-        <i class="material-icons">skip_previous</i>
-      </button>
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 center-button" style="margin: auto;">
+      <div class="call-to-action">
+        <div v-on:click="prev()" class="mdc-fab mdc-fab--extended">
+          <span class="mdc-fab__label">Back</span>
+        </div>
+      </div>
     </div>
-    -->
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4" style="margin: auto;">
+      <div class="call-to-action">
+        <div v-on:click="filterLink()" class="mdc-fab mdc-fab--extended">
+          <span class="mdc-fab__label">Subscribe</span>
+        </div>
+      </div>
+    </div>
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4" style="margin: auto;">
+      <div class="call-to-action">
+        <div v-on:click="next()" class="mdc-fab mdc-fab--extended">
+          <span class="mdc-fab__label">Forward</span>
+        </div>
+      </div>
+    </div>
     <div
       class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12"
     >
@@ -39,12 +57,15 @@
           <v-app style="display: flex;">
               <v-calendar 
                   ref="calendar"
+                  v-model="start"
                   :type="type"
                   :events="vcevents"
                   :now="now"
                   :color="color"
                   :interval-style="intervalStyle"
                   :event-color="getEventColor"
+                  :start="start"
+                  :end="end"
                 >
                 <template v-slot:event="{ event }">
                   <div style="height: 100%;" v-on:click="click(event)">
@@ -143,6 +164,9 @@ export default {
         selected: null,
         color: 'emma-pink',
         $vuetify: {},
+        events: [],
+        start: moment().format("YYYY-MM-DD").toString(),
+        end: moment().endOf("month").format("YYYY-MM-DD").toString(),
     };
   },
   methods: {
@@ -152,11 +176,24 @@ export default {
     click (event) {
         window.open(event.url, '_blank');
     },
-    previous() {
-      $refs.calendar.prev()
+    prev() {
+      this.$refs.calendar.prev()
     },
     next() {
-      $refs.calendar.pnextrev()
+      this.$refs.calendar.next()
+    },
+    filterLink() {
+      var out = "webcal://api.ecsu.org.uk/calendar.ics";
+      if (this.selectedCategory.includes("All") || this.selectedCategory.length == 0) {
+        window.open(out, "_blank");
+        return;
+      };
+      out += "?"
+      this.selectedCategory.forEach(cat => {
+        out += ("&category[]="+cat);
+      })
+      window.open(out, "_blank");
+      return;
     }
   },
   computed: {
@@ -172,12 +209,11 @@ export default {
         );
     },
     vcevents() {
-      console.log("Updated calendar!");
       return this.filteredEvents.map(element => ({
               start: moment(element.datetime).format("YYYY-MM-DD"),
               end: element.dtend ? moment(element.dtend).format("YYYY-MM-DD") : undefined,
               name: element.title,
-              color: 'emma-blue',
+              color: "emma-blue",
               url: element.url,
           }));
     },
