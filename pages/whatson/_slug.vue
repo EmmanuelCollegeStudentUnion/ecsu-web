@@ -10,7 +10,7 @@
     <nuxt-link
       to="/whatson"
       class="mdc-button mdc-button--outlined back-button"
-    >&lt; Back to What's on</nuxt-link>
+    >&lt; Back to Calendar</nuxt-link>
   </PostPage>
 </template>
 

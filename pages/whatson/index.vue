@@ -1,16 +1,18 @@
 <template>
   <div class="mdc-layout-grid__inner">
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 center-heading">
-      <h2 class="mdc-typography--headline2 layout-center">What's On?</h2>
+      <h2 class="mdc-typography--headline2 layout-center">Calendar</h2>
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">
       <div class="call-to-action">
         <div class="mdc-fab mdc-fab--extended">
-          <span class="mdc-fab__label">Filter: </span>
+          <span class="mdc-fab__label"><i class="material-icons" style="vertical-align: middle;">
+            filter_list
+          </i></span>
         </div>
       </div>
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-11">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10">
       <!--
       <Select v-model="selectedCategory">
         <option
@@ -20,7 +22,7 @@
           :selected="selectedCategory===category"
         >{{category}}</option>
       </Select>
-      -->
+      --> 
       <multiselect 
         :options="categories"
         :multiple="true"
@@ -31,7 +33,9 @@
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 center-button" style="margin: auto;">
       <div class="call-to-action">
         <div v-on:click="prev()" class="mdc-fab mdc-fab--extended">
-          <span class="mdc-fab__label">Back</span>
+          <span class="mdc-fab__label"><i class="material-icons" style="vertical-align: middle;">
+            navigate_before
+          </i></span>
         </div>
       </div>
     </div>
@@ -45,7 +49,9 @@
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4" style="margin: auto;">
       <div class="call-to-action">
         <div v-on:click="next()" class="mdc-fab mdc-fab--extended">
-          <span class="mdc-fab__label">Forward</span>
+          <span class="mdc-fab__label"><i class="material-icons" style="vertical-align: middle;">
+            navigate_next
+          </i></span>
         </div>
       </div>
     </div>
