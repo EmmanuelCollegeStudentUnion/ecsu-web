@@ -64,6 +64,21 @@ collections:
       editor:
         preview: false
 
+    - name: "opportunities"
+      label: "Opportunities"
+      folder: "content/opportunities"
+      slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+      create: true
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Category", name: "category", widget: "string"}
+        - {label: "Publish date", name: "pubdate", widget: "date", hidden: true}
+        - {label: "When", name: "datetime", widget: "String"}
+        - {label: "Image", name: "image", widget: "image", required: false, default: "https://ucarecdn.com/7fe81f7c-b30c-4cdb-8680-c3a9ad0768e4/"}
+        - {label: "Content", name: "body", widget: "markdown"}
+      editor:
+        preview: false
+
     - name: "societies"
       label: "Societies"
       label_singular: "Society"
