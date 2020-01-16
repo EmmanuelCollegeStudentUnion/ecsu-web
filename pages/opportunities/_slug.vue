@@ -34,7 +34,7 @@ export default {
     whatsOn: {
       query: gql`
         query opportunities($slug: String!) {
-          whatsOn(slug: $slug) {
+          opportunities(slug: $slug) {
             title
             datetime
             image {

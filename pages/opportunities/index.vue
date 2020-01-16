@@ -73,7 +73,6 @@ export default {
           title
           category
           datetime
-          dtend
           image {
             src
             srcSet
