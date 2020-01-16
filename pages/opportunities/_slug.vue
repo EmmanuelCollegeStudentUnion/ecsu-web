@@ -1,14 +1,14 @@
 <template>
-  <PostPage v-if="whatsOn">
-    <template slot="title">{{whatsOn.title}}</template>
-    <template slot="subtitle">{{whatsOn.datetime}}</template>
+  <PostPage v-if="opportunities">
+    <template slot="title">{{opportunities.title}}</template>
+    <template slot="subtitle">{{opportunities.datetime}}</template>
     <template slot="media">
-      <ImageCard v-if="whatsOn.image" :image="whatsOn.image"/>
+      <ImageCard v-if="opportunities.image" :image="opportunities.image"/>
     </template>
-    <Markdown :markdown="whatsOn.body"/>
+    <Markdown :markdown="opportunities.body"/>
     <br>
     <nuxt-link
-      to="/whatson"
+      to="/opportunities"
       class="mdc-button mdc-button--outlined back-button"
     >&lt; Back to Opportunities</nuxt-link>
   </PostPage>
@@ -25,13 +25,13 @@ import moment from "moment";
 export default {
   components: { PostPage, Markdown, ImageCard },
   head() {
-    return { title: this.whatsOn ? this.whatsOn.title : "Loading..." };
+    return { title: this.opportunities ? this.opportunities.title : "Loading..." };
   },
   mounted() {
-    this.$apollo.queries.whatsOn.refetch();
+    this.$apollo.queries.opportunities.refetch();
   },
   apollo: {
-    whatsOn: {
+    opportunities: {
       query: gql`
         query opportunities($slug: String!) {
           opportunities(slug: $slug) {

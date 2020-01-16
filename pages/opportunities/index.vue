@@ -63,11 +63,11 @@ export default {
     title: "Opportunities"
   },
   mounted() {
-    this.$apollo.queries.whatsOnEvents.refetch();
+    this.$apollo.queries.whatsOnOpportunities.refetch();
     this.$forceUpdate();
   },
   apollo: {
-    whatsOnEvents: gql`
+    whatsOnOpportunities: gql`
       {
         whatsOnOpportunities {
           title
@@ -90,13 +90,13 @@ export default {
   },
   computed: {
     categories() {
-      if (!this.whatsOnEvents) return [];
-      else return [...new Set(this.whatsOnEvents.map(x => x.category))];
+      if (!this.whatsOnOpportunities) return [];
+      else return [...new Set(this.whatsOnOpportunities.map(x => x.category))];
     },
     filteredEvents() {
-      if (this.selectedCategory.includes("All") || this.selectedCategory.length == 0) return this.whatsOnEvents;
+      if (this.selectedCategory.includes("All") || this.selectedCategory.length == 0) return this.whatsOnOpportunities;
       else
-        return this.whatsOnEvents.filter(
+        return this.whatsOnOpportunities.filter(
           x => this.selectedCategory.includes(x.category)
         );
     },
