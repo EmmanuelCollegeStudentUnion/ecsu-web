@@ -30,7 +30,6 @@
 import gql from "graphql-tag";
 import Cookies from "js-cookie";
 
-
 export default {
   data() {
     return { authUrl: "", dialogOpen: false, roomSlug: this.$route.params.slug, userComment: "" };
@@ -61,7 +60,7 @@ export default {
     }
   },
   methods: {
-    submit: () => {
+    submit() {
       this.$apollo.mutate({
         mutation: gql`
           mutation($room:String, $comment:String, $year:int) {
@@ -75,8 +74,14 @@ export default {
           comment: this.userComment,
           year: 2020, //TODO FIXME
         }
+      }).then((data) => {
+        console.log(data);
+        window.open("/rooms/comments/done/");
+      }).catch((error) => {
+        console.log(error);
+        this.userComment = "";
+        //TODO error to user
       })
-      window.open("/rooms/comments/done/");
     }
   },
 };
