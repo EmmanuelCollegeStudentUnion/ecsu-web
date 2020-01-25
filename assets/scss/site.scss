@@ -1,5 +1,19 @@
-$mdc-theme-primary: #d926a5;
-$mdc-theme-secondary: #d926a5;
+//Jerry:
+$emma-blue: #080266;
+$emma-pink: #FC65A8;
+$mdc-theme-on-primary: #fff;
+$mdc-theme-on-secondary: #fff;
+
+//EMMA website
+//$emma-blue: #15326e;
+//$emma-pink: #c02b7d;
+
+//Original site
+//$emma-pink: #d926a5;
+//$emma-blue: $emma-pink;
+
+$mdc-theme-primary: $emma-blue;
+$mdc-theme-secondary: $emma-pink;
 $mdc-theme-background: #eceff1;
 
 @import "@material/theme/mdc-theme";
@@ -56,7 +70,7 @@ th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #d926a5;
+  background-color: $emma-pink;
   color: white;
 }
 table {

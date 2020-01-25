@@ -9,7 +9,7 @@ const gaId = {
     'development': 'UA-131416461-2'
 }[nodeEnv];
 
-const routes = fetch('https://ecsu.org.uk/api/graphql?query={routes{url}}')
+const routes = fetch('https://api.ecsu.org.uk/graphql?query={routes{url}}')
     .then(x => x.json())
     .then(x => x.data.routes.map(route => route.url))
 
@@ -138,6 +138,7 @@ export default {
         whitelist: ["v-lazy-image-loaded"],
         whitelistPatterns: [/uppy/, /multiselect/],
         whitelistPatternsChildren: [/uppy/, /multiselect/],
+        enabled: ({ isDev, isClient }) => (!isDev && isClient), // or `false` when in dev/debug mode
     },
     head: {
         titleTemplate: 'ECSU | %s',
