@@ -54,6 +54,10 @@
     </table>
     <p v-else>There are no comments for this room</p>
 
+    <br>Lived here?
+    <nuxt-link v-if="room" :to="`/rooms/comments/${room.id}`" class="mdc-button">Add Comment</nuxt-link>
+    <br>
+
     <h2 class="mdc-typography--headline3">Photos</h2>
 
     <div v-if="room&&room.images.length!=0">
@@ -77,7 +81,7 @@
       </div>
     </div>
     <p v-if="room&&room.images.length==0">There are no photos for this room</p>
-    <br>Your room?
+    <br>Lived here?
     <nuxt-link v-if="room" :to="`/rooms/upload/${room.id}`" class="mdc-button">Upload photo</nuxt-link>
     <br>
 
