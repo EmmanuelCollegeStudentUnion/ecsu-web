@@ -2,6 +2,7 @@
     "name": "ECSU",
     "scripts": {
         "dev": "nuxt",
+        "dev-unsafe": "nuxt --hostname 0.0.0.0",
         "build": "nuxt generate",
         "webp": "yarn imagemin ./dist/_nuxt --out-dir=./dist/_nuxt/ --plugin=webp",
         "ampify": "node ampify.js",
