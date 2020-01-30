@@ -15,7 +15,6 @@ import { MDCTabBar } from "@material/tab-bar";
 export default {
   mounted() {
     this.tabBar = new MDCTabBar(this.$refs.tabBar);
-    this.tabBar.activateTab(1);
     this.tabBar.activateTab(0);
   }
 };

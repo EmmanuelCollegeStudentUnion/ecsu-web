@@ -11,7 +11,6 @@
                 :srcset="logo.srcSet"
                 alt="ECSU logo"
                 width="165px"
-                height="40px"
               >
             </nuxt-link>
           </span>
@@ -36,6 +35,7 @@
           </button>
         </section>
       </div>
+      <span style="background:var(--mdc-theme-secondary); width: 100%;height: 5px;display: block;"></span>
     </div>
     <Drawer :open="drawerOpen"/>
     <transition name="fade">
@@ -93,7 +93,7 @@ export default {
   },
   computed: {
     logo() {
-      return require("@/assets/images/site/logo1.png");
+      return require("@/assets/images/site/logo2.png");
     }
   }
 };
