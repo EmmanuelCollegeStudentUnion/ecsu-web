@@ -84,5 +84,6 @@
         "imagemin-webp": "^5.0.0",
         "markdown-with-front-matter-loader": "^0.1.0",
         "node-sass": "^4.10.0"
-    }
+    },
+    "version": "0.0.0"
 }
