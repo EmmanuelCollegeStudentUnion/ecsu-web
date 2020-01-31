@@ -26,5 +26,4 @@ export default {
 
 
 <style lang="scss">
-@import "@material/select/mdc-select";
 </style>

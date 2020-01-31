@@ -15,11 +15,12 @@
               <nuxt-link
                 class="mdc-list-item"
                 :class="{
-              'mdc-list-item--activated': item.url==$route.path
-            }"
+                  'mdc-list-item--activated': item.url==$route.path
+                  }"
                 :to="item.url"
                 aria-selected="true"
               >
+                <i v-if="item.subitem" style="width: 10px;"></i>
                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">{{item.icon}}</i>
                 <span class="mdc-list-item__text">{{item.text}}</span>
               </nuxt-link>
@@ -69,7 +70,8 @@ export default {
             route.routes.forEach(item => {
               items.push({
                 text: item.title,
-                url: item.url
+                url: item.url,
+                subitem: true,
               });
             });
           }

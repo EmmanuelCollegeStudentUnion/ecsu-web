@@ -42,7 +42,6 @@ export default {
 
 
 <style lang="scss" scoped>
-@import "@material/elevation/mdc-elevation";
 .cookies-frame {
   width: 100%;
   position: fixed;

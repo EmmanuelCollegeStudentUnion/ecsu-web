@@ -6,7 +6,13 @@
       :value="value||''"
       @input="input||null"
     ></textarea>
-    <label class="mdc-floating-label" for="text-field--textarea">{{label}}</label>
+    <div class="mdc-notched-outline">
+      <div class="mdc-notched-outline__leading"></div>
+      <div class="mdc-notched-outline__notch">
+        <label class="mdc-floating-label" for="text-field--textarea">{{label}}</label>
+      </div>
+      <div class="mdc-notched-outline__trailing"></div> 
+    </div>
   </div>
 </template>
 
@@ -14,10 +20,13 @@
 import { MDCTextField } from "@material/textfield";
 export default {
   props: ["label", "name", "value", "input"],
-  mounted: function() {
-    const r = this.$refs.inputField;
-    const textField = new MDCTextField(r);
-  }
+  mounted: function () {
+    this.$nextTick(function () {
+      if (this.$refs.inputField) {
+        const textField = new MDCTextField(this.$refs.inputField);
+      }
+    })
+  },
 };
 </script>
 

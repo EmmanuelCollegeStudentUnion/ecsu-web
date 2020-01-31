@@ -65,7 +65,7 @@ export default (ctx, inject) => {
         const ApolloSSR = require('vue-apollo/ssr')
         Vue.use(ApolloSSR)
         beforeNuxtRender(async ({ Components, nuxtState }) => {
-            await ApolloSSR.prefetchAll(apolloProvider, Components, ctx);
+            //await ApolloSSR.prefetchAll(apolloProvider, Components, ctx);
             await apolloClient.query({ query: globalQuery })
             nuxtState.apollo = ApolloSSR.getStates(apolloProvider);
         })

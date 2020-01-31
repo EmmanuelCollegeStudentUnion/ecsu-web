@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url("/fonts/Gotham-Bold.woff");
+}
+
+
+$mdc-typography-font-family: unquote("'Lato', sans-serif");
+
+$mdc-typography-styles-headline1: (
+  font-family: unquote("'Gotham-Bold', sans-serif"),
+  letter-spacing: -3pt,
+);
+
+$mdc-typography-styles-headline2: (
+  font-family: unquote("'Gotham-Bold', sans-serif"),
+  font-size: 3.25rem,
+  line-height: 3.25rem,
+  letter-spacing: -3pt,
+);
+
+$mdc-typography-styles-headline3: (
+  font-family: unquote("'Gotham-Bold', sans-serif"),
+  letter-spacing: -2pt,
+);
+
+$mdc-typography-styles-headline4: (
+  font-family: unquote("'Gotham-Bold', sans-serif"),
+  letter-spacing: -2pt,
+);

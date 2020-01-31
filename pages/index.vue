@@ -3,7 +3,7 @@
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
       <div class="page-content">
         <div class="sketchImageContainer">
-          <img :srcset="sketchImage.srcSet" :src="sketchImage.src" alt="front court" width="100%">
+          <img class="sketchImage" :srcset="sketchImage.srcSet" :src="sketchImage.src" alt="front court" width="100%">
         </div>
         <h1 class="mdc-typography--headline1 mdc-theme--text-secondary-on-light hero-heading">
           Welcome to
@@ -20,7 +20,7 @@
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 center-button">
       <div class="call-to-action">
-        <nuxt-link to="/prospective/" class="mdc-fab mdc-fab--extended">
+        <nuxt-link to="/prospective/" class="mdc-fab mdc-fab--extended primary-fab">
           <span class="mdc-fab__label">Prospective students</span>
         </nuxt-link>
       </div>
@@ -120,6 +120,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.sketchImage {
+  //filter: grayscale(100%) contrast(10%);  TODO
+}
+
 .sketchImageContainer {
   padding-bottom: 48%;
   overflow: hidden;
@@ -144,12 +148,14 @@ article.card-image {
 }
 .hero-heading {
   margin: 32px 0;
-  font-size: 80px;
+  font-size: 74px;
+  line-height: 74px;
   text-align: center;
   @media screen and (min-width: 1280px) {
-    font-size: 96px;
+    font-size: 80px;
+    line-height: 80px;
     margin: 32px 32px;
-    text-align: left;
+    text-align: center;
   }
 }
 .center-heading {

@@ -5,7 +5,7 @@
         <div class="material-icons card-icon md-48">{{icon}}</div>
       </div>
       <div class="text-card-header">
-        <span class="center mdc-typography--headline7">{{title}}</span>
+        <span class="center mdc-typography--headline6">{{title}}</span>
       </div>
       <slot/>
     </div>
@@ -41,7 +41,7 @@ article.card {
   position: relative;
   align-items: center;
   justify-content: flex-start;
-  height: 48px;
+  height: 64px;
   padding: 0 16px;
   overflow: hidden;
 }
