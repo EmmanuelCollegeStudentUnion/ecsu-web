@@ -1,7 +1,7 @@
 <template>
   <div class="mdc-layout-grid__inner">
     <div
-      class="mdc-layout-grid__cell center"
+      class="mdc-layout-grid__cell center left-heading"
       v-if="!!$slots.title"
       :class="{
       'mdc-layout-grid__cell--span-6': !!$slots.media,
@@ -36,5 +36,9 @@
 <style scoped>
 .center {
   margin: auto;
+}
+
+.left-heading {
+  margin-left: 2rem;
 }
 </style>

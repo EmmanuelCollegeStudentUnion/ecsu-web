@@ -9,7 +9,7 @@ const gaId = {
     'development': 'UA-131416461-2'
 }[nodeEnv];
 
-const routes = fetch('https://ecsu.org.uk/api/graphql?query={routes{url}}')
+const routes = fetch('https://api.ecsu.org.uk/graphql?query={routes{url}}')
     .then(x => x.json())
     .then(x => x.data.routes.map(route => route.url))
 
@@ -31,15 +31,29 @@ export default {
                     //console.log("MODIFYING!!!")
                     rule.oneOf.forEach(oneOf => {
                         const loader = oneOf.use.pop()
-                        var baseInclude = loader.options && loader.options.includePaths ? loader.options.includePaths : [];
-                        //console.log(loader);
-                        oneOf.use.push({
-                            ...loader,
-                            options: {
-                                includePaths: [...baseInclude, ...glob.sync(path.join(__dirname, 'node_modules/@material')).map((dir) => path.dirname(dir))],
-                                implementation: loader.loader == "sass-loader" ? require('sass') : undefined,
-                            }
-                        })
+                        var isSass = loader.loader == "sass-loader";
+                        if (!isSass) {
+                            var baseInclude = loader.options && loader.options.includePaths ? loader.options.includePaths : [];
+                            //console.log(loader);
+                            oneOf.use.push({
+                                ...loader,
+                                options: {
+                                    includePaths: [...baseInclude, ...glob.sync(path.join(__dirname, 'node_modules/@material')).map((dir) => path.dirname(dir))],
+                                    implementation: loader.loader == "sass-loader" ? require('sass') : undefined,
+                                }
+                            })
+                        } else { // Sass-Loader uses different pathing and gets angry if you are wrong
+                            var baseInclude = loader.options && loader.options.sassOptions && loader.options.sassOptions.includePaths ? loader.options.sassOptions.includePaths : [];
+                            oneOf.use.push({
+                                ...loader,
+                                options: {
+                                    sassOptions: {
+                                        includePaths: [...baseInclude, ...glob.sync(path.join(__dirname, 'node_modules/@material')).map((dir) => path.dirname(dir))],
+                                    },
+                                    implementation: loader.loader == "sass-loader" ? require('sass') : undefined,
+                                }
+                            })
+                        }
                     })
                 }
                 //console.log(rule);
@@ -119,6 +133,7 @@ export default {
         '@nuxtjs/sitemap',
         'nuxt-webfontloader',
         '@nuxtjs/vuetify',
+        //'@nuxtjs/apollo',
         ['nuxt-rollbar-module', {
             serverAccessToken: '8c5b36a9377c42059e5bb2fca54d8b8f',
             clientAccessToken: 'dfdb3ce2cf0e4428b26124d2a9fbb603',
@@ -138,6 +153,7 @@ export default {
         whitelist: ["v-lazy-image-loaded"],
         whitelistPatterns: [/uppy/, /multiselect/],
         whitelistPatternsChildren: [/uppy/, /multiselect/],
+        enabled: ({ isDev, isClient }) => (!isDev && isClient), // or `false` when in dev/debug mode
     },
     head: {
         titleTemplate: 'ECSU | %s',

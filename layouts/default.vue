@@ -10,8 +10,7 @@
                 :src="logo.src"
                 :srcset="logo.srcSet"
                 alt="ECSU logo"
-                width="165px"
-                height="40px"
+                width="190px"
               >
             </nuxt-link>
           </span>
@@ -25,17 +24,18 @@
             <svg
               role="img"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="32"
+              height="32"
               viewBox="0 0 24 24"
             >
               <title>menu</title>
               <path d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="hotpink"></path>
             </svg>
           </button>
         </section>
       </div>
+      <span style="background:var(--mdc-theme-secondary); width: 100%;height: 5px;display: block;"></span>
     </div>
     <Drawer :open="drawerOpen"/>
     <transition name="fade">
@@ -93,7 +93,7 @@ export default {
   },
   computed: {
     logo() {
-      return require("@/assets/images/site/logo1.png");
+      return require("@/assets/images/site/logo2_lgbt.png");
     }
   }
 };
@@ -103,6 +103,12 @@ export default {
 @import "~/assets/scss/site.scss";
 .header-logo {
   display: block;
+  margin-top:5px;
+  margin-bottom:5px;
+  width: 170px;
+  @media screen and (min-width: 1280px) {
+    width: 190px;
+  }
 }
 .mdc-top-app-bar {
   position: fixed;

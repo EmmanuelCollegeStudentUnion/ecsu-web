@@ -150,7 +150,7 @@ export default {
         if (error.gqlError.extensions.code == "NOT_FOUND") {
           return this.$nuxt.error({ statusCode: 404, message: error.message });
         }
-      }
+      },
     }
   },
   methods: {

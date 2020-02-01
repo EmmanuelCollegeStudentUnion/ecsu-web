@@ -2,7 +2,7 @@
   <button
     @click="click"
     ref="tab"
-    class="mdc-tab mdc-tab--active"
+    class="mdc-tab"
     role="tab"
     aria-selected="true"
     tabindex="0"

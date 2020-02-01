@@ -144,23 +144,26 @@ export default {
     this.$forceUpdate();
   },
   apollo: {
-    whatsOnEvents: gql`
-      {
-        whatsOnEvents {
-          title
-          category
-          datetime
-          dtend
-          image {
-            src
-            srcSet
-            placeholder
-            alt
+    whatsOnEvents: {
+      query: gql`
+        {
+          whatsOnEvents {
+            title
+            category
+            datetime
+            dtend
+            image {
+              src
+              srcSet
+              placeholder
+              alt
+            }
+            url
           }
-          url
         }
-      }
-    `
+      `,
+    //prefetch: true,
+    }
   },
   data() {
     return { selectedCategory: [], 
@@ -215,7 +218,14 @@ export default {
         );
     },
     vcevents() {
-      return this.filteredEvents.map(element => ({
+      var toScan = [];
+      if (this.selectedCategory.includes("All") || this.selectedCategory.length == 0) toScan = this.whatsOnEvents;
+      else
+        toScan = this.whatsOnEvents.filter(
+          x => this.selectedCategory.includes(x.category)
+        );
+      toScan = toScan != undefined ? toScan : [];
+      return toScan.map(element => ({
               start: moment(element.datetime).format("YYYY-MM-DD"),
               end: element.dtend ? moment(element.dtend).format("YYYY-MM-DD") : undefined,
               name: element.title,

@@ -1,5 +1,10 @@
-$mdc-theme-primary: #d926a5;
-$mdc-theme-secondary: #d926a5;
+@import "colours.scss";
+@import "typography.scss";
+
+$mdc-theme-on-primary: #fff;
+$mdc-theme-on-secondary: #fff;
+$mdc-theme-primary: $emma-blue;
+$mdc-theme-secondary: $emma-pink;
 $mdc-theme-background: #eceff1;
 
 @import "@material/theme/mdc-theme";
@@ -30,6 +35,32 @@ $mdc-theme-background: #eceff1;
 
 @import "vue-multiselect/dist/vue-multiselect.min.css";
 
+// Secondary themed buttons for when you need working stuff
+
+.mdc-button.secondary-text-button {
+  @include mdc-button-ink-color($mdc-theme-secondary);
+  @include mdc-states(secondary);
+}
+
+.mdc-button.secondary-filled-button {
+  @include mdc-button-filled-accessible($mdc-theme-secondary);
+  margin-bottom: 2px;
+}
+
+.mdc-button.primary-filled-button {
+  @include mdc-button-filled-accessible($mdc-theme-primary);
+  margin-bottom: 2px;
+}
+
+.mdc-button.secondary-stroked-button {
+  @include mdc-button-ink-color($mdc-theme-secondary);
+  @include mdc-button-outline-color($mdc-theme-secondary);
+
+}
+
+.mdc-fab.primary-fab {
+  @include mdc-fab-accessible($mdc-theme-primary);
+}
 
 //Standard font
 div{
@@ -56,7 +87,7 @@ th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #d926a5;
+  background-color: $emma-pink;
   color: white;
 }
 table {
@@ -97,12 +128,13 @@ table{
 
 //Hide icons until loaded
 
-/*
+
 .material-icons{
-  //visibility: hidden; // Loading broke
+  font-family: 'Material Icons' !important;
+  visibility: hidden; // Loading broke
   overflow: hidden;
 }
-*/
+
 
 /* purgecss ignore */
 .wf-active * .material-icons {

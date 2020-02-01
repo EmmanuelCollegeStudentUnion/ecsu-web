@@ -1,0 +1,16 @@
+//Jerry:
+$emma-blue: #080266;
+$emma-pink: #FC65A8;
+
+//EMMA website
+//$emma-blue: #15326e;
+//$emma-pink: #c02b7d;
+
+//Original site
+//$emma-pink: #d926a5;
+//$emma-blue: $emma-pink;
+
+:root {
+    --emma-blue: #{$emma-blue};
+    --emma-pink: #{$emma-pink};
+}
