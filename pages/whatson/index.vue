@@ -136,12 +136,12 @@ export default {
     title: "What's On?"
   },
   beforeMount() {
-    this.$apollo.queries.whatsOnEvents.refetch();
-    this.$forceUpdate();
+    //this.$apollo.queries.whatsOnEvents.refetch();
+    //this.$forceUpdate();
   },
   mounted() {
-    this.$apollo.queries.whatsOnEvents.refetch();
-    this.$forceUpdate();
+    //this.$apollo.queries.whatsOnEvents.refetch();
+    //this.$forceUpdate();
   },
   apollo: {
     whatsOnEvents: {
@@ -162,20 +162,21 @@ export default {
           }
         }
       `,
-    //prefetch: true,
+      prefetch: true,
     }
   },
   data() {
     return { selectedCategory: [], 
+        whatsOnEvents: [], // Init query data
         type: "month",
         now: null,
-        colors: ['blue', 'indigo', 'deep-purple', 'cyan', 'green', 'orange', 'grey darken-1'],
         selected: null,
         color: 'emma-pink',
         $vuetify: {},
         events: [],
         start: moment().format("YYYY-MM-DD").toString(),
         end: moment().endOf("month").format("YYYY-MM-DD").toString(),
+        vcevents2: [],
     };
   },
   methods: {
@@ -203,6 +204,17 @@ export default {
       })
       window.open(out, "_blank");
       return;
+    },
+    updateEvents() {
+      this.vcevents2 = this.whatsOnEvents.filter(
+          x => this.selectedCategory.includes(x.category)
+        ).map(element => ({
+              start: moment(element.datetime).format("YYYY-MM-DD"),
+              end: element.dtend ? moment(element.dtend).format("YYYY-MM-DD") : undefined,
+              name: element.title,
+              color: "emma-blue",
+              url: element.url,
+          }));
     }
   },
   computed: {
@@ -218,20 +230,16 @@ export default {
         );
     },
     vcevents() {
-      var toScan = [];
-      if (this.selectedCategory.includes("All") || this.selectedCategory.length == 0) toScan = this.whatsOnEvents;
-      else
-        toScan = this.whatsOnEvents.filter(
-          x => this.selectedCategory.includes(x.category)
-        );
-      toScan = toScan != undefined ? toScan : [];
-      return toScan.map(element => ({
-              start: moment(element.datetime).format("YYYY-MM-DD"),
-              end: element.dtend ? moment(element.dtend).format("YYYY-MM-DD") : undefined,
-              name: element.title,
-              color: "emma-blue",
-              url: element.url,
-          }));
+      this.$nextTick(() => {
+        this.$forceUpdate();
+      });
+      return this.filteredEvents.map(element => ({
+          start: moment(element.datetime).format("YYYY-MM-DD"),
+          end: element.dtend ? moment(element.dtend).format("YYYY-MM-DD") : undefined,
+          name: element.title,
+          color: "emma-blue",
+          url: element.url,
+      }));
     },
   },
   
