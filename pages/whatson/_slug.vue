@@ -1,7 +1,10 @@
 <template>
   <PostPage v-if="whatsOn">
     <template slot="title">{{whatsOn.title}}</template>
-    <template slot="subtitle">{{whatsOn.datetime| moment('LLL')}}</template>
+    <template slot="subtitle">
+      {{whatsOn.datetime|moment('LLL')}} - {{whatsOn.datetime|moment("diff", whatsOn.dtend)|duration('humanize')}}<br>
+      Category: {{whatsOn.category}}
+    </template>
     <template slot="media">
       <ImageCard v-if="whatsOn.image" :image="whatsOn.image"/>
     </template>
@@ -37,6 +40,8 @@ export default {
           whatsOn(slug: $slug) {
             title
             datetime
+            dtend
+            category
             image {
               src
               srcSet

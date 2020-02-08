@@ -7,7 +7,8 @@
         "webp": "yarn imagemin ./dist/_nuxt --out-dir=./dist/_nuxt/ --plugin=webp",
         "ampify": "node ampify.js",
         "downloadExternal": "bash download-external.sh",
-        "serve": "serve dist"
+        "serve": "serve dist",
+        "fix-watch": "sudo sysctl fs.inotify.max_user_watches=524288; sudo sysctl -p"
     },
     "dependencies": {
         "@material/button": "^4.0.0",

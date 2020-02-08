@@ -163,13 +163,13 @@ export default {
         ],
         link: [
             //{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic' }
-            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Material+Icons|Roboto:100,300,400,500,700,900italic' }
+            //{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Material+Icons|Roboto:100,300,400,500,700,900italic' }
         ],
         __dangerouslyDisableSanitizers: ['script']
     },
     webfontloader: {
         google: {
-            families: ['Material+Icons']
+            families: ['Material+Icons', 'Lato']
         }
     },
     sitemap: {
