@@ -3,7 +3,7 @@
     <div v-show="cookies" class="cookies-frame">
       <div class="cookies mdc-card mdc-elevation--z10">
         <div class="cookies-content">
-          <p>By using this website you agree to our
+          <p style="margin:auto">By using this website you agree to our
             <nuxt-link to="/cookies">cookie policy</nuxt-link>
             <span>🍪</span>
           </p>

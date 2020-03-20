@@ -87,7 +87,6 @@ export default {
         }&desc=ECSU&msg=&iact=`
       );
     });
-    
   },
   apollo: {
     user: {

@@ -34,8 +34,15 @@
 
 <script>
 import gql from "graphql-tag";
+import Cookies from "js-cookie";
 export default {
   props: ["open"],
+  mounted() {
+    if (!!Cookies.get("access_token")) {
+      this.$apollo.queries.navItems.refetch();
+      this.$forceUpdate();
+    }
+  },
   data: function() {
     return {
       routes: process.env.routes,

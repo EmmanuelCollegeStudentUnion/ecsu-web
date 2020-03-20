@@ -14,6 +14,22 @@
               >
             </nuxt-link>
           </span>
+          <nuxt-link
+            class="mdc-button mdc-button--outlined mdc-ripple-upgraded bar-button secondary-stroked-button"
+            style="float:right;"
+            to="/user/"
+            v-if="this.user != undefined && this.user.crsid != null"
+          >
+            {{this.user.crsid}}
+          </nuxt-link>
+          <a
+            class="mdc-button mdc-button--outlined mdc-ripple-upgraded bar-button secondary-stroked-button"
+            style="float:right;"
+            :href="authUrl"
+            v-else-if="authUrl"
+          >
+            Log In
+          </a>
           <button
             aria-label="menu"
             v-show="$mq!='lg'"
@@ -53,6 +69,7 @@
   </div>
 </template>
 <script>
+import gql from "graphql-tag";
 import "normalize.css";
 import Drawer from "@/components/Drawer";
 import Footer from "@/components/Footer";
@@ -61,7 +78,18 @@ const sketchImage = require("@/assets/images/pages/home/Sketch.png");
 sketchImage.src = sketchImage.images.slice(-1)[0].path;
 export default {
   components: { Drawer, Footer, Cookies },
-
+  mounted() {
+    if (this.$route.query["WLS-Response"]) {
+      this.$router.replace({ query: { "WLS-Response": undefined } });
+    }
+    this.$nextTick(() => {
+      this.authUrl = String(
+        `https://raven.cam.ac.uk/auth/authenticate.html?ver=3&url=${
+          window.location.href
+        }&desc=ECSU&msg=&iact=`
+      );
+    });
+  },
   head() {
     return {
       title: "Emmanuel College Students' Union",
@@ -82,6 +110,19 @@ export default {
         { rel: "canonical", href: `https://ecsu.org.uk${this.$route.path}` }
       ]
     };
+  },
+  apollo: {
+    user: {
+      query: gql`
+        {
+          user {
+            crsid
+          }
+        }
+      `,
+
+      fetchPolicy: "cache-and-network"
+    }
   },
   data: () => ({
     drawerOpen: false
@@ -117,6 +158,10 @@ export default {
   @extend .mdc-theme--background;
   height: 100%;
   display: flex;
+}
+
+.bar-button {
+  white-space: nowrap;
 }
 
 .page-content {
