@@ -1,8 +1,8 @@
 <template class>
   <article class="ecard mdc-card--outlined" v-on:click="test()">
-    <div class="card-content">
+    <div class="ecard-content">
       <div class="text-card-header">
-        <span class="center mdc-typography--headline6">{{title}}</span>
+        <span class="center mdc-typography--headline4">{{title}}</span>
       </div>
       <slot v-if="expand"/>
     </div>
@@ -30,9 +30,9 @@ export default {
 article.ecard:hover {
   @extend .mdc-elevation--z1;
 }
-.card-content {
+.ecard-content {
   padding: 24px;
-  text-align: center;
+  //text-align: center;
 }
 article.ecard {
   @extend .mdc-elevation-transition;

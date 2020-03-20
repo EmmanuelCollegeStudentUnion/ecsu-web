@@ -165,7 +165,7 @@ export default {
 }
 
 .page-content {
-  max-width: 820px;
+  max-width: 1024px;
   margin: auto;
   width: 100%;
   overflow: auto;
