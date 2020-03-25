@@ -87,6 +87,7 @@ collections:
       fields:
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Publish date", name: "pubdate", widget: "date", hidden: true}
+        - {label: "Ordering", name: "number", widget: "number", default: 0, valueType: "int"}
         - {label: "Content", name: "body", widget: "markdown"}
       editor:
         preview: false
