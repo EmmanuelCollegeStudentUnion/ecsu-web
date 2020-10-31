@@ -34,7 +34,9 @@
         </tr>
         <tr class="even">
           <td>
-            <a href="/downloads/protected/official_documents/constitution.pdf">Constitution</a>
+            <!--<a href="/downloads/protected/official_documents/constitution.pdf">Constitution</a>-->
+            <!--Hack due to perms error; fix with SRCF-->
+            <a href="/downloads2/Constitution.pdf">Constitution</a>
           </td>
           <td>362.81 KiB</td>
         </tr>
