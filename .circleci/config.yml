@@ -85,8 +85,8 @@ jobs:
             - run:
                 name: Upload
                 command: |
-                    ssh nh487@shell.srcf.net "rm -f ~/deploy/artifacts/*"
-                    scp /tmp/deploy.tar.gz nh487@files.srcf.net:~/deploy/artifacts/$CIRCLE_SHA1.tar.gz
+                    ssh btfs2@shell.srcf.net "rm -f ~/deploy/artifacts/*"
+                    scp /tmp/deploy.tar.gz btfs2@files.srcf.net:~/deploy/artifacts/$CIRCLE_SHA1.tar.gz
     
     deployStaging:
         machine:
@@ -95,7 +95,7 @@ jobs:
             - run:
                 name: Deploy staging
                 command: |
-                    ssh nh487@shell.srcf.net "~/deploy/deploy.sh ~/deploy/artifacts/$CIRCLE_SHA1.tar.gz"
+                    ssh btfs2@shell.srcf.net "~/deploy/deploy.sh ~/deploy/artifacts/$CIRCLE_SHA1.tar.gz"
                                     
     deployProduction:
         machine:
@@ -104,9 +104,7 @@ jobs:
             - run:
                 name: Deploy into production
                 command: |
-                    ssh nh487@shell.srcf.net "cat ~/deploy/deploy-PRODUCTION.sh > ~/ecsu/deploy-PRODUCTION.sh"
-                    ssh nh487@shell.srcf.net "chmod g+rw -R ~/ecsu/public_html"
-                    ssh nh487@shell.srcf.net "~/deploy/deploy-PRODUCTION.sh ~/deploy/artifacts/$CIRCLE_SHA1.tar.gz"
+                    ssh btfs2@shell.srcf.net "~/ecsu/deploy-PRODUCTION.sh ~/deploy/artifacts/$CIRCLE_SHA1.tar.gz"
 
     rollbarStaging:
         machine:
