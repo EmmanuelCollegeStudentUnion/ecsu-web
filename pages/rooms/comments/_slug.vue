@@ -41,7 +41,7 @@
         <div ref="year_select" class="mdc-select mdc-select--outlined">
           <div class="mdc-select__anchor">
             <i class="mdc-select__dropdown-icon"></i>
-            <div class="mdc-select__selected-text">2021</div>
+            <div class="mdc-select__selected-text">2022</div>
             <div class="mdc-notched-outline" style="top: 0px">
               <div class="mdc-notched-outline__leading"></div>
               <div class="mdc-notched-outline__notch">
@@ -59,14 +59,14 @@
             <ul class="mdc-list">
               <li
                 class="mdc-list-item mdc-list-item--selected"
-                data-value="2021"
+                data-value="2022"
               >
-                2021
+                2022
               </li>
+              <li class="mdc-list-item" data-value="2021">2020</li>
               <li class="mdc-list-item" data-value="2020">2020</li>
               <li class="mdc-list-item" data-value="2019">2019</li>
               <li class="mdc-list-item" data-value="2018">2018</li>
-              <li class="mdc-list-item" data-value="2017">2017</li>
             </ul>
           </div>
         </div>
@@ -141,7 +141,7 @@ export default {
           variables: {
             room: this.$route.params.slug,
             comment: this.userComment,
-            year: this.select ? parseInt(this.select.value) : 2021, //TODO FIXME
+            year: this.select ? parseInt(this.select.value) : 2022, //TODO FIXME
           },
         })
         .then((data) => {
