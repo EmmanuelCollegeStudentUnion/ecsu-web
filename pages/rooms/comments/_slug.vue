@@ -45,7 +45,7 @@
             <div class="mdc-notched-outline" style="top: 0px">
               <div class="mdc-notched-outline__leading"></div>
               <div class="mdc-notched-outline__notch">
-                <label class="mdc-floating-label">Year (20/21 = 2021)</label>
+                <label class="mdc-floating-label">Year (21/22 = 2022)</label>
               </div>
               <div class="mdc-notched-outline__trailing"></div>
             </div>
