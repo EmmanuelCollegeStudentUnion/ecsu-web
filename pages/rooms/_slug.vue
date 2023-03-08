@@ -37,7 +37,6 @@
       >Webmaster</a>.
     </p>
 
-
     <h2 class="mdc-typography--headline3">Comments</h2>
     <table v-if="room&&room.comments.length!=0">
       <thead>
